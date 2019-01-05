@@ -1,0 +1,32 @@
+// @file sns_dae_ccd.proto
+//
+// Defines message for sending CCD enable message
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_dae.proto";
+
+
+enum sns_dae_ccd_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Command from CCD sensor to tell SDC to enable CCD
+  // No body
+  SNS_DAE_CCD_MSGID_SNS_DAE_CCD_ENABLE         = 607;
+
+  // Command from CCD sensor to get axis mapping
+  // No body
+  SNS_DAE_CCD_MSGID_SNS_DAE_GET_AXIS_MAP       = 608;
+
+  // Event to CCD sensor contaning axis mapping
+  // This event may be sent immediately, or as soon as the DAE sensor discovers
+  // the axis map.
+  SNS_DAE_CCD_MSGID_SNS_DAE_AXIS_MAP_EVENT = 805;
+}
+
+message sns_dae_axis_map_event {
+  repeated sensor_to_phone_conversion map = 1 [(nanopb).max_count = 3];
+}
