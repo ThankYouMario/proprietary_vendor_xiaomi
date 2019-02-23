@@ -1,4 +1,4 @@
-# Copyright (C) 2018 Paranoid Android
+# Copyright (C) 2019 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -90,6 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_offbody_detect.proto:system/etc/sensors/proto/sns_offbody_detect.proto \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_pedometer.proto:system/etc/sensors/proto/sns_pedometer.proto \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_pedometer_wrist.proto:system/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_physical_sensor_oem_config.proto:system/etc/sensors/proto/sns_physical_sensor_oem_config.proto \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_physical_sensor_test.proto:system/etc/sensors/proto/sns_physical_sensor_test.proto \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_pose_6dof.proto:system/etc/sensors/proto/sns_pose_6dof.proto \
     vendor/xiaomi/sdm845-common/proprietary/etc/sensors/proto/sns_ppg.proto:system/etc/sensors/proto/sns_ppg.proto \
@@ -151,6 +152,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/xiaomi/sdm845-common/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
     vendor/xiaomi/sdm845-common/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
+    vendor/xiaomi/sdm845-common/proprietary/lib/android.hardware.soundtrigger@2.0-core.so:system/lib/android.hardware.soundtrigger@2.0-core.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.0.so:system/lib/com.qualcomm.qti.imscmservice@2.0.so \
@@ -229,11 +231,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mfidoca@1.0.so:system/lib/vendor.xiaomi.hardware.mfidoca@1.0.so \
+    vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.misys@1.0.so:system/lib/vendor.xiaomi.hardware.misys@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mlipay@1.0.so:system/lib/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mlipay@1.1.so:system/lib/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.0.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.0.so \
-    vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.1.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.1.so \
-    vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.mtdservice@1.2.so:system/lib/vendor.xiaomi.hardware.mtdservice@1.2.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.tidaservice@1.0.so:system/lib/vendor.xiaomi.hardware.tidaservice@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.tidaservice@1.1.so:system/lib/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/vendor.xiaomi.hardware.vsimapp@1.0.so:system/lib/vendor.xiaomi.hardware.vsimapp@1.0.so \
@@ -301,6 +302,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so:system/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so \
+    vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.misys@1.0.so:system/lib64/vendor.xiaomi.hardware.misys@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:system/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:system/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/sdm845-common/proprietary/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:system/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
@@ -315,6 +317,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
     QtiSystemService \
     QtiTelephonyService \
+    SoterService \
     datastatusnotification \
     embms \
     imssettings \
