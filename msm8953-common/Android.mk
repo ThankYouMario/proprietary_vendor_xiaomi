@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter mido tissot,$(TARGET_DEVICE)),)
+ifneq ($(filter sakura,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.display.color@1.0
