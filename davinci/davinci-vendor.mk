@@ -13,6 +13,7 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/davinci/proprietary/bin/charger:system/bin/charger \
     vendor/xiaomi/davinci/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/xiaomi/davinci/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/xiaomi/davinci/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
@@ -182,5 +183,4 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
-    chargeonlymode
+    WfdCommon
