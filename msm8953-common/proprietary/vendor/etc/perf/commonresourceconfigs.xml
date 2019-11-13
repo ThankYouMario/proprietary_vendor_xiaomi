@@ -80,6 +80,12 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x18" Node="/dev/stune/top-app/schedtune.prefer_idle" />
         <Minor OpcodeValue="0x19" Node="/proc/sys/kernel/sched_initial_task_util" />
         <Minor OpcodeValue="0x1A" Node="/sys/devices/system/cpu/cpu0/sched_load_boost" />
+        <Minor OpcodeValue="0x1B" Node="/proc/sys/kernel/sched_little_cluster_coloc_fmin_khz" />
+        <Minor OpcodeValue="0x1C" Node="/dev/stune/top-app/schedtune.boost" />
+        <Minor OpcodeValue="0x1D" Node="/proc/sys/kernel/sched_busy_hysteresis_enable_cpus" />
+        <Minor OpcodeValue="0x1E" Node="/proc/sys/kernel/sched_min_task_util_for_colocation" />
+        <Minor OpcodeValue="0x1F" Node="/proc/sys/kernel/sched_min_task_util_for_boost" />
+        <Minor OpcodeValue="0x20" Node="/proc/%d/sched_boost" Supported="yes"/> <!-- sched_task_boost -->
     <!-- sched major end -->
 
     <!-- core hotplug major start -->
@@ -110,6 +116,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0xF" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq" />
         <Minor OpcodeValue="0x10" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load" />
         <Minor OpcodeValue="0x11" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl" />
+        <Minor OpcodeValue="0x12" Node="/sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us" />
     <!-- interactive major end -->
 
     <!-- cpubw hwmon major start -->
@@ -194,6 +201,16 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x4" Node="/sys/class/devfreq/soc:qcom,memlat-cpu4/mem_latency/stall_floor" />
         <Minor OpcodeValue="0x5" Node="/sys/class/devfreq/soc:qcom,memlat-cpu0/min_freq" />
         <Minor OpcodeValue="0x6" Node="/sys/class/devfreq/soc:qcom,memlat-cpu4/min_freq" />
+        <Minor OpcodeValue="0x7" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/min_freq" />
+        <Minor OpcodeValue="0x8" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil" />
+        <Minor OpcodeValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil" />
+        <Minor OpcodeValue="0xA" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/stall_floor" />
+        <Minor OpcodeValue="0xB" Node="/sys/class/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/stall_floor" />
+        <Minor OpcodeValue="0xC" Node="/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/min_freq" />
+        <Minor OpcodeValue="0xD" Node="/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil" />
+        <Minor OpcodeValue="0xE" Node="/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil" />
+        <Minor OpcodeValue="0xF" Node="/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/stall_floor" />
+        <Minor OpcodeValue="0x10" Node="/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/stall_floor" />
     <!-- memlat major end -->
 
     </PerfResources>
