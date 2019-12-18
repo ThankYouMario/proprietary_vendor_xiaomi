@@ -169,8 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
-    vendor/xiaomi/davinci/proprietary/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/libvolumelistener.so \
-    vendor/xiaomi/davinci/proprietary/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/soundfx/libvolumelistener.so
+    vendor/xiaomi/davinci/proprietary/vendor_overlay/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/soundfx/libvolumelistener.so \
+    vendor/xiaomi/davinci/proprietary/vendor_overlay/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/soundfx/libvolumelistener.so
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
