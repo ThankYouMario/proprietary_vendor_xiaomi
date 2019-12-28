@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymaster.so \
     vendor/xiaomi/sakura/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/xiaomi/sakura/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service \
+    vendor/xiaomi/sakura/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/xiaomi/sakura/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/xiaomi/sakura/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/xiaomi/sakura/proprietary/vendor/etc/camera/sakura_imx486_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sakura_imx486_ofilm_chromatix.xml \
@@ -46,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sakura/proprietary/vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sakura_s5k5e8_sunny_chromatix_factory.xml \
     vendor/xiaomi/sakura/proprietary/vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sakura_s5k5e8_sunny_chromatix_india.xml \
     vendor/xiaomi/sakura/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/xiaomi/sakura/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/sakura/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/sakura/proprietary/vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml \
     vendor/xiaomi/sakura/proprietary/vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml \
@@ -626,8 +628,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixfingerprintd_binder.so \
+    vendor/xiaomi/sakura/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
+    vendor/xiaomi/sakura/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/sakura/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/sakura/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 PRODUCT_PACKAGES += \
