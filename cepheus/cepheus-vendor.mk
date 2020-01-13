@@ -909,6 +909,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     uceShimService \
     HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel
