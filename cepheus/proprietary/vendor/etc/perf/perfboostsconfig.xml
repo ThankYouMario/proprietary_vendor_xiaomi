@@ -33,32 +33,10 @@
         <!-- Type="1", main launch boost of 2sec -->
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msmnile"
-            Resources="0x40C00000, 0x4, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41800000, 0xFF,
                        0x40400000, 0x1, 0x42C10000, 0x1, 0x43000000, 0xFF, 0x43400000, 0xFFFF,
                        0x4281C000, 2000" />
-
-   <!--app resume boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-        <!-- GPU_MIN_POWER_LEVEL resource opcode, value-->
-        <Config
-            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="msmnile"
-            Resources="0x40C00000, 0x4, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41800000, 0xFFF,
-                       0x40400000, 0x1, 0x42C10000, 0x1, 0x43000000, 0xFF, 0x43400000, 0xFFFF,
-                       0x4281C000, 2000, 0x42804000, 0x1" />
 
     <!--app lauch boost (disabling packing)-->
 
@@ -149,7 +127,7 @@
         <!-- Type="4", Prefling boost -->
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="msmnile"
-            Resources="0x43000000, 0x19, 0x40800000, 1500, 0x40800100, 1500, 0x40800200, 1500,
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40" />
 
 	<!--MTP boost-->
@@ -187,13 +165,13 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
         <!-- Type="", Package Install boost -->
 
         <Config
             Id="0x00001088" Enable="true" Target="msmnile"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF,
-                       0x43000000,0xFF,0x43400000,0xFF,0x40400000,1" />
+            Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF, 0x40CA0000, 0" />
 
     <!--Rotation latency boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -217,29 +195,7 @@
 
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msmnile"
-            Resources="0x40800100, 1000, 0x4280C000, 596" />
-
-    <!--XiaoMi bluetooth boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-
-        <!-- Type="1", bluetooth boost of 3sec -->
-        <Config
-            Id="0x000011C0" Type="1" Enable="true" Timeout="3000" Target="msmnile"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41800000, 0x8C,
-                       0x40400000, 0x1, 0x43000000, 0xFF, 0x43400000, 0xFFFF" />
+            Resources="0x40800100, 1000, 0x42804000, 0" />
 
     <!--Display on Resource -->
         <!-- Display on resource opcode, value -->
