@@ -101,7 +101,7 @@ LensInfo : Information of the lens present in the module.
     <EepromName>sagit_imx386_semco</EepromName>
     <OisName>bu63164</OisName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>imx386_semco_chromatix</ChromatixName>
+    <ChromatixName>sagit_imx386_semco_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>360</MountAngle>
@@ -127,7 +127,7 @@ LensInfo : Information of the lens present in the module.
     <ActuatorName>ak7371_s5k3m3_semco</ActuatorName>
     <EepromName>sagit_s5k3m3_semco</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>s5k3m3_semco_chromatix</ChromatixName>
+    <ChromatixName>sagit_s5k3m3_semco_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK_AUX</Position>
     <MountAngle>360</MountAngle>
@@ -151,7 +151,7 @@ LensInfo : Information of the lens present in the module.
     <SensorName>imx268</SensorName>
     <AliasSensorName>Sony_imx268_I</AliasSensorName>
     <EepromName>sagit_imx268_primax</EepromName>
-    <ChromatixName>imx268_chromatix</ChromatixName>
+    <ChromatixName>sagit_imx268_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>360</MountAngle>
@@ -165,8 +165,8 @@ LensInfo : Information of the lens present in the module.
       <FocalLength>3.14</FocalLength>
       <FNumber>2.2</FNumber>
       <TotalFocusDistance>0.35</TotalFocusDistance>
-      <HorizontalViewAngle>64.3</HorizontalViewAngle>
-      <VerticalViewAngle>50.5</VerticalViewAngle>
+      <HorizontalViewAngle>68.5</HorizontalViewAngle>
+      <VerticalViewAngle>42.2</VerticalViewAngle>
       <MinFocusDistance>0.35</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
@@ -189,8 +189,8 @@ LensInfo : Information of the lens present in the module.
       <FocalLength>3.14</FocalLength>
       <FNumber>2.2</FNumber>
       <TotalFocusDistance>0.35</TotalFocusDistance>
-      <HorizontalViewAngle>64.3</HorizontalViewAngle>
-      <VerticalViewAngle>50.5</VerticalViewAngle>
+      <HorizontalViewAngle>68.5</HorizontalViewAngle>
+      <VerticalViewAngle>42.2</VerticalViewAngle>
       <MinFocusDistance>0.35</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
