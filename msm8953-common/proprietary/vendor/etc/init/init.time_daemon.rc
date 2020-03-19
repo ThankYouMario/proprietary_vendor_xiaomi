@@ -4,6 +4,9 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
+on post-fs-data && property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    start time_daemon
+
 service time_daemon /vendor/bin/time_daemon
     class main
     user system
