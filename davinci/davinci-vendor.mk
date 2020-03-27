@@ -20,9 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
     vendor/xiaomi/davinci/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/xiaomi/davinci/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
-    vendor/xiaomi/davinci/proprietary/vendor_overlay/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/hw/camera.qcom.so \
     vendor/xiaomi/davinci/proprietary/vendor_overlay/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib/soundfx/libvolumelistener.so \
-    vendor/xiaomi/davinci/proprietary/vendor_overlay/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/davinci/proprietary/vendor_overlay/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/soundfx/libvolumelistener.so
 
 PRODUCT_PACKAGES += \
