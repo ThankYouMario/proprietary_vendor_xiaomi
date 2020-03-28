@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+  Copyright (c) 2015-2018 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -204,8 +204,8 @@ LensInfo : Information of the lens present in the module.
           <FocalLength>2.639</FocalLength>
           <FNumber>2.0</FNumber>
           <TotalFocusDistance>1.97</TotalFocusDistance>
-          <HorizontalViewAngle>62.7</HorizontalViewAngle>
-          <VerticalViewAngle>49.0</VerticalViewAngle>
+          <HorizontalViewAngle>55.12</HorizontalViewAngle>
+          <VerticalViewAngle>41.34</VerticalViewAngle>
           <MinFocusDistance>0.1</MinFocusDistance>
         </LensInfo>
   </CameraModuleConfig>
@@ -228,8 +228,8 @@ LensInfo : Information of the lens present in the module.
           <FocalLength>2.639</FocalLength>
           <FNumber>2.0</FNumber>
           <TotalFocusDistance>1.97</TotalFocusDistance>
-          <HorizontalViewAngle>62.7</HorizontalViewAngle>
-          <VerticalViewAngle>49.0</VerticalViewAngle>
+          <HorizontalViewAngle>55.12</HorizontalViewAngle>
+          <VerticalViewAngle>41.34</VerticalViewAngle>
           <MinFocusDistance>0.1</MinFocusDistance>
         </LensInfo>
   </CameraModuleConfig>
