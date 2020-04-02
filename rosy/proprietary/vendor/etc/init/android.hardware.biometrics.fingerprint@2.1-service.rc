@@ -1,0 +1,28 @@
+on init
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+
+on boot
+    chown system system /sys/devices/soc/soc:fpc1020/compatible_all
+    chown system system /sys/devices/soc/soc:fpc1020/irq
+    chown system system /sys/devices/soc/soc:fpc1020/hw_reset
+    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
+    chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
+    chown system system /sys/devices/soc/soc:fpc1020/vendor
+    chown system system /data/misc/fpc/calibration_image.pndat
+    chmod 0700 /sys/devices/soc/soc:fpc1020/compatible_all
+    chmod 0700 /sys/devices/soc/soc:fpc1020/irq
+    chmod 0700 /sys/devices/soc/soc:fpc1020/hw_reset
+    chmod 0700 /sys/devices/soc/soc:fpc1020/wakeup_enable
+    chmod 0700 /sys/devices/soc/soc:fpc1020/fingerdown_wait
+    chmod 0700 /sys/devices/soc/soc:fpc1020/vendor
+    chmod 0600 /data/misc/fpc/calibration_image.pndat
+
+service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+    writepid /dev/cpuset/system-background/tasks
