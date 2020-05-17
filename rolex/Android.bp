@@ -155,6 +155,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WfdService",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -232,5 +243,11 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
