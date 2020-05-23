@@ -1,0 +1,6 @@
+<DaemonConfigurationRoot>
+  <DaemonModuleConfig>
+    <ModuleName>calibration</ModuleName>
+    <ModuleEnable>TRUE</ModuleEnable>
+  </DaemonModuleConfig>
+</DaemonConfigurationRoot>
