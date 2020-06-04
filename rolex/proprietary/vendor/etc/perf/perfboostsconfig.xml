@@ -23,29 +23,13 @@
         <!-- SWAP_RATIO resource opcode, value-->
 
         <!-- Type="1", main launch boost of 2sec -->
-        <!-- <Config
+        <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msm8937"
             Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40400000, 0x1, 0x41000000, 0x4, 0x42804000, 0x1, 0x42C0C000, 0x64" />
 
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40400000, 0x1, 0x41000000, 0x4, 0x42804000, 0x1, 0x42C0C000, 0x64" /> -->
-
-        <Config
-            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msm8937"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40400000, 0x1, 0x41000000, 0x4, 0x42804000, 0x1, 0x42C0C000, 0x64" />
 
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="sdm439"
@@ -127,29 +111,13 @@
         <!-- GPU_MIN_PWRLVL resource opcode, value-->
 
         <!-- Type="1", Animation boost of 0.6sec -->
-        <!-- <Config
+        <Config
             Id="0x00001083" Enable="true" Timeout="600" Target="msm8937"
             Resources="0x40C00000, 0x1, 0x40800000, 0x44C, 0x42804000, 0x1" />
 
         <Config
             Id="0x00001083" Enable="true" Timeout="600" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x44C, 0x42804000, 0x1" /> -->
-
-        <Config
-            Id="0x00001083" Enable="true" Timeout="600" Target="msm8937"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001083" Enable="true" Timeout="600" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Resources="0x40C00000, 0x1, 0x40800000, 0x44C, 0x42804000, 0x1" />
 
         <Config
             Id="0x00001083" Type="1" Enable="true" Timeout="600" Target="sdm439"
@@ -169,13 +137,13 @@
         <!-- SCHED_PREFER_IDLE resource opcode, value-->
 
         <!-- Type="1", Vertical Scroll boost -->
-        <!-- <Config
+        <Config
             Id="0x00001080" Type="1" Enable="true" Target="msm8937" Kernel="3.18"
             Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="msm8917" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" /> -->
+            Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" />
 
 
         <!-- SCHEDBOOST resource opcode, value-->
@@ -183,20 +151,12 @@
 
         <!-- Type="1", Vertical Scroll boost -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="msm8937" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Id="0x00001080" Type="1" Enable="true" Target="msm8937" Kernel="4.9"
+            Resources="0x40C00000, 0x1, 0x40800000, 0x514" />
 
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="msm8917" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Id="0x00001080" Type="1" Enable="true" Target="msm8917" Kernel="4.9"
+            Resources="0x40C00000, 0x1, 0x40800000, 0x514" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="sdm439"
@@ -216,58 +176,26 @@
         <!-- SCHED_PREFER_IDLE resource opcode, value-->
 
         <!-- Type="2", Horizontal Scroll boost -->
-        <!-- <Config
+        <Config
             Id="0x00001080" Type="2" Enable="true" Target="msm8937" Kernel="3.18"
             Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="msm8917" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" /> -->
-
-         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="msm8937" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001080" Type="2" Enable="true" Target="msm8917" Kernel="3.18"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Resources="0x40C00000, 0x1, 0x40800000, 0x514, 0x40C04000, 0x1" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
 
         <!-- Type="2", Horizontal Scroll boost -->
 
-        <!-- <Config
+        <Config
             Id="0x00001080" Type="2" Enable="true" Target="msm8937" Kernel="4.9"
             Resources="0x40C00000, 0x1, 0x40800000, 0x514" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="msm8917" Kernel="4.9"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x514" /> -->
-
-        <Config
-            Id="0x00001080" Type="2" Enable="true" Target="msm8937" Kernel="4.9"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001080" Type="2" Enable="true" Target="msm8917" Kernel="4.9"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Resources="0x40C00000, 0x1, 0x40800000, 0x514" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="sdm439"
@@ -320,30 +248,10 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- Type="", Rotation latency boost -->
-        <!-- <Config
+        <Config
             Id="0x00001089" Enable="true" Timeout="1500" Target="msm8937"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
                        0x40800100, 0xFFF" />
-
-        <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40800000, 0xFFF" /> -->
-
-        <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="msm8937"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
 
         <Config
             Id="0x00001089" Enable="true" Timeout="1500" Target="sdm439"
@@ -371,29 +279,13 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- GPU MIN_FREQUENCY resource opcode,value-->
         <!-- Type="", Rotation animation boost -->
-        <!-- <Config
+        <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msm8937"
             Resources="0x40800100, 1000, 0x4280C000, 596" />
 
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msm8917"
-            Resources="0x40800000, 1000, 0x4280C000, 596" /> -->
-
-        <Config
-            Id="0x00001090" Enable="true" Timeout="1000" Target="msm8937"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
-
-        <Config
-            Id="0x00001090" Enable="true" Timeout="1000" Target="msm8917"
-            Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                       0x40400000, 0x1,
-                       0x41000000, 0x4,
-                       0x42804000, 0x1,
-                       0x42C0C000, 0x64" />
+            Resources="0x40800000, 1000, 0x4280C000, 596" />
 
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="sdm439"
@@ -450,23 +342,6 @@
         <Config
                 Id="0x00001040" Enable="true" Timeout="0" Target="qm215"
                 Resources="0x40000000, 0x0" />
-
-        <!--Keyguard unlock boost-->
-        <Config
-           Id="0x00001094" Enable="true" Timeout="1000" Target="msm8937"
-           Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                      0x40400000, 0x1,
-                      0x41000000, 0x4,
-                      0x42804000, 0x1,
-                      0x42C0C000, 0x64" />
-
-       <Config
-          Id="0x00001094" Enable="true" Timeout="1000" Target="msm8917"
-          Resources="0x40C00000, 0x1, 0x40800000, 0x5DC, 0x40800010, 0x5DC, 0x40800020, 0x5DC, 0x40800030, 0x5DC,
-                     0x40400000, 0x1,
-                     0x41000000, 0x4,
-                     0x42804000, 0x1,
-                     0x42C0C000, 0x64" />
 
     </PerfBoost>
 </BoostConfigs>
