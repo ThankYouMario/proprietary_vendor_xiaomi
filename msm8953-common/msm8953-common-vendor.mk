@@ -607,7 +607,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so
 
 PRODUCT_PACKAGES += \
-    libbtconfigstore \
     libgpustats \
     libsdm-disp-vndapis \
     libthermalclient \
