@@ -1,0 +1,46 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP"],
+    "soc_id": ["341"]
+  },
+  "rpr0521rs_0":{
+    "owner": "sns_rpr0521rs",
+    ".ambient_light":{
+      "owner": "sns_rpr0521rs",
+      ".config":{
+        "owner": "sns_rpr0521rs",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".proximity":{
+      "owner": "sns_rpr0521rs",
+      ".config":{
+        "owner": "sns_rpr0521rs",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}
