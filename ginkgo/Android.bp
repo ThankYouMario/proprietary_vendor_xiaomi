@@ -38,6 +38,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqcomfm_jni",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libqcomfm_jni.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libqcomfm_jni.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libMpeg4SwEncoder",
 	owner: "xiaomi",
 	strip: {

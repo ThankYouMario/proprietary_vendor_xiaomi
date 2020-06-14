@@ -2327,6 +2327,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
+    libqcomfm_jni \
     libMpeg4SwEncoder \
     libplatformconfig \
     libthermalclient \
