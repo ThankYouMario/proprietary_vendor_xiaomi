@@ -2350,4 +2350,5 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    vendor.qti.hardware.soter-V1.0-java
+    vendor.qti.hardware.soter-V1.0-java \
+    offlinecharger

@@ -326,3 +326,10 @@ dex_import {
 	product_specific: true,
 }
 
+cc_prebuilt_binary {
+	name: "offlinecharger",
+	owner: "xiaomi",
+	srcs: ["proprietary/bin/offlinecharger"],
+	prefer: true,
+}
+
