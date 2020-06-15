@@ -1,4 +1,5 @@
 # Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -346,6 +347,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so
 
 PRODUCT_PACKAGES += \
+    libqcomfm_jni \
     vendor.qti.hardware.fm@1.0 \
     CACertService \
     HotwordEnrollmentOKGoogleWCD9340 \
