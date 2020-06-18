@@ -34,6 +34,8 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
         <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
 
+        <Config MajorValue="0x5" MinorValue="0x13" Supported="no" /> <!-- rtg_boost_freq -->
+
         <Config MajorValue="0x6" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq" />
         <Config MajorValue="0x6" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/decay_rate" />
         <Config MajorValue="0x6" MinorValue="0x2" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/io_percent" />
@@ -43,11 +45,14 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x6" MinorValue="0x7" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/polling_interval" />
         <Config MajorValue="0x6" MinorValue="0x8" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/sample_ms" />
         <Config MajorValue="0x6" MinorValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/idle_mbps"  />
+        <Config MajorValue="0x6" MinorValue="0xA" Supported="no" />
 
         <!-- llcbw L3 and DDR major end -->
         <Config MajorValue="0xC" MinorValue="0x0" Supported="no" />
         <Config MajorValue="0xC" MinorValue="0x1" Supported="no" />
         <Config MajorValue="0xC" MinorValue="0x3" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x4" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x6" Supported="no" />
 
         <Config MajorValue="0xD" MinorValue="0x0" Supported="no" />
         <Config MajorValue="0xD" MinorValue="0x1" Supported="no" />

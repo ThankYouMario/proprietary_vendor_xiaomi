@@ -75,6 +75,12 @@
                    <AsyncType>-1</AsyncType>
                 </Trigger>
 
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
             </Triggers>
             <Samples>100</Samples>
         </Meter>

@@ -350,8 +350,8 @@
             </BIT7>
           <!-- 1920x1080p60  -->
             <BIT8>
-                <MinBitrate>10000000</MinBitrate>
-                <MaxBitrate>20000000</MaxBitrate>
+                <MinBitrate>7000000</MinBitrate>
+                <MaxBitrate>13000000</MaxBitrate>
             </BIT8>
           <!-- 1920x1080i60  -->
             <BIT9>
@@ -745,11 +745,5 @@
 
     <!-- Enfore HDCP for Direct Streaming -->
     <DSRequiresHDCP>1</DSRequiresHDCP>
-
-    <!--
-        Disable CVP
-        0 to enable, 1 to disable, 2 to disable only for secure
-     -->
-    <DisableCVP>2</DisableCVP>
 
 </WFDConfig>
