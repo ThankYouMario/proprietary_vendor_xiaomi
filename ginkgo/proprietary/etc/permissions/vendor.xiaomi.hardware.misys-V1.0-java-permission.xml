@@ -1,4 +1,0 @@
-<permissions>
-    <library name="vendor.xiaomi.hardware.misys-V1.0-java"
-            file="/system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar" />
-</permissions>
