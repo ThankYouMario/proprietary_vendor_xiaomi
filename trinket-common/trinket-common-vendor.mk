@@ -814,7 +814,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
-    libqcomfm_jni \
     libMpeg4SwEncoder \
     libplatformconfig \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
