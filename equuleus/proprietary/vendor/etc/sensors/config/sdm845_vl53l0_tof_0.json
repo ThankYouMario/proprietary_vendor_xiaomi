@@ -1,0 +1,96 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "URSA", "EQUULEUS"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+  "vl53l0_tof_platform":{
+    "owner": "sns_vl53l0_tof",
+    ".config":{
+      "owner": "sns_vl53l0_tof",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "41"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "1",
+        "data": "78"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".prox":{
+      "owner": "sns_vl53l0_tof",
+      ".fac_cal":{
+        "owner": "sns_vl53l0_tof",
+        "near_threshold":{ "type": "flt", "ver": "7",
+          "data": "38.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "8",
+          "data": "45.0"
+        }
+      },
+      ".cal_factor":{
+        "owner": "sns_vl53l0_tof",
+        "refspad":{ "type": "flt", "ver": "1",
+          "data": "5.0"
+        },
+        "isaspad":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        },
+        "vhv":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        },
+        "phcal":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        },
+        "offset":{ "type": "flt", "ver": "1",
+          "data": "10000.0"
+        },
+        "xtalk":{ "type": "flt", "ver": "1",
+          "data": "0.0"
+        },
+        "lpoffset":{ "type": "flt", "ver": "3",
+          "data": "-16000.0"
+        }
+      }
+    }
+  }
+}
