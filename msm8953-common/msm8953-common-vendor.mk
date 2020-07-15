@@ -772,11 +772,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so
 
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-=======
-    libbtconfigstore \
     libaudio_log_utils \
->>>>>>> 403b1f8a... msm8953-common:  Update Audio blobs from daisy-user-10-QKQ1.191002.002-V11.0.5.0.QDLMIXM-release-keys
     libgpustats \
     libsdm-disp-vndapis \
     libthermalclient \
