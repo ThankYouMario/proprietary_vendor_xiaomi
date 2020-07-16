@@ -24,5 +24,4 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor_overlay/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/lib64/soundfx/libvolumelistener.so
 
 PRODUCT_PACKAGES += \
-    libqcomfm_jni \
     vendor.qti.hardware.fm@1.0
