@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
      Netmgr Module configuration XML file
      Copyright (c) 2013, 2016-2018 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
+
 
 <!-- QMI configuration -->
 <list name="netmgr_config">
@@ -593,6 +593,7 @@
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
 
       <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="tc_ul_baserate" type="int"> 85000000 </data>
       <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
       <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
@@ -636,7 +637,7 @@
          <data type="string"> rmnet_data7 </data>
       </list>
 
-      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="iwlan_enable" type="int"> 0 </data>
       <data name="rev_control_ports_len" type="int"> 9 </data>
       <list name="rev_control_ports">
          <data type="string"> r_rmnet_data0 </data>
@@ -2191,15 +2192,16 @@
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
 
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
-
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
       <data name="netdev_budget" type="int"> 0 </data>
+      <data name="tcp_mtu_probing" type="int"> 2 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
 
@@ -2299,12 +2301,12 @@
       <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
       <data name="rmnet_shs" type="int"> 0 </data>
       <data name="rmnet_perf" type="int"> 0 </data>
-
       <data name="netdev_max_backlog" type="int"> 100000 </data>
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
       <data name="dl_marker_enabled" type="int"> 1 </data>
+      <data name="xlat_txcsum_disabled" type="int"> 0 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
       <data name="netdev_budget" type="int"> 0 </data>
@@ -2502,8 +2504,9 @@
       <data name="disable_hystart" type="int"> 1 </data>
       <data name="initial_ssthresh" type="int"> 1400 </data>
       <data name="dl_marker_enabled" type="int"> 1 </data>
+      <data name="xlat_txcsum_disabled" type="int"> 1 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
-      <data name="vnd_rps_mask" type="int"> 13 </data>
+      <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
