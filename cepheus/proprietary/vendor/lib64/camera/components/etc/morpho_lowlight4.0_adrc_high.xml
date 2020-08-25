@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <lib_lowlight>
-  <device name="cepheus">
+  <device name="cepheus,crux">
     <camera id="0">
       <iso value="210">
         <ynr_weights>0,0,0,0,0,0,0,0,0,0,0</ynr_weights>

@@ -27,11 +27,7 @@ property Name is called. -->
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
 
                 <!--System Properties -->
-                <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
-                <Prop Name="ro.lmk.enhance_batch_kill" Value="false" />
-                <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="38" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="ro.lmk.enable_userspace_lmk" Value="false" />
 
