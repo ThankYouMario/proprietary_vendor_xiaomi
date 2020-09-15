@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+  <!--HAL Confguration  -->
+  <hal
+    PortName="lhd"
+    GpioDelayMs="130"
+    LogEnabled="true"
+    Log="FILE"
+    LogDirectory="/data/vendor/gps/log/gps"
+    CtrlPipe="/data/vendor/gps/glgpsctrl"
+    NvStorageDir="/data/vendor/gps/"
+    NmeaOutName="/data/vendor/gps/gpspipe"
+
+    WakeLock="geo"
+
+    LPmode="false"
+    ReAidingOnHotStart="true"
+    SuplSslMethod="SSLv23_NO_TLSv1_2"
+    SuplEnable="true"
+    SuplUseApn="false"
+    SuplSslVerify="none"
+    SuplTlsCertPath="/vendor/bin/gps.cer"
+    SuplUT1Seconds="20"
+    SuplUT2Seconds="20"
+    SuplUT3Seconds="20"
+    TcpConnectionTimeout="20"
+
+    HttpSyncLto="true"
+    LtoDir="/data/vendor/gps/"
+    LtoSyncThresholdDays="3"
+
+    AssertEnabled="false"
+
+    SensorsEnable="true"
+    SensorsMask="0x41"
+    SensorsLog="false"
+    SensorsDebugLog="false"
+    LogDirectoryMaxSizeMb="280"
+    LogLineThreshold="400000"
+    GnssYearOfHardware="2018"
+
+  />
+
+  <gll
+    LogPriMask="LOG_INFO"
+    LogFacMask="LOG_GLLIO | LOG_GLLAPI"
+    FrqPlan="FRQ_PLAN_26MHZ_2PPM"
+    RfType="GL_RF_4755_BRCM_EXT_LNA"
+    OnChipLogPriMask="LOG_INFO"
+    OnChipLogFacMask="LOG_GLLIO | LOG_INTEGR"
+    MultiCarrLnaMask="L1_EXT_ON|L5_EXT_ON"
+    MultiCarrRFMode ="GL_MULTI_CARR_RF_MODE_L1_L5"
+    GpsCarrierType="3,1,3,1,2,3,2,3,3,3,1,2,1,1,2,1,2,1,1,1,1,1,1,3,3,3,3,1,2,3,2,3"
+    PsfDisableClamping="true"
+    PsfDisableInternalMotionDetector="true"
+    WarmStandbyTimeout1Seconds="10"
+    WarmStandbyTimeout2Seconds="20"
+    ExtL5Bias="13.5"
+    >
+  </gll>
+  <gll_features
+    EnableLowPowerEls="false"
+    EnableLowPowerPmm="false"
+    EnableACSD="true"
+    MPFCollect="true"
+  />
+
+<job Id="Periodic">
+    <task>
+        <req_pos ValidFixes="1000"/>
+    </task>
+</job>
+
+<!-- Periodic Position with the ROM almanac Ignored for simulator testing -->
+<job Id="Simulator_Periodic">
+    <task Id="cont" Repeat="1">
+        <startup IgnoreRomAlm="true"
+          IgnoreOsc="false"
+          IgnoreRamAlm="false"
+          IgnorePosition="true"
+          IgnoreNav="true"
+          IgnoreTime="true"
+/>
+        <req_pos ValidFixes="400" DurationSec="1200"/>
+    </task>
+</job>
+
+<job Id="factory-L5-CW">
+    <task Id="test" Repeat="1">
+        <!-- Instructs GLL to ignore all elements stored in NVRAM listed below -->
+        <startup
+            IgnoreOsc="false"
+            IgnoreTime="true"
+            IgnorePosition="true"
+            IgnoreNav="true"
+            IgnoreRamAlm="true"
+            IgnoreRomAlm="true"
+        />
+        <req_ftest
+            Prn="1"
+            PrnL5a="1"
+            ConstellationL5a="GPS"
+            Disable200KhzCw="true"
+            FactoryTestItems="GL_FACT_TEST_CW"
+            FactoryTestMode="GL_FACT_TEST_CONT"
+            AveragingIntervalSec="10"
+            DurationSec="1000"
+        />
+    </task>
+</job>
+
+</glgps>
