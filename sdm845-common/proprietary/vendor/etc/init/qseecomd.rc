@@ -6,7 +6,6 @@ on post-fs
     start vendor.qseecomd
 
 service vendor.qseecomd /vendor/bin/qseecomd
-    shutdown critical
     class core
     user root
     group root
