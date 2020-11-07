@@ -283,3 +283,11 @@ dex_import {
 	product_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@3.0-service.xml",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
