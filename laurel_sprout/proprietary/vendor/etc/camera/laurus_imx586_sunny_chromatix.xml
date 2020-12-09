@@ -1,0 +1,227 @@
+<!--
+  Copyright (c) 2017 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+CommonChromatixInfo:
+    CommonChromatixInfo is the information about chromatix needed for
+        various use cases.
+    Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+        3A and SW PostProc.
+    Entries in this node are common for all sensor modes.
+
+ResolutionChromatixInfo:
+    ResolutionChromatixInfo is the information about chromatix needed for
+        various use cases.
+    Ex:- Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot for ISP, CPP,
+        3A and SW PostProc.
+    Entries in this node are specific to sensor resolution.
+
+ChromatixName:
+    Contains the list of chromatix names for all modules.
+    special_mode_mask:
+        It is the bit mask for special modes, which is used for
+            chromatix selection.
+        Special modes can be any mode that needs a special chromatix.
+        Ex:- scene mode, DZOOM mode, OIS capture mode, flash mode
+        This is applicable for CommonChromatixInfo and
+            ResolutionChromatixInfo.
+        special_mode_mask="0" means none of the special modes are
+            selected.
+    sensor_resolution_index:
+        It is the sensor resolution index for which chromatix libraries
+            will be choosen.
+        It is applicable only in ResolutionChromatixInfo.
+
+ISPCommon :
+    Common tuning library name for ISP
+ISPPreview :
+    Preview tuning library name for ISP
+ISPSnapshot :
+    Snapshot tuning library name for ISP
+CPPCommon :
+    Common tuning library name for CPP
+CPPPreview :
+    Preview tuning library name for CPP
+CPPSnapshot :
+    Snapshot tuning library name for CPP
+CPPLiveshot :
+    Liveshot tuning library name for CPP
+PostProc :
+    Tuning library name for postproc module
+A3Preview :
+    Preview tuning library for 3A
+A3Video :
+    Video tuning library for 3A
+
+Order of Resolution Pick:
+    Assume the current sensor mode is "r" and special mode mask is "s".
+    Chromatix for a module and type is choosen in this order till we find a
+        valid chroamtix file name or else NULL is returned.
+    1) From ResolutionChromatixInfo node for which sensor_resolution_index
+        is "r" and special_mode_mask is "s".
+    2) From CommonChromatixInfo node for which special_mode_mask is "s".
+    3) From ResolutionChromatixInfo node for which sensor_resolution_index
+        is "r" and special_mode_mask is "0".
+    4) From CommonChromatixInfo node for which special_mode_mask is "0".
+    5) NULL is returned if we dont find in any of the above cases.
+
+special_mode_mask values:
+    SENSOR_SPECIAL_MODE_NONE = 0,
+    SENSOR_SPECIAL_MODE_FLASH = 1,
+    SENSOR_SPECIAL_MODE_ZOOM_UPSCALE = 2,
+    SENSOR_SPECIAL_MODE_ZOOM_DOWNSCALE = 4,
+    SENSOR_SPECIAL_MODE_OIS_CAPTURE = 8,
+-->
+
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>laurus_imx586_sunny_common</ISPCommon>
+      <PostProc>laurus_imx586_sunny_post_proc</PostProc>
+    </ChromatixName>
+ </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="remosic">
+      <ISPPreview>laurus_imx586_sunny_snapshot_48M</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_48M</ISPSnapshot>
+      <ISPVideo>laurus_imx586_sunny_video</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_48M</CPPSnapshot>
+      <CPPVideo>laurus_imx586_sunny_cpp_video</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_liveshot</CPPLiveshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_48M</A3Preview>
+      <A3Video>laurus_imx586_sunny_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_snapshot_12M</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_12M</ISPSnapshot>
+      <ISPVideo>laurus_imx586_sunny_video</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_12M</CPPSnapshot>
+      <CPPVideo>laurus_imx586_sunny_cpp_video</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_liveshot</CPPLiveshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_12M</A3Preview>
+      <A3Video>laurus_imx586_sunny_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="0" special_mode_mask="hht">
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_48M_hht</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_48M</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="hht">
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_12M_hht</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_12M</A3Preview>
+    </ChromatixName>
+	<ChromatixName sensor_resolution_index="1" special_mode_mask="sr">
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_12M_sr</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_12M</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="portrait">
+      <ISPPreview>laurus_imx586_sunny_snapshot_portrait</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_portrait</ISPSnapshot>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_portrait</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_portrait</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="torch">
+      <ISPCommon>laurus_imx586_sunny_common_torch</ISPCommon>
+      <ISPPreview>laurus_imx586_sunny_snapshot_torch</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_torch</ISPSnapshot>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_torch</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_torch</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="HDR">
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_HDR</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_HDR</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="sn">
+      <ISPPreview>laurus_imx586_sunny_snapshot_sn</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_sn</ISPSnapshot>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_sn</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_sn</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="4k">
+      <ISPPreview>laurus_imx586_sunny_preview</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_video</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_video_4k</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_video_4k</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_video_4k</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_video_4k</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="panorama">
+      <ISPPreview>laurus_imx586_sunny_snapshot_panorama</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_panorama</ISPSnapshot>
+      <CPPPreview>laurus_imx586_sunny_cpp_preview</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_panorama</CPPSnapshot>
+      <A3Preview>laurus_imx586_sunny_zsl_preview_panorma</A3Preview>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_hfr_60</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_hfr_60</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_hfr_60</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_hfr_60</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_hfr_60</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_hfr_60</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_hfr_90</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_hfr_90</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_hfr_90</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_hfr_90</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_hfr_90</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_hfr_90</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_hfr_120</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_hfr_120</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_hfr_120</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_hfr_120</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_hfr_120</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_hfr_120</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_preview</ISPPreview>
+      <ISPSnapshot>laurus_imx586_sunny_snapshot_12M</ISPSnapshot>
+      <ISPVideo>laurus_imx586_sunny_video</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_video_1080P</CPPPreview>
+      <CPPSnapshot>laurus_imx586_sunny_cpp_snapshot_12M</CPPSnapshot>
+      <CPPVideo>laurus_imx586_sunny_cpp_video_1080P</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_video_1080P</CPPLiveshot>
+      <A3Preview>laurus_imx586_sunny_zsl_video</A3Preview>
+      <A3Video>laurus_imx586_sunny_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="QQ/weixin">
+      <ISPPreview>laurus_imx586_sunny_video_weixin</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_video_weixin</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_video_weixin</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_video_weixin</CPPVideo>
+      <A3Preview>laurus_imx586_sunny_zsl_video_weixin</A3Preview>
+      <A3Video>laurus_imx586_sunny_zsl_video_weixin</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="720P">
+      <ISPPreview>laurus_imx586_sunny_preview</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_video</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_video_720P</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_video_720P</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_video_720P</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="6" special_mode_mask="0">
+      <ISPPreview>laurus_imx586_sunny_hfr_240</ISPPreview>
+      <ISPVideo>laurus_imx586_sunny_hfr_240</ISPVideo>
+      <CPPPreview>laurus_imx586_sunny_cpp_hfr_240</CPPPreview>
+      <CPPVideo>laurus_imx586_sunny_cpp_hfr_240</CPPVideo>
+      <CPPLiveshot>laurus_imx586_sunny_cpp_hfr_240</CPPLiveshot>
+      <A3Video>laurus_imx586_sunny_zsl_hfr_240</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>
+
