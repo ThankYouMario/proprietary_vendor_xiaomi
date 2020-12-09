@@ -4,12 +4,46 @@
     "hw_platform": ["QRD"],
     "soc_id": [ "394"]
   },
+   "ak0991x_0":{
+    "owner": "sns_ak0991x",
+    ".mag":{
+      "owner": "sns_ak0991x",
+      ".config":{
+        "owner": "sns_ak0991x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".config_2":{
+        "owner": "sns_ak0991x",
+        "use_fifo":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "nsf":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sdr":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+
   "ak0991x_0_platform":{
     "owner": "sns_ak0991x",
     ".config":{
       "owner": "sns_ak0991x",
       "bus_type":{ "type": "int", "ver": "0",
-        "data": "0"
+        "data": "3"
       },
       "bus_instance":{ "type": "int", "ver": "0",
         "data": "7"
@@ -24,10 +58,25 @@
         "data": "400"
       },
       "max_bus_speed_khz":{ "type": "int", "ver": "0",
-        "data": "400"
+        "data": "12500"
       },
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "82"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
       },
       "num_rail":{ "type": "int", "ver": "0",
         "data": "1"
@@ -44,14 +93,14 @@
     },
     ".orient":{
       "owner": "sns_ak0991x",
-      "x":{ "type": "str", "ver": "3",
-        "data": "-x"
+      "x":{ "type": "str", "ver": "0",
+        "data": "+y"
       },
-      "y":{ "type": "str", "ver": "3",
-        "data": "-y"
+      "y":{ "type": "str", "ver": "0",
+        "data": "+x"
       },
-      "z":{ "type": "str", "ver": "3",
-        "data": "+z"
+      "z":{ "type": "str", "ver": "0",
+        "data": "-z"
       }
     },
     ".mag":{
@@ -60,32 +109,32 @@
         "owner": "sns_ak0991x",
         ".corr_mat":{
           "owner": "sns_ak0991x",
-          "0_0":{ "type": "flt", "ver": "1",
-            "data": "0.91033935546875"
+          "0_0":{ "type": "flt", "ver": "0",
+            "data": "1.025"
           },
-          "0_1":{ "type": "flt", "ver": "1",
-            "data": "0.00506591796875"
+          "0_1":{ "type": "flt", "ver": "0",
+            "data": "-0.003"
           },
-          "0_2":{ "type": "flt", "ver": "1",
-            "data": "-0.01617431640625"
+          "0_2":{ "type": "flt", "ver": "0",
+            "data": "0.003"
           },
-          "1_0":{ "type": "flt", "ver": "1",
-            "data": "0.00506591796875"
+          "1_0":{ "type": "flt", "ver": "0",
+            "data": "-0.003"
           },
-          "1_1":{ "type": "flt", "ver": "1",
-            "data": "1.004150390625"
+          "1_1":{ "type": "flt", "ver": "0",
+            "data": "0.968"
           },
-          "1_2":{ "type": "flt", "ver": "1",
-            "data": "-0.00299072265625"
+          "1_2":{ "type": "flt", "ver": "0",
+            "data": "0.003"
           },
-          "2_0":{ "type": "flt", "ver": "1",
-            "data": "-0.01617431640625"
+          "2_0":{ "type": "flt", "ver": "0",
+            "data": "0.003"
           },
-          "2_1":{ "type": "flt", "ver": "1",
-            "data": "-0.00299072265625"
+          "2_1":{ "type": "flt", "ver": "0",
+            "data": "0.003"
           },
-          "2_2":{ "type": "flt", "ver": "1",
-            "data": "1.09423828125"
+          "2_2":{ "type": "flt", "ver": "0",
+            "data": "1.007"
           }
         },
         ".bias":{
