@@ -19,26 +19,6 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libplatformconfig",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libplatformconfig.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libplatformconfig.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
