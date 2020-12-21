@@ -347,6 +347,30 @@ W_AUX for micro camera
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>2</CameraId>
+    <SensorName>ginkgo_ov13B10</SensorName>
+    <EepromName>ginkgo_ov13B10</EepromName>
+    <ChromatixName_india>ginkgo_ov13B10_india_chromatix</ChromatixName_india>
+    <ChromatixName>ginkgo_ov13B10_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>2</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.51</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>4.0</TotalFocusDistance>
+      <HorizontalViewAngle>98.0</HorizontalViewAngle>
+      <VerticalViewAngle>80.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig> 
  <!--- back 8M camera -->
  <CameraModuleConfig>
     <CameraId>3</CameraId>
@@ -502,4 +526,55 @@ W_AUX for micro camera
        <MinFocusDistance>0.02</MinFocusDistance>
      </LensInfo>
    </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>4</CameraId>
+    <SensorName>ginkgo_hi259_af_ofilm_iii</SensorName>
+    <ActuatorName>ginkgo_hi259_ofilm_iii_dw9714</ActuatorName>
+    <EepromName>ginkgo_hi259_af_ofilm_iii</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName_india>ginkgo_hi259_af_ofilm_india_iii_chromatix</ChromatixName_india>
+    <ChromatixName>ginkgo_hi259_af_ofilm_iii_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>W_AUX</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+       <CSIDCore>1</CSIDCore>
+      <LaneMask>0x18</LaneMask>
+      <LaneAssign>0x3</LaneAssign>
+       <ComboMode>1</ComboMode>
+     </CSIInfo>
+     <LensInfo>
+       <FocalLength>1.94</FocalLength>
+       <FNumber>2.4</FNumber>
+       <TotalFocusDistance>4.0</TotalFocusDistance>
+       <HorizontalViewAngle>71.0</HorizontalViewAngle>
+       <VerticalViewAngle>56.0</VerticalViewAngle>
+       <MinFocusDistance>0.02</MinFocusDistance>
+     </LensInfo>
+   </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>5</CameraId>
+    <SensorName>ginkgo_vtcamera</SensorName>
+    <ChromatixName>csidtg_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>0</MountAngle>
+    <CSIInfo>
+      <CSIDCore>3</CSIDCore>
+      <LaneMask>0x0</LaneMask>
+      <LaneAssign>0x0</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.65</FocalLength>
+      <FNumber>2.2</FNumber>
+      <TotalFocusDistance>4.26</TotalFocusDistance>
+      <HorizontalViewAngle>78.6</HorizontalViewAngle>
+      <VerticalViewAngle>119</VerticalViewAngle>
+      <MinFocusDistance>0.4</MinFocusDistance>
+      <MaxRollDegree>360</MaxRollDegree>
+      <MaxPitchDegree>360</MaxPitchDegree>
+      <MaxYawDegree>360</MaxYawDegree>
+    </LensInfo>
+  </CameraModuleConfig>
 </CameraConfigurationRoot>
