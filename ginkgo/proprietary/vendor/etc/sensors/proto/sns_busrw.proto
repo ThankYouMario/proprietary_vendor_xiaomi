@@ -1,0 +1,48 @@
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_register_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_MSGID_REGISTER_READ     = 666;
+  SNS_MSGID_REGISTER_WRITE     = 667;
+
+  SNS_MSGID_READ_EVENT = 668;
+
+  SNS_MSGID_WRITE_EVENT = 669;
+}
+
+message sns_register_read_req {
+
+  required fixed32 reg_address =1;
+
+  required  fixed32 length=2;
+}
+
+//assuem just support 1 register with 32 bit every time
+message sns_register_write_req{
+  required fixed32 reg_address =1;
+
+  required  fixed32 value      = 2;
+}
+
+
+// Events types from motion detect Sensor
+message sns_register_read_event
+{
+  required fixed32 reg_address =1;
+
+  required bytes   data =2;
+
+}
+
+// assume
+message sns_register_write_event
+{
+  required fixed32 reg_address =1;
+
+  required fixed32 result =2;
+
+//the old value before wrting,not necessary to use bytes here
+  optional bytes   old_value =3;
+}

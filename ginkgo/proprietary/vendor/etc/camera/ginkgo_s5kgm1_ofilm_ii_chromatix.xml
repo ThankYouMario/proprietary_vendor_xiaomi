@@ -96,8 +96,8 @@ special_mode_mask values:
       <A3Video>ginkgo_s5kgm1_ofilm_ii_zsl_video_3a</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="CTSVERIFY">
-      <ISPPreview>ginkgo_s5kgm1_ofilm_ii_snapshot</ISPPreview>
-      <ISPSnapshot>ginkgo_s5kgm1_ofilm_ii_snapshot</ISPSnapshot>
+      <ISPPreview>ginkgo_s5kgm1_ofilm_ii_snapshot_its</ISPPreview>
+      <ISPSnapshot>ginkgo_s5kgm1_ofilm_ii_snapshot_its</ISPSnapshot>
       <ISPVideo>ginkgo_s5kgm1_ofilm_ii_video</ISPVideo>
       <CPPPreview>ginkgo_s5kgm1_ofilm_ii_cpp_preview</CPPPreview>
       <CPPSnapshot>ginkgo_s5kgm1_ofilm_ii_cpp_snapshot</CPPSnapshot>

@@ -155,12 +155,18 @@ W_AUX for micro camera
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>4.74</FocalLength>
+      <!--<FocalLength>4.74</FocalLength>
       <FNumber>1.79</FNumber>
       <TotalFocusDistance>4.0</TotalFocusDistance>
       <HorizontalViewAngle>67.2</HorizontalViewAngle>
       <VerticalViewAngle>53.2</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
+      <MinFocusDistance>0.1</MinFocusDistance>-->
+      <FocalLength>3.543</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.97</TotalFocusDistance>
+      <HorizontalViewAngle>67.45</HorizontalViewAngle>
+      <VerticalViewAngle>52.73</VerticalViewAngle>
+      <MinFocusDistance>0.07</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
 <!--- back aux camera -->
