@@ -5,7 +5,6 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
 *********************************************************************/
 {
   "embedded_ta_images": [
-    { "name":"rtice"},
     { "name":"qwes"},
     { "name":"tzsc"}
   ],
