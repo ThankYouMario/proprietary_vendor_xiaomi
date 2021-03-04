@@ -1,0 +1,54 @@
+
+; TAS2557 Factory Test and Calibration Configuration File
+; -----------------------------------------------------------------------------
+; PPC3 File: 20180929_hand_free_update_xu_yang.ppc3
+; TAS2557_Mono version: 3.0.6-beta.7
+; DDC Name: E5
+; Comments: [Write Comments Here]
+
+; FTC Settings
+FTC_BYPASS                = 0                     ; Refer to documentation
+TEST_DELTA_T              = 55                    ; Delta Temperature Limit during verification phase
+CALIBRATION_TIME          = 2000                  ; Duration (in ms) of calibration phase
+VERIFICATION_TIME         = 4000                  ; Duration (in ms) of the verification phase
+CONFIGURATION             = 0                     ; Refer to documentation
+CONFIGURATION_CALIBRATION = 4                     ; Refer to documentation
+DEV_ADDR                  = 98                    ; I2C slave write addr (in hex) for device A
+
+; Pass/Fail Limits
+RE_HI                     = 8
+RE_LO                     = 6
+F0_HI                     = 990
+F0_LO                     = 600
+Q_HI                      = 2.5
+Q_LO                      = 1
+T_HI                      = 40
+T_LO                      = 0
+
+; Obtained from Speaker Manufacturer
+SPK_T_MAX                 = 85                    ; Speaker Maximum Temperature (C)
+SPK_RE_TOL_PER            = 10                    ; Re +/- tolerance (%)
+
+; Obtained from PurePath Console 3 (PPC3)
+PPC3_RE0                  = 7.47                  ; Re0 (ohm)
+PPC3_FWARP                = 916                   ; CMWF (Hz)
+PPC3_BL                   = 0.989                 ; Bl (Tm)
+PPC3_MMS                  = 0.1068                ; Mms (g)
+PPC3_RTV                  = 103.1                 ; Rtv (K/W)
+PPC3_RTM                  = 346.7                 ; Rtm  (K/W)
+PPC3_RTVA                 = 123                   ; Rtva  (K/W)
+PPC3_SYSGAIN              = 7.43                  ; System Gain (V/FS)
+PPC3_DEV_NONLIN_PER       = 3                     ; Device Non-linearity (%)
+PPC3_DELTA_T_LIMIT        = 55                    ; Delta Thermal Limit (C)
+PPC3_PIG                  = 1                     ; Refer to documentation
+PPC3_RE_ALPHA             = 0.0033                ; Temperature coefficient alpha (1/K)
+FS_RATE                   = 48000                 ; TAS2557 Sample Rate
+
+; Calibration parameters locations (Book,Page,Offset,CoeffLength)
+umg_SsmKEGCye             =  0x8c,0x2d,0x64,0x01
+iks_E0                    =  0x8c,0x2f,0x40,0x01
+yep_LsqM0                 =  0x8c,0x2f,0x4c,0x01
+mcb_ZwiNgmaj              =  0x8c,0x2f,0x50,0x01
+oyz_U0_ujx                =  0x8c,0x2f,0x54,0x01
+kgd_OEldlc                =  0x8c,0x30,0x20,0x01
+
