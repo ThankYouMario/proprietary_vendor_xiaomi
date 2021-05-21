@@ -8,6 +8,7 @@ service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
     class main
     user system
     group system
+    writepid /dev/cpuset/system-background/tasks
     disabled
 
 on property:persist.vendor.dpmhalservice.enable=*
