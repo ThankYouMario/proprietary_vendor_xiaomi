@@ -33,3 +33,4 @@ libst_sr_models.so 64
 libhvx_interface.so 64
 lib_denoiser3.so 64
 libxml2_vendor.so 64
+libc++_shared.so 64
