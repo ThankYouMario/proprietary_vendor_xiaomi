@@ -1,0 +1,44 @@
+{
+  "PipelineName": "FrontSuperNightSnapshot",
+  "PipelineId": 5558,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.supernight",
+        "NodeInstanceId": 1
+      },
+      {
+        "NodeName": "com.qcom.plugin.gpu",
+        "NodeInstanceId": 2
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstanceId": 3
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        }
+      }
+    ]
+  }
+}

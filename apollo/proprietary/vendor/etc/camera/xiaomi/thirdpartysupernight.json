@@ -1,0 +1,30 @@
+{
+  "PipelineName": "SuperNightSnapshot",
+  "PipelineId": 777,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.dc",
+        "NodeInstanceId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ldc",
+        "NodeInstanceId": 2
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      }
+    ]
+  }
+}

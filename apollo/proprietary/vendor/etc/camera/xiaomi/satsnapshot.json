@@ -1,0 +1,129 @@
+{
+  "PipelineName": "SatSnapshot",
+  "PipelineId": 666,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.hdr",
+        "NodeInstanceId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.depurple",
+        "NodeInstanceId": 2
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.miflaw",
+        "NodeInstanceId": 3,
+        "NodePropertyId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ldc",
+        "NodeInstanceId": 4
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.dc",
+        "NodeInstanceId": 5
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstanceId": 6
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.bodyslim",
+        "NodeInstanceId": 7
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.miaiie",
+        "NodeInstanceId": 8
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.miaideblur",
+        "NodeInstanceId": 9
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 9
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 9
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 4
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 4
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 5
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 5
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 6
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 6
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 7
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 7
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 8
+        }
+      }
+    ]
+  }
+}

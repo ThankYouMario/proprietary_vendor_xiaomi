@@ -1,0 +1,44 @@
+{
+  "PipelineName": "ManualSnapshot",
+  "PipelineId": 333,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.depurple",
+        "NodeInstanceId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ldc",
+        "NodeInstanceId": 2
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.dc",
+        "NodeInstanceId": 3
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        }
+      }
+    ]
+  }
+}

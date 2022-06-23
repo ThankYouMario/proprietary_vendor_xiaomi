@@ -1,0 +1,103 @@
+{
+  "PipelineName": "FrontSingleSnapshot",
+  "PipelineId": 111,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.hdr",
+        "NodeInstanceId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.miflaw",
+        "NodeInstanceId": 2,
+        "NodePropertyId": 1
+      },
+      {
+        "//": "com.xiaomi.plugin.dc",
+        "NodeName": "com.xiaomi.plugin.dc",
+        "NodeInstanceId": 3
+      },
+      {
+        "//": "com.xiaomi.plugin.misegment",
+        "NodeName": "com.xiaomi.plugin.misegment",
+        "NodeInstanceId": 4
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstanceId": 5
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.superportrait",
+        "NodeInstanceId": 6
+      },
+      {
+        "NodeName": "com.qcom.plugin.gpu",
+        "NodeInstanceId": 7
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 3
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 4
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 4
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 5
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 5
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 6
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 6
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 7
+        }
+      }
+    ]
+  }
+}
