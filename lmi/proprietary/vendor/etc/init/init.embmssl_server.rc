@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.embmsslServer /vendor/bin/embmsslServer
+    class main
+    user radio
+    group radio oem_2901
+
+    # HIDL interfaces
+    interface vendor.qti.hardware.embmssl@1.0::IEmbms embmsslServer0
+    interface vendor.qti.hardware.embmssl@1.1::IEmbms embmsslServer0
+
+    # don't auto restart
+    oneshot
+
+    # start only when requested
+    disabled

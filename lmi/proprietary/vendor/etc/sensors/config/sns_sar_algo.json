@@ -1,0 +1,52 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "LMI"
+    ],
+    "soc_id": [
+      "291", "246", "305", "321", "339", "356"
+    ]
+  },
+  "sar_algo": {
+    "owner": "sar_algo",
+    ".params":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "threshold2": {
+          "ver": "0", "type": "flt", "data": "350"
+        },
+        "threshold3": {
+          "ver": "0", "type": "flt", "data": "1150"
+        },
+        "threshold4": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "threshold5": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "use_acc_gyro": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "use_qmi": {
+          "ver": "0", "type": "flt", "data": "0"
+        }
+    },
+    ".params_reg2":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "threshold2": {
+          "ver": "0", "type": "flt", "data": "65535"
+        },
+        "threshold3": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "threshold4": {
+          "ver": "0", "type": "flt", "data": "0"
+        }
+    }
+  }
+}
