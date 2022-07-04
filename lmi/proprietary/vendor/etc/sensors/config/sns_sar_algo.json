@@ -47,6 +47,15 @@
         "threshold4": {
           "ver": "0", "type": "flt", "data": "0"
         }
+    },
+    ".params_step":{
+      "owner": "sar_algo",
+        "usestep": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "stepcount": {
+          "ver": "0", "type": "flt", "data": "100"
+        }
     }
   }
 }
