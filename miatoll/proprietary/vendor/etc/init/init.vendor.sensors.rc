@@ -46,7 +46,7 @@ on early-boot
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
     chown system system /sys/kernel/boot_adsp/ssr
 
-on post-fs-data
+on post-fs-data && property:ro.build.type=userdebug
     #sensors log dir
     mkdir /data/vendor/sensors 0777 system system
     mkdir /data/vendor/sensors/scripts 0777 system system
