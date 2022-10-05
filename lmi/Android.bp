@@ -68,6 +68,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "ConnectionSecurityService",
+	owner: "xiaomi",
+	apk: "proprietary/vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "IWlanService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
