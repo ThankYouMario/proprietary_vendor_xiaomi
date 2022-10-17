@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf","PHOENIX"],
+    "soc_id": ["291", "246", "365"]
+  },
+  "bu27030":{
+    "owner": "sns_bu27030",
+    ".ambient_light":{
+      "owner": "sns_bu27030",
+      ".config":{
+        "owner": "sns_bu27030",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

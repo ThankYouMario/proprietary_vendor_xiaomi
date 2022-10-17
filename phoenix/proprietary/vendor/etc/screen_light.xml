@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<screen_light>
+    <screen vendor="EBBG">
+        <light CCT="2600"                R="255" G="217" B="200"  DUV="-0.0014" />
+        <light CCT="2900" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0014" />
+        <light CCT="3200" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0014" />
+        <light CCT="3500" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0015" />
+        <light CCT="3800" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0014" />
+        <light CCT="4100" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0013" />
+        <light CCT="4400" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0012" />
+        <light CCT="4700" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0013" />
+        <light CCT="5000" deltaCCT="300" R="255" G="217" B="200" DUV="-0.0011" />
+        <light CCT="5500" deltaCCT="500" R="255" G="255" B="255" DUV="-0.0015" />
+        <light CCT="6000" deltaCCT="500" R="255" G="255" B="255" DUV="-0.0014" />
+        <light CCT="6500" deltaCCT="500" R="255" G="255" B="255" DUV="-0.0013" />
+        <light CCT="7000" deltaCCT="500" R="255" G="255" B="255" DUV="-0.0015" />
+        <light CCT="7500" deltaCCT="300" R="255" G="255" B="255" DUV="-0.0011" />
+    </screen>
+</screen_light>
