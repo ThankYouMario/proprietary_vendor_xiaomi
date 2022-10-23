@@ -542,18 +542,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qdcmss",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/qdcmss"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qrtr-ns",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/qrtr-ns"],
