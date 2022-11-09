@@ -11,3 +11,9 @@ on post-fs-data
 service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
+
+service lct_rfs_restore /vendor/bin/lct_rfs_restore.sh
+	   class main
+	   user root
+	   group root
+	   oneshot
