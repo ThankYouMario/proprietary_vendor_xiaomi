@@ -252,8 +252,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -265,8 +265,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -278,8 +278,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -291,8 +291,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -304,8 +304,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -317,8 +317,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -330,8 +330,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -343,8 +343,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -356,8 +356,8 @@ cc_prebuilt_binary {
 	strip: {
 		none: true,
 	},
-	relative_install_path: "hw",
 	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
@@ -533,6 +533,18 @@ cc_prebuilt_binary {
 	name: "power_off_alarm",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/power_off_alarm"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "qdcmss",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/qdcmss"],
 	check_elf_files: false,
 	strip: {
 		none: true,
