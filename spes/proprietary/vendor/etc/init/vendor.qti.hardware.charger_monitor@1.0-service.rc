@@ -32,12 +32,12 @@ on charger
     enable vendor.qti-chg-policy-sh
     start vendor.qti-chg-policy-sh
 
-#on property:persist.vendor.hvdcp_opti.start=2
-#    rmdir /mnt/vendor/persist/hvdcp_opti
-#    setprop persist.vendor.hvdcp_opti.start 0
-#
-#on property:persist.vendor.hvdcp_opti.start=1
-#    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
-#    enable vendor.hvdcp_opti
-#    start vendor.hvdcp_opti
-#    setprop persist.vendor.hvdcp_opti.start 0
+on property:persist.vendor.hvdcp_opti.start=2
+    rmdir /mnt/vendor/persist/hvdcp_opti
+    setprop persist.vendor.hvdcp_opti.start 0
+
+on property:persist.vendor.hvdcp_opti.start=1
+    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
+    enable vendor.hvdcp_opti
+    start vendor.hvdcp_opti
+    setprop persist.vendor.hvdcp_opti.start 0
