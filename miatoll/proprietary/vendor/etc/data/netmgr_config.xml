@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Netmgr Module configuration XML file
-     Copyright (c) 2013, 2016-2021 Qualcomm Technologies, Inc.
+     Copyright (c) 2013, 2016-2022 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -2803,6 +2803,7 @@
       <data name="kfc_mode" type="int"> 4 </data>
       <data name="kfc_qmap" type="int"> 1 </data>
       <data name="qmi_pc" type="int"> 1 </data>
+      <data name="dfc_ps_ext" type="int"> 0 </data>
       <data name="tcp_ack_prio" type="int"> 1 </data>
 
       <data name="single_qmux_ch_enabled" type="int"> 1 </data>
@@ -3382,6 +3383,11 @@
       <data name="single_qmux_ch_enabled" type="int"> 1 </data>
       <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
+
+      <data name="tc_ul_baserate" type="int"> 155000000 </data>
+      <data name="dynamic_tc_ul_baserate" type="int"> 1 </data>
+      <data name="tc_ul_burst" type="int"> 25000 </data>
+
       <data name="rmnet_data_enabled" type="int"> 1 </data>
       <data name="dataformat_agg_dl_pkt" type="int"> 10 </data>
       <data name="dataformat_agg_dl_size" type="int"> 8192 </data>
@@ -3403,6 +3409,7 @@
       <data name="iwlan_concurrency" type="int"> 1 </data>
       <data name="nl_xfrm" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
       <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
 
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>

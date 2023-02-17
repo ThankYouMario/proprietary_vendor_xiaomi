@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2020, 2022 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc
 #
@@ -92,3 +92,4 @@ tgkill: 1
 gettid: 1
 sched_yield: 1
 flock: 1
+getdents64: 1
