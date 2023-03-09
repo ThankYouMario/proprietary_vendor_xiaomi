@@ -353,7 +353,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/config/tsl2560_back.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2560_back.json \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/config/tsl2560_dup.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2560_dup.json \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/config/tsl2560_pol.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2560_pol.json \
-    vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
     vendor/xiaomi/lmi/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
