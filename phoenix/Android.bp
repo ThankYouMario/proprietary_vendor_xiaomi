@@ -149,18 +149,6 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
-	name: "adpl",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/adpl"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "adsprpcd",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/adsprpcd"],
@@ -176,18 +164,6 @@ cc_prebuilt_binary {
 	name: "cdsprpcd",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/cdsprpcd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "cnd",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/cnd"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -285,19 +261,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qcrild",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/hw/qcrild"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.nxp.hardware.nfc@1.2-service",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service"],
@@ -350,66 +313,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "ims_rtp_daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/ims_rtp_daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "imsdatadaemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/imsdatadaemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "imsqmidaemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/imsqmidaemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "imsrcsd",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/imsrcsd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "irsc_util",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/irsc_util"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "loc_launcher",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/loc_launcher"],
@@ -446,18 +349,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "netmgrd",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/netmgrd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "nqnfcinfo",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/nqnfcinfo"],
@@ -473,18 +364,6 @@ cc_prebuilt_binary {
 	name: "nv_mac",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/nv_mac"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "pd-mapper",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/pd-mapper"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -542,45 +421,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qrtr-ns",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/qrtr-ns"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qseecomd",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/qseecomd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qti",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/qti"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "rmt_storage",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/rmt_storage"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -605,18 +448,6 @@ cc_prebuilt_binary {
 	name: "slim_daemon",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/slim_daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "tftp_server",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/tftp_server"],
 	check_elf_files: false,
 	strip: {
 		none: true,
