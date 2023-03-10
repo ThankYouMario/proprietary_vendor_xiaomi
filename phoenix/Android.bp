@@ -233,18 +233,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "hvdcp_opti",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/hvdcp_opti"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.bluetooth@1.0-service-qti",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti"],
