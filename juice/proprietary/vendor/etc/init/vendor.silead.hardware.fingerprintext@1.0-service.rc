@@ -1,0 +1,8 @@
+service fpexts_hal /vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
+    class late_start
+    user system
+    group system input
+    disabled
+
+on property:vendor.silead.fp.ext.enable=1
+    start fpexts_hal
