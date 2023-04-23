@@ -1,0 +1,49 @@
+{
+  "PipelineName": "DualBokehJpegSnapshot",
+  "NodesList": {
+      "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.capbokeh",
+        "NodeInstance":"CapbokehInstance0"
+      },
+      {
+          "NodeName": "com.qcom.plugin.offlinepostproc",
+          "NodeInstance": "JpegInstance0"
+      }
+      ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "CapbokehInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "CapbokehInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "config":{
+    "hw_platform": ["MTP","QRD","LISA","RENOIR","Dragon","Surf", "HDK"],
+    "soc_id": ["339", "356", "361", "475"]
+  },
+  "dae":{
+    "owner": "sns_dae",
+    "use_sdc":{ "type": "int", "ver": "2",
+      "data": "1"
+    }
+  }
+}

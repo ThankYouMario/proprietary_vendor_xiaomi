@@ -1,0 +1,63 @@
+{
+  "PipelineName": "rearsupernightsnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.rearsupernight",
+        "NodeInstance": "RearSuperNightInstance0"
+      },
+      {
+        "NodeName": "com.qcom.plugin.offlinepostproc",
+        "NodeInstance": "IdealRaw2YuvInstance0"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.memcpy",
+        "NodeInstance": "MemcpyInstance1"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "MemcpyInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "MemcpyInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "IdealRaw2YuvInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "IdealRaw2YuvInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "MemcpyInstance1"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "MemcpyInstance1"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}

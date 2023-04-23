@@ -1,0 +1,92 @@
+{
+  "PipelineName": "thirdpartyjpegsnapshot",
+  "NodesList": {
+    "Node": [
+      {
+          "NodeName": "com.xiaomi.plugin.ldc",
+          "NodeInstance": "LdcInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.depurple",
+          "NodeInstance": "DepurpleInstance0",
+          "NodePropertyId" : 1
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.skinbeautifier",
+          "NodeInstance": "SkinBeautyInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.mibokeh",
+          "NodeInstance": "MiBokehInstance0"
+      },
+      {
+          "NodeName": "com.qcom.plugin.offlinepostproc",
+          "NodeInstance": "JpegInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "LdcInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "LdcInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SkinBeautyInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SkinBeautyInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "MiBokehInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "MiBokehInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}

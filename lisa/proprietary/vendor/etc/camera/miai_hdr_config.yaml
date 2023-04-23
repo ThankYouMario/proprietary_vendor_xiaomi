@@ -1,0 +1,166 @@
+global_config:
+#  print_yaml_content: true
+  input_dir: '/storage/self/primary/hdr'
+  output_dir: '/storage/self/primary/hdr-Output'
+  enable_rear_fusion_phase2: true 
+  dump:
+#    INPUT: true
+#    ALIGNED: true
+#    DEGHOSTED: true
+#    FINAL_IMG: true
+#    FACE_DETECTION: true
+#    PORTRAIT_SEG: true
+#    COLLAPSED_Y: true
+#    ADJUSTED_Y: true
+#    DARK_MASK: true
+#    FINAL_UV: true
+  
+img_default_parameter:
+  orientation: 90
+#  hdr_type: MIAI_HDR_FLASH
+  selfie: false
+
+mobile_model:
+  K11T: true
+
+algo_params:
+  pre_proc:
+  align:
+  deghost:
+  merge:
+    selfie:
+      y_lut0:
+        mean: 108       
+        sigma: 36       
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        mean: 148
+        sigma: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut2:
+        mean: 128
+        sigma: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        mean: 148
+        sigma: 36
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut0:
+        mean: 198
+        sigma: 20
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut1:
+        mean: 96
+        sigma: 20
+        type: 'rightmax'
+        scale: 1.0
+      collapse:
+        max_scale1: 0.05
+        max_scale2: 0.05
+      clhe:   
+        up_thre: 1.1       
+        low_thre: 0.9      
+      y_linear_adjust:
+        mul_ratio: 0.5
+        minus_ratio: 1.0
+      dehalo: 
+        th_selfie: 0
+        th_u1b: 100
+        diff_hi: 120
+        diff_lo: -10       
+    wide:
+      y_lut0:
+        mean: 148       
+        sigma: 36       
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 148
+        right_node: 148
+        sigma_left: 2592
+        sigma_right: 2592
+        type: 'normal'
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 2592
+        sigma_right: 5184
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        mean: 108
+        sigma: 36
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut0:
+        mean: 76
+        sigma: 64
+        type: 'normal'
+        scale: 1.0
+      uv_lut1:
+        mean: 128
+        sigma: 20
+        type: 'normal'
+        scale: 1.0
+      collapse:
+        max_scale1: 0.05
+        max_scale2: 0.05
+      enable_rear_phase2: true
+      clhe:   
+        up_thre: 1.1       
+        low_thre: 0.9      
+      y_linear_adjust:
+        mul_ratio: 1.0
+        minus_ratio: 1.0
+      dehalo: 
+        th_selfie: 0
+        th_u1b: 100
+        diff_hi: 120
+        diff_lo: -10
+    ultra_wide:
+    low_light:
+        y_lut0:
+          mean: 148       
+          sigma: 36       
+          type: 'rightmax' 
+          scale: 1.0      
+        y_lut1:
+          left_node: 64
+          right_node: 168
+          sigma_left: 2592
+          sigma_right: 1296
+          type: 'normal'
+          scale: 1.0
+        y_lut2:
+          mean: 108
+          sigma: 36
+          type: 'leftmax'
+          scale: 1.0
+        uv_lut0:
+          mean: 76
+          sigma: 64
+          type: 'leftmax'
+          scale: 1.0
+        collapse:
+          max_scale1: 0.05
+          max_scale2: 0.05
+        y_linear_adjust:
+          mul_ratio: 0.0
+          minus_ratio: 0.0
+        denoise:
+          enabled: false
+          mul: 0.02          
+          plus: 6.0 
+  post_proc:
+    denoise:
+      enabled: false
+      mul: 0.02          
+      plus: 6.0
+    sharpen:
+      enabled: false    

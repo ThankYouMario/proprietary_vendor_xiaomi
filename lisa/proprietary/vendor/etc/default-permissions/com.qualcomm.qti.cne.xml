@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Qualcomm Technologies, Inc.
+  ~ All Rights Reserved.
+  ~ Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+This XML file declares which signature|privileged permissions should be
+granted to privileged applications on QTI devices.
+It allows additional grants on top of privapp-permissions-platform.xml
+-->
+
+<exceptions>
+    <exception package="com.qualcomm.qti.cne">
+        <!--MIUI-2025315 don't allow ACCESS_COARSE_LOCATION access for default-->
+        <!--<permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>-->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+    </exception>
+</exceptions>

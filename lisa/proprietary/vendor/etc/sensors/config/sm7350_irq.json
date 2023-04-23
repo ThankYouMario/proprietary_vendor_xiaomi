@@ -1,0 +1,9 @@
+{
+  "config": {
+    "hw_platform": ["MTP","QRD","LISA", "Surf", "RCM"],
+    "soc_id": ["475"]
+  },
+  "sns_irq": {
+    "owner": "sns_irq"
+  }
+}

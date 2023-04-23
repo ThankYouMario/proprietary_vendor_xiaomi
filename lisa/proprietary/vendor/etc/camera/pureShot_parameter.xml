@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<deblur>
+	<imageWidth>2592</imageWidth>
+	<imageHeight>1940</imageHeight>
+	<imgFormat>IMG_YUV420_NV12</imgFormat>
+	<enableMfnr>1</enableMfnr>
+	<enableUvnr>0</enableUvnr>
+	<enableYnr>1</enableYnr>
+	<mfnr>
+		<inputFrameNum>5</inputFrameNum>
+		<deblurFrameSharpnessRatioThreshold>0.9</deblurFrameSharpnessRatioThreshold>
+		<mePpcDownScaleFactorHori>4</mePpcDownScaleFactorHori> 
+    <mePpcDownScaleFactorVert>4</mePpcDownScaleFactorVert>
+    <mePpcTransformWidth>256</mePpcTransformWidth>
+    <mePpcTransformHeight>128</mePpcTransformHeight>
+    <mePpcValidMvThresh>0.03</mePpcValidMvThresh>
+    <mePpcEnableAdaptivePpcThresh>1</mePpcEnableAdaptivePpcThresh>
+    <mePpcUseNeighborsAsCands>255</mePpcUseNeighborsAsCands>
+    <mePpcAdaptivePpcThreshFactor>60</mePpcAdaptivePpcThreshFactor>
+    <mePpcValidPeakNoiseFloor>0.03</mePpcValidPeakNoiseFloor>
+    <mePpcGoodMvErrorsThresh>0.2</mePpcGoodMvErrorsThresh>
+    <mePpcAddZeroMvToCandIfNotFullFilled>1</mePpcAddZeroMvToCandIfNotFullFilled>
+    <globalAlignBlockKeyPointsNum>50</globalAlignBlockKeyPointsNum> 
+    <globalAlignBlockNumX>4</globalAlignBlockNumX>
+    <globalAlignBlockNumY>3</globalAlignBlockNumY>
+    <globalAlignHomoDownFactorX>4</globalAlignHomoDownFactorX>
+    <globalAlignHomoDownFactorY>4</globalAlignHomoDownFactorY>    
+	</mfnr>
+  <uvnr>
+  	<uvnrParam iso="100">
+  		<alphaValidNum>63,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,0.35,0.35,0.35,0.35</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>SET_ZERO,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>3,8,16,2,6,16</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>3,8,16,2,7,16</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>3,8,16,3,7,16</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>3,8,16,3,8,16</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>3,8,16,3,8,16</laplaceCoringPosVal_4>  		
+  	</uvnrParam>
+  	<uvnrParam iso="200">
+  		<alphaValidNum>63,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.5,0.35,0.35,0.35,0.35</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>8,16,24,3,12,24</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,24,48,5,18,48</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,24,48,6,20,48</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>6,16,24,6,16,24</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>4,12,16,4,12,16</laplaceCoringPosVal_4>  		
+  	</uvnrParam>
+  	<uvnrParam iso="400">
+  		<alphaValidNum>42,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>2.5,2.3,2.1,1.8,1.4</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>8,32,96,2,22,96</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,96,4,24,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,6,28,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>8,32,96,8,32,96</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>8,32,96,8,32,96</laplaceCoringPosVal_4> 	  		
+  	</uvnrParam>    
+  	<uvnrParam iso="800">
+  		<alphaValidNum>42,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>2.5,2.3,2.1,1.8,1.4</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>8,32,96,3,18,96</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,96,4,23,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,6,28,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>8,32,96,7,30,96</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>8,32,96,8,32,96</laplaceCoringPosVal_4> 	 
+  	</uvnrParam> 
+  	<uvnrParam iso="1600">
+  		<alphaValidNum>42,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>2.5,2.3,2.1,1.8,1.4</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,NONE,NONE</laplaceProcMode>
+  		<laplaceCoringPosVal_0>8,32,96,2,20,96</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,96,2,24,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,5,28,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>8,32,96,6,32,96</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>8,32,96,8,32,96</laplaceCoringPosVal_4> 		
+  	</uvnrParam> 
+  	<uvnrParam iso="3200">
+  		<alphaValidNum>42,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.1,2.2,1.8,1.3,1.1</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,NONE,NONE</laplaceProcMode>
+  		<laplaceCoringPosVal_0>14,42,96,1,16,96</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,96,1,22,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,4,28,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>8,32,96,6,32,96</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>8,32,96,8,32,96</laplaceCoringPosVal_4> 					
+  	</uvnrParam>
+  	<uvnrParam iso="6400">
+  		<alphaValidNum>42,46,50,58,63</alphaValidNum>
+  		<uvPyramidLevel>5</uvPyramidLevel>
+  		<sigmaDist>0.5,0.5,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>2.5,2.3,2.1,1.8,1.4</sigmaIntensity>
+  		<jbfDiameter>5,5,5,5,5</jbfDiameter>
+  		<gaussProcMode>NONE,JBF,JBF,JBF,JBF</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>8,32,96,1,8,96</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,96,2,14,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,3,20,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>8,32,96,3,24,96</laplaceCoringPosVal_3>  		
+  		<laplaceCoringPosVal_4>8,32,96,4,30,96</laplaceCoringPosVal_4>  		
+  	</uvnrParam>   			  		
+  </uvnr>
+  <ynr groupId="0">
+  	<ynrParam iso="100">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       41,46,15,30,70</alphaFace>
+		  <alphaPortrait>   70,70,15,55,80</alphaPortrait>
+		  <alphaBackground>98,105,35,70,100</alphaBackground>
+		  <alphaMfnr>        8,16,130,16,16</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,1.0,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>5,5,5,5,5</bfDiameter>
+		  <sigmaNlm>0.0,0.0,0.8,0.5,0.2</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>			
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,128,256,4,60,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,4,30,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>	 	   	   		
+  	</ynrParam>
+  	<ynrParam iso="200">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       50,46,30,0,0</alphaFace>
+		  <alphaPortrait>   90,70,36,0,0</alphaPortrait>
+		  <alphaBackground>128,105,70,0,0</alphaBackground>
+		  <alphaMfnr>        8,16,80,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>  64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,2.2,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>5,5,5,5,5</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.4,0.8,0.6</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>60,128,256,4,30,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,4,30,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4>   
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap> 		 	   		
+  	</ynrParam>    
+  	<ynrParam iso="400">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       30,30,35,0,0</alphaFace>
+		  <alphaPortrait>   33,37,42,0,0</alphaPortrait>
+		  <alphaBackground>68,78,88,0,0</alphaBackground>
+		  <alphaMfnr>        48,46,42,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.0,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,2.3,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.8,1.1,0.5</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>60,148,256,4,30,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,4,20,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>   		 	 			
+  	</ynrParam>      	
+  	<ynrParam iso="800">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       30,30,35,0,0</alphaFace>
+		  <alphaPortrait>   33,37,42,0,0</alphaPortrait>
+		  <alphaBackground>68,78,88,0,0</alphaBackground>
+		  <alphaMfnr>        48,46,42,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.0,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,2.3,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.8,1.1,0.5</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>NONE,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>30,118,256,10,30,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,4,20,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,82,60,40,36,32,22,22,22</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,1,1,1,1</varBlendEnable>
+  		<varBlend_1>255,250,230,210,182,130,62,32,62,112,182,252,252,252,252,252</varBlend_1> 
+  		<varBlend_2>255,250,230,210,182,160,132,102,132,172,212,252,252,252,252,252</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,66,68,70,72,74</radialMap>   		
+  	</ynrParam>    	
+  	<ynrParam iso="1600">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       50,65,80,0,0</alphaFace>
+		  <alphaPortrait>   60,80,100,0,0</alphaPortrait>
+		  <alphaBackground>108,128,148,0,0</alphaBackground>
+		  <alphaMfnr>        8,16,32,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		 	  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.1,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,2.0,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.4,0.8,0.4</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>			
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>3,48,192,3,18,192</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>16,64,192,8,64,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,96,5,32,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>4,16,64,3,16,64</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>2,16,64,2,16,64</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 	
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap> 
+  	</ynrParam>  
+  	<ynrParam iso="3200">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       40,40,43,0,0</alphaFace>
+		  <alphaPortrait>   40,40,45,0,0</alphaPortrait>
+		  <alphaBackground>54,54,72,0,0</alphaBackground>
+		  <alphaMfnr>        62,255,62,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,128,128,128,128</laplaceFactorLayer>
+		  <gaussFactorLayer>     120,120,120,120</gaussFactorLayer>	 	  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.1,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,1.8,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.5,1.0,0.5</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>			
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>6,94,192,2,34,192</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,28,192,3,22,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,24,96,4,18,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>4,16,64,4,13,64</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>2,16,64,2,13,64</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>72,88,92,96,104,112,120,112,104,96,88,80,72,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,1,1,1,1</varBlendEnable>
+  		<varBlend_1>252,164,80,80,132,200,252,252,252,252,252,252,252,252,252,252</varBlend_1> 
+  		<varBlend_2>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_2> 
+  		<varBlend_3>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_3> 
+  		<varBlend_4>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>  		
+  	</ynrParam>     
+  	<ynrParam iso="6400">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       40,40,43,0,0</alphaFace>
+		  <alphaPortrait>   40,40,45,0,0</alphaPortrait>
+		  <alphaBackground>54,54,72,0,0</alphaBackground>
+		  <alphaMfnr>        62,62,62,0,0</alphaMfnr>
+  		<laplaceFactorLayer>64,128,128,128,128</laplaceFactorLayer>
+		  <gaussFactorLayer>     120,120,120,120</gaussFactorLayer>		 	  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.1,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,2.1,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.7,1.1,0.6</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>			
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>6,94,192,4,54,192</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,28,192,3,18,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,24,96,4,16,96</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>4,16,64,4,12,64</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>2,16,64,2,12,64</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>72,88,92,96,104,112,120,112,104,96,88,80,72,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>255,176,184,192,208,224,240,224,208,192,176,160,144,128,112,96</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,1,1,1,1</varBlendEnable>
+  		<varBlend_1>252,164,80,80,132,200,252,252,252,252,252,252,252,252,252,252</varBlend_1> 
+  		<varBlend_2>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_2> 
+  		<varBlend_3>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_3> 
+  		<varBlend_4>252,252,252,252,252,252,252,252,252,252,252,252,252,252,252,252</varBlend_4>  		
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap> 
+  	</ynrParam> 
+  </ynr> 
+  <ynr groupId="1">  	    	  	    	
+  	<ynrParam iso="100">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,66,126</alphaFace>
+		  <alphaPortrait>   0,0,0,73,135</alphaPortrait>
+		  <alphaBackground>0,0,0,83,170</alphaBackground>
+		  <alphaMfnr>        0,0,0,56,60</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.0,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,1.5,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.0,0.6,0.3</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,128,256,16,95,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,6,28,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>   	 	   	   		
+  	</ynrParam>
+  	<ynrParam iso="200">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,66,126</alphaFace>
+		  <alphaPortrait>   0,0,0,73,135</alphaPortrait>
+		  <alphaBackground>0,0,0,83,170</alphaBackground>
+		  <alphaMfnr>        0,0,0,56,60</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.0,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,1.5,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.0,0.6,0.3</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,128,256,16,95,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,6,28,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>   				  		
+  	</ynrParam>    
+  	<ynrParam iso="400">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,66,96</alphaFace>
+		  <alphaPortrait>   0,0,0,73,105</alphaPortrait>
+		  <alphaBackground>0,0,0,83,120</alphaBackground>
+		  <alphaMfnr>        0,0,0,56,60</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.0,0.0,0.0,0.0,0.0</sigmaDist>
+  		<sigmaIntensity>0.0,2.3,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.8,1.1,0.5</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>60,148,256,4,30,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>8,32,192,4,20,192</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,192,6,32,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,16,64,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,16,64,128</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>   		 	
+  	</ynrParam>      	
+  	<ynrParam iso="800">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,85,130</alphaFace>
+		  <alphaPortrait>   0,0,0,95,138</alphaPortrait>
+		  <alphaBackground>0,0,0,128,158</alphaBackground>
+		  <alphaMfnr>        0,0,0,16,16</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>			  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,1.5,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>5,5,5,5,5</bfDiameter>
+		  <sigmaNlm>0.0,0.0,1.5,0.8,0.5</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>			
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>24,96,258,12,26,258</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>12,48,96,6,28,96</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>8,32,64,4,20,64</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>4,16,32,2,10,32</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>2,8,16,0,6,16</laplaceCoringPosVal_4> 
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,70,82,90,98,114</radialMap>   		 	
+  	</ynrParam>    	
+  	<ynrParam iso="1600">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,110,120</alphaFace>
+		  <alphaPortrait>   0,0,0,120,130</alphaPortrait>
+		  <alphaBackground>0,0,0,158,168</alphaBackground>
+		  <alphaMfnr>        1,1,1,1,1</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,3.0,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,2.1,1.0,0.7</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,196,256,8,75,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>32,196,256,15,100,256</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>32,128,192,24,100,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,13,63,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,15,64,128</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>252,232,216,208,208,200,200,200,192,184,176,168,160,152,136,120</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>   		 	
+  	</ynrParam>  
+  	<ynrParam iso="3200">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,110,140</alphaFace>
+		  <alphaPortrait>   0,0,0,150,168</alphaPortrait>
+		  <alphaBackground>0,0,0,168,198</alphaBackground>
+		  <alphaMfnr>        1,1,1,1,1</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,3.4,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,2.6,1.6,1.0</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,196,256,10,40,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>32,196,256,10,60,256</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>32,128,192,20,100,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,13,63,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,15,64,128</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>  		
+  	</ynrParam>     
+  	<ynrParam iso="6400">
+  		<yPyramidLevel>5</yPyramidLevel>
+		  <alphaFace>       0,0,0,110,140</alphaFace>
+		  <alphaPortrait>   0,0,0,150,168</alphaPortrait>
+		  <alphaBackground>0,0,0,168,198</alphaBackground>
+		  <alphaMfnr>        1,1,1,1,1</alphaMfnr>
+  		<laplaceFactorLayer>64,64,64,64,64</laplaceFactorLayer>
+		  <gaussFactorLayer>     64,64,64,64</gaussFactorLayer>		  	  		
+  		<maskBlendEnable>1,1,1,1,1,1,1,1,1</maskBlendEnable>
+  		<sigmaDist>0.15,0.15,0.5,0.5,0.5</sigmaDist>
+  		<sigmaIntensity>0.0,3.4,0.0,0.0,0.0</sigmaIntensity>
+  		<bfDiameter>0,5,0,0,0</bfDiameter>
+		  <sigmaNlm>0.0,0.0,2.6,1.6,1.0</sigmaNlm>
+		  <patchSize>0,0,4,4,4</patchSize>
+		  <searchSize>0,0,7,9,9</searchSize>		
+  		<gaussProcMode>NONE,BF,NLMSTEP,NLMFULL,NLMFULL</gaussProcMode>
+  		<laplaceProcMode>CORING,CORING,CORING,CORING,CORING</laplaceProcMode>
+  		<laplaceCoringPosVal_0>32,196,256,10,40,256</laplaceCoringPosVal_0>
+  		<laplaceCoringPosVal_1>32,196,256,10,60,256</laplaceCoringPosVal_1>
+  		<laplaceCoringPosVal_2>32,128,192,20,100,192</laplaceCoringPosVal_2>
+  		<laplaceCoringPosVal_3>16,64,128,13,63,128</laplaceCoringPosVal_3>   		
+  		<laplaceCoringPosVal_4>16,64,128,15,64,128</laplaceCoringPosVal_4>  
+  		<lumNoiseBlendEnable>0,1,1,1,1</lumNoiseBlendEnable>
+  		<lumNoiseBlend_1>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_1> 
+  		<lumNoiseBlend_2>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_2> 
+  		<lumNoiseBlend_3>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_3> 
+  		<lumNoiseBlend_4>132,152,184,172,156,140,124,108,92,80,72,64,64,64,56,48</lumNoiseBlend_4> 
+			<localVarNormFact>63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63</localVarNormFact>	
+  		<varBlendEnable>0,0,0,0,0</varBlendEnable>
+  		<varBlend_1>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_1> 
+  		<varBlend_2>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_2> 
+  		<varBlend_3>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_3> 
+  		<varBlend_4>255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255</varBlend_4> 
+  		<radialPercent>0,64,99,144,196,256</radialPercent>
+  		<radialMap>64,64,64,64,64,64</radialMap>  		 	
+  	</ynrParam>    	  	    	
+  </ynr>  
+</deblur>

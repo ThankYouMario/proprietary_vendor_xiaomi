@@ -1,0 +1,77 @@
+{
+  "PipelineName": "FrontSingleSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+          "NodeName": "com.xiaomi.plugin.hdr",
+          "NodeInstance": "HdrInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.misegment",
+          "NodeInstance": "MiSegmentInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.skinbeautifier",
+          "NodeInstance": "SkinBeautifierInstance0"
+      },
+      {
+          "NodeName": "com.qcom.plugin.gpu",
+          "NodeInstance": "GpuInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "HdrInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "HdrInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "MiSegmentInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "MiSegmentInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SkinBeautifierInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SkinBeautifierInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "GpuInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "GpuInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}

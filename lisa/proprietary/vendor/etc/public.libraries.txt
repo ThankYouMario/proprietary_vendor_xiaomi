@@ -1,0 +1,11 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libfastcvopt.so
+liblistensoundmodel2.so
+libOpenCL.so
+libSNPE.so
+libhta.so
+libsnpe_dsp_domains_v2.so
+libsnpe_dsp_domains_v3.so

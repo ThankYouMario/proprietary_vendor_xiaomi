@@ -1,0 +1,35 @@
+{
+  "PipelineName": "DualBokehYuvSnapshot",
+  "NodesList": {
+      "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.capbokeh",
+        "NodeInstance":"CapbokehInstance0"
+      }
+      ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "CapbokehInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "CapbokehInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}
