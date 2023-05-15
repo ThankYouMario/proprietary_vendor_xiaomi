@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <color>
+        <NodeTree>
+            <NodeName>lcm cta unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight PaperMode</NodeName>
+        </NodeTree>
+        <lcm>
+            <lcmParamName>lcm_num lcm_array</lcmParamName>
+            <lcm_num>3</lcm_num>
+            <lcm_array>3.18020013778823 -1.33485852025382 -0.525944903273713 -0.738722345742797 1.61454541467235  0.0634813982173785 0.018280308219805 -0.0692271509463269 0.855379964771293</lcm_array>
+        </lcm>
+        <cta>
+            <ctaParamName>ctimes ttimes_us xydiv change nativeCT enterFactor exitFactor envCTTable panelCTTable lightTable lightCompensations</ctaParamName>
+            <ctimes>10</ctimes>
+            <ttimes_us>200</ttimes_us>
+            <xydiv>1</xydiv>
+            <change>20</change>
+            <nativeCT>7400</nativeCT>
+            <enterFactor>0.003</enterFactor>
+            <exitFactor>0.01</exitFactor>
+            <envCTTable>4500 5000 5500 6000 6500 7000 7500</envCTTable>
+            <panelCTTable>4500 5000 5500 6000 6500 7000 7500</panelCTTable>
+            <lightTable>0</lightTable>
+            <lightCompensations>0</lightCompensations>
+        </cta>
+        <unlimitedCT>
+            <unlimitedCTParamName>strength default cold warm uiParamMin paramMax dimmingTime dimmingStep</unlimitedCTParamName>
+            <strength>55</strength>
+            <default>255 255 255</default>
+            <cold>230 222 255</cold>
+            <warm>255 217 209</warm>
+            <uiParamMin>100</uiParamMin>
+            <paramMax>255</paramMax>
+            <dimmingTime>50</dimmingTime>
+            <dimmingStep>20</dimmingStep>
+        </unlimitedCT>
+        <eyeCare>
+            <eyeCareParamName>nativeCTIndex eyeCareIndex eyeCareRestoreTime GCoeff BCoeff eyeCareCoeff0 eyeCareCoeff1 eyeCareCoeff2 eyeCareCoeff3 eyeCareCoeff4 eyeCareCoeff5 eyeCareCoeff6 eyeCareCoeff7 eyeCareCoeff8 maxCCT minCCT</eyeCareParamName>
+            <nativeCTIndex>0</nativeCTIndex>
+            <eyeCareIndex>-3 -5 -8 -13 -14 -15 -17 -18 -19 -20 -21 -23 -24 -25 -27 -28 -29 -30 -32 -33 -34 -35 -36 -38 -39 -42 -43 -45 -48 -53 -59 -63</eyeCareIndex>
+            <eyeCareRestoreTime>25</eyeCareRestoreTime>
+            <GCoeff>-0.000000016 0.000262453 -0.12002964</GCoeff>
+            <BCoeff>-0.00000000249 0.000217486 -0.46019951</BCoeff>
+            <eyeCareCoeff0>6.83838816285039e-13 -1.78980659285705e-08 0.000179442461381126 0.353530939300252</eyeCareCoeff0>
+            <eyeCareCoeff1>-7.37727175919222e-13 1.87528081563744e-08 -0.000180468135168638 0.629193773596732</eyeCareCoeff1>
+            <eyeCareCoeff2>5.38883596342049e-14 -8.54742227804317e-10 1.02567378751428e-06 0.0172752871030127</eyeCareCoeff2>
+            <eyeCareCoeff3>2.94468645943709e-14 -7.47518580014416e-10 7.17961748107045e-06 -0.0249904331072179</eyeCareCoeff3>
+            <eyeCareCoeff4>1.37746386060829e-12 -3.55084053733695e-08 0.000348616808733223 -0.235421046751023</eyeCareCoeff4>
+            <eyeCareCoeff5>2.44643776752771e-15 -4.97958888417796e-11 3.05996101222692e-07 -0.000565203875071028</eyeCareCoeff5>
+            <eyeCareCoeff6>-9.60406782466124e-15 1.66188652856167e-10 -5.09803085992994e-07 -0.00137786371663093</eyeCareCoeff6>
+            <eyeCareCoeff7>-1.33144403928589e-13 2.40488944874160e-09 -9.45041700602033e-06 -0.00670709090270771</eyeCareCoeff7>
+            <eyeCareCoeff8>-1.50601238109991e-12 1.70055774826166e-08 0.000133758469317897 -0.327654965125629</eyeCareCoeff8>
+            <maxCCT>7000</maxCCT>
+            <minCCT>4000</minCCT>
+        </eyeCare>
+        <hbm>
+            <hbmParamName>hbmTrigerLux hbmExitThreshold hbmKeepOnMaxTime hbmRestTime maxBL closeDelay</hbmParamName>
+            <hbmTrigerLux>8000</hbmTrigerLux>
+            <hbmExitThreshold>5000</hbmExitThreshold>
+            <hbmKeepOnMaxTime>1800</hbmKeepOnMaxTime>
+            <hbmRestTime>600</hbmRestTime>
+            <maxBL>2047</maxBL>
+            <closeDelay>3</closeDelay>
+        </hbm>
+        <ccbb>
+            <ccbbParamName>xCoeff yCoeff blThreshold deltaX deltaY</ccbbParamName>
+            <xCoeff>-8976 6834230 1177544775</xCoeff>
+            <yCoeff>2260 661236 316363221</yCoeff>
+            <blThreshold>16 50</blThreshold>
+            <deltaX>-0.0113686</deltaX>
+            <deltaY>-0.00279</deltaY>
+        </ccbb>
+        <wpCalib>
+            <wpCalibParamName>targetWP targetWPXY rgbCoordinatexyl xRange yRange xyComp xyOffset</wpCalibParamName>
+            <targetWP>0.300 0.315</targetWP>
+            <targetWPXY>0.952381 1 1.222222</targetWPXY>
+            <!-- Rx Gx Bx Ry Gy By RLv GLv BLv -->
+            <rgbCoordinatexyl>0.6609 0.2968 0.1523 0.3336 0.6593 0.0504 0 0 0</rgbCoordinatexyl>
+            <xRange>0.285 0.325</xRange>
+            <yRange>0.3 0.34</yRange>
+            <xyComp>0.172 0.192</xyComp>
+            <xyOffset>0 0</xyOffset>
+        </wpCalib>
+        <sunlightScreen>
+            <sunlightScreenParamName>level delay coeff0 coeff1 coeff2 coeff3 coeff4 coeff5 coeff6 coeff7 coeff8 coeff9 coeff10 coeff11 coeff12 coeff13 coeff14 coeff15 threshold</sunlightScreenParamName>
+            <level>16</level>
+            <!-- ms -->
+            <delay>50</delay>
+            <coeff0>1.0000 0.0000 0.0000 0.0000 1.0000 0.0000 0.0000 0.0000 1.0000</coeff0>
+            <coeff1>1.011404027 -0.009064729 -0.002339298 -0.00423196 1.005968999 -0.001737039 -0.003501698 -0.005569497 1.009071195</coeff1>
+            <coeff2>1.022808054 -0.018129458 -0.004678596 -0.008463919 1.011937998 -0.003474078 -0.007003395 -0.011138995 1.01814239</coeff2>
+            <coeff3>1.034212081 -0.027194187 -0.007017894 -0.012695879 1.017906996 -0.005211118 -0.010505093 -0.016708492 1.027213585</coeff3>
+            <coeff4>1.045616108 -0.036258916 -0.009357192 -0.016927838 1.023875995 -0.006948157 -0.014006791 -0.02227799 1.036284781</coeff4>
+            <coeff5>1.057020135 -0.045323645 -0.011696491 -0.021159798 1.029844994 -0.008685196 -0.017508488 -0.027847487 1.045355976</coeff5>
+            <coeff6>1.068424162 -0.054388374 -0.014035789 -0.025391758 1.035813993 -0.010422235 -0.021010186 -0.033416985 1.054427171</coeff6>
+            <coeff7>1.079828189 -0.063453102 -0.016375087 -0.029623717 1.041782992 -0.012159275 -0.024511884 -0.038986482 1.063498366</coeff7>
+            <coeff8>1.091232216 -0.072517831 -0.018714385 -0.033855677 1.04775199 -0.013896314 -0.028013581 -0.04455598 1.072569561</coeff8>
+            <coeff9>1.102636243 -0.08158256 -0.021053683 -0.038087636 1.053720989 -0.015633353 -0.031515279 -0.050125477 1.081640756</coeff9>
+            <coeff10>1.11404027 -0.090647289 -0.023392981 -0.042319596 1.059689988 -0.017370392 -0.035016977 -0.055694975 1.090711951</coeff10>
+            <coeff11>1.125444297 -0.099712018 -0.025732279 -0.046551555 1.065658987 -0.019107431 -0.038518674 -0.061264472 1.099783147</coeff11>
+            <coeff12>1.136848324 -0.108776747 -0.028071577 -0.050783515 1.071627986 -0.020844471 -0.042020372 -0.06683397 1.108854342</coeff12>
+            <coeff13>1.148252351 -0.117841476 -0.030410875 -0.055015475 1.077596985 -0.02258151 -0.04552207 -0.072403467 1.117925537</coeff13>
+            <coeff14>1.159656378 -0.126906205 -0.032750173 -0.059247434 1.083565983 -0.024318549 -0.049023767 -0.077972965 1.126996732</coeff14>
+            <coeff15>1.171060406 -0.135970934 -0.035089472 -0.063479394 1.089534982 -0.026055588 -0.052525465 -0.083542462 1.136067927</coeff15>
+            <threshold>2000 2200 2400 2600 2800 3000 3300 3500 3800 4100 4500 4800 5000 5300 5600</threshold>
+        </sunlightScreen>
+        <maxBrightness>
+            <maxBrightnessParamName>maxBrightnessEnable typicalBrightness startBrightness brightnessStep</maxBrightnessParamName>
+            <maxBrightnessEnable>0</maxBrightnessEnable>
+            <typicalBrightness>450</typicalBrightness>
+            <startBrightness>308</startBrightness>
+            <brightnessStep>1.5</brightnessStep>
+        </maxBrightness>
+        <gabb>
+            <gabbParamName>luxTable regTable0 regTable1 regTable2 regTable3 regTable4 regTable5 regTable6 crcCmd0 crcCmd1 crcCmd2 crcCmd3 crcCmd4 pccGABBParams0 pccGABBParams1 pccGABBParams2 pccGABBParams3 pccGABBParams4 pccGABBParams5 pccGABBParams6 pccGABBParams7 pccGABBParams8 PccGABBThreshold</gabbParamName>
+            <luxTable>10 30 50 128 256 1024 2047</luxTable>
+            <regTable0>227 5 0 4 246 1 2 3 243 14 248 255 231 1 245 238 242 0 255 255 255</regTable0>
+            <regTable1>225 6 0 5 245 1 2 4 242 14 248 255 231 1 245 238 240 0 255 255 255</regTable1>
+            <regTable2>223 9 0 6 245 2 2 6 242 14 249 255 231 2 244 238 242 0 255 255 255</regTable2>
+            <regTable3>211 9 1 7 243 2 2 6 211 16 249 255 231 3 239 238 242 0 255 255 255</regTable3>
+            <regTable4>207 9 1 9 239 2 3 6 207 16 249 255 231 4 238 238 242 0 255 255 255</regTable4>
+            <regTable5>204 10 1 10 237 3 4 7 207 19 248 251 231 4 238 238 242 0 255 255 255</regTable5>
+            <regTable6>203 11 1 11 236 3 5 8 207 20 250 250 231 5 238 238 242 0 255 255 255</regTable6>
+            <crcCmd0>00 00 39 00 00 00 00 00 02 81 91</crcCmd0>
+            <crcCmd1>00 00 39 00 00 00 00 00 03 F0 5A 5A</crcCmd1>
+            <crcCmd2>00 00 39 00 00 00 00 00 02 B1 00</crcCmd2>
+            <crcCmd3>00 00 39 00 00 00 00 00 02 B0 16</crcCmd3>
+            <crcCmd4>00 00 39 01 00 00 00 00 03 F0 A5 A5</crcCmd4>
+            <pccGABBParams0>3.782E-26 -3.301E-22 1.191E-18 -2.299E-15 2.562E-12 -1.666E-9 6.309E-7 -1.848E-4 1.081</pccGABBParams0>
+            <pccGABBParams1>-1.556E-26 1.24E-22 -3.966E-19 6.532E-16 -6.013E-13 3.358E-10 -1.549E-7 1.065E-4 -0.07508</pccGABBParams1>
+            <pccGABBParams2>-2.226E-26 2.06E-22 -7.948E-19 1.646E-15 -1.96E-12 1.33E-9 -4.763E-7 7.83E-5 -6.237E-3</pccGABBParams2>
+            <pccGABBParams3>-6.618E-26 5.783E-22 -2.095E-18 4.069E-15 -4.575E-12 3E-9 -1.099E-6 2.087E-4 -0.02222</pccGABBParams3>
+            <pccGABBParams4>8.454E-26 -7.491E-22 2.758E-18 -5.455E-15 6.259E-12 -4.196E-9 1.577E-6 -3.104E-4 1.034</pccGABBParams4>
+            <pccGABBParams5>-1.837E-26 1.708E-22 -6.628E-19 1.386E-15 -1.684E-12 1.196E-9 -4.773E-7 1.018E-4 -0.01223</pccGABBParams5>
+            <pccGABBParams6>-2.039E-26 1.848E-22 -6.987E-19 1.42E-15 -1.664E-12 1.113E-9 -3.938E-7 6.72E-5 -0.01115</pccGABBParams6>
+            <pccGABBParams7>-3.691E-26 3.253E-22 -1.186E-18 2.305E-15 -2.568E-12 1.635E-9 -5.647E-7 1.123E-4 -0.0245</pccGABBParams7>
+            <pccGABBParams8>5.73E-26 -5.101E-22 1.884E-18 -3.725E-15 4.232E-12 -2.748E-9 9.586E-7 -1.795E-4 1.036</pccGABBParams8>
+            <PccGABBThreshold>1700</PccGABBThreshold>
+        </gabb>
+        <dcBacklight>
+            <dcBacklightParamName>minBL DCBLThreshold DCBLStartPcc DCBLStep DCBLCoeff0 DCBLCoeff1 DcCmd0 DcCmd1 DcCmd2 DcCmd3 DcCmd4</dcBacklightParamName>
+            <minBL>5</minBL>
+            <DCBLThreshold>610</DCBLThreshold>
+            <DCBLStartPcc>0.022</DCBLStartPcc>
+            <DCBLStep>0.002</DCBLStep>
+            <DCBLCoeff0>2.40725</DCBLCoeff0>
+            <DCBLCoeff1>3.8508</DCBLCoeff1>
+            <DcCmd0>00 00 39 00 00 00 00 00 02 81 91</DcCmd0>
+            <DcCmd1>00 00 39 00 00 00 00 00 03 F0 5A 5A</DcCmd1>
+            <DcCmd2>00 00 39 00 00 00 00 00 02 B1 00</DcCmd2>
+            <DcCmd3>00 00 39 00 00 00 00 00 02 B0 16</DcCmd3>
+            <DcCmd4>00 00 39 01 00 00 00 00 03 F0 A5 A5</DcCmd4>
+        </dcBacklight>
+        <PaperMode>
+            <PaperModeParamName>paperCoeff0 paperCoeff1 paperCoeff2</PaperModeParamName>
+            <paperCoeff0>1 0 0 0 1 0 0 0 1</paperCoeff0>
+            <paperCoeff1>0.686 0.262 0.052 0.146 0.816 0.038 0.08 0.268 0.652</paperCoeff1>
+            <paperCoeff2>0.218 0.693 0.089 0.218 0.693 0.089 0.218 0.693 0.089</paperCoeff2>
+        </PaperMode>
+    </color>
+</root>
