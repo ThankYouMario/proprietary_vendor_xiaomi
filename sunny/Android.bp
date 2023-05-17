@@ -6,46 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmmrtpdecoder",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libmmrtpdecoder.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libmmrtpdecoder.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmmrtpencoder",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libmmrtpencoder.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libmmrtpencoder.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "fm_helium",
 	owner: "xiaomi",
 	strip: {
