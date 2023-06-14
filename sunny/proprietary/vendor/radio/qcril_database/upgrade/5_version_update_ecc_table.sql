@@ -141,25 +141,4 @@ DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '102';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '108';
 
-DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '118';
-DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '222' AND NUMBER = '119';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '260' AND NUMBER = '997';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '260' AND NUMBER = '998';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '260' AND NUMBER = '999';
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '260' AND NUMBER = '997';
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '260' AND NUMBER = '998';
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '260' AND NUMBER = '999';
-DELETE FROM qcril_emergency_source_escv_nw_table where MCC = '262' AND NUMBER = '110';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '262' AND NUMBER = '110';
-DELETE FROM qcril_emergency_source_voice_table where MCC = '262' AND NUMBER = '110';
-INSERT INTO "qcril_emergency_source_voice_table" VALUES('262','110','','full');
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '230' AND MNC = '03' AND NUMBER = '150';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '230' AND MNC = '03' AND NUMBER = '155';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '230' AND MNC = '03' AND NUMBER = '158';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '230' AND NUMBER = '150';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '230' AND NUMBER = '155';
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '230' AND NUMBER = '158';
-DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '230' AND NUMBER = '150';
-DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '230' AND NUMBER = '155';
-DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '230' AND NUMBER = '158';
 COMMIT TRANSACTION;
