@@ -2,7 +2,7 @@
 <root>
     <color>
         <NodeTree>
-            <NodeName>lcm cta unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight PaperMode</NodeName>
+            <NodeName>lcm cta unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight PaperMode dither</NodeName>
         </NodeTree>
         <lcm>
             <lcmParamName>lcm_num lcm_array</lcmParamName>
@@ -157,5 +157,11 @@
             <paperCoeff1>0.686 0.262 0.052 0.146 0.816 0.038 0.08 0.268 0.652</paperCoeff1>
             <paperCoeff2>0.218 0.693 0.089 0.218 0.693 0.089 0.218 0.693 0.089</paperCoeff2>
         </PaperMode>
+        <dither>
+            <ditherParamName>DitherStrength HistControl Hist0Thresh</ditherParamName>
+            <DitherStrength>4</DitherStrength>
+            <HistControl>10 30</HistControl>
+            <Hist0Thresh>80 90</Hist0Thresh>
+        </dither>
     </color>
 </root>
