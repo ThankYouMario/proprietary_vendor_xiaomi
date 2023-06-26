@@ -1,5 +1,6 @@
 # Ignore Xiaomi Camera repo
 /camera/
 /firmware/
+/sm6225-common-miuicamera
 /surya-miuicamera
 /lmi-miuicamera
