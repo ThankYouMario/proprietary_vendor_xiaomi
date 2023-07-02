@@ -26,9 +26,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -38,9 +38,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
+	name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -54,14 +54,5 @@ dex_import {
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
 	system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
 }
 

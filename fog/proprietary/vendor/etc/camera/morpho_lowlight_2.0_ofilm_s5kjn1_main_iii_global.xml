@@ -8,7 +8,7 @@
 	<camera_id type="int" length="1">1</camera_id>
     <params>
 			<iso value="100">
-				<y_nr_level       type="float"  rang="[0.0,100.0]" default="10.0"  length="1">0.01</y_nr_level>
+				<y_nr_level       type="float"  rang="[0.0,100.0]" default="10.0"  length="1">0.03</y_nr_level>
 				<c_nr_level       type="float"  rang="[0.0,10.0]"  default="1.0"   length="1">0.01</c_nr_level>
 				<c_nr_times       type="int"    rang="[1,6]"       default="1"     length="1">1</c_nr_times>
 				<block_cnr        type="int"    rang="[1,6]"       default="1"     length="1">1</block_cnr>
@@ -23,7 +23,7 @@
 				<auto_sorting     type="int"    rang="[0, 1]"      default="1"     length="1">1</auto_sorting>
 			</iso>
 			<iso value="200">
-				<y_nr_level       type="float"  rang="[0.0,100.0]" default="10.0"  length="1">0.01</y_nr_level>
+				<y_nr_level       type="float"  rang="[0.0,100.0]" default="10.0"  length="1">0.03</y_nr_level>
 				<c_nr_level       type="float"  rang="[0.0,10.0]"  default="1.0"   length="1">0.01</c_nr_level>
 				<c_nr_times       type="int"    rang="[1,6]"       default="1"     length="1">1</c_nr_times>
 				<block_cnr        type="int"    rang="[1,6]"       default="1"     length="1">1</block_cnr>
