@@ -139,15 +139,6 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
 cc_prebuilt_binary {
 	name: "adsprpcd",
 	owner: "xiaomi",
@@ -313,30 +304,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "loc_launcher",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/loc_launcher"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "lowi-server",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/lowi-server"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "mi_thermald",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/mi_thermald"],
@@ -445,18 +412,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "slim_daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/slim_daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "thermal-engine",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/thermal-engine"],
@@ -508,18 +463,6 @@ cc_prebuilt_binary {
 	name: "wifidisplayhalservice",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/wifidisplayhalservice"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "xtra-daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/xtra-daemon"],
 	check_elf_files: false,
 	strip: {
 		none: true,
