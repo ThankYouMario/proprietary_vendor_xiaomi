@@ -1,0 +1,45 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "VENUS", "HDK", "IDP", "PSYCHE"],
+    "soc_id": ["291", "246", "305", "321", "336", "339", "341", "355", "356", "360", "361", "365", "366", "393", "394", "400", "407", "415","440"]
+  },
+  "sns_hand_detect": {
+    "owner": "sns_hand_detect",
+      ".params":{
+        "owner": "sns_hand_detect",
+        "debounce_ok": {
+          "type": "flt", "ver": "0", "data": "15"
+        },
+        "fast_step": {
+          "type": "flt", "ver": "0", "data": "5"
+        },
+        "normal_step": {
+          "type": "flt", "ver": "0", "data": "3"
+        },
+        "compen_num": {
+          "type": "flt", "ver": "0", "data": "5"
+        },
+        "sar0_th0": {
+          "type": "flt", "ver": "1", "data": "2000"
+        },
+        "sar0_th1": {
+          "type": "flt", "ver": "1", "data": "50000"
+        },
+        "sar1_th0": {
+          "type": "flt", "ver": "1", "data": "6000"
+        },
+        "sar1_th1": {
+          "type": "flt", "ver": "1", "data": "40000"
+        },
+        "acc_th": {
+          "type": "flt", "ver": "0", "data": "25.0"
+        },
+        "acc_y": {
+          "type": "flt", "ver": "0", "data": "3.0"
+        },
+        "sar1_th0_special": {
+          "type": "flt", "ver": "0", "data": "6000"
+        }
+      }
+  }
+}

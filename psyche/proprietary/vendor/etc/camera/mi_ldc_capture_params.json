@@ -1,0 +1,31 @@
+{
+  "/": "CaptureLDC parameters",
+  "StructM": {
+	"paramS": 1,
+    "paramMC": 64,
+    "paramMR": 48,
+    "paramUD": 0.9,
+    "paramFD": 11,
+    "paramFB": 3000.0,
+    "paramFF": 1600.0,
+    "paramL": 0.0,
+    "paramSW": 4208,
+    "paramSH": 3120,
+    "paramER": 1.0,
+    "paramEI": 0.75
+  },
+  "StructO": {
+    "paramF": 6,
+    "paramB": 1.5,
+    "paramR": 0.8,
+    "paramA": 3.0,
+    "paramW": 60.0,
+    "paramRa": 10.0,
+    "paramRb": -3.0,
+   "paramPL": 2,
+    "paramPR": 2,
+    "paramPU": 2.2,
+    "paramPD": 1.8,
+    "paramPCT": 2
+  }
+}
