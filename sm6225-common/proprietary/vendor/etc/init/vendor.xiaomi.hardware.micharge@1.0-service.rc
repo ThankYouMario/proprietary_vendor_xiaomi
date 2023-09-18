@@ -1,0 +1,84 @@
+on post-fs-data
+    chown system system /sys/class/power_supply/wireless/reverse_chg_mode
+    chown system system /sys/class/power_supply/wireless/bt_state
+    chown system system /sys/class/power_supply/wireless/rx_cr
+    chown system system /sys/class/power_supply/main/cool_mode
+    chown system system /sys/class/power_supply/battery/night_charging
+
+on property:dev.bootcomplete=1
+    chown system system /sys/class/qcom-battery/reverse_chg_mode
+    chown system system /sys/class/qcom-battery/bt_state
+    chown system system /sys/class/qcom-battery/rx_cr
+    chown system system /sys/class/qcom-battery/input_suspend
+    chown system system /sys/class/power_supply/usb/input_suspend
+    chown system system /sys/class/qcom-battery/cool_mode
+    chown system system /sys/class/qcom-battery/night_charging
+    chown system system /sys/class/qcom-battery/bt_transfer_start
+    chown system system /sys/class/qcom-battery/wls_tx_speed
+    chown system system /sys/class/qcom-battery/wireless_chip_fw
+    chown system system /sys/class/qcom-battery/smart_batt
+    chown system system /sys/class/power_supply/battery/smart_batt
+    chown system system /sys/class/qcom-battery/shipmode_count_reset
+    chown system system /sys/class/qcom-battery/sport_mode
+    chown system system /sys/class/qcom-battery/server_result
+    chown system system /sys/class/qcom-battery/over_peak_flag
+    chown system system /sys/class/qcom-battery/current_deviation
+    chown system system /sys/class/qcom-battery/power_deviation
+    chown system system /sys/class/qcom-battery/average_current
+    chown system system /sys/class/qcom-battery/average_temp
+    chown system system /sys/class/qcom-battery/start_learn
+    chown system system /sys/class/qcom-battery/stop_learn
+    chown system system /sys/class/qcom-battery/set_learn_power
+    chown system system /sys/class/qcom-battery/get_learn_power
+    chown system system /sys/class/qcom-battery/get_learn_power_dev
+    chown system system /sys/class/qcom-battery/get_learn_time_dev
+    chown system system /sys/class/qcom-battery/constant_power
+    chown system system /sys/class/qcom-battery/remaining_time
+    chown system system /sys/class/qcom-battery/referance_power
+    chown system system /sys/class/qcom-battery/nvt_referance_current
+    chown system system /sys/class/qcom-battery/nvt_referance_power
+    chown system system /sys/class/qcom-battery/start_learn_b
+    chown system system /sys/class/qcom-battery/stop_learn_b
+    chown system system /sys/class/qcom-battery/set_learn_power_b
+    chown system system /sys/class/qcom-battery/get_learn_power_b
+    chown system system /sys/class/qcom-battery/get_learn_power_dev_b
+    chmod 0660 /sys/class/qcom-battery/reverse_chg_mode
+    chmod 0660 /sys/class/qcom-battery/rx_cr
+    chmod 0660 /sys/class/qcom-battery/input_suspend
+    chmod 0660 /sys/class/power_supply/usb/input_suspend
+    chmod 0660 /sys/class/qcom-battery/cool_mode
+    chmod 0660 /sys/class/qcom-battery/night_charging
+    chmod 0660 /sys/class/qcom-battery/bt_transfer_start
+    chmod 0660 /sys/class/qcom-battery/wls_tx_speed
+    chmod 0660 /sys/class/qcom-battery/wireless_chip_fw
+    chmod 0660 /sys/class/qcom-battery/smart_batt
+    chmod 0660 /sys/class/power_supply/battery/smart_batt
+    chmod 0660 /sys/class/qcom-battery/shipmode_count_reset
+    chmod 0660 /sys/class/qcom-battery/sport_mode
+    chmod 0660 /sys/class/qcom-battery/server_result
+    chmod 0440 /sys/class/qcom-battery/over_peak_flag
+    chmod 0440 /sys/class/qcom-battery/current_deviation
+    chmod 0440 /sys/class/qcom-battery/power_deviation
+    chmod 0440 /sys/class/qcom-battery/average_current
+    chmod 0440 /sys/class/qcom-battery/average_temp
+    chmod 0660 /sys/class/qcom-battery/start_learn
+    chmod 0660 /sys/class/qcom-battery/stop_learn
+    chmod 0660 /sys/class/qcom-battery/set_learn_power
+    chmod 0440 /sys/class/qcom-battery/get_learn_power
+    chmod 0440 /sys/class/qcom-battery/get_learn_power_dev
+    chmod 0440 /sys/class/qcom-battery/get_learn_time_dev
+    chmod 0660 /sys/class/qcom-battery/constant_power
+    chmod 0440 /sys/class/qcom-battery/remaining_time
+    chmod 0660 /sys/class/qcom-battery/referance_power
+    chmod 0440 /sys/class/qcom-battery/nvt_referance_current
+    chmod 0440 /sys/class/qcom-battery/nvt_referance_power
+    chmod 0660 /sys/class/qcom-battery/start_learn_b
+    chmod 0660 /sys/class/qcom-battery/stop_learn_b
+    chmod 0660 /sys/class/qcom-battery/set_learn_power_b
+    chmod 0440 /sys/class/qcom-battery/get_learn_power_b
+    chmod 0440 /sys/class/qcom-battery/get_learn_power_dev_b
+
+service micharge-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
+    class hal
+    user system
+    group system
