@@ -1,0 +1,49 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["444"]
+  },
+  "vpg_0_platform":{
+    "owner": "sns_vpg",
+    ".settings":{
+      "owner": "sns_vmc",
+      "0":{ "type": "flt", "ver": "2",
+        "data": "85.0"
+      },
+      "1":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "2",
+        "data": "0.1"
+      },
+      "3":{ "type": "flt", "ver": "2",
+        "data": "0.001"
+      },
+      "4":{ "type": "flt", "ver": "2",
+        "data": "0.001"
+      },
+      "5":{ "type": "flt", "ver": "2",
+        "data": "12.0"
+      },
+      "6":{ "type": "flt", "ver": "2",
+        "data": "12.0"
+      },
+      "7":{ "type": "flt", "ver": "2",
+        "data": "0.04"
+      },
+      "8":{ "type": "flt", "ver": "2",
+        "data": "0.08"
+      },
+      "9":{ "type": "flt", "ver": "2",
+        "data": "0.15"
+      },
+      "10":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "2",
+        "data": "0.0"
+      }
+    }
+  }
+}

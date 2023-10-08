@@ -1,0 +1,16 @@
+{
+  "config":{
+    "hw_platform": ["IDP", "QRD"],
+    "soc_id": ["441", "471"]
+  },
+ "power":{
+    "owner": "power_manager",
+    ".island":{
+      "owner": "power_manager",
+      "enable_island":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}
+
