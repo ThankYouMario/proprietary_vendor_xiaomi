@@ -1,0 +1,59 @@
+{
+    "ellc": {
+	"phone_version":"L2",
+	"model_version":"v7.1",
+	"hdr":"true",
+	"resize":"false",
+        "shape_patch":[784,1040],
+        "overlap": [32, 32],
+        "snpe":{
+		"runtime": "dsp",
+		"dlcs": {
+			"dlc_name":"20211116_L2_IDEAL199_55.1dev_286mixoutMEFNet_concat_fq29600ep.dlc",
+			"input": {
+				"name": "Placeholder:0",
+				"shape": [1,784,1040,36],
+				"offset": 0,
+				"delta": 1.5259021893143654e-05,
+				"encoding": "tf16"
+			},
+			"output": {
+				"name": "g_conv10/Conv2D:0",
+				"shape": [1,784,1040,4],
+				"offset": 0.0,
+				"delta": 0.0000152590218931436538696289062500000000,
+				"encoding": "tf16"
+			}
+			}
+        },
+
+		"relight_setting": {
+			"range1_luxindex_start":495.0,
+			"range1_luxindex_end":520.0,
+			"range1_luxindex_start_ratio":2.83,
+			"range1_luxindex_end_ratio":2.77,
+			"range2_luxindex_start":520.0,
+			"range2_luxindex_end":540.0,
+			"range2_luxindex_start_ratio":2.77,
+			"range2_luxindex_end_ratio":2.18,
+			"range3_luxindex_start":540.0,
+			"range3_luxindex_end":550.0,
+			"range3_luxindex_start_ratio":2.18,
+			"range3_luxindex_end_ratio":1.4,
+			"range4_luxindex_start":550.0,
+			"range4_luxindex_end":580.0,
+			"range4_luxindex_start_ratio":1.4,
+			"range4_luxindex_end_ratio":1.0
+		},
+		"Threshold":{
+			"T_brightness":60,
+			"T_dark_scene":12,
+			"T_motion_1": 35000,
+			"T_motion_2": 100000000,
+			"T_over_expose_threshold": 3500,
+			"T_over_expose_ratio": 0.4,
+			"T_first_frame_luxindex": 620
+		}
+	}
+}
+

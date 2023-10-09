@@ -1,0 +1,248 @@
+{
+    "SDK": "MIVI",
+    "Version": "1.1",
+    "AppList": [
+        {
+            "PackageName": "com.xiaomi.camera.sample"
+        },
+        {
+            "PackageName": "com.xiaomi.camera.mivi"
+        },
+        {
+            "PackageName": "com.snapchat.android"
+        }
+    ],
+    "ModeList": [
+        {
+            "Mode": "Normal",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "HDR"
+                        },
+                        {
+                            "Function": "MFNR"
+                        },
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "DEPURPLE"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "Front",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "HDR"
+                        },
+                        {
+                            "Function": "MFNR"
+                        },
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "BOKEH_FRONT"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "UltraWide",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "HDR"
+                        },
+                        {
+                            "Function": "MFNR"
+                        },
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "DEPURPLE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "SuperNight",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "SUPER_NIGHT"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "Front",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "SUPER_NIGHT"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "UltraWide",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "SUPER_NIGHT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "AntiShake",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "UltraWide",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "VideoHdr",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "VIDEO_HDR"
+                        },
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "VideoSuperNight",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "VIDEO_SUPER_NIGHT"
+                        },
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "Bokeh",
+            "ModeAbility": [
+                {
+                    "RoleName": "Bokeh",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "BOKEH_REAR"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "Front",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "BOKEH_FRONT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "VideoNormal",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "VIDEO_BOKEH_REAR"
+                        },
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "Front",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "VIDEO_BOKEH_FRONT"
+                        }
+                    ]
+                },
+                {
+                    "RoleName": "UltraWide",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "BEAUTY"
+                        },
+                        {
+                            "Function": "VIDEO_BOKEH_REAR"
+                        },
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Mode": "VideoHdr10",
+            "ModeAbility": [
+                {
+                    "RoleName": "Rear",
+                    "SuportFunctionList": [
+                        {
+                            "Function": "VIDEO_HDR10"
+                        },
+                        {
+                            "Function": "AntiShake"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "AlgorithmImpl" : [
+        {
+             "Function": "BOKEH_REAR",
+             "ImplInfo":[
+                 {
+                      "RoleName":"Bokeh",
+                      "ResolutionFlag":"Fix"
+                 }
+             ]
+        }
+    ],
+    "Platform": "marble"
+}

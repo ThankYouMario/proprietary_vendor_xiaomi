@@ -1,0 +1,14 @@
+#  @file    qapeservice.rc
+#  @brief   Definition for qape client service
+#
+#  DESCRIPTION
+#  ---------------------------------------------------------------------------
+#       Copyright (c) 2021 Qualcomm Technologies, Inc.
+#       All Rights Reserved.
+#       Confidential and Proprietary - Qualcomm Technologies, Inc.
+#  ---------------------------------------------------------------------------
+
+service vendor.qapeservice /vendor/bin/perf_qesdk_client
+    class main
+    user system
+    group system

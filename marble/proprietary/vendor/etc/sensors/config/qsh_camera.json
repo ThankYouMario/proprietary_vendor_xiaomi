@@ -1,0 +1,162 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["457", "530"]
+  },
+  "qsh_camera":{
+    "owner": "qsh_camera",
+    ".config":{
+      "owner": "qsh_camera",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "9"
+      },
+      "slave_config":{ "type": "int", "ver": "1",
+        "data": "24"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reset_pin_num":{ "type": "int", "ver": "0",
+        "data": "108"
+      },
+      "reset_pin_pull_type":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "reset_pin_is_chip_pin":{"type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reset_pin_drive_strength":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_num":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "aux_pin_pull_type":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "aux_pin_is_chip_pin":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_drive_strength":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_value_motion_detect":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "aux_pin_value_ulp_streaming":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "85"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".dbg_flags":{
+      "owner": "qsh_camera",
+      "main_sensor.enable":{"type": "int", "ver": "0",
+      "data": "1"
+      },
+      "main_sensor.disable_after_n_runs":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "test_sensor.enable":{"type": "int", "ver": "0",
+      "data": "1"
+      },
+      "test_sensor.disable_after_n_runs":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "test_sensor_wait_to_start":{"type": "int", "ver": "0",
+      "data": "1"
+      },
+      "test_sensor_start_delay_ms":{"type": "int", "ver": "0",
+      "data": "5000"
+      },
+      "test_sensor_restart_cnt":{"type": "int", "ver": "0",
+      "data": "5"
+      },
+      "dump_reg_cnt":{"type": "int", "ver": "0",
+      "data": "1"
+      },
+      "dump_frame_cnt":{"type": "int", "ver": "0",
+      "data": "10"
+      },
+      "use_fake_frame_client":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "use_tpg":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "use_aec_output":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "use_island_log_trace":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "no_mem_rw_by_hw":{"type": "int", "ver": "0",
+      "data": "0"
+      },
+      "force_fd_result":{"type": "int", "ver": "0",
+      "data": "0"
+      }
+      },
+    ".tuning_params":{
+      "owner": "qsh_camera",
+      "fd_threshold":{"type": "int", "ver": "0",
+        "data": "290"
+      },
+      "fd_false_positive_threshold_sq":{"type": "int", "ver": "0",
+        "data": "1800"
+      },
+      "max_stg2_entries_per_unit_time":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "rate_limit_unit_time_in_secs":{"type": "int", "ver": "0",
+        "data": "1"
+      }
+    },
+    ".als_params":{
+      "owner": "qsh_camera",
+      "als_enable":{"type": "int", "ver": "1",
+        "data": "0"
+      },
+      "als_reg_cnt":{"type": "int", "ver": "0",
+        "data": "3"
+      },
+      "als_reg_base":{"type": "int", "ver": "0",
+        "data": "13185"
+      },
+      "als_reg_hold":{"type": "int", "ver": "0",
+        "data": "13188"
+      }
+    },
+    ".md_poll_params":{
+      "owner": "qsh_camera",
+      "md_poll_freq_ms":{"type": "int", "ver": "0",
+        "data": "0"
+      },
+      "md_detection_reg":{"type": "int", "ver": "0",
+        "data": "13238"
+      }
+    }
+  }
+}

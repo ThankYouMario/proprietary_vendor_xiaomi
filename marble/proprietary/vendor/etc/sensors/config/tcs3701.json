@@ -1,0 +1,67 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "URSA", "EQUULEUS", "RAPHAEL", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "339", "506", "591"]
+  },
+  "tcs3701":{
+    "owner": "sns_tcs3701",
+    ".als":{
+      "owner": "sns_tcs3701",
+      ".config":{
+        "owner": "sns_tcs3701",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3701",
+      ".config":{
+        "owner": "sns_tcs3701",
+        "is_dri":{ "type": "int", "ver": "1",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".def_config":{
+      "owner": "sns_tcs3701",
+      "p_pluse":{ "type": "int", "ver": "3",
+        "data": "32"
+      },
+      "p_pulse_len":{ "type": "int", "ver": "0",
+        "data": "32"
+      },
+      "p_gain":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "p_ma":{ "type": "int", "ver": "2",
+        "data": "10"
+      },
+      "p_target":{ "type": "int", "ver": "2",
+        "data": "4"
+      },
+      "p_ave":{ "type": "int", "ver": "3",
+        "data": "4"
+      }
+    }
+  }
+}

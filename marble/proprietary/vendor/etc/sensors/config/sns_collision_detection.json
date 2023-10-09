@@ -1,0 +1,34 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["457", "530", "591"]
+  },
+  "oem_collision_detection": {
+    "owner": "oem_collision_detection",
+      ".params":{
+        "owner":  "oem_collision_detection",
+          "param_endflag": {
+            "ver": "0", "type": "flt", "data": "4.50"
+          },
+          "param_110s": {
+              "ver": "0", "type": "flt", "data": "0.0105"
+          },
+          "param_norm": {
+            "ver": "0", "type": "flt", "data": "0.011"
+          },
+          "param_80s": {
+              "ver": "0", "type": "flt", "data": "0.965"
+          },
+          "param_100s": {
+            "ver": "0", "type": "flt", "data": "0.949"
+          },
+          "param_120s": {
+            "ver": "0", "type": "flt", "data": "0.976"
+          },
+          "param_150s": {
+            "ver": "0", "type": "flt", "data": "0.974"
+          }
+        }
+      }
+}
+

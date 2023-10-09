@@ -1,0 +1,22 @@
+{
+	"##note": "配置规则: ",
+	"##note1": "1.某一配置项如果不存在, 则使用代码中的默认值. 如: 没有配置EffectParams::preview, 则预览模式下, 所有效果参数使用代码中的默认值",
+	"##note2": "2.某一配置项如果存在, 则使用配置项下配置的各属性值. 对于配置项支持但没有配置的属性, 使用代码中的默认值",
+	"##note3": "3.某一配置项如果不存在, 但存在default项目项, 则使用default配置项. 如: EffectParams::capture下未配置OtherFront, 则使用default配置项",
+
+	"TrueSight": "",
+	"BrandModel": "xiaomi_l2s",
+	"CaptureDefaultEffectPath": "render/Effect/effect_mode_classical.json",
+	"PreviewDefaultEffectPath": "render/Effect/effect_mode_classical.json",
+	"EffectGLSLPath": "render/glsl/",
+	"EnvLightParam":
+	{
+		"FaceShadowPerc":0.1,
+		"K":0.3,
+		"HighThreshold":40,
+		"LowThreshold":20,
+		"Step":0.04,
+		"FaceShadowThreshold":140,
+		"MinFactor":0.1
+	}
+}

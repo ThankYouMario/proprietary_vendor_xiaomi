@@ -1,0 +1,9 @@
+EISLDCGridEnabled=1
+EISv3GyroDumpEnabled=0
+EISv3OperationMode=0
+EISv2GyroDumpEnabled=0
+EISv2OperationMode=0
+EISv3DisableOIS=0
+EISv2DisableOIS=0
+EISv2DisableAccel=1
+EISv3DisableAccel=1

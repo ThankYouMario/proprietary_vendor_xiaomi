@@ -1,0 +1,9 @@
+MISLDCGridEnabled=1
+MISv3GyroDumpEnabled=0
+MISv3OperationMode=0
+MISv2GyroDumpEnabled=0
+MISv2OperationMode=0
+MISv3DisableOIS=0
+MISv2DisableOIS=0
+MISV2InputImageDataDumpEnabled=0
+MISV3InputImageDataDumpEnabled=0
