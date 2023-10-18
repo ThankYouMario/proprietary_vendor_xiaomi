@@ -3493,7 +3493,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     NetworkSetting \
-    datastatusnotification \
     tcmiface \
     audiosphere
 PRODUCT_COPY_FILES += \
