@@ -1,0 +1,346 @@
+global_config:
+  input_dir: '/sdcard/hdr-raw'
+  output_dir: '/sdcard/hdr-raw-Output'
+  ref: AUTO 
+  enable_watermark: true
+  mfnr_flag: 0
+  return_ev0: false
+  adjust_light_color_uw: false
+  adjust_light_color_wide: false
+  dump:
+    pickref: false
+    save_raw: false
+    save_gray: false
+    align_evn: false
+    input: false
+    aligned: false
+    deghosted: false
+    fft: false
+    4ev0: false
+    2ev6: false
+    flow: false
+    4ev0_intermediate: false
+    ev0_ghost_mask: false
+    evX: false
+    merged_img: false
+    merged_y_blend_1st: false
+    merged_y_blend_2nd: false
+    merged_sec_fusion: false
+    merged_dehalo: false
+    merged_gau_pyramid: false
+    merged_lap_pyramid: false
+
+algo_align_config:
+  evn_global_align: true
+  evn_local_align: "BICUBIC"
+  use_tensor_remap: true  
+  evn_global_align_type: -1
+  evn_hybrid_align_type: -1
+  use_hybrid: true 
+  refine_dark_region: false
+
+algo_deghost_config:
+  4ev0_search_radius: 0
+  4ev0_interpolation_type: "D_PATCH_MSG"
+  ev0_to_evn_interp_type: "D_PATCH_MSG"
+  4ev0_use_replacement: true
+  4ev0_merge_type: "FFT"
+  2ev6_merge_type: "FFT"
+  inpaint_mask_thre: 20
+  inpaint_mask_area_min: 200
+  inpaint_mask_area_max: 25000
+
+algo_denoise_config:
+  use_denoise_for_high_gain: true
+  uw_ai_denoise_totalgain_thresh: 4.0
+  wide_ai_denoise_totalgain_thresh: 4.0
+  uw_denoise_before_totalgain_thresh: 4.0
+  wide_denoise_before_totalgain_thresh: 256.0
+
+algo_merge_config:
+  pk3_dataset: true
+  pk3_set_to_evm18: false
+  manual_control:
+    enabled: false
+    is_checker_board: false
+    is_lowlight_scene: false
+    not_sqrt_gain: false
+    not_brighten_ev6: false 
+    is_2ndfusion_portrait: false
+    is_2ndfusion_indoor: false
+    is_2ndfusion_outdoor: false
+  wide:
+    portrait:
+      y_lut0:
+        left_node: 118
+        right_node: 118
+        sigma_left: 36
+        sigma_right: 36      
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 128
+        right_node: 128
+        sigma_left: 36
+        sigma_right: 36
+        type: 'normal' 
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 36
+        sigma_right: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        left_node: 108
+        right_node: 108
+        sigma_left: 36
+        sigma_right: 36
+        type: 'leftmax'
+        scale: 1.0
+    non_portrait:
+      y_lut0:
+        left_node: 118
+        right_node: 118
+        sigma_left: 28
+        sigma_right: 28      
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 128
+        right_node: 128
+        sigma_left: 28
+        sigma_right: 28
+        type: 'normal' 
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 28
+        sigma_right: 28
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        left_node: 138
+        right_node: 138
+        sigma_left: 40
+        sigma_right: 40
+        type: 'leftmax'
+        scale: 1.0    
+    uv_lut0:
+      left_node: 76
+      right_node: 76
+      sigma_left: 64
+      sigma_right: 64
+      type: 'normal'
+      scale: 1.0
+    uv_lut1:
+      left_node: 128
+      right_node: 128
+      sigma_left: 64
+      sigma_right: 64
+      type: 'normal'
+      scale: 1.0
+    uv_lut_new:
+      left_node: 60
+      right_node: 190
+      sigma_left: 14
+      sigma_right: 14
+      type: 'normal'
+      scale: 1.0
+    ev0_face_gain: 1.0
+    ev0_face_decay_th: 170
+    HA_control: 1
+    Lowlight_lux_thre: 240
+    Lowlight_h_thre: 0.3
+    fusion_sec_thre_l: 220
+    fusion_sec_thre_h: 350
+    fusion_sec_thre_gain: 60
+    collapse:
+      suppress_ground: 0
+      mix_ev0: 1
+      mix_ev0_th: 260
+      portrait_th: 30
+    Lighten_2nd_fusion:
+      face_map_absdiff_min: 5.0
+      face_map_absdiff_max: 8.5
+    second_fusion_portrait_lighten:
+      highlight_bin: 220
+      portrait_oe_ratio: 0.001
+      luxindex_th: 150
+    Lighten_sky:
+      is_lighten: 1
+      lux_th_h: 160
+      lux_th_l: 100
+      hist_th_l: 0.1
+      hist_th_h: 0.15
+      cloudy_lux_th: 180
+      cloudy_vs_hist_th: 0.999
+    Linear_control:
+      thre_h: 0.5
+      thre_l: 0.4
+    clhe:   
+      up_thre: 1.1       
+      low_thre: 0.9      
+    y_linear_adjust:
+      mul_ratio: 1.0
+      minus_ratio: 1.0
+    dehalo: 
+      max_ev0_oe_area: 0.05
+      lux_index: 320
+      th_selfie: 0
+      th_u1b: 100
+      diff_hi: 120
+      diff_lo: -10
+    highlight_suppress:
+      scale1_clip_h: 0.05
+      scale1_clip_l: 0.03
+      scale1_pow: 0.9
+      suppress_gain: 40
+      s_layer: 0
+      indoor_layer_adj:
+        ev0_oe_ratio_th: 0.09
+        evn8_oe_ratio_th: 0.001
+        luxindex_th: 200
+    dark_area_boost:
+      dark_boost_node: 30
+      dark_boost_l: 0
+      dark_boost_m: 2
+      dark_boost_h: 2
+      dark_boost_thre_l: 100
+      dark_boost_thre_m: 200
+    saturation_boost:
+      bright_area_boost: 0.5
+      middle_area_boost: 0.5
+      dark_area_boost: 0.5
+  uw:
+    portrait:
+      y_lut0:
+        left_node: 118
+        right_node: 118
+        sigma_left: 36
+        sigma_right: 36      
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 128
+        right_node: 128
+        sigma_left: 36
+        sigma_right: 36
+        type: 'normal' 
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 36
+        sigma_right: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        left_node: 108
+        right_node: 108
+        sigma_left: 36
+        sigma_right: 36
+        type: 'leftmax'
+        scale: 1.0
+    non_portrait:
+      y_lut0:
+        left_node: 118
+        right_node: 118
+        sigma_left: 28
+        sigma_right: 28      
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 128
+        right_node: 128
+        sigma_left: 28
+        sigma_right: 28
+        type: 'normal' 
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 28
+        sigma_right: 28
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        left_node: 138
+        right_node: 138
+        sigma_left: 40
+        sigma_right: 40
+        type: 'leftmax'
+        scale: 1.0    
+    uv_lut0:
+      left_node: 76
+      right_node: 76
+      sigma_left: 64
+      sigma_right: 64
+      type: 'normal'
+      scale: 1.0
+    uv_lut1:
+      left_node: 128
+      right_node: 128
+      sigma_left: 64
+      sigma_right: 64
+      type: 'normal'
+      scale: 1.0
+    uv_lut_new:
+      left_node: 60
+      right_node: 190
+      sigma_left: 14
+      sigma_right: 14
+      type: 'normal'
+      scale: 1.0
+    ev0_face_gain: 1.0
+    ev0_face_decay_th: 170
+    HA_control: 1
+    Lowlight_lux_thre: 240
+    Lowlight_h_thre: 0.3
+    fusion_sec_thre_l: 220
+    fusion_sec_thre_h: 350
+    fusion_sec_thre_gain: 60
+    collapse:
+      suppress_ground: 0
+      mix_ev0: 1
+      mix_ev0_th: 260
+      portrait_th: 30
+    Lighten_sky:
+      is_lighten: 1
+      lux_th_h: 160
+      lux_th_l: 100
+      hist_th_l: 0.1
+      hist_th_h: 0.15
+    Linear_control:
+      thre_h: 0.5
+      thre_l: 0.4
+    clhe:   
+      up_thre: 1.1       
+      low_thre: 0.9      
+    y_linear_adjust:
+      mul_ratio: 1.0
+      minus_ratio: 1.0
+    dehalo: 
+      lux_th_l: 170
+      bright_th_l: 140
+      lux_th_h: 200
+      bright_th_h: 160
+    highlight_suppress:
+      scale1_clip_h: 0.05
+      scale1_clip_l: 0.03
+      scale1_pow: 0.9
+      suppress_gain: 40
+      s_layer: 0
+    dark_area_boost:
+      dark_boost_node: 45
+      dark_boost_l: 5
+      dark_boost_m: 2
+      dark_boost_h: 2
+      dark_boost_thre_l: 100
+      dark_boost_thre_m: 200
+    saturation_boost:
+      bright_area_boost: 0.5
+      middle_area_boost: 0.5
+      dark_area_boost: 0.5

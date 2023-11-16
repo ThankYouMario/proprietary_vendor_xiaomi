@@ -1,0 +1,11 @@
+<!-- Copyright (c) 2022 Qualcomm Technologies, Inc.
+     All Rights Reserved.
+     Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.hardware.data.connectionfactory</name>
+        <fqname>IFactory/slot0</fqname>
+        <fqname>IFactory/slot1</fqname>
+    </hal>
+</manifest>

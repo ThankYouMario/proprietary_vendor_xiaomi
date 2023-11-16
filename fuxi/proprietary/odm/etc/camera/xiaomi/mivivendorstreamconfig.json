@@ -1,0 +1,504 @@
+{
+    "ModeList": {
+        "Mode": [
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9002, StreamConfigModeAlgoDualSAT
+                "VendorOpMode": 36866,
+                // 0x8001, StreamConfigModeSAT
+                "MialgoOpMode": 32769,
+                "LensFacing": 0,
+                "Signature": "Sat",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 30,
+                "FlushWaitTimeMs": 4000,
+                // 0001 1111 0110, 0x1F6, vendorMfnr/burst/hdr/sr/hdrsr/rawhdr/sn
+                "FeatureMask" : 502,
+                "StreamConfig": [
+                    // normal yuv stream of ultra wide
+                    {
+                        "roleId": 21,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // normal yuv stream of wide
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // normal yuv stream of tele
+                    {
+                        "roleId": 20,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw10 stream of ultra wide for mihal mfnr
+                    {
+                        "roleId": 21,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 37,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw10 stream of wide for mihal mfnr
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 37,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw10 stream of tele for mihal mfnr
+                    {
+                        "roleId": 20,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 37,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of ultra wide for supernight
+                    {
+                        "roleId": 21,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of wide for supernight
+                    {
+                        "roleId": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of tele for supernight
+                    {
+                        "roleId": 20,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9000, StreamConfigModeAlgoDual
+                "VendorOpMode": 36864,
+                // 0x8002, StreamConfigModeBokeh
+                "MialgoOpMode": 32770,
+                "LensFacing": 0,
+                "Signature": "DualBokeh",
+                "BufferLimitCnt": 6,
+                // Bokeh 12/1, HDRBokeh 12/3, SNBokeh 12/6
+                "VendorSnapshotBufferQueueSize": 17,
+                "FlushWaitTimeMs": 4000,
+                // 0001 0001 0000, 0x110, hdrBokeh/snBokeh
+                "FeatureMask" : 272,
+                "StreamConfig": [
+                    // yuv stream of master
+                    {
+                        // BokehCamSig::masterYuv
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // yuv stream of slave
+                    {
+                        // BokehCamSig::slaveYuv
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream of master for sebokeh
+                    {
+                        // BokehCamSig::masterRaw
+                        "bokehSig": 1,
+                        "ratio": 1.33,
+                        "isPhysicalStream": true,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw10 stream of slave for sebokeh
+                    {
+                        // BokehCamSig::slaveRaw
+                        "bokehSig": 3,
+                        "ratio": 1.33,
+                        "isPhysicalStream": true,
+                        "format": 37,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9003, StreamConfigModeAlgoSingleRTB
+                "VendorOpMode": 36867,
+                // 0x8002, StreamConfigModeBokeh
+                "MialgoOpMode": 32770,
+                "LensFacing": 1,
+                "Signature": "SingleBokeh",
+                "BufferLimitCnt": 1,
+                "FlushWaitTimeMs": 4000,
+                // 0010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // yuv stream for front single bokeh
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9001, StreamConfigModeQCFALite
+                "VendorOpMode": 36865,
+                // 0x8005, StreamConfigModeMiuiZslFront
+                "MialgoOpMode": 32773,
+                "LensFacing": 1,
+                "Signature": "SingleFront",
+                "BufferLimitCnt": 3,
+                "FlushWaitTimeMs": 4000,
+                // 0001 0010, 0x12, vendorMfnr/hdr
+                "FeatureMask" : 18,
+                "StreamConfig": [
+                    // yuv stream for front single camera
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "MialgoOpMode": 32778,
+                "LensFacing": 0,
+                "Signature": "RearSuperNight",
+                "BufferLimitCnt": 12,
+                "VendorSnapshotBufferQueueSize": 28,
+                "FlushWaitTimeMs": 300,
+                "SupportFovCropCameras": [20], // RoleId: RoleIdRearTele
+                // 0001 0000 0010, 0x102, vendorMfnr/sn
+                "FeatureMask" : 258,
+                "StreamConfig": [
+                    // yuv stream for mfnr
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // raw16 stream for sn
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "MialgoOpMode": 32778,
+                "LensFacing": 1,
+                "Signature": "FrontSuperNight",
+                "BufferLimitCnt": 8,
+                "VendorSnapshotBufferQueueSize": 20,
+                "FlushWaitTimeMs": 300,
+                "IsVendorLowCaps": true,
+                // 0001 0000 0010, 0x102, vendorMfnr/sn
+                "FeatureMask" : 258,
+                "StreamConfig": [
+                    // yuv stream for mfnr
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9004, StreamConfigModeAlgoQCFAMFNR
+                "VendorOpMode": 36868,
+                // 0x9004, StreamConfigModeAlgoQcfaMfnr
+                "MialgoOpMode": 36868,
+                "LensFacing": 0,
+                "Signature": "SuperHD",
+                "BufferLimitCnt": 1,
+                "FlushWaitTimeMs":4000,
+                "SupportFovCropCameras": [20], // RoleId: RoleIdRearTele
+                // 0010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // yuv stream for remosiac full size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true
+                    },
+                    // yuv stream for binning size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9007, StreamConfigModeAlgoManualSuperHD
+                "VendorOpMode": 36871,
+                // 0x9007, StreamConfigModeAlgoManualSuperHD
+                "MialgoOpMode": 36871,
+                "LensFacing": 0,
+                "Signature": "ManualSuperHD",
+                "BufferLimitCnt": 1,
+                "FlushWaitTimeMs": 4000,
+                "SupportFovCropCameras": [20], // RoleId: RoleIdRearTele
+                // 0010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // yuv stream for remosiac full size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712,
+                        "isRemosaic": true
+                    },
+                    // yuv stream for binning size
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9008, StreamConfigModeAlgoManual
+                "VendorOpMode": 36872,
+                // 0x9008, StreamConfigModeAlgoManual
+                "MialgoOpMode": 36872,
+                "LensFacing": 0,
+                "Signature": "Professional",
+                "BufferLimitCnt": 1,
+                "FlushWaitTimeMs": 4000,
+                "SupportFovCropCameras": [20], // RoleId: RoleIdRearTele
+                // 0010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // yuv stream
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::MIUI
+                "CameraUser": 0,
+                // 0x9005, StreamConfigModeAlgoNormal
+                "VendorOpMode": 36869,
+                // 0x8005, StreamConfigModeMiuiZslFront
+                "MialgoOpMode": 32773,
+                "LensFacing": 0,
+                "Signature": "Single",
+                "BufferLimitCnt": 1,
+                "FlushWaitTimeMs": 4000,
+                // 0010, 0x2, vendorMfnr
+                "FeatureMask" : 2,
+                "StreamConfig": [
+                    // yuv stream
+                    {
+                        "ratio": 0.0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x9010, StreamConfigModeThirdCamera
+                "VendorOpMode": 36880,
+                "LensFacing": 0,
+                "Signature": "SdkNormal",
+                "StreamConfig": [
+                    // yuv stream
+                    {
+                        "ratio": 0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // yuv stream for select sensor mode 1
+                    {
+                        "ratio": 1.33,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x9010, StreamConfigModeThirdCamera
+                "VendorOpMode": 36880,
+                "LensFacing": 1,
+                "Signature": "SdkNormal",
+                "StreamConfig": [
+                    // yuv stream
+                    {
+                        "ratio": 0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                "LensFacing": 0,
+                "Signature": "SdkSupernight",
+                "StreamConfig": [
+                    // raw stream
+                    {
+                        "ratio": 1.33,
+                        "isPhysicalStream": false,
+                        "format": 32,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // yuv stream
+                    {
+                        "ratio": 0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x800A, StreamConfigModeMiuiSuperNight
+                "VendorOpMode": 32778,
+                "LensFacing": 1,
+                "Signature": "SdkSupernight",
+                "StreamConfig": [
+                    // yuv stream
+                    {
+                        "ratio": 0,
+                        "isPhysicalStream": false,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            },
+            {
+                // CameraUser::SDK
+                "CameraUser": 1,
+                // 0x9000, StreamConfigModeAlgoDual
+                "VendorOpMode": 36864,
+                "Signature": "SdkBokeh",
+                "StreamConfig": [
+                    // yuv stream of master
+                    {
+                        // BokehCamSig::masterYuv
+                        "bokehSig": 0,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    },
+                    // yuv stream of slave
+                    {
+                        // BokehCamSig::slaveYuv
+                        "bokehSig": 2,
+                        "ratio": 0.0,
+                        "isPhysicalStream": true,
+                        "format": 35,
+                        "usage": 3,
+                        "dataSpace": 146931712
+                    }
+                ]
+            }
+        ]
+    }
+}

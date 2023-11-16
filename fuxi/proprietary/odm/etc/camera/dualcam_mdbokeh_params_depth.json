@@ -1,0 +1,725 @@
+{
+	"//": "Global parameters",
+  "StructGlobal": {
+	"StructMask":{
+		"paramSwitch": 2,
+		"paramaiMaskDownSample": 4,
+		"parammImaskW": 960,
+		"parammImaskH": 720
+	},
+	"StructAiDepth":{
+        "paramSwitch": 1,
+        "paramDepthW": 1024
+	},
+	"StructMultiThread":{
+	    "paramMaskThreadSwitch": 1,
+		"paramBgFilterSwitch": 0,
+		"paramAiDepthThreadSwitch": 1
+	},
+	"StructDspGpu":{
+		"paramBmDspSwitch": 1,
+		"paramMatteGpuSwitch": 1
+	},
+	"paramIsTrustAfCode": 0
+  },
+  "/": "Depth parameters",
+"StructB1": {
+    "Struct_4_3": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+	},
+    "Struct_16_9": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    },
+    "Struct_full": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    },
+    "Struct_HOT": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+	  }
+  },
+  "StructB2": {
+    "Struct_4_3": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    },
+    "Struct_16_9": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    },
+    "Struct_full": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    },
+    "Struct_HOT": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramS3": 2,
+	  "paramM-1": 9,
+	  "StructRear": {
+        "paramC": -18,
+        "paramD": 64
+      },
+      "StructFront": {
+        "paramC": -45,
+        "paramD": 64
+      },
+	  "StructBM": {
+        "paramA": 31,
+		"paramB": 31,
+		"paramG": 0,
+		"paramT": 500,
+		"paramM-2": 20,
+		"paramSR": 0
+      },
+	  "StructSGBM": {
+		"paramSC": 1,
+		"paramH": 200,
+		"paramI": 16,
+		"paramU": 30,
+		"paramJ": 17,
+		"paramP1": 8,
+		"paramP2": 32,
+		"paramSP": 0
+      }
+    }
+  },
+  "StructDS": {
+    "paramB1": 0,
+    "paramB2": 0,
+    "paramBS": 8,
+    "paramS": 1,
+    "paramRR": 30,
+    "paramXV": 183,
+    "paramNV": 100
+  },
+  "StructEDGERef": {
+    "SWITCH": 0,
+	"SW_TRI": 0,
+	"SW_MPO": 0,
+    "B_W": 15,
+	"S_W": 32,
+	"M_H": 210,
+	"M_L": 10,
+	"R_RF": 1.0,
+	"Ang_Val": 0,
+	"To_Up": 0,
+	"To_Down": 1,
+	"To_Left": 1,
+	"To_Right": 0,
+	"Bg_DiSize": 7,
+	"Bg_DiCnt": 5,
+	"Bg_ErSize": 0,
+	"Bg_ErCnt": 0,
+	"Tri_ER": 6,
+	"Tri_DR": 6,
+	"St_Pix": 1.0
+  },
+  "StructI": {
+    "paramB": 1,
+    "paramU": 1,
+    "paramSD": 0,
+    "paramI": 0,
+    "paramW": 7,
+    "paramS": 5,
+    "paramGT": 0,
+    "paramT": 200,
+    "paramBF": 0,
+    "paramWR": 0.19,
+    "paramAR": 0.05
+  },
+  "StructHairRef": {
+    "paramTag": 2,
+    "paramGradThres": 220,
+    "paramDiffThres": 5
+  },
+  "StructF1": {
+    "paramLF": 1,
+    "paramO": 1,
+    "paramSC": 2,
+    "paramLFS": 9,
+    "paramLFU": 10,
+    "paramGF": 0,
+    "paramD": 0,
+    "paramU": 180,
+    "paramV1": 105,
+    "paramV2": 125,
+    "paramRM": 1,
+    "paramFR": 0.25
+  },
+  "StructF2": {
+    "paramLF": 1,
+	"paramO": 1,
+    "paramSC": 2,
+    "paramLFS": 9,
+    "paramLFU": 10,
+	"paramGF": 0,
+	"paramD": 0,
+    "paramU": 180,
+    "paramV1": 105,
+    "paramV2": 125,
+    "paramRM": 1,
+    "paramFR": 0.25
+  },
+  "StructP": {
+    "paramL0": 0,
+    "paramL1": 1,
+    "paramL2": 1,
+    "paramI": 2
+  },
+  "StructW": {
+    "paramB": 0,
+    "paramI": 1,
+    "paramS": 2.0,
+    "paramL": 100
+  },
+  "StructC1": {
+    "Struct_4_3": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 5,
+      "paramL0": 4,
+      "paramL1": 4,
+      "paramL2": 4,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 30000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_16_9": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 30000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_full": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 30000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_HOT": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    }
+  },
+  "StructC2": {
+    "Struct_4_3": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_16_9": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_full": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_HOT": {
+      "paramT": 0,
+      "paramD": 5,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 0,
+      "paramL4": 0,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramMN": 0,
+      "paramSWD": 0,
+      "paramCCM": 1,
+      "paramFRC": 1.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    }
+  },
+  "StructBlurDisp": {
+    "paramSwitch": 1,
+    "paramThresDensity": 0.5,
+    "paramThresVar": 10
+  },
+  "StructPostProSwitch": {
+    "paramNonEdge": 1,
+    "paramDTF": 1
+  },
+  "StructTimeControl": {
+    "paramOvertimeThres": 4000
+  },
+  "//": "Calib parameters",
+  "StructM_WU": {
+    "param_InitMode": 1,
+    "param_AFnum": 1,
+    "param_PreProcessDark": 1,
+    "param_Tx": 0,
+    "param_Ty": -14.55,
+    "param_BSwap": 1,
+    "param_UndisSelect": 2,
+    "param_BinHasDistable": 0,
+    "param_MAINDIS0": 0,
+    "param_MAINDIS1": 0.19,
+    "param_MAINDIS2": 0.12,
+    "param_MAINDIS3": 0.17,
+    "param_MAINDIS4": 0.51,
+    "param_MAINDIS5": 0.83,
+    "param_MAINDIS6": 1.14,
+    "param_MAINDIS7": 1.29,
+    "param_MAINDIS8": 1.41,
+    "param_MAINDIS9": 1.52,
+    "param_MAINDIS10": 1.62,
+    "param_SUBDIS0": 0,
+    "param_SUBDIS1": 0.61045,
+    "param_SUBDIS2": 0.60914,
+    "param_SUBDIS3": 0.44611,
+    "param_SUBDIS4": 0.1672,
+    "param_SUBDIS5": -0.03112,
+    "param_SUBDIS6": -0.10215,
+    "param_SUBDIS7": -0.50734,
+    "param_SUBDIS8": -1.73657,
+    "param_SUBDIS9": -5.33958,
+    "param_SUBDIS10": -14.57822
+  },
+  "StructM_WT": {
+    "param_InitMode": 1,
+    "param_AFnum": 1,
+    "param_PreProcessDark": 1,
+    "param_Tx": 14.55,
+    "param_Ty": 0,
+    "param_BSwap": 1,
+    "param_UndisSelect": 2,
+    "param_BinHasDistable": 0,
+    "param_MAINDIS0": 0,
+    "param_MAINDIS1": 0.0334154,
+    "param_MAINDIS2": 0.13516,
+    "param_MAINDIS3": 0.31131,
+    "param_MAINDIS4": 0.565759,
+    "param_MAINDIS5": 0.892043,
+    "param_MAINDIS6": 1.26374,
+    "param_MAINDIS7": 1.62358,
+    "param_MAINDIS8": 1.8683,
+    "param_MAINDIS9": 1.81597,
+    "param_MAINDIS10": 1.10216,
+    "param_SUBDIS0": 0,
+    "param_SUBDIS1": 0,
+    "param_SUBDIS2": 0,
+    "param_SUBDIS3": 0,
+    "param_SUBDIS4": 0,
+    "param_SUBDIS5": 0,
+    "param_SUBDIS6": 0,
+    "param_SUBDIS7": 0,
+    "param_SUBDIS8": 0,
+    "param_SUBDIS9": 0,
+    "param_SUBDIS10": 0
+  },  
+  "StructPublic": {
+    "param_ProjectNum": "M3",
+    "param_bVerbose": 0,
+    "param_LM_BD": 10,
+    "param_LM_SD": 3.0,
+    "param_LM_SJ": 6.0,
+    "param_LM_MI": 50,
+    "param_LM_DT": 1e-8,
+    "param_LM_DE": 1e-10,
+    "param_LM_BE": 1e-8,
+    "param_LM_CE": 1e-5,
+    "param_Q_Type" : 3,
+    "param_Q_FeatureNum": 400,
+    "param_Q_RansacThd" : 4.0,
+    "param_Q_AlphaX" : 0.25,
+    "param_Q_DispRankRatio" : 0.02,
+    "param_Q_DsFactor" : 2,
+    "param_Q_WinSize" : 21,
+    "param_Q_MaxLevel" : 4,
+    "param_Q_QualityLevel" : 0.002,
+    "param_P_Type" : 3,
+    "param_P_FeatureNum" : 200,
+    "param_P_RansacThd" : 4.0,
+    "param_P_AlphaX" : 0.25,
+    "param_P_DispRankRatio" : 0.02,
+    "param_P_DsFactor" : 2,
+    "param_P_WinSize" : 21,
+    "param_P_MaxLevel" : 4,
+    "param_P_QualityLevel" : 0.002
+	},  
+  "StructIMG_1_4x_WU_Bin_Bin": {
+    "param_F_proc": 1.9,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "param_m_4_3w": 2012,
+    "param_m_4_3h": 2684,
+    "param_s_4_3w": 2520,
+    "param_s_4_3h": 3360
+	},
+  "StructIMG_2x_WU_Bin_Bin": {
+    "param_F_proc": 1.5,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "param_m_4_3w": 1408,
+    "param_m_4_3h": 1878,
+    "param_s_4_3w": 1440,
+    "param_s_4_3h": 1920
+	},	
+  "StructIMG_2x_WU_Re_Bin": {
+    "param_F_proc": 1.5,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "param_m_4_3w": 2818,
+    "param_m_4_3h": 3758,
+    "param_s_4_3w": 1440,
+    "param_s_4_3h": 1920
+	},
+  "StructIMG_3_26x_WT_Bin_Bin": {
+    "param_F_proc": 1.3,	
+    "param_M_Nc": 0.9,
+    "param_S_Nc": 0.5,
+    "param_m_4_3w": 3258,
+    "param_m_4_3h": 2442,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_26x_WU_Bin_Bin": {
+    "param_F_proc": 1.8,
+    "param_M_Nc": 0.3,
+    "param_S_Nc": 0.4,
+    "param_m_4_3w": 938,
+    "param_m_4_3h": 1252,
+    "param_s_4_3w": 1080,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_75x_WT_Bin_Bin": {
+    "param_F_proc": 1.7,
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "param_m_4_3w": 2714,
+    "param_m_4_3h": 2034,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_75x_WU_Bin_Bin": {
+    "param_F_proc": 1.8,
+    "param_M_Nc": 0.25,
+    "param_S_Nc": 0.4,
+    "param_m_4_3w": 782,
+    "param_m_4_3h": 1044,
+    "param_s_4_3w": 1080,
+    "param_s_4_3h": 1440
+	}
+}

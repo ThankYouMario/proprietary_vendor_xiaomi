@@ -1,0 +1,58 @@
+{
+    "PipelineName": "superhdsnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.depurple",
+            "NodeInstance": "DepurpleInstance0",
+            "InputFormat": "YUV420_NV12",
+            "OutputFormat": "YUV420_NV12",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":1
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.memcpy",
+            "NodeInstance": "MemcpyInstance0"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "DepurpleInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "DepurpleInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "MemcpyInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "MemcpyInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer"
+            }
+        }
+        ]
+    }
+  }
+  

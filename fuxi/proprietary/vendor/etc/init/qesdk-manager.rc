@@ -1,0 +1,13 @@
+#==============================================================================
+#       qesdk-manager.rc
+#
+#  Copyright (c) 2021 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#===============================================================================
+service vendor.qesdk-mgr /vendor/bin/qesdk-manager
+    class hal
+    user system
+    group system
+    socket qesd seqpacket 666 root system
+

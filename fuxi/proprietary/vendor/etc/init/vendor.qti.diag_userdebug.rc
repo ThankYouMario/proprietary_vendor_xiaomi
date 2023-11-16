@@ -1,0 +1,110 @@
+#
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on early-init
+    chown system system /sys/devices/soc0/select_image
+    chown system system /sys/devices/soc0/image_version
+    chown system system /sys/devices/soc0/image_variant
+    chown system system /sys/devices/soc0/image_crm_version
+
+on early-fs
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/hwevent_enable
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/setreg
+    chown system system /sys/bus/coresight/devices/coresight-swao-csr/timestamp
+    chown system system /sys/bus/coresight/devices/coresight-modem-diag/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/out_mode
+
+on early-boot
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/hwevent_enable
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/setreg
+    chown system system /sys/bus/coresight/devices/coresight-swao-csr/timestamp
+    chown system system /sys/bus/coresight/devices/coresight-modem-diag/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/out_mode
+    start vendor.diag-router
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/block_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/block_size
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_type
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_type
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/out_mode
+    chown root oem_2902 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/block_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/block_size
+    chown root oem_2902 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/buffer_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/buffer_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/out_mode
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/enable_sink
+    chmod 660 /sys/devices/platform/soc/soc:modem_diag/coresight-modem-diag/enable_source
+    chown root oem_2902 /sys/bus/coresight/reset_source_sink
+    chmod 660 /sys/bus/coresight/reset_source_sink
+    write /sys/bus/coresight/devices/coresight-stm/traceid 0x10
+
+on boot
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/block_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/block_size
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_type
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_type
+    chown root oem_2902 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/mem_size
+    chmod 660 /sys/devices/platform/soc/10048000.tmc/coresight-tmc-etr/out_mode
+    chown root oem_2902 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/block_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/block_size
+    chown root oem_2902 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/buffer_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/buffer_size
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/out_mode
+    chmod 660 /sys/devices/platform/soc/1004f000.tmc/coresight-tmc-etr1/enable_sink
+    chmod 660 /sys/devices/platform/soc/soc:modem_diag/coresight-modem-diag/enable_source
+    chown root oem_2902 /sys/bus/coresight/reset_source_sink
+    chmod 660 /sys/bus/coresight/reset_source_sink
+    write /sys/bus/coresight/devices/coresight-stm/traceid 0x10
+
+#avoid the fifo error
+on early-boot && property:persist.logd.diag.bootup=* && property:persist.logd.diag.modemlog=*
+    start diag_mdlog_bootup
+
+service vendor.diag-router /vendor/bin/diag-router
+    class hal
+    user system
+    group system
+    capabilities KILL
+    disabled
+
+service qti-debug-early-boot-diag /vendor/bin/sh /vendor/bin/vendor.qti.diag.sh
+    class core
+    user root
+    oneshot
+
+on property:vendor.all.modules.ready=1
+    start qti-debug-early-boot-diag
+
+service diag_mdlog_bootup /vendor/bin/diag_mdlog -q 0x2006 -j 1 -u -c -i -n 50 -z -o /data/vendor/modem/diag_logs
+    class late_start
+    user shell
+    group system oem_2902 oem_2905 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot

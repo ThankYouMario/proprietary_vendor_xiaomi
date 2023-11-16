@@ -1,0 +1,20 @@
+# File: qvrd_vndr.rc
+#
+# Copyright (c) 2018-2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on post-fs-data
+    mkdir /data/vendor/qvr 0770 system system
+
+# Add qvrservice_vndr,qvrservice_vndr_camera sockets for qvrservice
+service qvrd_vndr /vendor/bin/hw/qvrservice
+    class late_start
+    user system
+    group system camera graphics usb
+    socket qvrservice_vndr stream 0660 system system
+    socket qvrservice_vndr_camera stream 0660 system system
+    capabilities SYS_NICE
+
+on boot
+    chown system system /sys/module/drm/parameters/vblankoffdelay

@@ -1,0 +1,12 @@
+Device = {M3}
+Version = {1.0.0.0}
+CbSize = {0}
+NumberOfCameras = {3}
+CalibrationType = {1}
+CameraFov = {120.0, 85.6, 35.4}
+CameraRatio = {0.6, 1.0, 3.0}
+MappedFovRatio = {0.0, 0.0, 3.0}
+ActiveRange1 = {[0, 0, 4000, 3000], [0, 0, 8192, 6144], [0, 0, 3648, 2736]}
+ActiveRange2 = {[0, 0, 4000, 3000], [0, 0, 8768, 6576], [0, 0, 3648, 2736]}
+SensorOutSize = {[0, 0, 4000, 3000], [0, 0, 4096, 3072], [0, 0, 3648, 2736]}
+RotationCorrection = {1, 1, 0}

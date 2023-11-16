@@ -1,0 +1,23 @@
+# Copyright (c) 2018 - 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+# Create the directories used by DPM subsystem
+
+on post-fs-data
+    mkdir /data/vendor/dpm_vndr 0771 system system
+    chown system system /data/vendor/dpm_vndr
+
+#start vendor.dpmd service
+service vendor.dpmd /vendor/bin/vendor.dpmd
+    class late_start
+    #socket dpmd stream 660 root radio
+    #socket tcm  stream 660 root inet
+    #socket dpmwrapper stream 660 root inet
+    group system readproc inet radio wakelock oem_2901
+    disabled
+
+on property:persist.vendor.dpm.vndr.feature=*
+    start vendor.dpmd
+on property:persist.vendor.dpm.vndr.feature=0
+    stop vendor.dpmd

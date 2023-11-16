@@ -1,0 +1,6 @@
+service qguard /vendor/bin/qguard
+    class late_start
+    user root
+    group system readproc
+    file /dev/kmsg w
+    capabilities KILL

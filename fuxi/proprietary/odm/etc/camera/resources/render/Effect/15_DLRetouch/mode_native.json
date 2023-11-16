@@ -1,0 +1,66 @@
+{
+	"##":"质感DL相关，祛斑祛痘 + 匀肤 + 去皱",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"Index":1,
+			"Mode":"Capture",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"KeepNevus":true,
+				"MaleDegreeFactor":0.5
+			}
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"SkinUnify":
+			{
+				"Enable":true,
+				"DefaultDegree":0.4,
+				"DegreeFactor":1.0,
+				"MaleDegreeFactor":1.0
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"E2EWrinkle":
+			{
+				"Enable":true,
+				"EnableUniqueDegree":false,
+				"DegreeList":{
+					"ForeheadLine":1.0,
+					"EyeLine":1.0,
+					"LegalLine":0.6,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"DegreeFactorList":{
+					"ForeheadLine":1.0,
+					"EyeLine":1.0,
+					"LegalLine":1.0,
+					"DarkCircle":1.0,
+					"Unique":1.0
+				},
+				"MaleDegreeList": {
+					"ForeheadLine": 1.0,
+					"EyeLine": 1.0,
+					"LegalLine": 1.0,
+					"DarkCircle": 1.0,
+					"Unique": 1.0
+				}
+			}
+		},
+		{
+			"Index":4,
+			"Mode":"Preview",
+			"E2ESpotless":
+			{
+				"Enable":false
+			}
+		}
+	]
+}

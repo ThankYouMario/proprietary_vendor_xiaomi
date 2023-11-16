@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/******************************************************************************
+* Copyright (c) 2022 Qualcomm Technologies, Inc.
+* All Rights Reserved.
+* Confidential and Proprietary - Qualcomm Technologies, Inc.
+******************************************************************************/
+-->
+<Configuration>
+  <Tracker3_5 enabled="true" />
+  <ValidateTimestamps enabled="true" fatalIMUAfterCamera_ms="2147483647" fatalTimeBetweenFrames_ms="2147483647" fatalTimeBetweenImuSamples_ms="2147483647" />
+  <SFConfig>
+  </SFConfig>
+</Configuration>

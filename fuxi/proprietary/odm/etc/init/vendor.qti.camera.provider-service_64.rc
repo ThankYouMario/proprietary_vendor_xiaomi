@@ -1,0 +1,20 @@
+service vendor.camera-provider /odm/bin/hw/vendor.qti.camera.provider-service_64
+    interface aidl android.hardware.camera.provider.ICameraProvider/vendor_qti/0
+    interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+    interface vendor.qti.hardware.camera.aon@1.0::IAONService aoncameraservice
+    interface vendor.qti.hardware.camera.aon@1.1::IAONService aoncameraservice
+    interface vendor.qti.hardware.camera.aon@1.2::IAONService aoncameraservice
+    interface vendor.qti.hardware.camera.aon@1.3::IAONService aoncameraservice
+    interface vendor.xiaomi.hardware.bgservice@1.0::IBGService default
+    interface vendor.xiaomi.hardware.quickcamera@1.0::IQuickCameraService default
+    class hal
+    user cameraserver
+    group system audio camera input drmrpc oem_2907 oem_2912
+    ioprio rt 4
+    capabilities SYS_NICE SYS_RESOURCE
+    task_profiles CameraServiceCapacity CameraServicePerformance
+    writepid /dev/memcg/camera/provider/cgroup.procs
+    writepid /sys/kernel/reserve_pool/pid
+
+on boot
+    chown cameraserver camera /sys/module/camera/parameters/cam_error_inject

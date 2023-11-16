@@ -1,0 +1,35 @@
+{
+    // if enableBokehOptimize is opened, then in hdr, se and MD bokeh, only anchor frame
+    // will take slave stream buffer to qcom
+    "enableBokehOptimize": 1,
+    // if two stream sizes are different from each other but within this threshold, then we
+    // still consider that these two stream sizes are identical
+    "streamSizeDifferenceThreshold": 50,
+    "InternalPreviewBufferQueueSize": 20,
+    "FwkStreamMaxBufferQueueSize": 8,
+    "MockCameraFwkStreamMaxBufferQueueSize": 8,
+    "MockCameraMaxInviteThreshold": 6,
+    "MillisecondsWaitingForMockRequest": 30000,
+    "MillisecondsWaitingForFlush": 4000,
+    "ModeList": {
+        // spatial alignment mode(aka: muti camera mode)
+        "SatMode": {
+            "InternalSnapshotBufferQueueSize": 8
+        },
+        "ProfessionalMode": {
+            // if the buffer queue size is 0, Qcom will override this to 8
+            "InternalSnapshotBufferQueueSize": 0,
+            "MillisecondsWaitingForFlush": 100
+        },
+        "BokehMode": {
+            "InternalSnapshotBufferQueueSize": 0
+        },
+        "SuperNightMode": {
+            "InternalSnapshotBufferQueueSize": 0,
+            "MillisecondsWaitingForFlush": 300
+        },
+        "SuperHDMode": {
+            "InternalSnapshotBufferQueueSize": 0
+        }
+    }
+}

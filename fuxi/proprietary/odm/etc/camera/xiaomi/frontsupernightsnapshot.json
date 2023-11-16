@@ -1,0 +1,91 @@
+{
+    "PipelineName": "FrontSuperNightSnapshot",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.miaiportraitsupernight",
+                "NodeInstance": "MiAiPortraitSuperNight",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.portraitrepair",
+                "NodeInstance": "PortraitRepairInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":1
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+                "NodeInstance": "SkinBeautifierInstance",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.gpu",
+                "NodeInstance": "GpuInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAiPortraitSuperNight"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAiPortraitSuperNight"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            }
+        ]
+    }
+}

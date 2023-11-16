@@ -1,0 +1,32 @@
+#if there is any change, please modify the commiter and modification time when submitting
+commiter: 'chenyifei'
+timestamp: '202112272011'
+product_name: "M3"
+platform: 'qcom'
+
+trigger_param:
+  rear:
+    trigger_method: 24 # 5 bit, 0b___  h->l: dead-dark over-exp hdrbhist-svm real-drc preview-yuv
+    normal:
+      HDR-AUTO: # [uw, wide, 2x, tele]
+        overexp_start_bin: [254, 254, 254, 254]
+        overexp_ratio: [0.01, 0.01, 0.01, 0.01]
+        dd_bin: [10, 10, 10, 10]
+        dd_ratio: [0.05, 0.05, 0.05, 0.05]
+      HDR-ON: # just for india version
+        overexp_start_bin: [254, 254, 254, 254]
+        overexp_ratio: [0.01, 0.01, 0.01, 0.01]
+        dd_bin: [10, 10, 10, 10]
+        dd_ratio: [0.05, 0.05, 0.05, 0.05]
+  front:
+    trigger_method: 24 # 5 bit, 0b___  h->l: dead-dark over-exp hdrbhist-svm real-drc preview-yuv
+    HDR-AUTO:
+      overexp_ratio: 0.01
+      overexp_start_bin: 254
+      dd_bin: 10
+      dd_ratio: 0.05
+    HDR-ON: # just for india version
+      overexp_ratio: 0.01
+      overexp_start_bin: 254
+      dd_bin: 10
+      dd_ratio: 0.05
