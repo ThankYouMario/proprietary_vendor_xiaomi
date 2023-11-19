@@ -1294,7 +1294,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
-    vendor/xiaomi/fuxi/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/xiaomi/fuxi/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
@@ -1481,7 +1480,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/modemManager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modemManager.rc \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
@@ -2040,8 +2038,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libpichdralgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpichdralgo.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
-    vendor/xiaomi/fuxi/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
-    vendor/xiaomi/fuxi/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libqc2audio_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_core.so \
