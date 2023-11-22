@@ -1817,6 +1817,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtp.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtpNetRunExtensions.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpNetRunExtensions.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpPrepare.so \
+    vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtpProfilingReader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpProfilingReader.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtpV73CalculatorStub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpV73CalculatorStub.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnHtpV73Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnHtpV73Stub.so \
     vendor/xiaomi/fuxi/proprietary/vendor/lib64/libQnnSaver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQnnSaver.so \
