@@ -1,0 +1,27 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
+    "soc_id": ["519", "536"]
+  },
+
+  "sns_dynamic_libraries":
+  {
+    "owner": "dynamic_sensor",
+    "detect_on_every_boot":{ "type": "int", "ver": "0",
+        "data": "0"
+    },
+    ".libchre":
+    {
+      "owner": "dynamic_sensor",
+      "name":{ "type": "str", "ver": "0",
+        "data": "chre_qsh_shim.so"
+      },
+      "reg_fun":{ "type": "str", "ver": "0",
+        "data": "chre_qsh_shim_register"
+      },
+      "reg_cnt":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}
