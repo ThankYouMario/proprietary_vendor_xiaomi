@@ -151,27 +151,15 @@ isPreviewZoomEISSupported=1
 isMorphorEISAlgo=1
 
 #Camera Log
-overrideLogLevels=0x1
-logInfoMask=0
-logWarningMask=0
-logConfigMask=0
-logVerboseMask=0
-logCoreCfgMask=0
-logRequestMapping=FALSE
-systemLogEnable=TRUE
-enableAsciiLogging=0
-enableTxtLogging=0
-offlineLogNumber=0
-offlinedebugmask=0
-enable3ADebugData=FALSE
-enableTuningMetadata=FALSE
-raiserecoverysigabrt=FALSE
+logInfoMask=0x2010098
+overrideLogLevels=0x1F
+enableTxtLogging=1
+offlineLogNumber=20
 offlineLoggerEnableBackupLog=FALSE
-enableCameraCoreDumpBinary=FALSE
-enableCameraCoreDumpText=FALSE
-numConsecutiveRecovery=10
+raiserecoverysigabrt=TRUE
+
 #systrace
-traceGroupsEnable=0
+traceGroupsEnable=0x10000000000100c0
 
 #HLG:100  HDR10:010  HDR10+:001  HLG|HDR10:110  HLG|HDR10+:101
 VideoHdrAvailableConfigurations=100:1080P@30|100:1080P@60|100:4K@24|100:4K@30|100:4K@60
@@ -428,3 +416,6 @@ QuickCameraSupported=TRUE
 
 #wide Sharpness x 0.45 | ultra Sharpness x 0.45
 SharpnessCompensateRatio=0@0.45|2@0.45
+
+#Enable CameraHWDiag
+enCameraHWDiag=TRUE

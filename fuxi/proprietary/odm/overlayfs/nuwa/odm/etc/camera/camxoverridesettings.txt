@@ -102,28 +102,16 @@ wideFovCropZoomRatio=1.111
 #Tele Fov Crop
 teleFovCropZoomRatio=1.12
 
-#Camera Log
-overrideLogLevels=0x1
-logInfoMask=0
-logWarningMask=0
-logConfigMask=0
-logVerboseMask=0
-logCoreCfgMask=0
-logRequestMapping=FALSE
-systemLogEnable=TRUE
-enableAsciiLogging=0
-enableTxtLogging=0
-offlineLogNumber=0
-offlinedebugmask=0
-enable3ADebugData=FALSE
-enableTuningMetadata=FALSE
-raiserecoverysigabrt=FALSE
+# Camera Log
+logInfoMask=0x1000000002010098
+overrideLogLevels=0x1F
+enableTxtLogging=1
+offlineLogNumber=20
 offlineLoggerEnableBackupLog=FALSE
-enableCameraCoreDumpBinary=FALSE
-enableCameraCoreDumpText=FALSE
-numConsecutiveRecovery=10
+raiserecoverysigabrt=TRUE
+
 #systrace
-traceGroupsEnable=0
+traceGroupsEnable=0x10000000000100c0
 
 #Camera driver
 enableOISOptimization=TRUE
@@ -439,3 +427,6 @@ enablePerRequestSync=FALSE
 
 #Enable quickcamera
 QuickCameraSupported=TRUE
+
+#Enable CameraHWDiag
+enCameraHWDiag=TRUE

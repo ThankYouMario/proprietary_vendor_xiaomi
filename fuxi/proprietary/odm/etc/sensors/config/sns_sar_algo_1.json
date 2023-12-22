@@ -55,5 +55,56 @@
           "ver": "0", "type": "flt", "data": "100"
         }
     }
+  },
+  "sar_cn_algo_1": {
+    "owner": "sar_cn_algo_1",
+    ".params":{
+      "owner": "sar_algo_1",
+        "threshold1": {
+          "ver": "0", "type": "flt", "data": "50"
+        },
+        "threshold2": {
+          "ver": "1", "type": "flt", "data": "2100"
+        },
+        "threshold3": {
+          "ver": "1", "type": "flt", "data": "2500"
+        },
+        "threshold4": {
+          "ver": "1", "type": "flt", "data": "0"
+        },
+        "threshold5": {
+          "ver": "1", "type": "flt", "data": "0"
+        },
+        "use_acc_gyro": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "use_qmi": {
+          "ver": "0", "type": "flt", "data": "0"
+        }
+    },
+    ".params_reg2":{
+      "owner": "sar_algo_1",
+        "threshold1": {
+          "ver": "1", "type": "flt", "data": "0"
+        },
+        "threshold2": {
+          "ver": "1", "type": "flt", "data": "0"
+        },
+        "threshold3": {
+          "ver": "1", "type": "flt", "data": "0"
+        },
+        "threshold4": {
+          "ver": "1", "type": "flt", "data": "0"
+        }
+    },
+    ".params_step":{
+      "owner": "sar_algo_1",
+        "usestep": {
+          "ver": "0", "type": "flt", "data": "1"
+        },
+        "stepcount": {
+          "ver": "0", "type": "flt", "data": "100"
+        }
+    }
   }
 }

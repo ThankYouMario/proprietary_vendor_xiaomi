@@ -832,6 +832,12 @@
                 <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MSPP -->
                 <graph_kv key="0xAC000000" value="0xAC00000B"/>
             </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER" CustomConfig="sync-record">
+                <!-- DEVICERX - SPEAKER -->
+                <graph_kv key="0xA2000000" value="0xA2000001"/>
+                <!-- DEVICEPP_RX - DevicePP_Rx_Default -->
+                <graph_kv key="0xAC000000" value="0xAC000001"/>
+            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_RAW">
                 <!-- DEVICERX - SPEAKER -->
                 <graph_kv key="0xA2000000" value="0xA2000001"/>

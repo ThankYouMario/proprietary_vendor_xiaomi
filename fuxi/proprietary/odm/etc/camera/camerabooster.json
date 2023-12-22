@@ -29,14 +29,17 @@
                 "com.miui.gallery": 235520,
                 "com.miui.home": 716800,
                 "com.miui.personalassistant": 512000,
-                "com.miui.miwallpaper": 409600
+                "com.miui.miwallpaper": 409600,
+                "com.baidu.carlife.xiaomi": 256000,
+                "com.android.updater": 51200
             }
         },
         {
             "name": "adj_threshold",
             "config": {
                 "com.tencent.mm": 250,
-                "com.miui.screenrecorder": 200
+                "com.miui.screenrecorder": 200,
+                "com.android.updater": 250
             }
         }
     ],
@@ -62,7 +65,8 @@
                 "com.tencent.mm",
                 "com.miui.gallery",
                 "com.miui.personalassistant",
-                "com.miui.screenrecorder"
+                "com.miui.screenrecorder",
+                "com.android.updater"
             ]
         },
         {
@@ -80,7 +84,9 @@
                 "android.camera.cts",
                 "android.camera.cts:errorLoggingServiceProcess",
                 "com.samsung.android.app.watchmanager:contentprovider",
-                "com.miui.avpressuretest"
+                "com.miui.avpressuretest",
+                "com.baidu.carlife.xiaomi",
+                "com.android.updater"
             ]
         },
         {
@@ -116,5 +122,8 @@
                 "com.android.vending"
             ]
         }
-    ]
+    ],
+    "threshold_8Gmem": {
+        "recent_task_pss_threshold": 819200
+    }
 }

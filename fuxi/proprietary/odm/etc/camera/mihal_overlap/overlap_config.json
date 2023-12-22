@@ -659,6 +659,10 @@
             "ApkFunctionType":"FallbackTrigger",
             "ApkTable" :["com.gorgeous.lite",
                         "com.tencent.mm"]
+        },
+        {
+            "ApkFunctionType":"DisablePrivatePort",
+            "ApkTable" :["com.instagram.android"]
         }
     ]
     ,

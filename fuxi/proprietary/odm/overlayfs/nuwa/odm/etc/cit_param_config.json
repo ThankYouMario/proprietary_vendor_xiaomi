@@ -322,7 +322,14 @@
         },
         {
             "name": "fp_fod_cali",
-            "caption": "屏下指纹校准"
+            "caption": "屏下指纹校准",
+            "config":{
+                "support_frame_cmds":true,
+                "fod_cali_cmds":[
+                    "service call SurfaceFlinger 31117 i32 120",
+                    "service call SurfaceFlinger 31117 i32 0"
+                ]
+            }
         },
         {
             "name": "touch_pointer_location",

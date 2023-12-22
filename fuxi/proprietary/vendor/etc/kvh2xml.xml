@@ -507,6 +507,10 @@
       <VALUE val="0x1" name="0x1"/>
       <VALUE val="0x0" name="0x0"/>
     </KEY>
+    <KEY name="SUPER_VOICE_VOLUME" id="0xfa000008" description="SuperVoiceVolume">
+      <VALUE val="0x1" name="ON"/>
+      <VALUE val="0x0" name="OFF"/>
+    </KEY>
     <KEY name="SlotMask" id="0xe0000000" description="SlotMask">
       <VALUE val="0x1" name="MASK_1"/>
       <VALUE val="0x2" name="MASK_2"/>
@@ -563,6 +567,7 @@
     <KEY id="0xd2000000" name="Gain"/>
     <KEY id="0xd4000000" name="StreamChannels"/>
     <KEY id="0xd100000" name="VOIP_Sample_Rate"/>
+    <KEY id="0xfa000008" name="SUPER_VOICE_VOLUME"/>
   </CAL_KEY>
   <MODULE_TAGS>
     <TAG id="0xc0000004" name="device_hw_ep_rx" description="Hw EP Rx">

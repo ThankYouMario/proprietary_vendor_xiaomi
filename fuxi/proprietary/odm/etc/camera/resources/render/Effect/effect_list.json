@@ -83,10 +83,6 @@
 				{
 					"Name":"基础(只亮眼)",
 					"Path":"30_BasicRetouch/mode_base.json"
-				},
-				{
-					"Name":"基础(亮眼+去黑眼圈法令纹)",
-					"Path":"30_BasicRetouch/mode_base_all.json"
 				}		
 			]
 		},

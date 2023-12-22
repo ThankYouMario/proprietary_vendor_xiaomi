@@ -3,7 +3,7 @@ reset 1
 interval 50
 
 # core_reset_ntf
-trigger 60000A020120040501A40110
+trigger 60000A0201200405
 # core_reset_rsp
 trigger 40000100
 # core reset

@@ -16,7 +16,7 @@
             "pipelining": true,
             // this will enable carveout memory for secure encoder bitstream
             "hw_protected_carveout": false,
-            //Reduce the startup latency of the first session 
+            //Reduce the startup latency of the first session
             //by starting vpp service at boot
             "vpp_lazy_init": true
         },
@@ -58,7 +58,8 @@
         // list of codec plugin libraries to be loaded into codec registry
         "QC2CodecPlugins": [
             "libqc2vppfilter.so",
-            "libqcodec2_imgtxrfilter.so"
+            "libqcodec2_imgtxrfilter.so",
+            "libqcodec2_mocklutfilter.so"
         ],
 
         // list of filters used in pre processing
@@ -117,11 +118,10 @@
         "QC2PostProcessingFilters": {
             "vppFilter": [
                 "c2.qti.vpp.filter",
-                "c2.qti.vpp.filter.secure"
+                "c2.qti.vpp.filter.secure",
+                "c2.mi.filter.mock.lut"
             ]
         },
-
-        //
         // Put below optional codecs under "OptionalCodecs" to enable it
         // "c2.qti.dv.decoder",
         // "c2.qti.dv.decoder.secure",

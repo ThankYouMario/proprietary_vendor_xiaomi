@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<audio_cloud_control version="20230713">
+<audio_cloud_control version="20231030">
     <kara_app_name_list>
         <com.tencent.karaoke/>
         <com.changba/>
@@ -60,6 +60,8 @@
         <com.baidu.input_mi/>
         <com.sohu.inputmethod.sogou.xiaomi/>
         <com.miui.securitycenter/>
+        <com.ss.android.lark.kami/>
+        <com.ss.android.lark/>
     </record_unsilence_app_name_list>
     <property_list/>
     <voip_app_name_list>

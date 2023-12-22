@@ -656,6 +656,18 @@
         {
             "ApkFunctionType":"ReconfigCaptureScene",
             "ApkTable" :["com.tencent.wework"]
+        },
+        {
+            "ApkFunctionType":"SkipUselessFeature",
+            "ApkTable" :[""]
+        },
+        {
+            "ApkFunctionType":"FallbackTrigger",
+            "ApkTable" :[""]
+        },
+        {
+            "ApkFunctionType":"DisablePrivatePort",
+            "ApkTable" :["com.instagram.android"]
         }
     ]
     ,

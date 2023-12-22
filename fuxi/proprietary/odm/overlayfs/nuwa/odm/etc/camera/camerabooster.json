@@ -30,14 +30,17 @@
                 "com.miui.gallery": 235520,
                 "com.miui.home": 716800,
                 "com.miui.personalassistant": 512000,
-                "com.miui.miwallpaper": 409600
+                "com.miui.miwallpaper": 409600,
+                "com.baidu.carlife.xiaomi": 256000,
+                "com.android.updater": 51200
             }
         },
         {
             "name": "adj_threshold",
             "config": {
                 "com.tencent.mm": 250,
-                "com.miui.screenrecorder": 200
+                "com.miui.screenrecorder": 200,
+                "com.android.updater": 250
             }
         }
     ],
@@ -63,7 +66,8 @@
                 "com.tencent.mm",
                 "com.miui.gallery",
                 "com.miui.personalassistant",
-                "com.miui.screenrecorder"
+                "com.miui.screenrecorder",
+                "com.android.updater"
             ]
         },
         {
@@ -80,7 +84,9 @@
                 "com.phonetest.application:CameraMemoryWatcher",
                 "android.camera.cts",
                 "android.camera.cts:errorLoggingServiceProcess",
-                "com.miui.avpressuretest"
+                "com.miui.avpressuretest",
+                "com.baidu.carlife.xiaomi",
+                "com.android.updater"
             ]
         },
         {

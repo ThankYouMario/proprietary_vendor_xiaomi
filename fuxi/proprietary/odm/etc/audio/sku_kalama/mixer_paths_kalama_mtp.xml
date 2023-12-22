@@ -391,6 +391,36 @@
         <ctl name="AMIC5_MIXER Switch" value="1" />
     </path>
 
+    <path name="speaker-tlh">
+        <ctl name="TLH PCM Source"  value="ASP" />
+        <ctl name="TLH AMP Enable Switch" value="1" />
+    </path>
+
+    <path name="speaker-blh">
+        <ctl name="BLH PCM Source"  value="ASP" />
+        <ctl name="BLH AMP Enable Switch" value="1" />
+    </path>
+
+    <path name="speaker-trl">
+        <ctl name="TRL PCM Source"  value="ASP" />
+        <ctl name="TRL AMP Enable Switch" value="1" />
+    </path>
+
+    <path name="speaker-tll">
+        <ctl name="TLL PCM Source"  value="ASP" />
+        <ctl name="TLL AMP Enable Switch" value="1" />
+    </path>
+
+    <path name="speaker-brl">
+        <ctl name="BRL PCM Source"  value="ASP" />
+        <ctl name="BRL AMP Enable Switch" value="1" />
+    </path>
+
+    <path name="speaker-bll">
+        <ctl name="BLL PCM Source"  value="ASP" />
+        <ctl name="BLL AMP Enable Switch" value="1" />
+    </path>
+
     <path name="speaker-top">
         <ctl name="T PCM Source"  value="DSP" />
         <ctl name="T AMP Enable Switch" value="1" />
@@ -413,6 +443,14 @@
 
     <path name="back-mic">
         <path name="amic4" />
+    </path>
+
+    <path name="sidetop-mic">
+        <path name="amic5" />
+    </path>
+
+    <path name="sidebottom-mic">
+        <path name="amic1" />
     </path>
 
     <path name="speaker-lp-l1">
