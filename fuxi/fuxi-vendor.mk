@@ -1551,8 +1551,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/odm/lib64/libgf_hal6.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libgf_hal6.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_ODM)/lib64/libhdr10plus.so \
     vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/odm/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libhdr10plus.so \
+    vendor/xiaomi/fuxi/proprietary/odm/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libhdr_stub.so \
+    vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/odm/lib64/libhdr_stub.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libhdr_stub.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/libhdrmode.so:$(TARGET_COPY_OUT_ODM)/lib64/libhdrmode.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/libhistprocess.so:$(TARGET_COPY_OUT_ODM)/lib64/libhistprocess.so \
+    vendor/xiaomi/fuxi/proprietary/odm/lib64/libhme.so:$(TARGET_COPY_OUT_ODM)/lib64/libhme.so \
+    vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/odm/lib64/libhme.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libhme.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_ODM)/lib64/libipebpsstriping.so \
     vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/odm/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libipebpsstriping.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_ODM)/lib64/libipebpsstriping170.so \
