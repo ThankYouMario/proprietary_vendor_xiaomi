@@ -2310,6 +2310,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/vendor/etc/thermal-engine.conf \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/vendor/etc/thermal-map.conf \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/overlayfs/nuwa/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/vendor/etc/thermald-devices.conf \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/usb_compositions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/usb_compositions.conf \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
