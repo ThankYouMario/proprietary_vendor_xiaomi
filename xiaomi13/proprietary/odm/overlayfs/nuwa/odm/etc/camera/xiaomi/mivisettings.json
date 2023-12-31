@@ -1,0 +1,5 @@
+{
+    "offlinedebugmask" : 1,
+    "CurrentTempFilePath" : "/sys/class/thermal/thermal_message/board_sensor_second_temp",
+    "Soc" : "QCOM"
+}

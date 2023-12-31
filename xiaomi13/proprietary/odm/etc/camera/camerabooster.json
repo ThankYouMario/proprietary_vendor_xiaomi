@@ -1,0 +1,129 @@
+{
+    "version": "1.0",
+    "product": "fuxi",
+    "threshold": {
+            "lowAdj_threshold": 0,
+            "3rd_lowAdj_threshold": 50,
+            "kill_lowprio_sysapp_threshlod": 10240,
+            "kill_highprio_sysapp_threshlod": 30720,
+            "protect_locktask_num": 2,
+            "kill_tag": 31
+        },
+    "support": {
+            "inhibit_3rdprocs_enable": true,
+            "oom_update_support": true,
+            "cam_boost_early_enable": true,
+            "perceptible_support": true,
+            "lmkd_perceptible_support": true,
+            "dynamic_task_proctect_support": true
+        },
+    "oom": {
+            "oom_level": "51200:0,89600:100,128000:200,179200:251,262144:701,393216:800",
+            "psi_level": "30,20,13,8"
+        },
+    "kill_configs": [
+        {
+            "name": "pss_threshold",
+            "config": {
+                "com.tencent.mm": 1024000,
+                "com.miui.gallery": 235520,
+                "com.miui.home": 716800,
+                "com.miui.personalassistant": 512000,
+                "com.miui.miwallpaper": 409600,
+                "com.baidu.carlife.xiaomi": 256000,
+                "com.android.updater": 51200
+            }
+        },
+        {
+            "name": "adj_threshold",
+            "config": {
+                "com.tencent.mm": 250,
+                "com.miui.screenrecorder": 200,
+                "com.android.updater": 250
+            }
+        }
+    ],
+    "dump_configs": {
+        "system_server": 665600,
+        "/system/bin/surfaceflinger": 563200,
+        "/vendor/bin/hw/vendor.qti.hardware.display.composer-service": 307200,
+        "com.miui.home": 563200,
+        "com.android.systemui": 563200,
+        "com.miui.miwallpaper": 307200
+    },
+    "configs": [
+        {
+            "name": "protect_list",
+            "config": [
+                "com.tencent.mobileqq",
+                "com.ss.android.lark.kami"
+            ]
+        },
+        {
+            "name": "perceptible_list",
+            "config": [
+                "com.tencent.mm",
+                "com.miui.gallery",
+                "com.miui.personalassistant",
+                "com.miui.screenrecorder",
+                "com.android.updater"
+            ]
+        },
+        {
+            "name": "white_list",
+            "config": [
+                "com.android.camera",
+                "com.miui.miwallpaper",
+                "com.miui.home",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "android.process.media",
+                "com.android.traceur",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess",
+                "com.samsung.android.app.watchmanager:contentprovider",
+                "com.miui.avpressuretest",
+                "com.baidu.carlife.xiaomi",
+                "com.android.updater"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi"
+            ]
+        }
+    ],
+    "configs_cn": [
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        }
+    ],
+    "threshold_8Gmem": {
+        "recent_task_pss_threshold": 819200
+    }
+}
