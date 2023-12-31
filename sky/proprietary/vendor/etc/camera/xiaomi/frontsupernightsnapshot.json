@@ -1,0 +1,63 @@
+{
+  "PipelineName": "FrontSuperNightSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.supernight",
+        "NodeInstance":   "SupernightInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstance": "SkinInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.swflip",
+        "NodeInstance":  "SwflipInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SupernightInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance":"SupernightInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SkinInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance":"SkinInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SwflipInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance":"SwflipInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

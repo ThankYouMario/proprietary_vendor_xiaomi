@@ -1,0 +1,54 @@
+{
+  "config": {
+    "hw_platform": ["QRD"],
+    "soc_id": ["568"]
+  },
+  "sar_algo": {
+    "owner": "sar_algo",
+    ".params":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "2", "type": "flt", "data": "140"
+        },
+        "threshold2": {
+          "ver": "2", "type": "flt", "data": "1404"
+        },
+        "threshold3": {
+          "ver": "0", "type": "flt", "data": "1600"
+        },
+        "threshold4": {
+          "ver": "0", "type": "flt", "data": "1650"
+        },
+        "threshold5": {
+          "ver": "0", "type": "flt", "data": "1650"
+        },
+        "use_acc_gyro": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "use_qmi": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "stepcount": {
+          "ver": "0", "type": "flt", "data": "100"
+        },
+        "use_step": {
+          "ver": "0", "type": "flt", "data": "1"
+        }
+    },
+    ".params_reg2":{
+      "owner": "sar_algo",
+        "threshold1": {
+          "ver": "0", "type": "flt", "data": "3000"
+        },
+        "threshold2": {
+          "ver": "0", "type": "flt", "data": "600"
+        },
+        "threshold3": {
+          "ver": "0", "type": "flt", "data": "1500"
+        },
+        "threshold4": {
+          "ver": "0", "type": "flt", "data": "500"
+        }
+    }
+  }
+}

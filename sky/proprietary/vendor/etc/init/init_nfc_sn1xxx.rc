@@ -1,0 +1,41 @@
+#! /odm/etc/vintf for m19 nfc one binary
+# S88019BP-cn poco  S88029JA1-jp  S88029AA1-global
+on early-init && property:ro.boot.boardid=S88019BP1
+    setprop ro.boot.product.hardware.sku hcesimese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88018PA1
+    setprop ro.boot.product.hardware.sku hcesimese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88029JA1
+    setprop ro.boot.product.hardware.sku hcesim1ese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88029EA1
+    setprop ro.boot.product.hardware.sku hcesim1ese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88029AA1 && property:persist.radio.multisim.config=ssss
+    setprop ro.boot.product.hardware.sku hcesim1
+    setprop ro.vendor.se.type HCE,UICC
+
+on early-init && property:ro.boot.boardid=S88029AA1 && property:persist.radio.multisim.config=dsds
+    setprop ro.boot.product.hardware.sku hcesim
+    setprop ro.vendor.se.type HCE,UICC
+
+on early-init && property:ro.product.device=river
+    setprop persist.vendor.nfc.factory.fwstatus unknown
+    setprop ro.vendor.nfc.repair 1
+    setprop ro.vendor.nfc.wallet_fusion 1
+    setprop ro.vendor.nfc.dispatch_optim 1
+
+on early-init && property:ro.product.device=XIG03
+    setprop ro.vendor.nfc.repair 1
+    setprop persist.vendor.nfc.factory.fwstatus unknown
+
+

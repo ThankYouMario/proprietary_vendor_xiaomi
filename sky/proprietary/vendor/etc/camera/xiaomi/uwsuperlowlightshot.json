@@ -1,0 +1,35 @@
+{
+    "PipelineName": "SuperlightLdcPlugin",
+    "NodesList": {
+      "Node": [
+        {
+          "NodeName": "com.xiaomi.plugin.ldc",
+          "NodeInstance": "LDCInstance"
+        }
+      ]
+    },
+    "PortLinkages": {
+      "Link": [
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "SinkBuffer"
+          }
+        }
+      ]
+    }
+  }

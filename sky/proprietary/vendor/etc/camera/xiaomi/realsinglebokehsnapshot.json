@@ -1,0 +1,49 @@
+{
+  "PipelineName": "RealSingleBokehSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.swflip",
+        "NodeInstance":  "SwflipInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.mibokeh",
+        "NodeInstance": "MibokehInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":  "SwflipInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance":  "SwflipInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":  "MibokehInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance":  "MibokehInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":  "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

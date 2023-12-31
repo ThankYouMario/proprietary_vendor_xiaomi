@@ -1,0 +1,12 @@
+<!-- Copyright (c) 2021 Qualcomm Technologies, Inc.
+     All Rights Reserved.
+     Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <version>8</version>
+        <fqname>IQtiRadioStable/slot1</fqname>
+        <fqname>IQtiRadioStable/slot2</fqname>
+    </hal>
+</manifest>

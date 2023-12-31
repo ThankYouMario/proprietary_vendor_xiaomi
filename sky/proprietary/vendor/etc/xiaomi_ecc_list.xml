@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EccTable>
+    <!--    20210611 update
+        Configure emergency numbers for open market load. For the emergey numbers defined in
+        3GPP TS 22.101 (112/911 when SIM/USIM present and 112/911/000/08/110/118/119/999
+        when SIM/USIM not present) it will be configure in default emergency number source,
+        so no need to configure here if there is no special request for these numbers.
+
+        The attribute definition for tag EccEntry:
+        - Ecc: the emergnecy number
+        - Category: the service category (From 3GPP TS24.008)
+            - Bit 1 (1): Police
+            - Bit 2 (2): Ambulance
+            - Bit 3 (4): Fire Brigade
+            - Bit 4 (8): Marine Guard
+            - Bit 5 (16): Mountain Rescue
+            - Bit 6 (32): Manually initiated eCall
+            - Bit 7 (64): Automatically initiated eCall
+            - Bit 8 (128): is spare and set to "0"
+        - Condition: there are following values:
+              0  emergency call when card absent 无卡紧急号码，有卡不是紧急号码
+              1  real emergency call      有卡无卡真紧急号码
+              2  fake emergency call      有卡假紧急号码，无卡/锁卡真紧急号码
+              3  emergency call when card present  有卡紧急号码，无卡不是紧急号码
+              5  fake emergency call when card present有卡为假紧急号码,无卡非紧急号码,MTK提供的配置方法为5，所以跳过4
+        - Plmn: Operator PLMN which contains MCC+MNC.
+                Use FFF or FF for all operators under same country
+                Ex: 460 FFF means all operators in China
+    -->
+
+    <!-- Add for Myanmar due to AOSP eccdata will treat it as ecc xiaomi-->
+    <EccEntry Ecc="191" Category="4" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="192" Category="2" Condition="2" Plmn="414 FFF"/>
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn="414 FFF"/>
+
+
+    <!-- Add for Japan KDDI operator -->
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 07"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 07"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 07"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 07"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 07"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 07"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 08"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 08"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 08"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 08"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 08"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 08"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 50"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 50"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 50"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 50"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 50"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 50"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 51"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 51"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 51"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 51"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 51"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 51"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 52"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 52"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 52"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 52"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 52"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 52"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 53"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 53"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 53"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 53"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 53"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 53"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 54"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 54"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 54"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 54"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 54"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 54"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 55"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 55"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 55"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 55"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 55"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 55"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 56"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 56"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 56"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 56"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 56"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 56"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 70"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 70"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 70"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 70"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 70"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 70"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 71"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 71"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 71"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 71"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 71"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 71"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 72"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 72"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 72"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 72"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 72"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 72"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 73"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 73"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 73"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 73"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 73"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 73"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 74"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 74"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 74"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 74"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 74"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 74"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 75"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 75"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 75"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 75"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 75"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 75"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 76"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 76"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 76"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 76"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 76"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 76"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 77"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 77"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 77"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 77"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 77"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 77"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 78"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 78"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 78"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 78"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 78"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 78"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 79"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 79"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 79"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 79"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 79"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 79"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 80"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 80"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 80"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 80"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 80"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 80"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 81"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 81"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 81"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 81"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 81"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 81"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 82"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 82"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 82"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 82"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 82"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 82"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 83"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 83"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 83"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 83"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 83"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 83"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 84"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 84"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 84"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 84"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 84"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 84"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 85"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 85"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 85"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 85"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 85"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 85"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 86"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 86"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 86"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 86"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 86"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 86"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 88"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 88"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 88"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 88"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 88"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 88"/>
+
+    <EccEntry Ecc="184110" Category="1" Condition="1" Plmn="440 89"/>
+    <EccEntry Ecc="184118" Category="8" Condition="1" Plmn="440 89"/>
+    <EccEntry Ecc="184119" Category="6" Condition="1" Plmn="440 89"/>
+    <EccEntry Ecc="186110" Category="1" Condition="1" Plmn="440 89"/>
+    <EccEntry Ecc="186118" Category="8" Condition="1" Plmn="440 89"/>
+    <EccEntry Ecc="186119" Category="6" Condition="1" Plmn="440 89"/>
+
+    <!-- Add for Japan operator due to AOSP don't set correct category -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="118" Category="8" Condition="1" Plmn="440 FFF"/>
+    <EccEntry Ecc="119" Category="6" Condition="1" Plmn="440 FFF"/>
+
+    <!-- Add for Korea operator xiaomi -->
+    <EccEntry Ecc="111" Category="7" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="113" Category="3" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="117" Category="18" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="118" Category="19" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="125" Category="9" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="911" Category="4" Condition="1" Plmn="450 FFF"/>
+    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="450 FFF"/>
+    <!-- Add for Korea operator xiaomi -->
+
+    <!-- Add for Vietnam due to AOSP eccdata will treat it as ecc  xiaomi-->
+    <EccEntry Ecc="113" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="114" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="112" Category="16" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="113" Category="1" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="114" Category="4" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="115" Category="2" Condition="1" Plmn="452 02"/>
+    <!-- Add for Vietnam due to AOSP eccdata will treat it as ecc  xiaomi-->
+
+    <!-- Add 999 for HongKong xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="454 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="454 FFF"/>
+
+    <!-- Add for CT 2/3G network -->
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="120" Category="0" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="460 03"/>
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 03"/>
+
+    <!-- Add for CT VOLTE requirement -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="460 11"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="460 11"/>
+    <EccEntry Ecc="120" Category="2" Condition="1" Plmn="460 11"/>
+    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="460 11"/>
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 11"/>
+
+    <!-- China CTA emergency numbers for GSM operators -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="460 FFF"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="460 FFF"/>
+    <!-- Support dial 999 under G+N/A case because CT network don't support
+         dial 999 without no CT SIM
+    -->
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
+
+    <!-- 从73755的配置中拿出来的，有卡配了这些号码  xiaomi-->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="08" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn="460 FFF"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="460 FFF"/>
+    <!-- 从73755的配置中拿出来的，有卡配了这些号码  xiaomi-->
+
+    <!--xiaomi Ireland-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="272 FFF"/>
+    <!--xiaomi Ireland-->
+
+    <!-- Add for Taiwan FET operator (466 01/02/03) -->
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 01"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 01"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 02"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 02"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 03"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 03"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 03"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 03"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 03"/>
+
+    <!-- Add for Taiwan APTG operator (466 05/12) -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 05"/>
+    <EccEntry Ecc="112" Category="4" Condition="1" Plmn="466 05"/>
+    <EccEntry Ecc="119" Category="2" Condition="1" Plmn="466 05"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 05"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="112" Category="4" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="119" Category="2" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 12"/>
+
+    <!-- Add for Taiwan T star operator (466 89) -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 89"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="466 89"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 89"/>
+
+    <!-- Add for Taiwan CHT operator (466 92) -->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 92"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="466 92"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 92"/>
+
+    <!-- Add for Taiwan TWM operator (466 93/97/99) -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 93"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 93"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 97"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 97"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 99"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 99"/>
+    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="466 99"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 99"/>
+
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="466 FFF"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 FFF"/>
+
+    <!-- Add for Nigeria -->
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 20"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 50"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 60"/>
+
+    <!-- Add for Malaysis Digi operator xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="502 FFF"/>
+    <EccEntry Ecc="999" Category="1" Condition="1" Plmn="502 153"/>
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="502 153"/>
+    <EccEntry Ecc="991" Category="0" Condition="1" Plmn="502 19"/>
+    <EccEntry Ecc="994" Category="0" Condition="1" Plmn="502 19"/>
+
+    <!-- Add for Malaysis Digi operator xiaomi-->
+
+    <!-- Add for macan operator xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="993" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="120" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="455 FFF"/>
+    <!-- Add for macan operator xiaomi-->
+
+    <!-- Fix NO SIM ECC call end delay issue xiaomi-->
+    <EccEntry Ecc="000" Category="31" Condition="1" Plmn="505 01"/>
+    <!-- Add for All Australia operators xiaomi-->
+    <EccEntry Ecc="000" Category="0" Condition="1" Plmn="505 FFF"/>
+    <!-- Add for All Australia operators xiaomi-->
+
+    <!-- Add for Thailand operator xiaomi-->
+    <EccEntry Ecc="191" Category="0" Condition="2" Plmn = "520 FFF" />
+    <EccEntry Ecc="1669" Category="0" Condition="2" Plmn = "520 FFF" />
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn = "520 FFF" />
+    <!-- Add for Thailand operator xiaomi-->
+
+    <!-- xiaomi add being -->
+     <!-- Add for Greece operator xiaomi-->
+    <EccEntry Ecc="100" Category="1" Condition="2" Plmn = "202 FFF" />
+    <EccEntry Ecc="166" Category="2" Condition="2" Plmn = "202 FFF" />
+    <EccEntry Ecc="199" Category="4" Condition="2" Plmn = "202 FFF" />
+
+    <!-- Add for Czech Republic operator xiaomi-->
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "230 01" />
+    <EccEntry Ecc="155" Category="0" Condition="2" Plmn = "230 01" />
+    <EccEntry Ecc="158" Category="0" Condition="2" Plmn = "230 01" />
+
+    <!-- Add for United Kingdom operator xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "234 FFF" />
+    <!-- Add for United Kingdom operator xiaomi-->
+
+    <!-- Add for austria operator xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "232 FFF" />
+    <!--A1-->
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "232 01" />
+    <EccEntry Ecc="133" Category="0" Condition="2" Plmn = "232 01" />
+    <EccEntry Ecc="144" Category="0" Condition="2" Plmn = "232 01" />
+    <EccEntry Ecc="140" Category="0" Condition="2" Plmn = "232 01" />
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "232 02" />
+    <EccEntry Ecc="133" Category="0" Condition="2" Plmn = "232 02" />
+    <EccEntry Ecc="144" Category="0" Condition="2" Plmn = "232 02" />
+    <EccEntry Ecc="140" Category="0" Condition="2" Plmn = "232 02" />
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "232 11" />
+    <EccEntry Ecc="133" Category="0" Condition="2" Plmn = "232 11" />
+    <EccEntry Ecc="144" Category="0" Condition="2" Plmn = "232 11" />
+    <EccEntry Ecc="140" Category="0" Condition="2" Plmn = "232 11" />
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn = "232 12" />
+    <EccEntry Ecc="133" Category="0" Condition="2" Plmn = "232 12" />
+    <EccEntry Ecc="144" Category="0" Condition="2" Plmn = "232 12" />
+    <EccEntry Ecc="140" Category="0" Condition="2" Plmn = "232 12" />
+    <!-- Add for austria operator xiaomi-->
+
+    <!-- Add for United States operator -->
+    <EccEntry Ecc="*911" Category="0" Condition="1" Plmn = "310 FFF" />
+    <EccEntry Ecc="#911" Category="0" Condition="1" Plmn = "310 FFF" />
+
+    <!-- Add for slovakia operator xiaomi-->
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "231 01" />
+    <EccEntry Ecc="155" Category="0" Condition="2" Plmn = "231 01" />
+    <EccEntry Ecc="158" Category="0" Condition="2" Plmn = "231 01" />
+
+    <EccEntry Ecc="150" Category="0" Condition="5" Plmn = "231 03" />
+    <EccEntry Ecc="155" Category="0" Condition="5" Plmn = "231 03" />
+    <EccEntry Ecc="158" Category="0" Condition="5" Plmn = "231 03" />
+    <EccEntry Ecc="159" Category="0" Condition="5" Plmn = "231 03" />
+
+    <EccEntry Ecc="150" Category="0" Condition="5" Plmn = "231 06" />
+    <EccEntry Ecc="155" Category="0" Condition="5" Plmn = "231 06" />
+    <EccEntry Ecc="158" Category="0" Condition="5" Plmn = "231 06" />
+    <!-- Add for slovakia operator xiaomi-->
+
+    <!-- Add for latvia operator xiaomi-->
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "247 01" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "247 01" />
+    <!-- Add for latvia operator xiaomi-->
+
+    <!-- Add for bulgaria operator xiaomi-->
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "284 03" />
+    <EccEntry Ecc="160" Category="0" Condition="2" Plmn = "284 03" />
+    <EccEntry Ecc="166" Category="0" Condition="2" Plmn = "284 03" />
+    <EccEntry Ecc="150" Category="0" Condition="2" Plmn = "284 01" />
+    <EccEntry Ecc="160" Category="0" Condition="2" Plmn = "284 01" />
+    <EccEntry Ecc="166" Category="0" Condition="2" Plmn = "284 01" />
+    <!-- Add for bulgaria operator xiaomi-->
+
+    <!-- Add for moldova operator xiaomi-->
+    <EccEntry Ecc="901" Category="0" Condition="2" Plmn = "259 FFF" />
+    <EccEntry Ecc="902" Category="0" Condition="2" Plmn = "259 FFF" />
+    <EccEntry Ecc="903" Category="0" Condition="2" Plmn = "259 FFF" />
+    <!-- Add for moldova operator xiaomi-->
+
+    <!-- Add for norway operator xiaomi-->
+    <EccEntry Ecc="110" Category="4" Condition="1" Plmn = "242 FFF" />
+    <EccEntry Ecc="113" Category="2" Condition="1" Plmn = "242 FFF" />
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn = "242 FFF" />
+    <!-- Add for norway operator xiaomi-->
+
+    <!-- Add for afghanistan operator xiaomi-->
+    <EccEntry Ecc="119" Category="1" Condition="1" Plmn = "412 FFF" />
+    <EccEntry Ecc="102" Category="2" Condition="1" Plmn = "412 FFF" />
+    <EccEntry Ecc="100" Category="4" Condition="1" Plmn = "412 FFF" />
+    <EccEntry Ecc="101" Category="4" Condition="1" Plmn = "412 FFF" />
+    <!-- Add for afghanistan operator xiaomi-->
+
+    <!-- Add for slovenia operator xiaomi-->
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="1987" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116000" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116123" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116111" Category="0" Condition="1" Plmn = "293 40" />
+
+    <EccEntry Ecc="113" Category="0" Condition="5" Plmn = "293 70" />
+    <!-- Add for slovenia operator xiaomi-->
+
+    <!-- Add for Palestine operator xiaomi-->
+    <EccEntry Ecc="100" Category="0" Condition="2" Plmn = "425 FFF" />
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn = "425 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn = "425 FFF" />
+    <EccEntry Ecc="1221" Category="0" Condition="2" Plmn = "425 FFF" />
+
+    <!-- Add for tunisia operator xiaomi-->
+    <EccEntry Ecc="190" Category="0" Condition="2" Plmn = "605 FFF" />
+    <EccEntry Ecc="193" Category="0" Condition="2" Plmn = "605 FFF" />
+    <EccEntry Ecc="197" Category="0" Condition="2" Plmn = "605 FFF" />
+    <EccEntry Ecc="198" Category="0" Condition="2" Plmn = "605 FFF" />
+
+    <!--add Egypt xiaomi -->
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn = "602 FFF" />
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="180" Category="0" Condition="2" Plmn = "602 FFF" />
+    <EccEntry Ecc="126" Category="0" Condition="2" Plmn = "602 FFF" />
+    <!--add Egypt xiaomi -->
+
+    <!--add Salvador xiaomi -->
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn = "706 FFF" />
+    <EccEntry Ecc="133" Category="0" Condition="1" Plmn = "706 FFF" />
+    <!--add Salvador xiaomi -->
+
+    <!--add Paraguay xiaomi -->
+    <EccEntry Ecc="128" Category="1" Condition="1" Plmn = "744 FFF" />
+    <!--add Paraguay xiaomi -->
+
+    <!--add jordan xiaomi -->
+    <EccEntry Ecc="199" Category="0" Condition="1" Plmn = "416 FFF" />
+    <!--add jordan xiaomi -->
+
+    <!--add turkey xiaomi -->
+    <EccEntry Ecc="155" Category="1" Condition="2" Plmn = "286 FFF" />
+    <EccEntry Ecc="110" Category="4" Condition="2" Plmn = "286 FFF" />
+    <!--add turkey xiaomi -->
+
+    <!--add UAE xiaomi -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "424 FFF" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="996" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="991" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="992" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="901" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="909" Category="0" Condition="2" Plmn = "424 FFF" />
+    <EccEntry Ecc="116111" Category="0" Condition="2" Plmn = "424 FFF" />
+    <!--add UAE xiaomi -->
+
+    <!--add saudiarabia xiaomi -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "420 FFF" />
+    <EccEntry Ecc="998" Category="0" Condition="1" Plmn = "420 FFF" />
+    <EccEntry Ecc="997" Category="0" Condition="1" Plmn = "420 FFF" />
+    <EccEntry Ecc="993" Category="0" Condition="1" Plmn = "420 FFF" />
+    <!--add saudiarabia xiaomi -->
+
+    <!--add saudiarabia xiaomi -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "427 FFF" />
+    <EccEntry Ecc="135" Category="0" Condition="1" Plmn = "427 FFF" />
+    <!--add saudiarabia xiaomi -->
+
+    <!--add Cyprus xiaomi -->
+    <EccEntry Ecc="199" Category="0" Condition="1" Plmn = "280 FFF" />
+    <!--add Cyprus xiaomi -->
+
+    <!--add kenya xiaomi -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "639 FFF" />
+    <!--add kenya xiaomi -->
+
+    <!--add oman xiaomi -->
+    <EccEntry Ecc="9999" Category="0" Condition="2" Plmn = "422 FFF" />
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "422 FFF" />
+    <!--add oman xiaomi -->
+
+    <!--add ukraine xiaomi -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn = "255 06" />
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn = "255 06" />
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn = "255 06" />
+    <!--add ukraine xiaomi -->
+
+    <!--add YL xiaomi -->
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn = "432 FFF" />
+    <EccEntry Ecc="115" Category="2" Condition="2" Plmn = "432 FFF" />
+    <EccEntry Ecc="125" Category="4" Condition="2" Plmn = "432 FFF" />
+    <!--add YL xiaomi -->
+
+    <!--add pakistan xiaomi -->
+    <EccEntry Ecc="15" Category="0" Condition="5" Plmn = "410 FFF" />
+    <EccEntry Ecc="1122" Category="0" Condition="5" Plmn = "410 FFF" />
+    <EccEntry Ecc="115" Category="0" Condition="5" Plmn = "410 FFF" />
+    <EccEntry Ecc="130" Category="0" Condition="5" Plmn = "410 FFF" />
+    <EccEntry Ecc="16" Category="0" Condition="5" Plmn = "410 FFF" />
+    <EccEntry Ecc="114" Category="0" Condition="5" Plmn = "410 FFF" />
+    <!--add pakistan xiaomi -->
+
+    <!--add morocco xiaomi -->
+    <EccEntry Ecc="15" Category="0" Condition="2" Plmn = "604 FFF" />
+    <EccEntry Ecc="19" Category="0" Condition="2" Plmn = "604 FFF" />
+    <EccEntry Ecc="177" Category="0" Condition="2" Plmn = "604 FFF" />
+    <!--add morocco xiaomi -->
+
+    <!--add belarus xiaomi -->
+    <EccEntry Ecc="101" Category="4" Condition="1" Plmn = "257 01" />
+    <EccEntry Ecc="102" Category="1" Condition="1" Plmn = "257 01" />
+    <EccEntry Ecc="103" Category="2" Condition="1" Plmn = "257 01" />
+    <EccEntry Ecc="104" Category="8" Condition="1" Plmn = "257 01" />
+    <!--add belarus xiaomi -->
+
+    <!--add Bahrain xiaomi -->
+    <EccEntry Ecc="991" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="992" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="993" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="994" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="995" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="996" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "426 FFF" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "426 FFF" />
+    <!--add Bahrain xiaomi -->
+
+    <!--add Honduras xiaomi -->
+    <EccEntry Ecc="100" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="111" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="116" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="195" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="198" Category="0" Condition="1" Plmn = "708 FFF" />
+    <EccEntry Ecc="199" Category="0" Condition="1" Plmn = "708 FFF" />
+    <!--add Honduras xiaomi -->
+
+
+    <!-- Add for Cambodia operator xiaomi-->
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn = "456 FFF" />
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn = "456 FFF" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "456 FFF" />
+
+    <!-- Add for Laos operator -->
+    <EccEntry Ecc="1191" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1190" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1195" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1199" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1196" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1168" Category="0" Condition="2" Plmn = "457 FFF" />
+
+    <!-- Add for Bangladesh operator -->
+    <EccEntry Ecc="100" Category="0" Condition="1" Plmn = "470 FFF" />
+    <EccEntry Ecc="101" Category="0" Condition="1" Plmn = "470 FFF" />
+    <EccEntry Ecc="102" Category="0" Condition="1" Plmn = "470 FFF" />
+    <EccEntry Ecc="108" Category="0" Condition="1" Plmn = "470 FFF" />
+
+    <!-- Add for Indonesia operator xiaomi  根据需求给印尼修改紧急号码配置-->
+    <!-- Add for Indonesia Telkomsel operator -->
+    <EccEntry Ecc="113" Category="4" Condition="1" Plmn = "510 10" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 10" />
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn = "510 10" />
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 10" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 10" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 10" />
+
+    <!-- Add for Indonesia Smartfren operator -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 09" />
+    <EccEntry Ecc="113" Category="4" Condition="1" Plmn = "510 09" />
+    <EccEntry Ecc="118" Category="2" Condition="1" Plmn = "510 09" />
+    <EccEntry Ecc="115" Category="8" Condition="1" Plmn = "510 09" />
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 28" />
+    <EccEntry Ecc="113" Category="4" Condition="1" Plmn = "510 28" />
+    <EccEntry Ecc="118" Category="2" Condition="1" Plmn = "510 28" />
+    <EccEntry Ecc="115" Category="8" Condition="1" Plmn = "510 28" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 09" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 09" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 28" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 28" /> 
+
+    <!-- Add for Indonesia Indosat operator -->
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn = "510 01" />
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 01" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 01" />
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "510 01" />
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 01" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 01" />
+
+    <!-- Add for Indonesia xl operator -->
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn = "510 11" />
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 11" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 11" />
+    <EccEntry Ecc="115" Category="0" Condition="1" Plmn = "510 11" />
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn = "510 11" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 11" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 11" />
+    <!-- Add for Indonesia operator xiaomi  根据需求给印尼修改紧急号码配置-->
+
+    <!-- Add for Brazil operator xiaomi -->
+    <EccEntry Ecc="190" Category="0" Condition="1" Plmn = "724 FFF" />
+    <!-- Add for Brazil operator xiaomi -->
+
+    <!-- Add for Colombia operator xiaomi-->
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn = "732 111" />
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn = "732 103" />
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn = "732 165" />
+    <EccEntry Ecc="123" Category="0" Condition="1" Plmn = "732 123" />
+    <EccEntry Ecc="123" Category="2" Condition="1" Plmn = "732 130" />
+    <EccEntry Ecc="123" Category="2" Condition="1" Plmn = "732 360" />
+    <!-- Add for Colombia operator xiaomi-->
+
+    <!-- Add for Singapore operator xiaomi-->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "525 03" />
+    <EccEntry Ecc="999" Category="1" Condition="1" Plmn = "525 05" />
+    <EccEntry Ecc="999" Category="31" Condition="1" Plmn = "525 01" />
+
+    <!-- Add for Chile operator xiaomi-->
+    <EccEntry Ecc="133" Category="0" Condition="1" Plmn = "730 FFF" />
+    <EccEntry Ecc="133" Category="1" Condition="1" Plmn = "730 03" />
+    <!-- Add for Chile operator xiaomi-->
+
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "852 FFF" />
+
+    <!-- Peru operator xiaomi-->
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 10" />
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 06" />
+    <!-- Peru operator xiaomi-->
+
+    <!-- Bolivia operator xiaomi-->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "736 FFF" />
+    <!-- Bolivia operator xiaomi-->
+	 <!-- Add for Hungary operator xiaomi-->
+    <EccEntry Ecc="104" Category="31" Condition="3" Plmn = "216 70" />
+    <EccEntry Ecc="105" Category="31" Condition="3" Plmn = "216 70" />
+    <EccEntry Ecc="107" Category="31" Condition="3" Plmn = "216 70" />
+    <!-- Add for Hungary operator xiaomi-->
+
+    <!-- Add for Claro operator wt-->
+    <EccEntry Ecc="110" Category="0" Condition="5" Plmn = "704 01" />
+    <EccEntry Ecc="119" Category="0" Condition="5" Plmn = "704 01" />
+    <EccEntry Ecc="122" Category="0" Condition="5" Plmn = "704 01" />
+    <EccEntry Ecc="123" Category="0" Condition="5" Plmn = "704 01" />
+    <EccEntry Ecc="125" Category="0" Condition="5" Plmn = "704 01" />
+    <EccEntry Ecc="128" Category="0" Condition="5" Plmn = "704 01" />
+    <!-- Add for Claro operator wt-->
+</EccTable>
