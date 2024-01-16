@@ -3156,6 +3156,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     IFAAService \
+    QcomSoterService \
     com.android.hotwordenrollment.common.util \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.ir-service.example \

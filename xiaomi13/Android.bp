@@ -95,6 +95,17 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "QcomSoterService",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/QcomSoterService/QcomSoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "xiaomi",
