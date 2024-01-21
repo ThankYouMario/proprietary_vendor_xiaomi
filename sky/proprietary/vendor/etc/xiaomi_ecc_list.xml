@@ -262,30 +262,6 @@
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="454 FFF"/>
     <EccEntry Ecc="110" Category="0" Condition="1" Plmn="454 FFF"/>
 
-    <!-- Add for CT 2/3G network -->
-    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="120" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 03"/>
-
-    <!-- Add for CT VOLTE requirement -->
-    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="120" Category="2" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 11"/>
-
-    <!-- China CTA emergency numbers for GSM operators -->
-    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="460 FFF"/>
-    <!-- Support dial 999 under G+N/A case because CT network don't support
-         dial 999 without no CT SIM
-    -->
-    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
-
     <!-- 从73755的配置中拿出来的，有卡配了这些号码  xiaomi-->
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="000" Category="0" Condition="1" Plmn="460 FFF"/>
@@ -354,9 +330,7 @@
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 FFF"/>
 
     <!-- Add for Nigeria -->
-    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 20"/>
-    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 50"/>
-    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 60"/>
+    <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 FFF"/>
 
     <!-- Add for Malaysis Digi operator xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="502 FFF"/>
