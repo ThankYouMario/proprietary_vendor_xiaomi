@@ -1907,7 +1907,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
@@ -1958,10 +1957,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
@@ -2089,18 +2086,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/LUT0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT0.txt \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/LUT1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT1.txt \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/LUT2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT2.txt \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/displayconfig/display_layout_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_layout_configuration.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
@@ -2150,7 +2138,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
@@ -2161,7 +2148,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
@@ -2544,7 +2530,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libaudiochargerlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiochargerlistener.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libaudiocloudctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocloudctrl.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libbacklight-calib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbacklight-calib.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
@@ -2568,9 +2553,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libclstc_algorithm_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_algorithm_adapter.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libclstc_gcp_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_gcp_adapter.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libclstc_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_tm.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -2585,19 +2567,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.qti.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplayfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeature.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeatureservice.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbpreg.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyottcameracontrol.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libdrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmutils.so \
@@ -2620,7 +2597,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libfcsam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcsam.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmpal.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
@@ -2630,17 +2606,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libgpt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpt.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhalide_hexagon_host.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdr_hbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_hbm.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhdrvivid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvivid.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libhta_hexagon_runtime_snpe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime_snpe.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libintervmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libintervmipc.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
@@ -2681,7 +2653,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmemutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemutils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmi-stc-HW-modulate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmi-stc-HW-modulate.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmiam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiam.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libmicuttlefish_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmicuttlefish_fs.so \
@@ -2771,13 +2742,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqcrildataaidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildataaidl.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqcrildataqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildataqos.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdcm-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-algo.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdcm-json-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-json-mode-parser.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdcm-mode-parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdcm-mode-parser.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk2_0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk_manager.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
@@ -2797,7 +2764,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqnnengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqnnengine.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqrtrclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtrclient.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
@@ -2817,7 +2783,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_ov9282_hvx_tuning.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
@@ -2837,7 +2802,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdmcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmcore.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsdmdal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmdal.so \
@@ -2852,8 +2816,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsn220u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn220u_fw.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsnapdragoncolor-manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-manager.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsnapdragoncolor-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-qdcm.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndcardparser.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsnpe_config.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_config.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsns_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_api.so \
@@ -2881,16 +2843,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsys_info_cache.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libtestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtestutils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtracker_6dof_impl.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideotxr.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvmfilexfer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmfilexfer.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmmem.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/libvppcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppcommon.so \
@@ -2964,15 +2923,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.6.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.color@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.7.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmctmgr.so \
@@ -3044,7 +2994,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qconfig@1.0.so \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/xiaomi/xiaomi13/proprietary/vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qxr-V1-ndk.so \
