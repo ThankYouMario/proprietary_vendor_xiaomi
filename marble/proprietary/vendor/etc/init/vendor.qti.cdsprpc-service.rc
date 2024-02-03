@@ -35,6 +35,28 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    class main
    user system
    group system
+   disabled
+
+on boot && property:ro.boot.product.vendor.sku=taro
+   start vendor.cdsprpcd
+
+on boot && property:ro.boot.product.vendor.sku=diwali
+   start vendor.cdsprpcd
+
+on boot && property:ro.boot.product.vendor.sku=parrot
+   start vendor.cdsprpcd
+
+on boot && property:ro.boot.product.vendor.sku=cape
+   start vendor.cdsprpcd
+
+on boot && property:ro.boot.product.vendor.sku=ukee
+   start vendor.cdsprpcd
+
+on boot && property:ro.product.device=sm6150
+   start vendor.cdsprpcd
+
+on boot && property:ro.product.device=anorak
+   start vendor.cdsprpcd
 
 on property:vendor.fastrpc.disable.cdsprpcd.daemon=1
    stop vendor.cdsprpcd

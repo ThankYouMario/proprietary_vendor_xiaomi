@@ -125,6 +125,15 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "AHBF@2.1-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/AHBF@2.1-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "android.hardware.security.keymint-service-qti-rkp",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml",
@@ -254,6 +263,15 @@ prebuilt_etc_xml {
 	name: "vendor.xiaomi.hardware.quickcamera@1.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hw.touchfeature@1.0-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

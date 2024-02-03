@@ -31,3 +31,7 @@ service vendor.audioadsprpcd_audiopd /vendor/bin/audioadsprpcd audiopd
    class main
    user media
    group media
+
+# Start audio adsp rpc deamon at early init stage
+on early-init
+    start vendor.audioadsprpcd_audiopd

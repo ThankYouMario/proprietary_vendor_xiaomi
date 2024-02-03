@@ -68,7 +68,6 @@ on charger
     write /config/usb_gadget/g1/configs/b.1/MaxPower 900
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.usb.sh
     write /config/usb_gadget/g1/strings/0x409/product ${vendor.usb.product_string}
-    setprop sys.usb.config mass_storage
     setprop sys.usb.configfs 1
 
 on post-fs
@@ -168,6 +167,19 @@ on property:persist.vendor.usb.config=* && property:vendor.usb.use_gadget_hal=0
 on boot && property:ro.boot.usbconfigfs=true
         setprop sys.usb.configfs 1
 
+on property:dev.bootcomplete=1 && property:ro.product.device=yudi
+    setprop vendor.usb.rndis.func.name "rndis"
+    setprop vendor.usb.rmnet.func.name "rmnet"
+    write /config/usb_gadget/g1/functions/rndis.rndis/class e0
+    write /config/usb_gadget/g1/functions/rndis.rndis/subclass 1
+    write /config/usb_gadget/g1/functions/rndis.rndis/protocol 3
+
+on property:dev.bootcomplete=1 && property:ro.product.device=liuqin
+    setprop vendor.usb.rndis.func.name "rndis"
+    setprop vendor.usb.rmnet.func.name "rmnet"
+    write /config/usb_gadget/g1/functions/rndis.rndis/class e0
+    write /config/usb_gadget/g1/functions/rndis.rndis/subclass 1
+    write /config/usb_gadget/g1/functions/rndis.rndis/protocol 3
 #
 # USB compositions
 #

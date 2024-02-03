@@ -104,3 +104,4 @@ recv: 1
 dup: 1
 process_vm_readv: 1
 rt_tgsigqueueinfo: 1
+sysinfo: 1

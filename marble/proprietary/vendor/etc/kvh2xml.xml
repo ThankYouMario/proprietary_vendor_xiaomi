@@ -244,6 +244,11 @@
       <VALUE val="0x1" name="LeftSpeaker"/>
       <VALUE val="0x2" name="StereoSpeaker"/>
     </KEY>
+    <KEY name="SP_Profile" id="0xfa000007" description="SpkrProtProfile">
+      <VALUE val="0x0" name="Normal"/>
+      <VALUE val="0x1" name="Voice"/>
+      <VALUE val="0x2" name="Bypass"/>
+    </KEY>
     <KEY name="RAS_Switch" id="0xd0000000" description="RAS_Switch">
       <VALUE val="0x0" name="Off"/>
       <VALUE val="0x1" name="On"/>
@@ -382,6 +387,7 @@
     <KEY id="0xbe000000" name="SP_Dev_Map"/>
     <KEY id="0xd0000000" name="RAS_Switch"/>
     <KEY id="0xbf000000" name="SP_VI_Map"/>
+    <KEY id="0xfa000007" name="SP_Profile"/>
   </CAL_KEY>
   <MODULE_TAGS>
     <TAG id="0xc0000004" name="device_hw_ep_rx" description="Hw EP Rx">
@@ -526,5 +532,6 @@
     <TAG id="0xc0001014" name="misound_hph_earcomp_bandgains_l"/>
     <TAG id="0xc0001015" name="misound_hph_earcomp_bandgains_r"/>
     <TAG id="0xc0001044" name="misound_karaoke_vocal_reserved1"/>
+    <TAG id="0xc000340" name="miec_speaker_direction"/>
   </MODULE_TAGS>
 </KEY_DEF>

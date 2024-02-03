@@ -133,7 +133,7 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a "$(getprop ro.build.type)" 
 	              "sdm845" | "sdm710")
 		          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,adb
 		      ;;
-	              "msmnile" | "sm6150" | "trinket" | "lito" | "atoll" | "bengal" | "lahaina" | "holi" | "taro" | "parrot")
+	              "msmnile" | "sm6150" | "trinket" | "lito" | "atoll" | "bengal" | "lahaina" | "holi" | "taro" | "parrot" | "ravelin")
 			  setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,qdss,adb
 		      ;;
 	              *)
@@ -220,3 +220,14 @@ esac
 if [ -d /config/usb_gadget/g1/functions/uvc.0 ]; then
 	setprop vendor.usb.uvc.function.init 1
 fi
+
+# enable ncm
+case "$target" in
+"neo" | "anorak")
+	if [ -d /config/usb_gadget/g1/functions/ncm.0 ]; then
+		cd /config/usb_gadget/g1/functions/ncm.0
+
+		echo WINNCM > os_desc/interface.ncm/compatible_id
+	fi
+    ;;
+esac

@@ -726,6 +726,14 @@
                 <name>PAL_STREAM_VOICE_CALL</name>
                 <priority>1</priority>
             </usecase>
+            <usecase>
+                <name>PAL_STREAM_COMPRESSED</name>
+                <bit_width>24</bit_width>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_PCM_OFFLOAD</name>
+                <bit_width>24</bit_width>
+            </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_AUX_DIGITAL_1</id>

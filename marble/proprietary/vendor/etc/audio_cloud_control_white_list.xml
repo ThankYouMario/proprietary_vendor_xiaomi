@@ -41,11 +41,18 @@
         <com.miui.screenrecorder/>
         <com.quicinc.voice.activation/>
         <com.whatsapp/>
+        <com.skype.raider/>
+        <com.skype.rover/>
+        <com.xiaomi.aiasst.vision/>
+        <com.android.incallui/>
+        <com.iflytek.inputmethod.miui/>
+        <com.baidu.input_mi/>
+        <com.sohu.inputmethod.sogou.xiaomi/>
+        <com.miui.securitycenter/>
+        <com.ss.android.lark.kami/>
+        <com.ss.android.lark/>
     </record_unsilence_app_name_list>
-    <property_int_list>
-    </property_int_list>
-    <property_bool_list>
+    <property_list>
         <persist.vendor.audio.misoundasc>false</persist.vendor.audio.misoundasc>
-    </property_bool_list>
+    </property_list>
 </audio_cloud_control>
-

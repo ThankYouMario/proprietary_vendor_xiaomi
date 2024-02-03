@@ -16,12 +16,21 @@ if [ "$soc_id" -eq 457 ] || [ "$soc_id" -eq 482 ] || [ "$soc_id" -eq 552 ]; then
     setprop ro.vendor.qti.soc_name taro
     setprop ro.vendor.qti.soc_model SM8450
     setprop ro.vendor.media_performance_class 31
-elif [ "$soc_id" -eq 537 ]; then
+elif [ "$soc_id" -eq 537 ] || [ "$soc_id" -eq 583 ]; then
     setprop ro.vendor.qti.soc_name parrot
     setprop ro.vendor.qti.soc_model SM6450
-elif [ "$soc_id" -eq 568 ]; then
+elif [ "$soc_id" -eq 613 ]; then
+    setprop ro.vendor.qti.soc_name parrot
+    setprop ro.vendor.qti.soc_model SM7435
+elif [ "$soc_id" -eq 568 ] || [ "$soc_id" -eq 602 ]; then
     setprop ro.vendor.qti.soc_name ravelin
     setprop ro.vendor.qti.soc_model SM4450
+elif [ "$soc_id" -eq 581 ]; then
+    setprop ro.vendor.qti.soc_name ravelin
+    setprop ro.vendor.qti.soc_model QCM4450
+elif [ "$soc_id" -eq 582 ]; then
+    setprop ro.vendor.qti.soc_name ravelin
+    setprop ro.vendor.qti.soc_model QCS4450
 elif [ "$soc_id" -eq 506 ] || [ "$soc_id" -eq 547 ] || [ "$soc_id" -eq 564 ]; then
     setprop ro.vendor.qti.soc_name diwali
     setprop ro.vendor.qti.soc_model SM7450
@@ -31,7 +40,9 @@ elif [ "$soc_id" -eq 591 ]; then
 elif [ "$soc_id" -eq 530 ] || [ "$soc_id" -eq 531 ] || [ "$soc_id" -eq 540 ]; then
     setprop ro.vendor.qti.soc_name cape
     setprop ro.vendor.qti.soc_model SM8475
+if [ -z "$(getprop ro.vendor.audio.video.pc.disable)"]; then
     setprop ro.vendor.media_performance_class 31
+fi
 elif [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 456 ] ||
    [ "$soc_id" -eq 501 ] || [ "$soc_id" -eq 502 ]; then
     setprop ro.vendor.qti.soc_name lahaina

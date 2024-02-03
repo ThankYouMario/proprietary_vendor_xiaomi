@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
-
+<!-- MIUI ADD: Adapt_MIUIAdaptFrame-->
 <displayConfiguration>
     <!-- Global Brightness-Nit mapping -->
     <screenBrightnessMap>
@@ -52,3 +52,4 @@
     <ambientLightHorizonLong>3000</ambientLightHorizonLong>
     <ambientLightHorizonShort>1000</ambientLightHorizonShort>
 </displayConfiguration>
+<!-- END Adapt_MIUIAdaptFrame-->
