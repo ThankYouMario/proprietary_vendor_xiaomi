@@ -1879,6 +1879,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/xiaomi/xiaomi13/proprietary/vendor/bin/battery_stats:$(TARGET_COPY_OUT_VENDOR)/bin/battery_stats \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
@@ -2149,6 +2150,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
+    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
