@@ -1948,7 +1948,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/mmid:$(TARGET_COPY_OUT_VENDOR)/bin/mmid \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/modemManager:$(TARGET_COPY_OUT_VENDOR)/bin/modemManager \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
     vendor/xiaomi/xiaomi13/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
@@ -2206,7 +2205,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
-    vendor/xiaomi/xiaomi13/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/xiaomi13/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
