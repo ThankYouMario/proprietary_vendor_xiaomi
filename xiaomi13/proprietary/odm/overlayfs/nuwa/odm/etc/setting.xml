@@ -131,7 +131,7 @@
 
         <!-- cclassvideo-->
         <scenario id="701" defined="0 0 98 99 0 0 0 99 99 2 2" name="cclassvideo" />
-        <scenario id="751" defined="0 0 98 99 0 0 0 98 99 2 2" name="per-cclassvideo" />
+        <scenario id="751" defined="0 0 98 99 0 0 0 98 99 2 2" name="cclassvideo" />
     </scenarios>
 
     <processors>
