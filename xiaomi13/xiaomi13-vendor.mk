@@ -3099,7 +3099,6 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
-    IFAAService \
     QcomSoterService \
     com.android.hotwordenrollment.common.util \
     android.hardware.gnss-aidl-service-qti \
