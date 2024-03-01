@@ -1772,6 +1772,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi13/proprietary/odm/overlayfs/nuwa/odm/lib64/libxmi_slow_motion_triger.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/libxmi_slow_motion_triger.so \
     vendor/xiaomi/xiaomi13/proprietary/odm/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_ODM)/lib64/nfc_nci.nqx.default.hw.so \
     vendor/xiaomi/xiaomi13/proprietary/odm/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_ODM)/lib64/sensors.touch.detect.so \
+    vendor/xiaomi/xiaomi13/proprietary/odm/overlayfs/nuwa/odm/lib64/subwaystate.hal.so:$(TARGET_COPY_OUT_ODM)/overlayfs/nuwa/odm/lib64/subwaystate.hal.so \
     vendor/xiaomi/xiaomi13/proprietary/odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.hardware.camera.aon-service-impl.so \
     vendor/xiaomi/xiaomi13/proprietary/odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/xiaomi/xiaomi13/proprietary/odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so \
