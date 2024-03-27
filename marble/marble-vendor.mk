@@ -674,6 +674,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/miLut_7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_7.txt \
     vendor/xiaomi/marble/proprietary/vendor/etc/miLut_8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_8.txt \
     vendor/xiaomi/marble/proprietary/vendor/etc/miLut_9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_9.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_0.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_1.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_2.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_3.txt \
     vendor/xiaomi/marble/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/xiaomi/marble/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -1868,7 +1872,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
-    IFAAService \
     IWlanService \
     SoterService \
     TimeService \
