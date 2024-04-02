@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/xiaomi/sky/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/sky/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/xiaomi/sky/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/xiaomi/sky/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
     vendor/xiaomi/sky/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/xiaomi/sky/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
@@ -206,6 +207,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
+    vendor/xiaomi/sky/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
@@ -245,6 +247,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/vendor.wlan.lowirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.wlan.lowirpcd.rc \
+    vendor/xiaomi/sky/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -760,6 +763,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
@@ -896,6 +900,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libgoodixhwfingerprint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixhwfingerprint.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libgrpc++_unsecure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrpc++_unsecure.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgui_vendor.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libhdr10plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plus.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libhme.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhme.so \
@@ -1008,7 +1013,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqcrildataqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildataqos.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
-    vendor/xiaomi/sky/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libqesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk.so \
@@ -1198,6 +1202,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.1.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
