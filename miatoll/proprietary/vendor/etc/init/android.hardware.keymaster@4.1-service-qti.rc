@@ -1,7 +1,14 @@
 on init
-    start keymaster-4-0
+    start vendor.keymaster-4-1
 
-service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
+on property:vendor.keymaster.quickboot=true
+   stop vendor.keymaster-4-1
+   start vendor.keymaster-4-1
+   stop keystore
+   start keystore
+   start wait_for_keymaster
+
+service vendor.keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
     class early_hal
     user system
     group system drmrpc

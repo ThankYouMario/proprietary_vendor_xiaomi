@@ -1,3 +1,6 @@
+on boot
+    mkdir /dev/socket/qcrild 0750 radio radio
+
 service vendor.qcrild /vendor/bin/hw/qcrild
     class main
     user radio
