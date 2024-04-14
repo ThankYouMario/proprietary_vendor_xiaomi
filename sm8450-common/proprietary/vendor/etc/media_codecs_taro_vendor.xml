@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<MediaCodecs>
+    <Include href="media_codecs_system_default.xml" />
+    <Include href="media_codecs_dolby_audio.xml" />
+    <Include href="media_codecs_with_dolby_taro.xml" />
+    <Include href="media_codecs_with_dolby_diwali.xml" />
+    <Include href="media_codecs_with_dolby_cape.xml" />
+</MediaCodecs>

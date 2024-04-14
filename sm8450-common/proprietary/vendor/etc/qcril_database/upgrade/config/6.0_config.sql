@@ -161,7 +161,7 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.subaddr_amp", "true");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.reject_cause_21", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.subaddr_ia5_id", "false");
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.redir_party_num", "true");
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.redir_party_num", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.call_type", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.facnotsup_as_nonw", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.autoanswer.ms", "0");
