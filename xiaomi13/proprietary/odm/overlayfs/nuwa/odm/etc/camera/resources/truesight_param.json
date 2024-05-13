@@ -1,0 +1,61 @@
+{
+	"##note": "配置规则: ",
+	"##note1": "1.某一配置项如果不存在, 则使用代码中的默认值. 如: 没有配置EffectParams::preview, 则预览模式下, 所有效果参数使用代码中的默认值",
+	"##note2": "2.某一配置项如果存在, 则使用配置项下配置的各属性值. 对于配置项支持但没有配置的属性, 使用代码中的默认值",
+	"##note3": "3.某一配置项如果不存在, 但存在default项目项, 则使用default配置项. 如: EffectParams::capture下未配置OtherFront, 则使用default配置项",
+
+	"TrueSight": "",
+	"BrandModel": "xiaomi_m2",
+	"CaptureDefaultEffectPath": "render/Effect/effect_mode_clear.json",
+	"PreviewDefaultEffectPath": "render/Effect/effect_mode_clear.json",
+	"EffectGLSLPath": "render/glsl/",
+	"FactorConfig":
+	{
+		"##": "磨皮程度系数",
+		"Retouch":
+		[
+			{
+				"##": "普通(拍照)模式",
+				"Type": 0,
+				"Iso": [   99, 100, 399, 400, 1199, 1200, 3199, 3200],
+				"Factor":[1.0, 0.8, 0.8, 0.6,  0.6,  0.4,  0.4,  0.2]
+			},
+			{
+				"##": "视频模式",
+				"Type": 1,
+				"Iso": [  299, 300, 799, 800, 1199, 1200],
+				"Factor":[1.0, 0.8, 0.8, 0.5,  0.5, 0.2]
+			}
+		],
+		"##": "环境光系数",
+		"EnvLight":
+		[
+			{
+				"##": "普通(自动)模式",
+				"Type": 0,
+				"LuxArray": [0, 110, 160, 260, 300, 360, 400, 999],
+				"FaceShadowPerc":0.1,
+				"K":0.3,
+				"HighThreshold":[60, 60, 85, 85, 60, 60, 60, 60],
+				"LowThreshold":[30, 30, 35, 35, 30, 30, 30, 30],
+				"Step":[0.04, 0.04, 0.02, 0.02, 0.04, 0.04, 0.04, 0.04],
+				"FaceShadowThreshold":140,
+				"MinFactor":0.2,
+				"MaxFactor":[1.0, 1.0, 1.0, 1.0, 0.6, 0.6, 0.2, 0.2]
+			},
+			{
+				"##": "妆容模式",
+				"Type": 1,
+				"LuxArray": [0, 110, 160, 260, 300, 360, 400, 999],
+				"FaceShadowPerc":0.1,
+				"K":0.3,
+				"HighThreshold":[130, 130, 130, 130, 130, 130, 130, 130],
+				"LowThreshold":[30, 30, 30, 30, 30, 30, 30, 30],
+				"Step":[0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01],
+				"FaceShadowThreshold":140,
+				"MinFactor":0.3,
+				"MaxFactor":[1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.5, 0.5]
+			}
+		]
+	}
+}
