@@ -1,0 +1,16 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/1_ModeNative/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/1_ModeNative/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"Type":"Effect",
+	"RetouchFactorType": 0,
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/1_SkinSmoothNative/effect_preview.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"FaceRetouchEngine":
+			{
+				"Enable":false
+			}
+		},
+		{
+			"ConfigurePath":"Effects/1_SkinSmoothNative/effect_capture.json",
+			"Index":6,
+			"Mode":"Capture"
+		}
+	]
+}

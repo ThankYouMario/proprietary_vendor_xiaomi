@@ -1,0 +1,12 @@
+{
+	"Type":"Effect",
+	"RetouchFactorType": 1,
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/4_Hessian/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		}
+	]
+}

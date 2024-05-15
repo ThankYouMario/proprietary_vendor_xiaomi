@@ -1,0 +1,23 @@
+{
+	"Type":"Category",
+	"ForVideo": true,
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_light.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"40_FaceStereo/mode_classical.json",
+			"Index":40
+		},
+		{
+			"ConfigurePath":"60_Makeup/mode_classical.json",
+			"Index":60
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_video.json",
+			"Index":70
+		}
+	]
+}

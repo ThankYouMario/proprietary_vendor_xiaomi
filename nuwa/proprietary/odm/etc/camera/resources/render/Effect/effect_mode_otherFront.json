@@ -1,0 +1,18 @@
+{
+	"Type":"Category",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"15_DLRetouch/mode_native.json",
+			"Index":15
+		},
+		{
+			"ConfigurePath":"20_FaceRetouch/mode_native.json",
+			"Index":20
+		},
+		{
+			"ConfigurePath":"70_FacialRefine/mode_other_front.json",
+			"Index":70
+		}
+	]
+}
