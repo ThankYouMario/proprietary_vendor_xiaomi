@@ -1,0 +1,28 @@
+{
+    "version": 1.0,
+    "product": "ishtar",
+    "hook_activities": [
+        "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+        "com.alipay.mobile.scan.as.main.MainCaptureActivity",
+        "com.alipay.mobile.scan.as.tool.ToolsCaptureActivity",
+        "com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity",
+        "com.xunmeng.pinduoduo.activity.NewPageActivity",
+        "com.etao.feimagesearch.capture.CaptureActivity",
+        "com.taobao.taobao.scancode.gateway.activity.ScancodeGatewayActivity",
+        "com.zhihu.android.qrscanner.ui.ScannerActivity",
+        "com.tencent.mobileqq.qrscan.activity.ScannerActivity",
+        "com.tencent.mobileqq.olympic.activity.ScanTorchActivity",
+        "com.baidu.searchbox.CodeScannerActivity",
+        "com.yxcorp.plugin.qrcode.api.QRCodeScanActivity",
+        "com.jd.lib.scan.lib.zxing.client.android.CaptureActivity",
+        "com.meituan.android.scan.ScanQRInMeituanActivity",
+        "com.meituan.android.bike.component.feature.qrcode.view.QRCodeScannerByMBarActivity",
+        "me.ele.scan.ui.ScanMainActivity",
+        "com.weibo.international.activity.scan.ScanWebActivity",
+        "com.sina.weibo.qrcode.CaptureActivity",
+        "com.bilibili.app.qrcode.QRcodeCaptureActivity",
+        "com.xingin.matrix.v2.redscanner.scanner.QrCodeScannerActivityV2",
+        "com.tencent.qqlive.qrcode.ui.ScanQRCustomActivity",
+        "com.qiyi.scan.ARWrapperActivity"
+    ]
+}

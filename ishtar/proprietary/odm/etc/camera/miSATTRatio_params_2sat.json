@@ -1,0 +1,29 @@
+{
+  "/": "Calib parameters",
+  "StructF1": {
+    "paramMXF": 1.0,
+    "paramMIF": 0.7,
+    "paramMDF": 1.0,
+    "paramSDF": 0.5,
+    "paramFP": 1.5,
+    "paramFR": 1.95
+  },
+
+  "StructF2": {
+    "paramMXF": 2000,
+    "paramMIF": 1500,
+    "paramMDF": 2000,
+    "paramSDF": 1.0,
+    "paramFP": 1.5,
+    "paramFR": 2.6
+  },
+
+  "StructF3": {
+    "paramMXF": 2000,
+    "paramMIF": 1500,
+    "paramMDF": 2000,
+    "paramSDF": 1000,
+    "paramFP": 1.5,
+    "paramFR": 2.2
+  }
+}

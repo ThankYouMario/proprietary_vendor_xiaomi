@@ -1,0 +1,118 @@
+<setting>
+    <elements>
+        <listener name="ForegroundGroup" />
+        <listener name="TopActivity" />
+        <listener name="Screen" />
+        <listener name="Call" />
+        <listener name="Camera" />
+        <listener name="FloatWindow" />
+        <listener name="SpecialForeground" />
+        <listener name="PowerMode" />
+        <listener name="IEC" />
+    </elements>
+
+    <scenarios>
+        <scenario id="0" defined="0 0 0 0 0 0 0 0 0" name="normal" />
+        <scenario id="1" defined="1 0 98 99 0 0 0 0 99" name="huanji" />
+        <scenario id="5" defined="0 0 0 98 0 0 0 0 99" name="phone" />
+        <scenario id="6" defined="4 0 98 99 0 0 0 0 99" name="nolimits" />
+        <scenario id="7" defined="5 0 98 99 0 0 0 99 99" name="class0" />
+        <scenario id="7" defined="15 0 98 99 0 0 0 0 99" name="class0~videochatOrCamera" />
+        <scenario id="9" defined="9 0 98 99 0 0 0 0 99" name="arvr" />
+        <scenario id="10" defined="11 0 98 99 0 0 0 99 99" name="navigation" />
+        <scenario id="11" defined="13 0 98 99 0 0 0 99 99" name="video" />
+        <scenario id="12" defined="14 0 98 99 0 0 0 0 99" name="demo" />
+        <scenario id="14" defined="15 0 98 99 98 0 0 0 99" name="videochatOrCamera" />
+        <scenario id="15" defined="7 0 98 99 0 0 0 0 99" name="camera" />
+        <scenario id="15" defined="0 1 98 99 98 0 0 0 99" name="camera" />
+        <scenario id="15" defined="0 0 98 99 3 0 0 0 99" name="camera~nightVideo" />
+        <scenario id="16" defined="0 0 98 99 1 0 0 0 99" name="4K" />
+        <scenario id="17" defined="0 0 98 99 2 0 0 0 99" name="8K" />
+        <scenario id="19" defined="3 0 98 99 0 0 0 99 99" name="game" />
+        <scenario id="19" defined="6 0 98 99 0 0 0 99 99" name="pubg" />
+        <scenario id="19" defined="10 0 98 99 0 0 0 99 99" name="game2" />
+        <scenario id="19" defined="16 0 98 99 0 0 0 99 99" name="optiGame" />
+        <scenario id="19" defined="12 0 98 99 0 0 0 99 99" name="yuanshen" />
+
+        <scenario id="50" defined="0 0 0 0 0 0 0 98 0" name="per-normal" />
+        <scenario id="51" defined="1 0 98 99 0 0 0 98 99" name="huanji" />
+        <scenario id="55" defined="0 0 0 98 0 0 0 98 99" name="phone" />
+        <scenario id="56" defined="4 0 98 99 0 0 0 98 99" name="nolimits" />
+        <scenario id="57" defined="5 0 98 99 0 0 0 98 99" name="per-class0" />
+        <scenario id="57" defined="15 0 98 99 0 0 0 98 99" name="class0~videochatOrCamera" />
+        <scenario id="59" defined="9 0 98 99 0 0 0 98 99" name="arvr" />
+        <scenario id="60" defined="11 0 98 99 0 0 0 98 99" name="navigation" />
+        <scenario id="61" defined="13 0 98 99 0 0 0 98 99" name="per-video" />
+        <scenario id="62" defined="14 0 98 99 0 0 0 98 99" name="demo" />
+        <scenario id="64" defined="15 0 98 99 98 0 0 98 99" name="videochatOrCamera" />
+        <scenario id="65" defined="7 0 98 99 0 0 0 98 99" name="camera" />
+        <scenario id="65" defined="0 1 98 99 98 0 0 98 99" name="camera" />
+        <scenario id="65" defined="0 0 98 99 3 0 0 98 99" name="camera~nightVideo" />
+        <scenario id="66" defined="0 0 98 99 1 0 0 98 99" name="4K" />
+        <scenario id="67" defined="0 0 98 99 2 0 0 98 99" name="8K" />
+        <scenario id="69" defined="3 0 98 99 0 0 0 98 99" name="tgame" />
+        <scenario id="69" defined="6 0 98 99 0 0 0 98 99" name="tgame~per-pubg" />
+        <scenario id="69" defined="10 0 98 99 0 0 0 98 99" name="tgame~per-game2" />
+        <scenario id="69" defined="16 0 98 99 0 0 0 98 99" name="tgame~per-optiGame" />
+        <scenario id="69" defined="12 0 98 99 0 0 0 98 99" name="tgame~per-yuanshen" />
+
+        <!-- IEC48 -->
+        <scenario id="200" defined="0 0 0 0 0 0 0 0 1" name="iec-normal" />
+        <scenario id="201" defined="1 0 98 99 0 0 0 0 1" name="iec-huanji" />
+        <scenario id="202" defined="2 0 98 99 0 0 0 99 1" name="iec-abnormal" />
+        <scenario id="205" defined="0 0 0 98 0 0 0 0 1" name="iec-phone" />
+        <scenario id="206" defined="4 0 98 99 0 0 0 0 1" name="iec-noimits" />
+        <scenario id="207" defined="5 0 98 99 0 0 0 99 1" name="iec-class0" />
+        <scenario id="208" defined="8 0 98 99 0 0 0 99 1" name="iec-youtube" />
+        <scenario id="209" defined="9 0 98 99 0 0 0 0 1" name="iec-arvr" />
+        <scenario id="210" defined="11 0 98 99 0 0 0 99 1" name="iec-navigation" />
+        <scenario id="211" defined="13 0 98 99 0 0 0 99 1" name="iec-video" />
+        <scenario id="212" defined="14 0 98 99 0 0 0 0 1" name="iec-demo" />
+        <scenario id="214" defined="15 0 98 99 98 0 0 0 1" name="iec-videochatOrCamera" />
+        <scenario id="215" defined="7 0 98 99 99 0 0 0 1" name="iec-camera" />
+        <scenario id="215" defined="0 1 98 99 98 0 0 0 1" name="iec-camera" />
+        <scenario id="215" defined="0 0 98 99 3 0 0 0 1" name="iec-camera ~nightVideo" />
+        <scenario id="216" defined="0 0 98 99 1 0 0 0 1" name="iec-4K" />
+        <scenario id="217" defined="0 0 98 99 2 0 0 0 1" name="iec-8K" />
+        <scenario id="219" defined="3 0 98 99 0 0 0 99 1" name="iec-game" />
+        <scenario id="219" defined="6 0 98 99 0 0 0 99 1" name="iec-pubg" />
+        <scenario id="219" defined="10 0 98 99 0 0 0 99 1" name="iec-game2" />
+        <scenario id="219" defined="16 0 98 99 0 0 0 99 1" name="iec-optiGame" />
+        <scenario id="219" defined="12 0 98 99 0 0 0 99 1" name="iec-yuanshen" />
+
+        <scenario id="250" defined="0 0 0 0 0 0 0 0 1" name="iec-per-normal" />
+        <scenario id="252" defined="2 0 98 99 0 0 0 98 1" name="iec-per-abnormal" />
+        <scenario id="257" defined="5 0 98 99 0 0 0 98 1" name="iec-per-class0" />
+        <scenario id="258" defined="8 0 98 99 0 0 0 98 1" name="iec-per-youtube" />
+        <scenario id="260" defined="11 0 98 99 0 0 0 98 1" name="iec-per-navigation" />
+        <scenario id="261" defined="13 0 98 99 0 0 0 98 1" name="iec-per-video" />
+        <scenario id="218" defined="3 0 98 99 0 0 0 98 1" name="iec-per-game" />
+        <scenario id="218" defined="6 0 98 99 0 0 0 98 1" name="iec-per-pubg" />
+        <scenario id="218" defined="10 0 98 99 0 0 0 98 1" name="iec-per-game2" />
+        <scenario id="218" defined="16 0 98 99 0 0 0 98 1" name="iec-per-optiGame" />
+        <scenario id="218" defined="12 0 98 99 0 0 0 98 1" name="iec-per-yuanshen" />
+
+        <!-- IEC test -->
+        <scenario id="500" defined="0 0 0 0 0 0 0 0 98" name="hp-normal" />
+        <scenario id="501" defined="3 0 98 99 0 0 0 0 98" name="hp-game" />
+        <scenario id="501" defined="6 0 98 99 0 0 0 0 98" name="hp-game" />
+        <scenario id="501" defined="10 0 98 99 0 0 0 0 98" name="hp-game" />
+        <scenario id="501" defined="16 0 98 99 0 0 0 0 98" name="hp-game" />
+
+        <scenario id="700" defined="0 0 98 99 0 1 1 0 99" name="cgame" />
+        <scenario id="701" defined="0 0 98 99 0 2 2 0 99" name="cclassvideo" />
+    </scenarios>
+
+    <processors>
+        <processor name="Switch">
+            <group name="need_map" content="14 19 51 55 56 59 60 62 64 65 66 67 69" />
+            <group name="game" content="19 69" />
+            <group name="yuanshen" content="19 69" />
+            <group name="camera" content="14" />
+            <group name="unperfromance" content="51 55 56 59 60 62 64 65 66 67" />
+        </processor>
+        <processor name="Game">
+            <group name="tgame" content="19 69" />
+        </processor>
+    </processors>
+</setting>

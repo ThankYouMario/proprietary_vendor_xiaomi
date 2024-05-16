@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf8"?>
+<VideoStabilizer>
+    <!--
+        ultrazoom_thd         : "引入图像配准辅助防抖阈值"
+        is_fixed_num_frame    : "判断是否为稳定模式所使用的帧数"                        
+        is_fixed_th_low       : "进入稳定模式的阈值,越小越难进入稳定模式" 
+        is_fixed_th_high      : "跳出稳定模式的阈值,越小越容易跳出稳定模式,Range(0,]"   
+        barrier_fix_scale     : "降低这个值微调模式就会变敏感"                          
+        barrier_follow_scale  : "降低这个值跟随模式就会变敏感"                          
+        coeff_trans_to_fix    : "切换到稳定模式的速度,增加此值会加快切换速度" 
+        coeff_trans_to_follow : "切换到跟随模式的速度,增加此值会加快切换速度" 
+    -->
+    <UltrazoomEIS>
+        <ultrazoom_thd              type="double"   default="20"                        >20.0</ultrazoom_thd>
+
+        <zoom_ratio value="1.0">
+             <is_fixed_num_frame     type="int"      range="[1, 100]"    default="16"    >24</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   range="[0, 1.0]"    default="0.0080">0.004</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   range="[0, 1.0]"    default="0.0320">0.008</is_fixed_th_high>
+            <barrier_fix_scale      type="double"   range="[0, 1.0]"    default="0.1200">0.06</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   range="[0, 1.0]"    default="1.0000">0.1</barrier_fix_offset>
+            <barrier_follow_scale   type="double"   range="[0, 1.0]"    default="0.1200">0</barrier_follow_scale>
+            <barrier_follow_power   type="double"                       default="2.0000">0</barrier_follow_power>
+            <coeff_trans_to_fix     type="double"   range="[0, 1.0]"    default="0.1000">0.02</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_follow>
+            <coeff_averaging        type="double"                       default="0.5000">1</coeff_averaging>
+            <coeff_stab_roll_fix    type="double"                       default="0.0625">0.0625</coeff_stab_roll_fix>
+        </zoom_ratio>
+
+         <zoom_ratio value="15.0">
+             <is_fixed_num_frame     type="int"      range="[1, 100]"    default="16"    >24</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   range="[0, 1.0]"    default="0.0080">0.004</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   range="[0, 1.0]"    default="0.0320">0.016</is_fixed_th_high>
+            <barrier_fix_scale      type="double"   range="[0, 1.0]"    default="0.1200">0.08</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   range="[0, 1.0]"    default="1.0000">0.05</barrier_fix_offset>
+            <barrier_follow_scale   type="double"   range="[0, 1.0]"    default="0.1200">0</barrier_follow_scale>
+            <barrier_follow_power   type="double"                       default="2.0000">0</barrier_follow_power>
+            <coeff_trans_to_fix     type="double"   range="[0, 1.0]"    default="0.1000">0.02</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_follow>
+            <coeff_averaging        type="double"                       default="0.5000">1</coeff_averaging>
+            <coeff_stab_roll_fix    type="double"                       default="0.0625">0.0625</coeff_stab_roll_fix>
+        </zoom_ratio>
+
+        <zoom_ratio value="20.0">
+            <is_fixed_num_frame     type="int"      range="[1, 100]"    default="16"    >24</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   range="[0, 1.0]"    default="0.0080">0.002</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   range="[0, 1.0]"    default="0.0320">0.016</is_fixed_th_high>
+            <barrier_fix_scale      type="double"   range="[0, 1.0]"    default="0.1200">0.16</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   range="[0, 1.0]"    default="1.0000">0.1</barrier_fix_offset>
+            <barrier_follow_scale   type="double"   range="[0, 1.0]"    default="0.1200">0.06</barrier_follow_scale>
+            <coeff_trans_to_fix     type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_follow>
+        </zoom_ratio>
+
+        <zoom_ratio value="30.0">
+            <is_fixed_num_frame     type="int"      range="[1, 100]"    default="16"    >24</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   range="[0, 1.0]"    default="0.0080">0.002</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   range="[0, 1.0]"    default="0.0320">0.016</is_fixed_th_high>
+            <barrier_fix_scale      type="double"   range="[0, 1.0]"    default="0.1200">0.24</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   range="[0, 1.0]"    default="1.0000">0.30</barrier_fix_offset>
+            <barrier_follow_scale   type="double"   range="[0, 1.0]"    default="0.1200">0.24</barrier_follow_scale>
+            <coeff_trans_to_fix     type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_follow>
+        </zoom_ratio>
+
+        <zoom_ratio value="50.0">
+            <is_fixed_num_frame     type="int"      range="[1, 100]"    default="16"    >16</is_fixed_num_frame>
+            <is_fixed_th_low        type="double"   range="[0, 1.0]"    default="0.0080">0.002</is_fixed_th_low>
+            <is_fixed_th_high       type="double"   range="[0, 1.0]"    default="0.0320">0.032</is_fixed_th_high>
+            <barrier_fix_scale      type="double"   range="[0, 1.0]"    default="0.1200">0.12</barrier_fix_scale>
+            <barrier_fix_offset     type="double"   range="[0, 1.0]"    default="1.0000">0.2</barrier_fix_offset>
+            <barrier_follow_scale   type="double"   range="[0, 1.0]"    default="0.1200">0.24</barrier_follow_scale>
+            <coeff_trans_to_fix     type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_fix>
+            <coeff_trans_to_follow  type="double"   range="[0, 1.0]"    default="0.1000">0.1</coeff_trans_to_follow>
+        </zoom_ratio>
+    </UltrazoomEIS>
+</VideoStabilizer>
