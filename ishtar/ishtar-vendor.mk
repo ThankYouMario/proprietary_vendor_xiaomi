@@ -580,6 +580,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ishtar/proprietary/odm/etc/display/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.json \
     vendor/xiaomi/ishtar/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
     vendor/xiaomi/ishtar/proprietary/odm/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby_vision.cfg \
+    vendor/xiaomi/ishtar/proprietary/odm/etc/init/init.vl53l5.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.vl53l5.rc \
     vendor/xiaomi/ishtar/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/ishtar/proprietary/odm/etc/mdss_dsi_m1_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_m1_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/ishtar/proprietary/odm/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak991x_dri_0.json \
@@ -1053,6 +1054,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ishtar/proprietary/odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.hardware.camera.aon-service-impl.so \
     vendor/xiaomi/ishtar/proprietary/odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/xiaomi/ishtar/proprietary/odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so \
+    vendor/xiaomi/ishtar/proprietary/odm/lib64/vl53l5.core.so:$(TARGET_COPY_OUT_ODM)/lib64/vl53l5.core.so \
+    vendor/xiaomi/ishtar/proprietary/odm/lib64/vl53l5.hal@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vl53l5.hal@1.0.so \
+    vendor/xiaomi/ishtar/proprietary/odm/lib64/vl53l5.hal@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vl53l5.hal@2.0.so \
     vendor/xiaomi/ishtar/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n29.bin \
     vendor/xiaomi/ishtar/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n30.bin \
     vendor/xiaomi/ishtar/proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/bm3a68v08s11n35.bin \
