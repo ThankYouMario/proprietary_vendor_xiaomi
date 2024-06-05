@@ -1,3 +1,7 @@
+# Ignore device blobs if they are to big and have to be split during extraction
+vermeer/proprietary/odm/etc/camera/aivsModel_6C06C006
+vermeer/proprietary/odm/lib64/libmialgo_aisn.so
+
 # Ignore Xiaomi Camera repo
 /camera/
 /firmware/

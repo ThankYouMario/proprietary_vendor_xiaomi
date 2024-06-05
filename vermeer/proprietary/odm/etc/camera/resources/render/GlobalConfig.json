@@ -1,0 +1,41 @@
+{
+  "MaxStashFaceCount":3,
+  "ChildAgeThreshold":-1,
+  "SmallFaceRatioRange":[5, 10],
+  "IsNeedFixEnvLightForMakeup":false,
+    "ShelterOptions":
+    {
+        "LipPart":
+        {
+            "Enable":true,
+            "PointThreshold":7,
+            "AvgVisThreshold":0.0,
+            "VisThreshold":0.8,
+            "FrameCount":1
+        },
+        "NormalLipPart":
+        {
+            "Enable":true,
+            "PointThreshold":15,
+            "AvgVisThreshold":0.0,
+            "VisThreshold":0.8,
+            "FrameCount":6
+        },
+        "EyePart":
+        {
+            "Enable":true,
+            "PointThreshold":8,
+            "AvgVisThreshold":0.3,
+            "VisThreshold":0.85,
+            "FrameCount":1
+        },
+        "EyePupilPart":
+        {
+            "Enable":true
+        },
+        "BigAnglePart":
+        {
+            "Enable":true
+        }
+    }
+}

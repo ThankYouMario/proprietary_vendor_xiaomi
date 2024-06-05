@@ -1,0 +1,37 @@
+{
+    "PipelineName": "miuicamerayuv2jpeg",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "JpegInstance0"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+          {
+              "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SourceBuffer"
+              },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "JpegInstance0",
+                  "PortFormat": "YUV420_NV12"
+              }
+          },
+          {
+              "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "JpegInstance0",
+                  "PortFormat": "BLOB"
+              },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SinkBuffer"
+              }
+          }
+        ]
+    }
+}

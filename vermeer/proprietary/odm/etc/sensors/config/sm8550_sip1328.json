@@ -1,0 +1,140 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "QRD"],
+    "soc_id": ["519", "536"]
+  },
+  "sip1328":{
+    "owner": "sns_sip1328",
+    ".als":{
+      "owner": "sns_sip1328",
+      ".config":{
+        "owner": "sns_sip1328",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "sip1328_platform":{
+    "owner": "sns_sip1328",
+    ".config":{
+      "owner": "sns_sip1328",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "91"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "35"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "4"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_sip1328",
+      ".fac_cal":{
+        "owner": "sns_sip1328",
+        "scale":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        }
+      },
+      ".fac_cal_original":{
+        "owner": "sns_tsl2522",
+        "scale":{ "type": "flt", "ver": "1",
+          "data": "1.0"}
+      }
+
+    },
+    ".coefficient":{
+      "owner": "sns_sip1328",
+      "0":{ "type": "flt", "ver": "1",
+        "data": "49.6236703"
+      },
+      "1":{ "type": "flt", "ver": "1",
+        "data": "45.25406747"
+      },
+      "2":{ "type": "flt", "ver": "1",
+        "data": "46.32764108"
+      },
+      "3":{ "type": "flt", "ver": "1",
+        "data": "41.29328436"
+      },
+      "4":{ "type": "flt", "ver": "1",
+        "data": "49.032"
+      },
+      "5":{ "type": "flt", "ver": "1",
+        "data": "5.247"
+      },
+      "6":{ "type": "flt", "ver": "1",
+        "data": "2.474"
+      },
+      "7":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "12":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      },
+      "13":{ "type": "flt", "ver": "1",
+        "data": "0.0"
+      }
+    }
+  }
+}
+
