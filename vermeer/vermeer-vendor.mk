@@ -101,8 +101,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
-    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden2:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden2 \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/config_para_madrid.yaml:$(TARGET_COPY_OUT_ODM)/etc/camera/config_para_madrid.yaml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/config_para_normal.yaml:$(TARGET_COPY_OUT_ODM)/etc/camera/config_para_normal.yaml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/camera/deblur_txt_dsp.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_dsp.dlc \
@@ -1022,6 +1022,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_ODM)/lib64/libremosaiclib.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/librfs_warp.so:$(TARGET_COPY_OUT_ODM)/lib64/librfs_warp.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_ODM)/lib64/libsfeShiftExtrapolation.so \
+    vendor/xiaomi/vermeer/proprietary/odm/lib64/libssccalapi@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libssccalapi@2.0.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/libsupermoon.so:$(TARGET_COPY_OUT_ODM)/lib64/libsupermoon.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_ODM)/lib64/libswregistrationalgo.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/libtfestriping.so:$(TARGET_COPY_OUT_ODM)/lib64/libtfestriping.so \

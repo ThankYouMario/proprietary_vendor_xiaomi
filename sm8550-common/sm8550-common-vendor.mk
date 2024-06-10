@@ -113,7 +113,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsdr2hdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsdr2hdr.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsensor_cal@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_cal@2.0.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libsre.so:$(TARGET_COPY_OUT_ODM)/lib64/libsre.so \
-    vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libssccalapi@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libssccalapi@2.0.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libtida@1.2.so:$(TARGET_COPY_OUT_ODM)/lib64/libtida@1.2.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libtruetone.so:$(TARGET_COPY_OUT_ODM)/lib64/libtruetone.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/libvideomode.so:$(TARGET_COPY_OUT_ODM)/lib64/libvideomode.so \

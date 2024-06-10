@@ -985,6 +985,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libremosaic_wrapper.so \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_ODM)/lib64/libremosaiclib.so \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libsfeShiftExtrapolation.so:$(TARGET_COPY_OUT_ODM)/lib64/libsfeShiftExtrapolation.so \
+    vendor/xiaomi/nuwa/proprietary/odm/lib64/libssccalapi@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/libssccalapi@2.0.so \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libsupermoon.so:$(TARGET_COPY_OUT_ODM)/lib64/libsupermoon.so \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_ODM)/lib64/libswregistrationalgo.so \
     vendor/xiaomi/nuwa/proprietary/odm/lib64/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib64/libtensorflowlite_c.so \
