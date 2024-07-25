@@ -656,6 +656,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_firmware_vermeer.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_vermeer.bin \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_ODM)/firmware/goodix_test_limits_255.csv \
     vendor/xiaomi/vermeer/proprietary/odm/firmware/vermeer_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/vermeer_thp_config.ini \
+    vendor/xiaomi/vermeer/proprietary/odm/lib/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/lib/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/lib/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib/rfsa/adsp/libaisupernight_ellc_cdsp_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaisupernight_ellc_cdsp_skel.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib/rfsa/adsp/libmialgo_ai_process_cdsp_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libmialgo_ai_process_cdsp_skel.so \
@@ -689,8 +692,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_aac_ov16a1q_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_aac_ov16a1q_front.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_aac_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_aac_ovx8000_wide_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i.bin \
+    vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/components/com.bots.node.vendortagwrite.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.bots.node.vendortagwrite.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/components/com.jigan.node.videobokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.jigan.node.videobokeh.so \
     vendor/xiaomi/vermeer/proprietary/odm/lib64/camera/components/com.mi.node.aiasd.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.mi.node.aiasd.so \
