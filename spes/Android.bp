@@ -29,7 +29,7 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -41,7 +41,7 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
