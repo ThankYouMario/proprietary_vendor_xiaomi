@@ -28,6 +28,9 @@ on early-init && property:ro.boot.boardid=S88029AA1 && property:persist.radio.mu
     setprop ro.boot.product.hardware.sku hcesim
     setprop ro.vendor.se.type HCE,UICC
 
+on early-init && property:ro.product.model=A401XM
+    setprop ro.vendor.nfc.wallet_fusion 0
+
 on early-init && property:ro.product.device=river
     setprop persist.vendor.nfc.factory.fwstatus unknown
     setprop ro.vendor.nfc.repair 1

@@ -681,6 +681,7 @@
     <!-- Peru operator xiaomi-->
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 10" />
     <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 06" />
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn = "716 17" />
     <!-- Peru operator xiaomi-->
 
     <!-- Bolivia operator xiaomi-->

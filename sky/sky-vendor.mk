@@ -187,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/sky/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_m19_36_02_0a_fhd_dsc_video_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_m19_36_02_0a_fhd_dsc_video_dsi_panel.json \
     vendor/xiaomi/sky/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_m19_42_03_0b_fhd_dsc_video_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_m19_42_03_0b_fhd_dsc_video_dsi_panel.json \
     vendor/xiaomi/sky/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
@@ -381,20 +382,65 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sky/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-camera-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-camera-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-camera-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-chg-only-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-chg-only-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-chg-only-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-class0-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-class0-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-class0-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-mgame-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-mgame-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-mgame-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-normal-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-normal-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-normal-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-map-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-map-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-map-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-mgame-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-mgame-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-mgame-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-navigation-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-navigation-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-navigation-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-nolimits-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-nolimits-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-nolimits-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-normal-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-normal-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-normal-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-phone-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-phone-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-phone-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-region-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-region-map.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-tgame-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-tgame-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-tgame-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-update-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-update-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-update.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-update.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-video-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-video-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-video-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat-global.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat-global.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat-india.conf \
+    vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
