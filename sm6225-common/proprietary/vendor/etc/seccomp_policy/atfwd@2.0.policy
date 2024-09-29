@@ -65,3 +65,4 @@ set_tid_address: 1
 connect: 1
 ppoll: 1
 clock_gettime: 1
+gettid: 1
