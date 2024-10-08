@@ -1,0 +1,589 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["519", "536"]
+  },
+  "tcs3720_fb":{
+    "owner": "sns_tcs3720_fb",
+    ".prox":{
+      "owner": "sns_tcs3720_fb",
+      ".config":{
+        "owner": "sns_tcs3720_fb",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3720_fb",
+      ".config":{
+        "owner": "sns_tcs3720_fb",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "tcs3720_fb_platform":{
+    "owner": "sns_tcs3720_fb",
+    ".config":{
+      "owner": "sns_tcs3720_fb",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "4"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "16"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3720_fb",
+      ".fac_cal":{
+        "owner": "sns_tcs3720_fb",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "120.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "80.0"
+        }
+      },
+      ".fac_cal_original":{
+        "owner": "sns_tcs3720_fb",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "120.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "80.0"
+        }
+      },
+      ".fac_cal_1":{
+        "owner": "sns_tcs3720_fb",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "800.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "400.0"
+        }
+      },
+      ".hw_cal":{
+        "owner": "sns_tcs3720_fb",
+        "p_offset":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_crosstalk":{ "type": "flt", "ver": "0",
+          "data": "50.0"
+        },
+        "p_ore_en":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_ore_val":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      },
+      ".def_thr":{
+        "owner": "sns_tcs3720_fb",
+        "p_fac_near":{ "type": "flt", "ver": "0",
+          "data": "150.0"
+        },
+        "p_fac_far":{ "type": "flt", "ver": "0",
+          "data": "90.0"
+        },
+        "p_fac_base":{ "type": "flt", "ver": "0",
+          "data": "50.0"
+        }
+      },
+      ".def_config":{
+        "owner": "sns_tcs3720_fb",
+        "p_apc_en":{ "type": "flt", "ver": "1",
+          "data": "0.0"
+        },
+        "p_time_us":{ "type": "flt", "ver": "0",
+          "data": "2816"
+        },
+        "p_wtime_ms":{ "type": "flt", "ver": "3",
+          "data": "50.0"
+        },
+        "p_pulse_len":{ "type": "flt", "ver": "1",
+          "data": "64.0"
+        },
+        "p_pulse":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "p_gain":{ "type": "flt", "ver": "1",
+          "data": "3.0"
+        },
+        "p_gain2":{ "type": "flt", "ver": "1",
+          "data": "3.0"
+        },
+        "p_Isink0":{ "type": "flt", "ver": "1",
+          "data": "14.0"
+        },
+        "p_Isink1":{ "type": "flt", "ver": "1",
+          "data": "14.0"
+        },
+        "p_Isink2":{ "type": "flt", "ver": "0",
+          "data": "10.0"
+        },
+        "p_pers":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "p_avg":{ "type": "flt", "ver": "1",
+          "data": "1.0"
+        },
+        "p_vsync_en":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "p_sync_delay_us_0":{ "type": "flt", "ver": "1",
+          "data": "5900.0"
+        },
+        "p_sync_delay_us_1":{ "type": "flt", "ver": "1",
+          "data": "9890.0"
+        },
+        "p_sync_delay_us_2":{ "type": "flt", "ver": "1",
+          "data": "8000.0"
+        },
+        "p_offset_cal_target_0":{ "type": "flt", "ver": "1",
+          "data": "50.0"
+        },
+        "p_offset_cal_target_1":{ "type": "flt", "ver": "1",
+          "data": "50.0"
+        },
+        "p_offset_cal_thres":{ "type": "flt", "ver": "0",
+          "data": "200.0"
+        },
+        "p_ambcomp_lvl":{ "type": "flt", "ver": "0",
+          "data": "7.0"
+        },
+        "p_iptat":{ "type": "flt", "ver": "0",
+          "data": "22.0"
+        },
+        "prox_algo_type":{ "type": "int", "ver": "1",
+          "data": "3"
+        },
+        "prox_dual_algo_detect_scheme":{ "type": "int", "ver": "0",
+          "data": "0x70"
+        },
+        "prox_dual_algo_release_scheme":{ "type": "int", "ver": "0",
+          "data": "0x07"
+        }
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3720_fb",
+      ".scale_cal":{
+        "owner": "sns_tcs3720_fb",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".ch_fac_cal":{
+        "owner": "sns_tcs3720_fb",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".ch_fac_cal_original":{
+        "owner": "sns_tcs3720_fb",
+        "scale_ch0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "scale_ch4":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      },
+      ".def_config":{
+        "owner": "sns_tcs3720_fb",
+        "display_brightness":{ "type": "flt", "ver": "0",
+          "data": "255"
+        },
+        "vsync_freq":{ "type": "int", "ver": "0",
+          "data": "60"
+        },
+        "a_time_us":{ "type": "flt", "ver": "0",
+          "data": "50000"
+        },
+        "a_gain":{ "type": "flt", "ver": "0",
+          "data": "6.0"
+        },
+        "a_pers":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "a_thrs_width":{ "type": "flt", "ver": "0",
+          "data": "10.0"
+        },
+        "a_vsync_en":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "lux_target":{ "type": "flt", "ver": "0",
+          "data": "300.0"
+        },
+        "lux_target_error":{ "type": "flt", "ver": "0",
+          "data": "30.0"
+        },
+        "auto_gain":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "a_mode_cfg":{ "type": "flt", "ver": "0",
+          "data": "2.0"
+        },
+        "a_sync_delay_us":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "use_asp1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "residuals_enabled":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "res_max_gain":{ "type": "flt", "ver": "0",
+          "data": "9.0"
+        },
+        "use_channelcal":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".gain_cal":{
+        "owner": "sns_tcs3720_fb",
+        "gain_0":{ "type": "flt", "ver": "0",
+          "data": "2"
+        },
+        "gain_1":{ "type": "flt", "ver": "0",
+          "data": "4"
+        },
+        "gain_2":{ "type": "flt", "ver": "0",
+          "data": "8"
+        },
+        "gain_3":{ "type": "flt", "ver": "0",
+          "data": "16"
+        },
+        "gain_4":{ "type": "flt", "ver": "0",
+          "data": "32"
+        },
+        "gain_5":{ "type": "flt", "ver": "0",
+          "data": "64"
+        },
+        "gain_6":{ "type": "flt", "ver": "0",
+          "data": "128"
+        },
+        "gain_7":{ "type": "flt", "ver": "0",
+          "data": "256"
+        },
+        "gain_8":{ "type": "flt", "ver": "0",
+          "data": "512"
+        },
+        "gain_9":{ "type": "flt", "ver": "0",
+          "data": "1024"
+        },
+        "gain_10_0":{ "type": "flt", "ver": "0",
+          "data": "2048"
+        },
+        "gain_10_1":{ "type": "flt", "ver": "0",
+          "data": "2048"
+        },
+        "gain_10_2":{ "type": "flt", "ver": "0",
+          "data": "2048"
+        },
+        "gain_10_3":{ "type": "flt", "ver": "0",
+          "data": "2048"
+        },
+        "gain_11_0":{ "type": "flt", "ver": "0",
+          "data": "4096"
+        },
+        "gain_11_1":{ "type": "flt", "ver": "0",
+          "data": "4096"
+        },
+        "gain_11_2":{ "type": "flt", "ver": "0",
+          "data": "4096"
+        },
+        "gain_11_3":{ "type": "flt", "ver": "0",
+          "data": "4096"
+        }
+      },
+      ".lux_coefs":{
+        "owner": "sns_tcs3720_fb",
+        "2ch_coefs_dgf_0":{ "type": "flt", "ver": "0",
+          "data": "2.7518"
+        },
+        "2ch_coefs_ch0_0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "2ch_coefs_ch1_0":{ "type": "flt", "ver": "0",
+          "data": "-0.8223"
+        },
+        "2ch_coefs_dgf_1":{ "type": "flt", "ver": "0",
+          "data": "3.7518"
+        },
+        "2ch_coefs_ch0_1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "2ch_coefs_ch1_1":{ "type": "flt", "ver": "0",
+          "data": "-0.8223"
+        },
+        "4ch_coefs_dgf_0":{ "type": "flt", "ver": "0",
+          "data": "875.476"
+        },
+        "4ch_coefs_ch0_0":{ "type": "flt", "ver": "0",
+          "data": "1.818"
+        },
+        "4ch_coefs_ch1_0":{ "type": "flt", "ver": "0",
+          "data": "-1.193"
+        },
+        "4ch_coefs_ch2_0":{ "type": "flt", "ver": "0",
+          "data": "2.552"
+        },
+        "4ch_coefs_ch3_0":{ "type": "flt", "ver": "0",
+          "data": "-4.281"
+        },
+        "4ch_coefs_dgf_1":{ "type": "flt", "ver": "0",
+          "data": "875.476"
+        },
+        "4ch_coefs_ch0_1":{ "type": "flt", "ver": "0",
+          "data": "1.818"
+        },
+        "4ch_coefs_ch1_1":{ "type": "flt", "ver": "0",
+          "data": "-1.193"
+        },
+        "4ch_coefs_ch2_1":{ "type": "flt", "ver": "0",
+          "data": "2.552"
+        },
+        "4ch_coefs_ch3_1":{ "type": "flt", "ver": "0",
+          "data": "-4.281"
+        }
+      },
+      ".coefficient":{
+        "owner": "sns_tcs3720_fb",
+        "ir_coefs_dgf":{ "type": "flt", "ver": "0",
+          "data": "1"
+        },
+        "lo_ir_cch":{ "type": "flt", "ver": "1",
+          "data": "0.0158"
+        },
+        "lo_ir_rch":{ "type": "flt", "ver": "1",
+          "data": "-0.0101"
+        },
+        "lo_ir_gch":{ "type": "flt", "ver": "1",
+          "data": "0.0286"
+        },
+        "lo_ir_bch":{ "type": "flt", "ver": "1",
+          "data": "-0.0427"
+        },
+        "hi_ir_cch":{ "type": "flt", "ver": "1",
+          "data": "0.0158"
+        },
+        "hi_ir_rch":{ "type": "flt", "ver": "1",
+          "data": "-0.0101"
+        },
+        "hi_ir_gch":{ "type": "flt", "ver": "1",
+          "data": "0.0286"
+        },
+        "hi_ir_bch":{ "type": "flt", "ver": "1",
+          "data": "-0.0427"
+        },
+        "ir_thres":{ "type": "flt", "ver": "1",
+          "data": "0.1"
+        },
+        "use_ir_radio":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        }
+      }
+    },
+    ".cct":{
+      "owner": "sns_tcs3720_fb",
+      ".cct_coef_hir":{
+        "owner": "sns_tcs3720_fb",
+        "0":{ "type": "flt", "ver": "7",
+          "data": "-0.244021"
+        },
+        "1":{ "type": "flt", "ver": "7",
+          "data": "0.292435"
+        },
+        "2":{ "type": "flt", "ver": "7",
+          "data": "0.955637"
+        },
+        "3":{ "type": "flt", "ver": "7",
+          "data": "0.279860"
+        },
+        "4":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "5":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "6":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "7":{ "type": "flt", "ver": "1",
+          "data": "1.000000"
+        },
+        "8":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "9":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "10":{ "type": "flt", "ver": "7",
+          "data": "0.494216"
+        },
+        "11":{ "type": "flt", "ver": "7",
+          "data": "-1.064361"
+        },
+        "12":{ "type": "flt", "ver": "7",
+          "data": "1.169894"
+        },
+        "13":{ "type": "flt", "ver": "7",
+          "data": "0.397904"
+        },
+        "14":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        }
+      },
+      ".cct_coef_lir":{
+        "owner": "sns_tcs3720_fb",
+        "0":{ "type": "flt", "ver": "5",
+          "data": "-0.091791"
+        },
+        "1":{ "type": "flt", "ver": "5",
+          "data": "0.234637"
+        },
+        "2":{ "type": "flt", "ver": "5",
+          "data": "1.053425"
+        },
+        "3":{ "type": "flt", "ver": "5",
+          "data": "-0.405079"
+        },
+        "4":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "5":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "6":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "7":{ "type": "flt", "ver": "1",
+          "data": "1.000000"
+        },
+        "8":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "9":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        },
+        "10":{ "type": "flt", "ver": "5",
+          "data": "-0.096106"
+        },
+        "11":{ "type": "flt", "ver": "5",
+          "data": "-0.125639"
+        },
+        "12":{ "type": "flt", "ver": "5",
+          "data": "0.235659"
+        },
+        "13":{ "type": "flt", "ver": "5",
+          "data": "1.708485"
+        },
+        "14":{ "type": "flt", "ver": "1",
+          "data": "0.000000"
+        }
+      },
+      ".cct_custom":{
+        "owner": "sns_tcs3720_fb",
+        "parm0":{ "type": "flt", "ver": "2",
+          "data": "0.08"
+        },
+        "parm1":{ "type": "flt", "ver": "0",
+          "data": "0.1"
+        },
+        "parm2":{ "type": "flt", "ver": "0",
+          "data": "0.1"
+        },
+        "parm3":{ "type": "flt", "ver": "0",
+          "data": "0.1"
+        },
+        "parm4":{ "type": "flt", "ver": "0",
+          "data": "0.1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+    "PipelineName": "FrontSingleSnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.memcpy",
+            "NodeInstance": "MemcpyInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.gpu",
+            "NodeInstance": "GpuInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+            "NodeInstance": "SkinBeautifierInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.hdr",
+            "NodeInstance": "HDRInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.arcsoftrawhdr",
+            "NodeInstance": "RawHDRInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "IdealRaw2YuvInstance0",
+            "NodeProperty": [
+              {
+                "NodePropertyName": "NodeMask",
+                "NodePropertyValue": 4
+              }
+            ]
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "RawHDRInstance0",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "RawHDRInstance0",
+                "PortFormat": "RAW16"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "IdealRaw2YuvInstance0",
+                "PortFormat": "RAW16"
+            }
+        },
+        {
+            "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "IdealRaw2YuvInstance0",
+              "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SkinBeautifierInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SkinBeautifierInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "GpuInstance0",
+                "PortFormat": "YUV420_NV12"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "GpuInstance0",
+                "PortFormat": "YUV420_NV12"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer"
+            }
+        }
+        ]
+    }
+  }
+  

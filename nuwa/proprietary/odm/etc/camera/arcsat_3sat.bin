@@ -1,0 +1,11 @@
+Device = {M2}
+Version = {1.0.0.0}
+CbSize = {0}
+NumberOfCameras = {3}
+CalibrationType = {1}
+CameraFov = {115.0, 91.6, 36.2}
+CameraRatio = {0.6, 0.9, 2.9}
+MappedFovRatio = {0.0, 0.0, 3.222222}
+ActiveRange = {[0, 0, 8160, 6144], [0, 0, 8192, 6144], [0, 0, 8160, 6144]}
+SensorOutSize = {[0, 0, 4080, 3072], [0, 0, 4096, 3072], [0, 0, 4080, 3072]}
+RotationCorrection = {1, 1, 0}

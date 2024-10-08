@@ -1,0 +1,22 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["518"]
+  },
+  "bmi26x_crt_config":{
+    "owner": "sns_bmi26x",
+    ".crt_cfg":{
+      "owner": "sns_bmi26x",
+      "crt_itvl":{ "type": "int", "ver": "0",
+        "data": "600"
+      },
+      "repeate_on_error":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reserved":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    }
+  }
+}

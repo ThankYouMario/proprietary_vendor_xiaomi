@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2021 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<permissions>
+    <!-- This should be used to exclude these features from modem-less targets. -->
+    <unavailable-feature name="android.hardware.telephony" />
+    <unavailable-feature name="android.hardware.telephony.gsm" />
+    <unavailable-feature name="android.hardware.telephony.cdma" />
+    <unavailable-feature name="android.hardware.telephony.ims" />
+</permissions>

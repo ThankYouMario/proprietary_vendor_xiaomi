@@ -1,0 +1,451 @@
+{
+    "PipelineName": "SatSnapshotJpeg",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.anchor",
+                "NodeInstance": "AnchorInstance0",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":1
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "MfnrInstance0",
+                "InputFormat": "RAW10",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":4
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.portraitrepair",
+                "NodeInstance": "PortraitRepairInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":1
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.depurple",
+                "NodeInstance": "DepurpleInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":1
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.ldc",
+                "NodeInstance": "LDCInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.miaideblur",
+                "NodeInstance": "MiAIDeblurInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.supermoon",
+                "NodeInstance": "SuperMoonInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hdr",
+                "NodeInstance": "HDRInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.sr",
+                "NodeInstance": "SrInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":4
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "YuvReprocessInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.arcsoftsll",
+                "NodeInstance": "ArcsoftSLLInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":16
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.miairawhdr",
+                "NodeInstance": "MiaiRawHDRInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mialgoellc",
+                "NodeInstance": "MiAlgoELLCInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":16
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.deflicker",
+                "NodeInstance": "DeflickerInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.mialgosnsc",
+                "NodeInstance": "MiAlgoSNSCInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":16
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "OfflineStatsTintlessInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16",
+                "NodeProperty":[
+                    {
+                        "NodePropertyName":"NodeMask",
+                        "NodePropertyValue":1
+                    }
+                  ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "OfflineStatsAWBIdealInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "RAW16",
+                "NodeProperty":[
+                    {
+                        "NodePropertyName":"NodeMask",
+                        "NodePropertyValue":1
+                    }
+                  ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "IdealRaw2YuvInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":4
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "BayerRaw2YuvInstance0",
+                "InputFormat": "RAW16",
+                "OutputFormat": "YUV420_NV12",
+                "NodeProperty":[
+                  {
+                       "NodePropertyName":"NodeMask",
+                       "NodePropertyValue":4
+                  }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.miaiie",
+                "NodeInstance": "AIIEInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+                "NodeInstance": "SkinBeautifierInstance0",
+                "InputFormat": "YUV420_NV12",
+                "OutputFormat": "YUV420_NV12"
+            },
+            {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "JpegInstance0"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AnchorInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SourceBuffer1"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "HDRInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AnchorInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SrInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SrInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ArcsoftSLLInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ArcsoftSLLInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiaiRawHDRInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiaiRawHDRInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAlgoELLCInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAlgoELLCInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "DeflickerInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "DeflickerInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAlgoSNSCInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAlgoSNSCInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "OfflineStatsTintlessInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "OfflineStatsTintlessInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "OfflineStatsAWBIdealInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "OfflineStatsAWBIdealInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "IdealRaw2YuvInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "IdealRaw2YuvInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "BayerRaw2YuvInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "BayerRaw2YuvInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "YuvReprocessInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "YuvReprocessInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HDRInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HDRInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "DepurpleInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "DepurpleInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SuperMoonInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SuperMoonInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "LDCInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "LDCInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAIDeblurInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAIDeblurInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AIIEInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "AIIEInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "SkinBeautifierInstance0"
+                  },
+                "DstPort": {
+                      "PortId": 0,
+                      "NodeInstance": "JpegInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "JpegInstance0"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            }
+        ]
+    }
+}

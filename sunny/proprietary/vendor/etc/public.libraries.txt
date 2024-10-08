@@ -1,0 +1,42 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libfastcvopt.so
+liblistensoundmodel2.so
+libOpenCL.so
+libmpbase.so 64
+libmialgoengine.so 64
+libarcsoft_beautyshot.so 64
+libarcsoft_dualcam_refocus.so 64
+libarcsoft_dualcam_refocus_rear_t.so 64
+libarcsoft_dualcam_refocus_rear_w.so 64
+libarcsoft_dualcam_refocus_front.so 64
+libmialgo_basic.so 64
+libmialgo_utils.so 64
+libarcsoft_portrait_lighting.so 64
+libarcsoft_portrait_lighting_c.so 64
+libmibokeh_712.so 64
+libarcsoft_distortion_correction.so 64
+libarcsoft_bodyslim.so 64
+libalCFR.so 64
+libcvp.so
+libcvp_stub.so
+libcvp_common.so
+libalhLDC.so 64
+libVDClearShot.so 64
+libVDSuperPhotoAPI.so 64
+libsdk_sr.so 64
+lib_sr_models.so 64
+libhvx_interface.so 64
+lib_denoiser3.so 64
+libmiStereoFactoryRemapLib.so 64
+libanc_dc_base.so 64
+libwa_dof.so 64
+libwa_refocus.so 64
+libbeauty_face_interface.so 64
+libmiai_supernight.so 64
+libxmi_high_dynamic_range.so 64
+libanc_dc_plugin_xiaomi_v2.so 64
+libmiStereoFactoryRemapBasicLib.so 64
+libmiStereoFactoryRemapLib_v2.so 64

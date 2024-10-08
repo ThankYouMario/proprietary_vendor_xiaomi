@@ -1,0 +1,45 @@
+// @file sns_ois_cal.proto
+//
+// Defines the API for ois manager.
+//
+// Copyright (c) 2019 AKM, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - AKM, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// Message IDs for ois manager
+enum sns_ois_manager_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_OIS_MANAGER_MSGID_SNS_SET_OIS_MODE = 525;
+
+  SNS_OIS_MANAGER_MSGID_SNS_OIS_CONFIG = 526;
+
+  SNS_OIS_MANAGER_MSGID_SNS_OIS_MANAGER_EVENT = 1024;
+}
+
+message sns_set_ois_mode
+{
+  required int32 ois_gain_x   = 1;
+  required int32 ois_gain_y   = 2;
+  required int32 ois_delay_x  = 3;
+  required int32 ois_delay_y  = 4;
+  required int32 ois_offset_x = 5;
+  required int32 ois_offset_y = 6;
+  required int32 mode = 7;
+}
+
+message sns_ois_config
+{
+  required int32 mode     = 1;
+  required int32 posture  = 2;
+  required int32 af_fb    = 3;
+}
+
+message sns_ois_manager_event
+{
+  repeated float data  = 1;
+}

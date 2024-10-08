@@ -1,0 +1,3 @@
+Acc lsm6dso_0_platform.accel.fac_cal.bias /vendor/etc/sensors/config/sm8250_lsm6dso_0.json 0
+Gyr lsm6dso_0_platform.gyro.fac_cal.bias /vendor/etc/sensors/config/sm8250_lsm6dso_0.json 0
+Lux tmd3719_platform.als.fac_cal /vendor/etc/sensors/config/sm8250_tmd3719.json 0 TMD3719ALSPRX

@@ -1,0 +1,18 @@
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    class early_hal
+    user system
+    group system
+    disabled
+
+on property:ro.boot.boardid=S88019BP1
+    start secureelement-hal_1_2
+ 
+on property:ro.boot.boardid=S88029JA1
+    start secureelement-hal_1_2
+
+on property:ro.boot.boardid=S88029EA1
+    start secureelement-hal_1_2
+
+on property:ro.boot.boardid=S88018PA1
+    start secureelement-hal_1_2
+

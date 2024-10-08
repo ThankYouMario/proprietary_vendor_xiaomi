@@ -1,0 +1,19 @@
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+on post-fs-data
+    # create QDMA dropbox
+    mkdir /data/vendor/qcc 0770 system system
+    mkdir /data/vendor/qcc/shared 0770 system system
+    mkdir /data/vendor/qcc/shared/3 0770 system system
+    mkdir /data/vendor/qcc/shared/1503 0770 system system
+    mkdir /data/vendor/qcc/shared/qmct 0770 system system
+    mkdir /dev/socket/qcc_trd 0770 system vendor_qtr
+    chmod 2770 /dev/socket/qcc_trd
+
+service vendor.qcc-vendor /system/vendor/bin/qcc-vendor
+    class late_start
+    user system
+    group vendor_qtr readproc system radio vendor_rfs_shared sdcard_rw media_rw sdcard_r
+

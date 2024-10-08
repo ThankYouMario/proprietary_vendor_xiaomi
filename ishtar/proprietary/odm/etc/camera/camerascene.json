@@ -1,0 +1,44 @@
+{
+    "configs": [
+        {
+            "name": "videocall_list",
+            "config": [
+                "com.android.incallui.InCallActivity",
+                "com.tencent.mm.plugin.voip.ui.VideoActivity",
+                "com.tencent.av.ui.AVActivity",
+                "com.immomo.molive.gui.activities.live.base.LiveActivity",
+                "com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingActivity",
+                "com.ss.android.vc.meeting.module.preview.facade.MeetingPreviewActivity",
+                "com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity",
+                "com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingActivity",
+                "com.bytedance.android.xr.fusion.XrAvCallActivity",
+                "com.tencent.weishi.module.multi.PublisherMultiPageActivity",
+                "com.yxcorp.gifshow.camera.record.CameraActivity",
+                "com.bytedance.mira.stub.p0.StubSingleTaskActivity1",
+                "com.bilibili.bilibililive.ui.room.BlinkRoomActivityV2",
+                "com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI",
+                "com.xingin.capa.v2.feature.entrance.view.activity.entrance.CapaEntranceActivity2",
+                "com.taobao.fleamarket.call.ui.FishRtcCallActivity",
+                "com.yy.mobile.plugin.pluginmobilelive.MobileLiveActivity"
+            ]
+        },
+        {
+            "name": "highresolutionblob_list",
+            "config": [
+                "com.tencent.ttpic.module.camera.CameraActivity",
+                "com.linecorp.b612.android.activity.ActivityCamera",
+                "com.wudaokou.hippo.media.camera.CameraActivity",
+                "com.lemon.faceu.business.mainpage.MainActivity",
+                "com.mt.mtxx.camera.view.CameraActivity",
+                "com.light.beauty.mainpage.MainActivity",
+                "com.taobao.taopai.business.record.fragment.SocialRecordVideoActivity_Module",
+                "com.alipay.mobile.beehive.capture.activity.CaptureActivity",
+                "com.dianping.ugc.uploadphoto.ugcalbum.droplet.DrpLocalAlbumActivity",
+                "com.taobao.android.litecreator.modules.record.LCRecordActivity",
+                "com.jd.lib.unification.video.recorder.VideoRecorderActivity",
+                "com.baidu.homework.common.camera.CameraManyQuestionsActivity",
+                "com.jd.lib.scan.lib.zxing.client.android.CaptureActivity"
+            ]
+        }
+    ]
+}

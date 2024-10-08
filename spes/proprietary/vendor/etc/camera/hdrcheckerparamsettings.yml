@@ -1,0 +1,103 @@
+#if there is any change, please modify the commiter and modification time when submitting
+commiter: 'chenyifei'
+timestamp: '202105251838'
+product_name: 39
+trigger_param:
+  rear:
+    trigger_method: 2 # 0:preview yuv | 1:real drc | 2: hdrbhist+svm | 3: over exposure
+    normal:
+      HDR-AUTO: # [uw, wide, 2x, tele]
+        hdsr_enable: 0
+        hdsr_zoom_max: 10.0
+        hdsr_zoom_min: 1.0
+        real_drc_gain: [3.5, 6.0, 3.5, 3.5]
+        luxindex: [360, 325, 360, 360]
+        threshold: [0.65, 0.65, 0.65, 0.65]
+        overexp_ratio: [0.3, 0.3, 0.3, 0.3]
+        overexp_start_bin: [251, 251, 251, 251]
+      HDR-ON: # just for india version
+        real_drc_gain: [3.5, 6.0, 3.5, 3.5]
+        luxindex: [360, 325, 360, 360]
+        threshold: [0.5, 0.5, 0.5, 0.5]
+        overexp_ratio: [0.3, 0.3, 0.3, 0.3]
+        overexp_start_bin: [251, 251, 251, 251]
+    lowlight:
+      detect: 7 # four bit, 0b___, luxindex, exp time, sensitivity, ae luma
+      enable_auto: [0, 0, 0, 0]
+      enable_on: [1, 1, 1, 1]
+      exp_time: [30, 30, 30, 30]
+      luxindex: [360, 360, 360, 360]
+      threshold: [0.6, 0.6, 0.6, 0.6]
+      luma_1: [10.1, 10.1, 10.1, 10.1]
+      luma_2: [12.1, 12.1, 12.1, 12.1]
+      luma_3: [15.1, 15.1, 15.1, 15.1]
+      expo_1: [30, 30, 30, 30]
+      expo_2: [50, 50, 50, 50]
+      expo_3: [60, 60, 60, 60]
+      sensitivity: [1000, 1000, 1000, 1000]
+    bokeh:
+      enable: 0
+      real_drc_gain: 5.5
+      luxindex: 325
+    flash:
+      enable: 0
+  front:
+    trigger_method: 2 # 0:preview yuv | 1:real drc | 2: hdrbhist+svm | 3: over exposure
+    HDR-AUTO:
+      real_drc_gain: 6.0
+      luxindex: 360
+      threshold: 0.65
+      overexp_ratio: 0.3
+      overexp_start_bin: 251
+      enable_lowlight: 0
+    HDR-ON: # just for india version
+      real_drc_gain: 6.0
+      luxindex: 360
+      threshold: 0.5
+      overexp_ratio: 0.3
+      overexp_start_bin: 251
+      enable_lowlight: 0
+ev_setting:
+  rear:
+    ev_method: 0 # 0 fixed, 1 dynamic
+    ev_formula: [2, 1, 1, 1]
+    ev_4_frame: [0, 0, 0, 0] # support 4 frame pipeline?
+    ev_normal: [9, -24, 0]
+    ev_lowlight: [6, -24, 0]
+    ev_bokeh: [-24, 0]
+    ev_flash: [-24, -12, 0]
+    ev_order: [[0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3]]
+    revise: [1, 1, 1, 1] # [uw, wide, 2x, tele]
+    revise_interval: [[-18, -24, -30], [-18, -24, -30], [-18, -24, -30], [-18, -24, -30]]
+    ev_adj: [1, 2, 2, 2] # [uw, wide, 2x, tele] just for MTK
+    delta_ev: [0, 0, 0, 0] # just for mtk
+    delta_ev_method: [1, 0, 0, 0] # 0 use arcsoft method | 1 new method
+    lce_gain_max_ratio: [1, 0, 0, 0] # notice:lce_gain_max_ratio+lce_gain_middle_ratio=1
+    lce_gain_middle_ratio: [0, 1, 1, 1]
+    delta_normal: 0
+    delta_lowlight: 0
+    delta_bokeh: 0
+  front:
+    ev_method: 0 # 0 fixed, 1 dynamic
+    ev_formula: 0
+    ev_front: [-24, -9, 0]
+    ev_order: [0, 1, 2, 3]
+    delta_ev: 0
+options:
+  support_hdsr: 0
+  support_flash: 0
+  support_bokeh: 0
+  support_ui_ae: 0
+  support_zsl: 0
+  exp_time_unit: 1000000
+  choose_model_rear: 1
+  choose_model_front: 1
+  state_luxindex: 15
+  state_hist_corr: 0.8
+  judge_ae_active: 1
+  judge_ae_converge: 1
+  judge_ae_luxindex: 5
+  judge_ae_frame: 5
+  skip_ae_lock: 1
+  reorder_ev: 0
+  test_idx: 4

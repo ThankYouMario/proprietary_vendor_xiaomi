@@ -1,0 +1,11 @@
+<!-- Copyright (c) 2022 Qualcomm Technologies, Inc.
+     All Rights Reserved.
+     Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.ims.datachannelservice</name>
+        <version>1</version>
+        <fqname>IDataChannelService/default</fqname>
+    </hal>
+</manifest>

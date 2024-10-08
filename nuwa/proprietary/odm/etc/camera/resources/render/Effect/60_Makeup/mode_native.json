@@ -1,0 +1,18 @@
+{
+	"##":"质感妆容",
+	"Type":"Effect",
+	"EnvLightType": 0,
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeNative/effect_preview.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_ModeNative/effect_capture.json",
+			"Index":1,
+			"Mode":"Capture"
+		}
+	]
+}

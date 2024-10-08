@@ -1,0 +1,5 @@
+Acc bmi26x_0_platform.accel.fac_cal.bias /vendor/etc/sensors/config/sm8250_bmi26x_0.json 0 bmi26x
+Gyr bmi26x_0_platform.gyro.fac_cal.bias /vendor/etc/sensors/config/sm8250_bmi26x_0.json 0 bmi26x
+Lux bu27030_0_platform.ambient_light.fac_cal /vendor/etc/sensors/config/sm8250_bu27030_0.json 0 rohm_bu27030
+Lux bu27030_0_platform.highlcd.fac_cal /vendor/etc/sensors/config/sm8250_bu27030_0.json 1 rohm_bu27030
+Lux_B bu27030_back_0_platform.ambient_light.fac_cal /vendor/etc/sensors/config/sm8250_bu27030_0_back.json 0 rohm_bu27030

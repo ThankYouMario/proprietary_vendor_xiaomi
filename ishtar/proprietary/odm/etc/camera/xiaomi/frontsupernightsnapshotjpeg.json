@@ -1,0 +1,108 @@
+{
+    "PipelineName": "FrontSuperNightSnapshotJpeg",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.miaiportraitsupernight",
+            "NodeInstance": "MiAiPortraitSuperNight"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.gpu",
+            "NodeInstance": "GpuInstance0"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.portraitrepair",
+            "NodeInstance": "PortraitRepairInstance0",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":1
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+            "NodeInstance": "SkinBeautifierInstance"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "JpegInstance0"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAiPortraitSuperNight",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MiAiPortraitSuperNight",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "PortraitRepairInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance0",
+                    "PortFormat": "YUV420_NV12"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance0",
+                    "PortFormat": "BLOB"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            }
+        ]
+    }
+  }
+  

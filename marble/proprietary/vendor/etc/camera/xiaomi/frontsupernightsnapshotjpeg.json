@@ -1,0 +1,63 @@
+{
+  "PipelineName": "FrontSuperNightSnapshotJpeg",
+  "NodesList": {
+    "Node": [
+      {
+          "NodeName": "com.xiaomi.plugin.miaiportraitsupernight",
+          "NodeInstance": "MiAiPortraitSuperNight"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.gpu",
+          "NodeInstance": "GpuInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.offlinepostproc",
+          "NodeInstance": "JpegInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "MiAiPortraitSuperNight"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "MiAiPortraitSuperNight"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "GpuInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "GpuInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "JpegInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+          }
+      }
+      ]
+  }
+}

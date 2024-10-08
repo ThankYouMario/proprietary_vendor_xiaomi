@@ -1,0 +1,45 @@
+{
+  "PipelineName": "NormalPreview",
+  "PipelineId": 0,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.memcpy",
+        "NodeInstanceId": 0
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.aiasd",
+        "NodeInstanceId": 1,
+        "NodePropertyId": 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstanceId": 2
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstanceId": 0
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 2
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 1,
+          "NodeInstanceId": 0
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstanceId": 1
+        }
+      }
+    ]
+  }
+}

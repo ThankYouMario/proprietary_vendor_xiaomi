@@ -1,0 +1,67 @@
+[
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/lsm6dso_0_platform.accel.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"lsm6dso_0_platform.accel.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8250_lsm6dso_0.json",
+        "verDepth":4,
+        "rootObject":"lsm6dso_0_platform",
+        "subRootObject1":".accel",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/lsm6dso_0_platform.gyro.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"lsm6dso_0_platform.gyro.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_lsm6dso_0.json",
+        "verDepth":4,
+        "rootObject":"lsm6dso_0_platform",
+        "subRootObject1":".gyro",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/tcs3701_platform.channel.fac_cal",
+        "verDepth":1,
+        "rootObject":"tcs3701_platform.channel.fac_cal",
+        "items":["data_cch"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_tcs3701.json",
+        "verDepth":3,
+        "rootObject":"tcs3701_platform",
+        "subRootObject1":".channel",
+        "subRootObject2":".fac_cal",
+        "items":["data_cch"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/bu27030_back_0_platform.ambient_light.fac_cal",
+        "verDepth":1,
+        "rootObject":"bu27030_back_0_platform.ambient_light.fac_cal",
+        "items":["scale"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_bu27030_0_back.json",
+        "verDepth":3,
+        "rootObject":"bu27030_back_0_platform",
+        "subRootObject1":".ambient_light",
+        "subRootObject2":".fac_cal",
+        "items":["scale"]
+    }
+}
+]

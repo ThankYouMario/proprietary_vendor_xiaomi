@@ -1,0 +1,64 @@
+{
+  "PipelineName": "normalsnapshot",
+  "NodesList": {
+    "Node": [
+      {
+          "NodeName": "com.xiaomi.plugin.depurple",
+          "NodeInstance": "DepurpleInstance0",
+          "NodePropertyId" : 1
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.ldc",
+          "NodeInstance": "LDCInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.skinbeautifier",
+          "NodeInstance": "SkinBeautifierInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance0"
+          }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "LDCInstance0"
+          }
+      },
+      {
+        "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance0"
+        },
+        "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "SkinBeautifierInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SkinBeautifierInstance0"
+        },
+        "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "SinkBuffer"
+        }
+      }
+      ]
+  }
+}

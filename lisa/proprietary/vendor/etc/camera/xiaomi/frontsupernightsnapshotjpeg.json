@@ -1,0 +1,77 @@
+{
+  "PipelineName": "FrontSuperNightSnapshotJpeg",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.supernight",
+        "NodeInstance": "SuperNight"
+      },
+      {
+        "NodeName": "com.qcom.plugin.gpu",
+        "NodeInstance": "GpuInstance"
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstance": "SkinBeautifierInstance"
+      },
+      {
+        "NodeName": "com.qcom.plugin.offlinepostproc",
+        "NodeInstance": "JpegInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SuperNight"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SuperNight"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "GpuInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "GpuInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SkinBeautifierInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SkinBeautifierInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "JpegInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "JpegInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

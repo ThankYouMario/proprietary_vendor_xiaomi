@@ -1,0 +1,517 @@
+{
+    "ellc": {
+        "phone_version": "M2",
+        "model_version": "v5.0",
+        "hdr": "true",
+        "resize": "false",
+        "shape_patch": [
+            784,
+            1040
+        ],
+        "overlap": [
+            32,
+            32
+        ],
+        "snpe": {
+            "runtime": "dsp",
+            "isDebug": 0,
+            "dlcs": [
+                {
+                    "Scene": "WIDE_EV0_BASE_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "20231017SNWRGGBM_snpe2.3.1.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "g_conv10/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.7668153304839507e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 0
+                },
+                {
+                    "Scene": "WIDE_EVN_BASE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_wide_rggb_snpe23.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 7
+                },
+                {
+                    "Scene": "WIDE_EVN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sn-evnevnn_178410402023071302-0720_10_quantized-2.3.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.52535567394807e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "m_tail/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 8
+                },
+                {
+                    "Scene": "WIDE_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "evn-evnn_1_784_1040_2023072301_2.3_quantized.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5244119822455104e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "Add_4:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "WIDE_MERGE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_wide_rggb_snpe23.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 7
+                },
+                {
+                    "Scene": "UW_EV0_BASE_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "n11_sn_uw_quantized_1020_6.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "g_conv10/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.579308766e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 4
+                },
+                {
+                    "Scene": "UW_EVN_BASE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_uw_rggb_snpe231_1102.dlc",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5229219570755959e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.6146837879205123e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 6
+                },
+                {
+                    "Scene": "UW_EVN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sn-evnevnn_178410402023071302-0720_10_quantized-2.3.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.5244119822455104e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "m_tail/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 8
+                },
+                {
+                    "Scene": "UW_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "evn-evnn_1_784_1040_2023072301_2.3_quantized.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5244119822455104e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "Add_4:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "UW_MERGE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_uw_rggb_snpe231_1102.dlc",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5229219570755959e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.6146837879205123e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 6
+                },
+                {
+                    "Scene": "TELE_EV0_BASE_MFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "mfnr_uw_grbg_snpe231.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            16
+                        ],
+                        "offset": 0,
+                        "delta": 1.5221778994600754e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "g_conv10/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.625115328351967e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 5
+                },
+                {
+                    "Scene": "TELE_EVN_BASE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_uw_rggb_snpe231_1102.dlc",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5229219570755959e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.6146837879205123e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 6
+                },
+                {
+                    "Scene": "TELE_EVN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sn-evnevnn_178410402023071302-0720_10_quantized-2.3.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.5244119822455104e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "m_tail/Conv2D:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            8
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 8
+                },
+                {
+                    "Scene": "TELE_EVNN_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "evn-evnn_1_784_1040_2023072301_2.3_quantized.dlc",
+                    "input": {
+                        "name": "Placeholder:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5244119822455104e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "Add_4:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5259021893143654e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 2
+                },
+                {
+                    "Scene": "TELE_MERGE_SFNR",
+                    "bin_name": "aisn.bin",
+                    "dlc_name": "sfnr_uw_rggb_snpe231_1102.dlc",
+                    "input": {
+                        "name": "input:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.5229219570755959e-05,
+                        "encoding": "tf16"
+                    },
+                    "output": {
+                        "name": "output:0",
+                        "shape": [
+                            1,
+                            784,
+                            1040,
+                            4
+                        ],
+                        "offset": 0,
+                        "delta": 1.6146837879205123e-05,
+                        "encoding": "tf16"
+                    },
+                    "dlc_index": 6
+                }
+            ]
+        },
+        "relight_setting": {
+            "range1_luxindex_start": 495.0,
+            "range1_luxindex_end": 520.0,
+            "range1_luxindex_start_ratio": 1.0,
+            "range1_luxindex_end_ratio": 1.0,
+            "range2_luxindex_start": 520.0,
+            "range2_luxindex_end": 540.0,
+            "range2_luxindex_start_ratio": 1.0,
+            "range2_luxindex_end_ratio": 1.0,
+            "range3_luxindex_start": 540.0,
+            "range3_luxindex_end": 550.0,
+            "range3_luxindex_start_ratio": 1.0,
+            "range3_luxindex_end_ratio": 1.0,
+            "range4_luxindex_start": 550.0,
+            "range4_luxindex_end": 580.0,
+            "range4_luxindex_start_ratio": 1.0,
+            "range4_luxindex_end_ratio": 1.0
+        },
+        "Threshold": {
+            "T_brightness": 150,
+            "T_dark_scene": 25000,
+            "T_motion_1": 15,
+            "T_motion_2": 50000000,
+            "T_over_expose_threshold": 3500,
+            "T_clip_ratio": 0.36,
+            "T_first_frame_luxindex": 260,
+            "T_merge_ratio": 0.95,
+            "T_pow_merge_ratio": [
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100,
+                200,
+                200,
+                200,
+                200,
+                100
+            ]
+        }
+    }
+}

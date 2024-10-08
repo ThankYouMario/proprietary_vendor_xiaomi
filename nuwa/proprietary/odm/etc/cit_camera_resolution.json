@@ -1,0 +1,87 @@
+{
+    "CameraConfig":[
+        {
+            "CameraType": "REAR_CAMERA",
+            "CameraId": "0",
+            "grid_Standard":{
+                "gridW": "24.0",
+                "gridH": "18.0"
+             },
+            "divFreq": "5",
+            "points":{
+                "d0": "0",
+                "d1": "3",
+                "d2": "5",
+                "d3": "7"
+            },
+            "ref_SFRH":{
+                "S0": "0.4",
+                "S1": "0.2",
+                "S2": "0.2",
+                "S3": "0.1"
+            },
+            "ref_SFRV":{
+                "S0": "0.4",
+                "S1": "0.2",
+                "S2": "0.2",
+                "S3": "0.1"
+            }
+        },
+
+        {
+            "CameraType": "TELE_CAMERA",
+            "CameraId": "20",
+            "grid_Standard": {
+                "gridW": "13.3",
+                "gridH": "10"
+            },
+            "divFreq": "5",
+            "points":{
+                "d0": "0",
+                "d1": "3",
+                "d2": "5",
+                "d3": "8"
+            },
+            "ref_SFRH":{
+                "S0": "0.4",
+                "S1": "0.2",
+                "S2": "0.2",
+                "S3": "0.1"
+            },
+            "ref_SFRV":{
+                "S0": "0.4",
+                "S1": "0.2",
+                "S2": "0.2",
+                "S3": "0.1"
+            }
+        },
+
+        {
+            "CameraType": "URTRA_CAMERA",
+            "CameraId": "21",
+            "grid_Standard": {
+                "gridW": "21.3",
+                "gridH": "16.0"
+            },
+            "divFreq": "5",
+            "points":{
+                "d0": "0",
+                "d1": "2",
+                "d2": "3",
+                "d3": "5"
+            },
+            "ref_SFRH":{
+                "S0": "0.25",
+                "S1": "0.2",
+                "S2": "0.15",
+                "S3": "0.15"
+            },
+            "ref_SFRV":{
+                "S0": "0.25",
+                "S1": "0.2",
+                "S2": "0.15",
+                "S3": "0.15"
+            }
+        }
+    ]
+}

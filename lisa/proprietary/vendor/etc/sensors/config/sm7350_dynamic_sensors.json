@@ -1,0 +1,24 @@
+{
+  "config":{
+    "hw_platform": ["MTP","QRD","LISA", "Surf", "RCM", "RENOIR"],
+    "soc_id": ["475"]
+  },
+
+  "sns_dynamic_sensors":
+  {
+    "owner":"sns_dynamic_sensors",
+
+    "sns_geomag_rv_register":
+    {
+      "type" : "str",
+      "ver" : "0",
+      "data" : "sns_geomag_rv_normal.so"
+    },
+    "sns_wigig_register":
+    {
+      "type" : "str",
+      "ver" : "0",
+      "data" : "wigig_sensing.so"
+    }
+  }
+}

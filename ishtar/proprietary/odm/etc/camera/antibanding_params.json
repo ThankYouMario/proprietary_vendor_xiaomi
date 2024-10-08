@@ -1,0 +1,55 @@
+{
+    "phone_version":"M1",
+	"sdk_version":"v2.1",
+    "comment"               : "antibanding json config",
+	"log_level"             : "debug",
+	"motiondetect1":
+	{
+	    "fastmove_openflag":1
+	},
+	"frameselect":
+	{
+        "ratio_thre_d":0.17,
+        "ratio_thre_l":0.0
+	},
+	"align":
+	{
+
+	},
+	"debanding":
+	{
+		"fp":11,
+		"fp1":3,
+		"fp_only":2,
+		"fp1_only":2
+	},
+	"motiondetect2":
+	{
+
+	},
+	"alignrefine":
+	{
+
+	},
+    "fusion":
+	{
+         "total_th_re_abn":0.45,
+         "total_th_re_0p7":0.25,
+         "total_th_re_0p8":0.20,
+         "total_th_re_0p9":0.18,
+         "total_th_re_1p2":0.40,
+         "total_th_re_1p3":0.35,
+         "total_th_re_1p4":0.30,
+         "total_th_re_1p5":0.25,
+		 "RGB_avoid_total_MIN":70000,
+		 "RGB_avoid_total_MAX":180000,
+         "RGB_avoid_0p14":0.14,
+         "RGB_avoid_0p20":0.20,
+         "RGB_th_re_0p14":0.35,
+         "RGB_th_re_0p20":0.21
+	},
+	"antibanding":
+    {
+        "antibanding_status_debug" : 399999999
+    }
+}

@@ -1,0 +1,93 @@
+# push to /odm/etc/camera to be read by main program
+# version: 2023_0313_2015_M1
+algo_params:
+  common:
+    daylight_lux_thres: 275
+    use_faceblur: false
+  align:
+  deghost:
+    ev6_ratio_mul: 1.0
+  merge:
+
+  denoise:
+    dldenoise_lux_thres: 250
+    dldenoise_iso_thres: 230
+
+    m_min_front_dlw: 0.1
+    m_max_front_dlw: 0.4
+    m_min_back_dlw: 0.3
+    m_max_back_dlw: 0.7  #0.8
+    nlm_window_size: 7
+    nlm_template_size: 3
+
+  post_process:
+    face_light: 0.0
+    face_contrast: 0.0
+    face_gamma: 0.0
+    bg_light_ratio: 0.3
+    # sharp
+    portrait_sharp_0: 2.0 
+    portrait_sharp_1: 1.6
+    portrait_sharp_2: 1.2
+    portrait_sharp_3: 1.2
+    # portrait_sharp_0: 1.0 
+    # portrait_sharp_1: 2.5
+    # portrait_sharp_2: 2.3
+    # portrait_sharp_3: 2.1
+
+    #satuation
+    adjust_satuation: false
+    satuation_a: 0.0
+    satuation_b: 0.0
+
+    #thres
+    blend_sharpen_lux_thres: 400
+
+    #skyseg 
+    sky_threshold: 255
+    
+  Lighting_Mode:
+    denoise:
+
+      dldenoise_lux_thres: 250
+      dldenoise_iso_thres: 230
+      nlm_window_size: 7
+      nlm_template_size: 3
+      
+      m_min_front_dlw: 0.1
+      m_max_front_dlw: 0.8
+      m_min_back_dlw: 0.1
+      m_max_back_dlw: 0.8  #0.8
+
+    post_process:
+      face_light: 0.0
+      face_contrast: 0.0
+      face_gamma: 0.0
+      bg_light_ratio: 0.1
+      # sharp
+      portrait_sharp_0: 2.0 
+      portrait_sharp_1: 1.6
+      portrait_sharp_2: 1.2
+      portrait_sharp_3: 1.2
+      # portrait_sharp_0: 1.0 
+      # portrait_sharp_1: 2.5
+      # portrait_sharp_2: 2.3
+      # portrait_sharp_3: 2.1
+
+      #satuation
+      adjust_satuation: false
+      satuation_a: 0.0
+      satuation_b: 0.0
+
+      #thres
+      blend_sharpen_lux_thres: 400
+
+      #skyseg 
+      sky_threshold: 255
+  model_path:
+    denoise_model_path: /odm/etc/camera/denoise_qat.dlc
+    protrait_seg_model_path: /odm/etc/camera/portrait_segmentation_qat.dlc
+    sky_seg_model_path: /odm/etc/camera/sky_segmentation_qat.dlc
+
+  env_path: ./;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp
+    

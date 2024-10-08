@@ -1,0 +1,14 @@
+<DaemonConfigurationRoot>
+  <DaemonModuleConfig>
+    <ModuleName>calibration</ModuleName>
+    <ModuleEnable>TRUE</ModuleEnable>
+  </DaemonModuleConfig>
+  <DaemonDataConfig>
+    <TopMin>-2500</TopMin>
+    <TopMax>12000</TopMax>
+    <BottomMin>-10000</BottomMin>
+    <BottomMax>2500</BottomMax>
+    <StuckRange>50</StuckRange>
+    <MoveErrorRange>8500</MoveErrorRange>
+  </DaemonDataConfig>
+</DaemonConfigurationRoot>

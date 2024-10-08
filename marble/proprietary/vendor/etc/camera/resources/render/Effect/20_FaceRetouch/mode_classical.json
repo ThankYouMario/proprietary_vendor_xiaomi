@@ -1,0 +1,47 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_Spotless/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/1_SkinSmoothClassical/effect.json",
+			"Index":1,
+			"Mode":"Preview"
+		},
+		{
+			"Index":2,
+			"Mode":"Capture",
+			"E2ESpotless":
+			{
+				"Enable":true,
+				"KeepNevus":true,
+				"MaleDegreeFactor":0.5
+			}
+		},
+		{
+			"Index":3,
+			"Mode":"Capture",
+			"FaceRetouchEngine":
+			{
+				"Enable":true,
+				"DegreeFactor":0.5,
+				"SkinMatchSwitch": false,
+				"Portraiture_Fine": 0,
+				"Portraiture_Medium": 0,
+				"Portraiture_Large": 0,
+				"Portraiture_Threshold": 32,
+				"Portraiture_Size": 0,
+				"FaceRetouchDegreeUniqueSwitch": true,
+				"SharpnessSwitch": false,
+				"SharpnessScaleFactor": 4,
+				"SharpnessRadius": 2,
+				"SharpnessCount": 30,
+				"SharpnessThreshold": 0
+			}
+		}
+	]
+}

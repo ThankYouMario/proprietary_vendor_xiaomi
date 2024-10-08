@@ -1,0 +1,73 @@
+{
+    "PipelineName": "satburstsnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "BayerRaw2YuvInstance1",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":6,
+                   "NodeConcurrencyThreadLimit":"3,5"
+              }
+            ]
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "BurstJpegInstance0",
+            "NodeProperty":[
+              {
+                   "NodePropertyName":"NodeMask",
+                   "NodePropertyValue":0
+              }
+            ]
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstance1",
+                "PortFormat": "RAW10"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BayerRaw2YuvInstance1",
+                "PortFormat": "YUV420_NV12",
+                "OutputBufferNumber": "FollowInPut",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance0",
+                "PortFormat": "YUV420_NV12",
+                "PortFollowType":2,
+                "FollowPortId":0
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance0",
+                "PortFormat": "BLOB",
+                "PortFollowType":2,
+                "FollowPortId":0
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer"
+            }
+        }
+        ]
+    }
+}

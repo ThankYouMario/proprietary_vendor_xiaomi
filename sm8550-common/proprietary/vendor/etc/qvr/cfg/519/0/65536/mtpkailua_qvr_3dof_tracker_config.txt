@@ -1,0 +1,26 @@
+##############################################################################
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+##############################################################################
+
+# Configuration parameters for qvr 3dof tracker
+
+############ Adjustable parameters default values for AHRS sensor fusion algorithm ######################
+# 2 * proportional gain
+ahrs_twoKpDef = 0.2
+# 2 * proportional gain used during initialization
+ahrs_twoKpInitDef = 20.0
+# initialisation period in seconds
+ahrs_initPeriodDef = 1.0
+
+########## tunable MAG params ##################
+# number of mag frames
+num_frames_till_mag_stabilizes = 2500
+# number of mag frames
+count_to_validate_threshold = 20
+head_stabilized_threshold = 0.3
+high_wt_mag = 5.0
+low_wt_mag = 0.2
+wt_adjust_slope = 0.6
+yaw_correction_smooth_factor = 0.01

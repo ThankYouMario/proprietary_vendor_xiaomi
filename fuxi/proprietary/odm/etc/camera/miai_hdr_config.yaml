@@ -1,0 +1,400 @@
+global_config:
+#  version: 2021_0923_154700
+#  print_yaml_content: true
+  input_dir: '/storage/self/primary/hdr'
+  output_dir: '/storage/self/primary/hdr-Output'
+  enable_rear_fusion_phase2: true 
+  dump:
+    SEG_SNPE: false
+#    INPUT: true
+#    ALIGNED: true
+#    DEGHOSTED: true
+#    FINAL_IMG: true
+#    FACE_DETECTION: true
+#    PORTRAIT_SEG: true
+#    COLLAPSED_Y: true
+#    ADJUSTED_Y: true
+#    DARK_MASK: true
+#    FINAL_UV: true
+  
+img_default_parameter:
+  orientation: 90
+  # hdr_type: MIAI_HDR_NORMAL
+  selfie: false
+  loopIndex: 1
+
+mobile_model:
+  M3: true
+
+algo_params_dsp:
+  hdsr:
+     enabled: true
+algo_params:
+  pre_proc:
+  align:
+    global_align:
+      block_win_size: 28
+      search_range: 48
+      cp_thre: 8
+      resize_factor: 4
+      max_cp_num_per_area: 6
+      area_num_in_width: 6
+      area_num_in_height: 4
+      cp_min_distance: 20
+      total_level: 2
+      maxIteration: 200
+      low_thre: 150
+      high_thre: 4000
+      good_ratio: 0.9
+      bad_ratio: 0.4
+    local_align:
+      use_redness_mask: true
+      use_static_judgement: true
+      use_cross_trilateral: false
+      sigmaSpace: 4.0
+      sigmaColor: 0.1
+      sigmaFlow: 3.5
+      median_size: 5
+      filter_size: 3
+  deghost:
+    ref2_max_thre: 100
+    ref2_diff_thre: 30
+    lux_int_0: 50.0
+    lux_int_1: 100.0
+    lux_int_2: 150.0
+    lux_int_3: 200.0
+    wide:
+      lux_stage0:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage1:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage2:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage3:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage4:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+    uw:
+      lux_stage0:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage1:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage2:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage3:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage4:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+    tele:
+      lux_stage0:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage1:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage2:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage3:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+      lux_stage4:
+        min_thre: 4
+        max_thre: 12
+        getdiff0_thre: 12
+        getdiff0_d: 5
+        getdiff1_thre: 12
+        getdiff1_d: 5
+        df_ghost_thre: 1275
+        df_rough_thre: 255
+        df_ghost_niter: 5
+        df_rough_niter: 5
+  merge:
+    selfie:
+      y_lut0:
+        mean: 108       
+        sigma: 36       
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        mean: 148
+        sigma: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut2:
+        mean: 128
+        sigma: 36
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        mean: 148
+        sigma: 36
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut0:
+        mean: 198
+        sigma: 20
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut1:
+        mean: 96
+        sigma: 20
+        type: 'rightmax'
+        scale: 1.0
+      collapse:
+        max_scale1: 0.05
+        max_scale2: 0.05
+      clhe:   
+        up_thre: 1.1       
+        low_thre: 0.9      
+      y_linear_adjust:
+        mul_ratio: 0.5
+        minus_ratio: 1.0
+      dehalo: 
+        th_selfie: 0
+        th_u1b: 100
+        diff_hi: 120
+        diff_lo: -10       
+    wide:
+      y_lut0:
+        mean: 148       
+        sigma: 36       
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 148
+        right_node: 148
+        sigma_left: 2592
+        sigma_right: 2592
+        type: 'normal'
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 2592
+        sigma_right: 5184
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        mean: 108
+        sigma: 36
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut0:
+        mean: 76
+        sigma: 64
+        type: 'normal'
+        scale: 1.0
+      uv_lut1:
+        mean: 128
+        sigma: 20
+        type: 'normal'
+        scale: 1.0
+      collapse:
+        max_scale1: 0.05
+        max_scale2: 0.05
+      enable_rear_phase2: true
+      enable_lighten: true
+      enable_ll_control: false
+      clhe:   
+        up_thre: 1.1       
+        low_thre: 0.9      
+      y_linear_adjust:
+        mul_ratio: 1.0
+        minus_ratio: 1.0
+      dehalo: 
+        th_selfie: 0
+        th_u1b: 100
+        diff_hi: 120
+        diff_lo: -10
+      highlight_suppress:
+        suppress_ratio: 0.5
+      dark_area_boost:
+        boost_ratio: 0.6
+        overall_control: 0.6
+        noise_control: 1
+    ultra_wide:
+      y_lut0:
+        mean: 148       
+        sigma: 36       
+        type: 'rightmax' 
+        scale: 1.0      
+      y_lut1:
+        left_node: 148
+        right_node: 148
+        sigma_left: 2592
+        sigma_right: 2592
+        type: 'normal'
+        scale: 1.0
+      y_lut2:
+        left_node: 128
+        right_node: 128
+        sigma_left: 2592
+        sigma_right: 5184
+        type: 'normal'
+        scale: 1.0
+      y_lut3:
+        mean: 108
+        sigma: 36
+        type: 'leftmax'
+        scale: 1.0
+      uv_lut0:
+        mean: 76
+        sigma: 64
+        type: 'normal'
+        scale: 1.0
+      uv_lut1:
+        mean: 128
+        sigma: 20
+        type: 'normal'
+        scale: 1.0
+      collapse:
+        max_scale1: 0.05
+        max_scale2: 0.05
+      enable_rear_phase2: true
+      clhe:   
+        up_thre: 1.1       
+        low_thre: 0.9      
+      y_linear_adjust:
+        mul_ratio: 1.0
+        minus_ratio: 1.0
+      dehalo: 
+        th_selfie: 0
+        th_u1b: 100
+        diff_hi: 120
+        diff_lo: -10
+      highlight_suppress:
+        suppress_ratio: 0.5
+      dark_area_boost:
+        boost_ratio: 0.6
+        overall_control: 0.6
+        noise_control: 1
+  post_proc:
+    denoise:
+      enabled: false
+      mul: 0.02          
+      plus: 6.0
+    sharpen:
+      enabled: false    

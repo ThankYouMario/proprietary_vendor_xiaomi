@@ -1,0 +1,4 @@
+service vendor.qti.hardware.memtrack /vendor/bin/hw/vendor.qti.hardware.memtrack-service
+    class hal
+    user nobody
+    group system

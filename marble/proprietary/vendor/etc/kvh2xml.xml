@@ -1,0 +1,537 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS>
+    <PLATFORM name="LA" id="0x1"/>
+    <PLATFORM name="LE" id="0x2"/>
+  </PLATFORMS>
+  <KEY_LIST>
+    <KEY name="StreamRX" id="0xa1000000" description="Type of Rx Stream">
+      <VALUE val="0xa1000001" name="PCM_Deep_Buffer"/>
+      <VALUE val="0xa1000003" name="PCM_Rx_Loopback"/>
+      <VALUE val="0xa1000005" name="Voip_Rx"/>
+      <VALUE val="0xa100000a" name="Compress_Offload_Playback"/>
+      <VALUE val="0xa100000c" name="HFP_Rx_Playback"/>
+      <VALUE val="0xa100000d" name="HFP_Tx_Playback"/>
+      <VALUE val="0xa100000e" name="PCM_LL_Playback"/>
+      <VALUE val="0xa100000f" name="PCM_Offload"/>
+      <VALUE val="0xa1000010" name="Voice_Call_Rx"/>
+      <VALUE val="0xa1000011" name="PCM_ULL_Playback"/>
+      <VALUE val="0xa1000012" name="PCM_Proxy_Playback"/>
+      <VALUE val="0xa1000013" name="Incall_Music"/>
+    </KEY>
+    <KEY name="StreamTX" id="0xb1000000" description="Type of Tx Stream">
+      <VALUE val="0xb1000001" name="PCM_Record"/>
+      <VALUE val="0xb1000002" name="PCM_Tx_Loopback"/>
+      <VALUE val="0xb1000003" name="Voice_UI"/>
+      <VALUE val="0xb1000004" name="Voip_Tx"/>
+      <VALUE val="0xb1000005" name="HFP_Rx_Capture"/>
+      <VALUE val="0xb1000006" name="HFP_Tx_Capture"/>
+      <VALUE val="0xb1000007" name="Voice_Call_Tx"/>
+      <VALUE val="0xb1000008" name="DeepBuffer_Record"/>
+      <VALUE val="0xb1000009" name="RAW_Record"/>
+      <VALUE val="0xb100000a" name="PCM_ULL_Record"/>
+      <VALUE val="0xb100000b" name="PCM_Proxy_Record"/>
+      <VALUE val="0xb100000c" name="Incall_Record"/>
+    </KEY>
+    <KEY name="Instance" id="0xab000000" description="Stream Instance Id">
+      <VALUE val="0x1" name="Instance_1"/>
+      <VALUE val="0x2" name="Instance_2"/>
+      <VALUE val="0x3" name="Instance_3"/>
+      <VALUE val="0x4" name="Instance_4"/>
+      <VALUE val="0x5" name="Instance_5"/>
+      <VALUE val="0x6" name="Instance_6"/>
+      <VALUE val="0x7" name="Instance_7"/>
+      <VALUE val="0x8" name="Instance_8"/>
+    </KEY>
+    <KEY name="DeviceRX" id="0xa2000000" description="Rx Device">
+      <VALUE val="0xa2000001" name="Speaker"/>
+      <VALUE val="0xa2000002" name="Headphones"/>
+      <VALUE val="0xa2000003" name="BT_Rx"/>
+      <VALUE val="0xa2000004" name="Handset"/>
+      <VALUE val="0xa2000005" name="USB_Rx"/>
+      <VALUE val="0xa2000006" name="HDMI_Rx"/>
+      <VALUE val="0xa2000007" name="Proxy_Rx"/>
+      <VALUE val="0xA2000100" name="Speaker_FCT"/>
+      <VALUE val="0xa2000101" name="Speaker_Voice"/>
+      <VALUE val="0xa2000102" name="Handset_Voice"/>
+    </KEY>
+    <KEY name="DeviceTX" id="0xa3000000" description="Tx Device">
+      <VALUE val="0xa3000001" name="Speaker_Mic"/>
+      <VALUE val="0xa3000002" name="BT_Tx"/>
+      <VALUE val="0xa3000003" name="Headphone_Mic"/>
+      <VALUE val="0xa3000004" name="Handset_Mic"/>
+      <VALUE val="0xa3000005" name="USB_Tx"/>
+      <VALUE val="0xa3000006" name="VoiceActivation_Mic"/>
+      <VALUE val="0xa3000007" name="VoiceActivation_Headset_Mic"/>
+      <VALUE val="0xa3000008" name="Proxy_Tx"/>
+      <VALUE val="0xa3000009" name="VI_TX"/>
+    </KEY>
+    <KEY name="DevicePP_Rx" id="0xac000000" description="Rx Device Post/Pre Processing Chain">
+      <VALUE val="0xac000001" name="DevicePP_Rx_Default"/>
+      <VALUE val="0xac000002" name="Audio_MBDRC"/>
+      <VALUE val="0xac000003" name="Voip_MBDRC"/>
+      <VALUE val="0xac000004" name="HFP_Sink"/>
+      <VALUE val="0xac000005" name="DevicePP_RX_Voice_Default"/>
+      <VALUE val="0xac000009" name="Audio_MBDRC_DEFAULT"/>
+      <VALUE val="0xac000080" name="DevicePP_RX_Game"/>
+      <VALUE val="0xac000081" name="DevicePP_RX_Karaoke"/>
+    </KEY>
+    <KEY name="DevicePP_Tx" id="0xad000000" description="Tx Device Post/Pre Processing Chain">
+      <VALUE val="0xad000001" name="Voice_UI_Fluence_FFECNS"/>
+      <VALUE val="0xad000002" name="Audio_Fluence_SMECNS"/>
+      <VALUE val="0xad000003" name="Audio_Fluence_Endfire"/>
+      <VALUE val="0xad000004" name="Audio_Fluence_Pro"/>
+      <VALUE val="0xad000005" name="Voip_Fluence_Pro"/>
+      <VALUE val="0xad000006" name="HFP_Sink_Fluence_SMECNS"/>
+      <VALUE val="0xad000007" name="Voip_Fluence_SMECNS"/>
+      <VALUE val="0xad000008" name="Voice_Fluence_SMECNS"/>
+      <VALUE val="0xad000009" name="Voice_Fluence_Endfire"/>
+      <VALUE val="0xad00000a" name="Voice_Fluence_Pro"/>
+      <VALUE val="0xad00000b" name="Voice_UI_Fluence_FFNS"/>
+      <VALUE val="0xad00000c" name="Voice_UI_RAW"/>
+      <VALUE val="0xad00000d" name="Voip_Fluence_Endfire"/>
+      <VALUE val="0xad000071" name="Karaoke_Tx_PP"/>
+      <VALUE val="0xad000072" name="Recording_DualADC"/>
+      <VALUE val="0xad000073" name="RECORDING_VA_ENROLL"/>
+      <VALUE val="0xad000074" name="RECORDING_ASR"/>
+      <VALUE val="0xad000080" name="DEVICEPP_TX_GAME"/>
+      <VALUE val="0xad000082" name="DEVICEPP_TX_VOICE_WIRED_HEADPHONE"/>
+      <VALUE val="0xad000083" name="DEVICEPP_TX_VOIP_WIRED_HEADPHONE"/>
+    </KEY>
+    <KEY name="StreamPP_RX" id="0xaf000000" description="Rx Stream Post/Pre Processing Chain">
+      <VALUE val="0xaf000001" name="StreamPP_Rx_Default"/>
+    </KEY>
+    <KEY name="StreamPP_TX" id="0xb0000000" description="Tx Stream Post/Pre Processing Chain">
+      <VALUE val="0xb0000001" name="StreamPP_Tx_Default"/>
+    </KEY>
+    <KEY name="Volume" id="0xa4000000" description="Volume">
+      <VALUE val="0x0" name="Level_0"/>
+      <VALUE val="0x1" name="Level_1"/>
+      <VALUE val="0x2" name="Level_2"/>
+      <VALUE val="0x3" name="Level_3"/>
+      <VALUE val="0x4" name="Level_4"/>
+      <VALUE val="0x5" name="Level_5"/>
+      <VALUE val="0x6" name="Level_6"/>
+      <VALUE val="0x7" name="Level_7"/>
+      <VALUE val="0x8" name="Level_8"/>
+      <VALUE val="0x9" name="Level_9"/>
+      <VALUE val="0xa" name="Level_10"/>
+      <VALUE val="0xb" name="Level_11"/>
+      <VALUE val="0xc" name="Level_12"/>
+      <VALUE val="0xd" name="Level_13"/>
+      <VALUE val="0xe" name="Level_14"/>
+      <VALUE val="0xf" name="Level_15"/>
+    </KEY>
+    <KEY name="SamplingRate" id="0xa5000000" sampleRate="true" description="Sampling Rate">
+      <VALUE val="0x1f40" name="SR_8K" sampleRate="0x1f40"/>
+      <VALUE val="0x3e80" name="SR_16K" sampleRate="0x3e80"/>
+      <VALUE val="0x5622" name="SR_22K" sampleRate="0x5622"/>
+      <VALUE val="0x5dc0" name="SR_24K" sampleRate="0x5dc0"/>
+      <VALUE val="0x7d00" name="SR_32K" sampleRate="0x7d00"/>
+      <VALUE val="0xac44" name="SR_44.1K" sampleRate="0xac44"/>
+      <VALUE val="0xbb80" name="SR_48K" sampleRate="0xbb80"/>
+      <VALUE val="0x17700" name="SR_96K" sampleRate="0x17700"/>
+      <VALUE val="0x2ee00" name="SR_192K" sampleRate="0x2ee00"/>
+      <VALUE val="0x5dc00" name="SR_384K" sampleRate="0x5dc00"/>
+    </KEY>
+    <KEY name="BitWidth" id="0xa6000000" description="Bit Width">
+      <VALUE val="0x10" name="BW_16"/>
+      <VALUE val="0x18" name="BW_24"/>
+      <VALUE val="0x20" name="BW_32"/>
+    </KEY>
+    <KEY name="Pause" id="0xa7000000" description="Pause">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="Mute" id="0xa8000000" description="Mute">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="Channels" id="0xa9000000" description="Channels">
+      <VALUE val="0x1" name="CHS_1"/>
+      <VALUE val="0x2" name="CHS_2"/>
+      <VALUE val="0x3" name="CHS_3"/>
+      <VALUE val="0x4" name="CHS_4"/>
+      <VALUE val="0x5" name="CHS_5"/>
+      <VALUE val="0x6" name="CHS_6"/>
+      <VALUE val="0x6" name="CHS_6"/>
+      <VALUE val="0x7" name="CHS_7"/>
+      <VALUE val="0x8" name="CHS_8"/>
+    </KEY>
+    <KEY name="Fluence" id="0xaa000000" description="Fluence">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+      <VALUE val="0x2" name="EC"/>
+      <VALUE val="0x3" name="NS"/>
+    </KEY>
+    <KEY name="MediaFmtID" id="0xae000000" description="MediaFmtID">
+      <VALUE val="0xae000001" name="PCM"/>
+      <VALUE val="0xae000002" name="AAC"/>
+      <VALUE val="0xae000003" name="ALAC"/>
+      <VALUE val="0xae000004" name="APE"/>
+      <VALUE val="0xae000005" name="WMAPRO"/>
+      <VALUE val="0xae000006" name="WMASTD"/>
+      <VALUE val="0xae000007" name="FLAC"/>
+      <VALUE val="0xae000008" name="VORBIS"/>
+      <VALUE val="0xae000009" name="MP3"/>
+      <VALUE val="0xae00000a" name="AMRWBPLUS"/>
+    </KEY>
+    <KEY name="VSID" id="0xb3000000" description="VSID">
+      <VALUE val="0xb3000001" name="VSID_DEFAULT"/>
+      <VALUE val="0xb3000002" name="VSID_VOICE1"/>
+      <VALUE val="0xb3000003" name="VSID_VOICE2"/>
+      <VALUE val="0xb3000004" name="VSID_VOICE1_LB"/>
+      <VALUE val="0xb3000005" name="VSID_VOICE2_LB"/>
+    </KEY>
+    <KEY name="Equalizer" id="0xb2000000" description="Equalizer_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="BtProfile" id="0xb4000000" description="BTProfile">
+      <VALUE val="0xb4000001" name="SCO"/>
+      <VALUE val="0xb4000002" name="A2DP"/>
+    </KEY>
+    <KEY name="ProxyTxType" id="0xd1000000" description="ProxyTxType">
+      <VALUE val="0xd1000001" name="PROXY_TX_DEFAULT"/>
+      <VALUE val="0xd1000002" name="PROXY_TX_WFD"/>
+    </KEY>
+    <KEY name="BtFormat" id="0xb5000000" description="BTFormat">
+      <VALUE val="0xb5000001" name="GENERIC"/>
+      <VALUE val="0xb5000002" name="LDAC"/>
+      <VALUE val="0xb5000003" name="APTX_ADAPTIVE"/>
+      <VALUE val="0xb5000004" name="SWB"/>
+    </KEY>
+    <KEY name="Virtualizer_Switch" id="0xb9000000" description="Virtualizer_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="Reverb_Switch" id="0xb8000000" description="Reverb_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="PBE_Switch" id="0xb6000000" description="PBE_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="BASS_BOOST_Switch" id="0xb7000000" description="Bass_Boost_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="SW_Sidetone" id="0xba000000" description="SW_SIDETONE">
+      <VALUE val="0xba000001" name="SW_Sidetone"/>
+    </KEY>
+    <KEY name="Stream_SlowTalk" id="0xbb000000" description="Stream_SlowTalk">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="VoiceUI_Stream_Config" id="0xbc000000" description="VuiStreamConfig">
+      <VALUE val="0xbc000001" name="SVA"/>
+      <VALUE val="0xbc000002" name="Hotword"/>
+    </KEY>
+    <KEY name="Stream_MuxDemux" id="0xbd000000" description="Stream_MuxDemux">
+      <VALUE val="0x1" name="UL_Mono"/>
+      <VALUE val="0x2" name="DL_Mono"/>
+      <VALUE val="0x3" name="UL_DL_Mono"/>
+      <VALUE val="0x4" name="UL_DL_Stereo"/>
+    </KEY>
+    <KEY name="SP_Dev_Map" id="0xbe000000" description="SpkrProtDevMap">
+      <VALUE val="0x0" name="Disable_SP"/>
+      <VALUE val="0x1" name="Right_Mono"/>
+      <VALUE val="0x2" name="Left_Mono"/>
+      <VALUE val="0x3" name="Left_Right"/>
+    </KEY>
+    <KEY name="SP_VI_Map" id="0xbf000000" description="SpkrProtVIMap">
+      <VALUE val="0x0" name="RightSpeaker"/>
+      <VALUE val="0x1" name="LeftSpeaker"/>
+      <VALUE val="0x2" name="StereoSpeaker"/>
+    </KEY>
+    <KEY name="SP_Profile" id="0xfa000007" description="SpkrProtProfile">
+      <VALUE val="0x0" name="Normal"/>
+      <VALUE val="0x1" name="Voice"/>
+      <VALUE val="0x2" name="Bypass"/>
+    </KEY>
+    <KEY name="RAS_Switch" id="0xd0000000" description="RAS_Switch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_FX_Module_Switch" id="0xe1000000" description="MisoundSpkFxModuleSwitch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_FX_Switch" id="0xe2000000" description="MisoundSpkFxSwitch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_Mode" id="0xe3000000" description="MisoundSpkMode">
+      <VALUE val="0x0" name="AUTO"/>
+      <VALUE val="0x1" name="MUSIC"/>
+      <VALUE val="0x2" name="VIDEO"/>
+      <VALUE val="0x3" name="VOICE"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_ROTATION" id="0xe4000000" description="MisoundSpkRotation">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_STEREO_ENHANCE_MODE" id="0xe5000000" description="MisoundSpkStereoEnhanceMode">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_VOCAL_ENHANCE_MODE" id="0xe6000000" description="MisoundSpkVocalEnhanceMode">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_SYSTEM_SOUND" id="0xe7000000" description="MisoundSpkSystemSound">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+    </KEY>
+    <KEY name="MISOUND_SPK_VOLUME_CHANGE_MODE" id="0xe8000000" description="MisoundSpkVolumeChangeMode">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+      <VALUE val="0x4" name="0x4"/>
+      <VALUE val="0x5" name="0x5"/>
+      <VALUE val="0x6" name="0x6"/>
+      <VALUE val="0x7" name="0x7"/>
+      <VALUE val="0x8" name="0x8"/>
+      <VALUE val="0x9" name="0x9"/>
+      <VALUE val="0xa" name="0xa"/>
+      <VALUE val="0xb" name="0xb"/>
+      <VALUE val="0xc" name="0xc"/>
+      <VALUE val="0xd" name="0xd"/>
+      <VALUE val="0xe" name="0xe"/>
+      <VALUE val="0xf" name="0xf"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_MODULE_SWITCH" id="0xe9000000" description="MisoundHphModuleSwitch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_SWITCH" id="0xea000000" description="MisoundHphSwitch">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_EQ_ENABLE" id="0xec000000" description="MisoundHphEQEnable">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_MUSICMODE_ENABLE" id="0xee000000" description="MisoundHphMusicModeEnable">
+      <VALUE val="0x0" name="Off"/>
+      <VALUE val="0x1" name="On"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_MODE_TYPE" id="0xef000000" description="MisoundHphModeType">
+      <VALUE val="0x1" name="Music"/>
+      <VALUE val="0x2" name="Movie"/>
+      <VALUE val="0x3" name="Voice"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_STEREO_ENHANCE" id="0xf0000000" description="MisoundHphStereoEnhance">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_VOCAL_ENHANCE" id="0xf1000000" description="MisoundHphVocalEnhance">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_EARCOMP_AGEMODE" id="0xf2000000" description="MisoundHphEarCompAgeMode">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_HPH_EARCOMP_ENABLE" id="0xf3000000" description="MisoundHphEarCompEnable">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+    </KEY>
+    <KEY name="MISOUND_KARAOKE_REVERB_TYPE" id="0xf8000000" description="MisoundKaraokeReverbType">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+      <VALUE val="0x3" name="0x3"/>
+    </KEY>
+    <KEY name="MISOUND_KARAOKE_EQ_TYPE" id="0xf9000000" description="MisoundKaraokeEQType">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+      <VALUE val="0x2" name="0x2"/>
+    </KEY>
+    <KEY name="MISOUND_KARAOKE_SWITCH" id="0xfa000000" description="MisoundKaraokeSwitch">
+      <VALUE val="0x0" name="0x0"/>
+      <VALUE val="0x1" name="0x1"/>
+    </KEY>
+  </KEY_LIST>
+  <GRAPH_KEY description="Graph Keys">
+    <KEY id="0xa1000000" name="StreamRX"/>
+    <KEY id="0xa2000000" name="DeviceRX"/>
+    <KEY id="0xa3000000" name="DeviceTX"/>
+    <KEY id="0xac000000" name="DevicePP_Rx"/>
+    <KEY id="0xad000000" name="DevicePP_Tx"/>
+    <KEY id="0xab000000" name="Instance"/>
+    <KEY id="0xaf000000" name="StreamPP_RX"/>
+    <KEY id="0xb0000000" name="StreamPP_TX"/>
+    <KEY id="0xb1000000" name="StreamTX"/>
+    <KEY id="0xb3000000" name="VSID"/>
+    <KEY id="0xb4000000" name="BtProfile"/>
+    <KEY id="0xb5000000" name="BtFormat"/>
+    <KEY id="0xba000000" name="SW_Sidetone"/>
+    <KEY id="0xbc000000" name="VoiceUI_Stream_Config"/>
+    <KEY id="0xd1000000" name="ProxyTxType"/>
+  </GRAPH_KEY>
+  <CAL_KEY description="Calibration Keys">
+    <KEY id="0xa4000000" name="Volume"/>
+    <KEY id="0xa9000000" name="Channels"/>
+    <KEY id="0xbe000000" name="SP_Dev_Map"/>
+    <KEY id="0xd0000000" name="RAS_Switch"/>
+    <KEY id="0xbf000000" name="SP_VI_Map"/>
+    <KEY id="0xfa000007" name="SP_Profile"/>
+  </CAL_KEY>
+  <MODULE_TAGS>
+    <TAG id="0xc0000004" name="device_hw_ep_rx" description="Hw EP Rx">
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc0000005" name="device_hw_ep_tx" description="Hw EP Tx">
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc0000006" name="stream_pause" description="Stream Pause">
+      <KEY id="0xa7000000" name="Pause"/>
+    </TAG>
+    <TAG id="0xc0000007" name="stream_mute" description="Stream Mute">
+      <KEY id="0xa8000000" name="Mute"/>
+    </TAG>
+    <TAG id="0xc000000a" name="device_fluence" description="Fluence On/Off">
+      <KEY id="0xaa000000" name="Fluence"/>
+    </TAG>
+    <TAG id="0xc000000d" name="stream_volume" description="Stream Volume">
+      <KEY id="0xa4000000" name="Volume"/>
+    </TAG>
+    <TAG id="0xc0000011" name="device_pp_mfc" description="Device PP MFC">
+      <KEY id="0xa5000000" name="SamplingRate"/>
+      <KEY id="0xa6000000" name="BitWidth"/>
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc000000b" name="stream_mfc" description="Stream MFC">
+      <KEY id="0xa5000000" name="SamplingRate"/>
+      <KEY id="0xa6000000" name="BitWidth"/>
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc0000012" name="stream_placeholder_decoder" description="Placeholder Decoder">
+      <KEY id="0xae000000" name="MediaFmtID"/>
+    </TAG>
+    <TAG id="0xc0000014" name="stream_equalizer" description="Stream Equalizer">
+      <KEY id="0xb2000000" name="Equalizer"/>
+    </TAG>
+    <TAG id="0xc0000015" name="stream_virtualizer" description="Stream Virtualizer">
+      <KEY id="0xb9000000" name="Virtualizer_Switch"/>
+    </TAG>
+    <TAG id="0xc0000016" name="stream_reverb" description="Stream Reverb">
+      <KEY id="0xb8000000" name="Reverb_Switch"/>
+    </TAG>
+    <TAG id="0xc0000017" name="stream_pbe" description="Stream PBE">
+      <KEY id="0xb6000000" name="PBE_Switch"/>
+    </TAG>
+    <TAG id="0xc0000018" name="stream_bass_bost" description="Stream Bass Boost">
+      <KEY id="0xb7000000" name="BASS_BOOST_Switch"/>
+    </TAG>
+    <TAG id="0xc0000019" name="pspd_mfc" description="Per Stream Per Device MFC">
+      <KEY id="0xa5000000" name="SamplingRate"/>
+      <KEY id="0xa6000000" name="BitWidth"/>
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc0000025" name="stream_slowtalk" description="Slow Talk">
+      <KEY id="0xbb000000" name="Stream_SlowTalk"/>
+    </TAG>
+    <TAG id="0xc0000026" name="module_channels" description="Module Channels">
+      <KEY id="0xa9000000" name="Channels"/>
+    </TAG>
+    <TAG id="0xc0000027" name="stream_muxdemux" description="Mux Demux">
+      <KEY id="0xbd000000" name="Stream_MuxDemux"/>
+    </TAG>
+    <TAG id="0xc0001001" name="misound spk  module switch" description="misound spk module switch">
+      <KEY id="0xe1000000" name="MISOUND_SPK_FX_Module_Switch"/>
+    </TAG>
+    <TAG id="0xc0001002" name="misound spk switch" description="misound spk switch">
+      <KEY id="0xe2000000" name="MISOUND_SPK_FX_Switch"/>
+    </TAG>
+    <TAG id="0xc0001003" name="misound spk mode" description="misound spk mode">
+      <KEY id="0xe3000000" name="MISOUND_SPK_Mode"/>
+    </TAG>
+    <TAG id="0xc0001004" name="misound spk rotation" description="misound spk rotation">
+      <KEY id="0xe4000000" name="MISOUND_SPK_ROTATION"/>
+    </TAG>
+    <TAG id="0xc0001005" name="misound spk stereo enhance mode" description="misound spk stereo enhance mode">
+      <KEY id="0xe5000000" name="MISOUND_SPK_STEREO_ENHANCE_MODE"/>
+    </TAG>
+    <TAG id="0xc0001006" name="misound spk vocal enhance mode" description="misound spk vocal enhance mode">
+      <KEY id="0xe6000000" name="MISOUND_SPK_VOCAL_ENHANCE_MODE"/>
+    </TAG>
+    <TAG id="0xc0001007" name="misound spk system sound" description="misound spk system sound">
+      <KEY id="0xe7000000" name="MISOUND_SPK_SYSTEM_SOUND"/>
+    </TAG>
+    <TAG id="0xc0001008" name="misound spk system sound" description="misound spk volume change">
+      <KEY id="0xe8000000" name="MISOUND_SPK_VOLUME_CHANGE_MODE"/>
+    </TAG>
+    <TAG id="0xc0001009" name="misound hph module switch" description="misound hph module switch">
+      <KEY id="0xe9000000" name="MISOUND_HPH_MODULE_SWITCH"/>
+    </TAG>
+    <TAG id="0xc000100a" name="misound hph switch" description="misound hph switch">
+      <KEY id="0xea000000" name="MISOUND_HPH_SWITCH"/>
+    </TAG>
+    <TAG id="0xc000100c" name="misound hph filteridx" description="misound hph eq enable">
+      <KEY id="0xec000000" name="MISOUND_HPH_EQ_ENABLE"/>
+    </TAG>
+    <TAG id="0xc000100e" name="misound hph music mode enable" description="misound hph musicmode enable">
+      <KEY id="0xee000000" name="MISOUND_HPH_MUSICMODE_ENABLE"/>
+    </TAG>
+    <TAG id="0xc000100f" name="misound hph mode type" description="misound hph mode type">
+      <KEY id="0xef000000" name="MISOUND_HPH_MODE_TYPE"/>
+    </TAG>
+    <TAG id="0xc0001010" name="misound hph stereo enhance" description="misound hph stereo enhance">
+      <KEY id="0xf0000000" name="MISOUND_HPH_STEREO_ENHANCE"/>
+    </TAG>
+    <TAG id="0xc0001011" name="misound hph vocal enhance" description="misound hph vocal enhance">
+      <KEY id="0xf1000000" name="MISOUND_HPH_VOCAL_ENHANCE"/>
+    </TAG>
+    <TAG id="0xc0001012" name="misound hph earcomp agemode" description="misound hph earcomp agemode">
+      <KEY id="0xf2000000" name="MISOUND_HPH_EARCOMP_AGEMODE"/>
+    </TAG>
+    <TAG id="0xc0001013" name="misound hph earcomp enable" description="misound hph earcomp agemode">
+      <KEY id="0xf3000000" name="MISOUND_HPH_EARCOMP_ENABLE"/>
+    </TAG>
+    <TAG id="0xc0001020" name="misound karaoke reverb type" description="misound karaoke reverb type">
+      <KEY id="0xf8000000" name="MISOUND_KARAOKE_REVERB_TYPE"/>
+    </TAG>
+    <TAG id="0xc0001021" name="misound karaoke eq type" description="misound karaoke eq type">
+      <KEY id="0xf9000000" name="MISOUND_KARAOKE_EQ_TYPE"/>
+    </TAG>
+    <TAG id="0xc0001022" name="misound karaoke switch" description="misound karaoke switch">
+      <KEY id="0xfa000000" name="MISOUND_KARAOKE_SWITCH"/>
+    </TAG>
+    <TAG id="0xc0000001" name="sh_ep"/>
+    <TAG id="0xc0000002" name="stream_input_media_format"/>
+    <TAG id="0xc0000003" name="stream_output_media_format"/>
+    <TAG id="0xc0000008" name="device_sva"/>
+    <TAG id="0xc0000009" name="device_adam"/>
+    <TAG id="0xc000000c" name="device_mfc"/>
+    <TAG id="0xc000000e" name="stream_pcm_decoder"/>
+    <TAG id="0xc000000f" name="stream_pcm_encoder"/>
+    <TAG id="0xc0000010" name="stream_pcm_converter"/>
+    <TAG id="0xc0000013" name="stream_spr"/>
+    <TAG id="0xc0000020" name="bt_encoder"/>
+    <TAG id="0xc0000021" name="cop_packetizer_v0"/>
+    <TAG id="0xc0000022" name="rate_adapter_module"/>
+    <TAG id="0xc0000023" name="bt_pcm_converter"/>
+    <TAG id="0xc0000024" name="bt_decoder"/>
+    <TAG id="0xc0000028" name="module_vi"/>
+    <TAG id="0xc0000029" name="module_sp"/>
+    <TAG id="0xc000100b" name="misound_hph_filteridx"/>
+    <TAG id="0xc000100d" name="misound_hph_eq_bandgains"/>
+    <TAG id="0xc0001014" name="misound_hph_earcomp_bandgains_l"/>
+    <TAG id="0xc0001015" name="misound_hph_earcomp_bandgains_r"/>
+    <TAG id="0xc0001044" name="misound_karaoke_vocal_reserved1"/>
+    <TAG id="0xc000340" name="miec_speaker_direction"/>
+  </MODULE_TAGS>
+</KEY_DEF>

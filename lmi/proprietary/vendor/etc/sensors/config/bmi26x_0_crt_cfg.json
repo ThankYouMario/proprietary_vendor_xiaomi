@@ -1,0 +1,22 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "LMI"],
+    "soc_id": ["291", "246", "305", "321", "356"]
+  },
+  "bmi26x_crt_config":{
+    "owner": "sns_bmi26x",
+    ".crt_cfg":{
+      "owner": "sns_bmi26x",
+      "crt_itvl":{ "type": "int", "ver": "1",
+        "data": "2"
+      },
+      "repeate_on_error":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "reserved":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    }
+  }
+}

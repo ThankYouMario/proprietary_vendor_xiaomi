@@ -1,0 +1,647 @@
+{
+		"//": "Global parameters",
+  "StructGlobal": {
+	"StructMask":{
+		"paramSwitch": 1,
+		"paramaiMaskDownSample": 4,
+		"parammImaskW": 960,
+		"parammImaskH": 720
+	},
+	"StructMultiThread":{
+	    "paramMaskThreadSwitch": 1,
+		"paramBgFilterSwitch": 1,
+		"paramthreadNums": 4
+	},
+	"StructDspGpu":{
+		"paramBmDspSwitch": 1,
+		"paramGatherDspSwitch": 1,
+		"paramMatteGpuSwitch": 0
+	}
+  },
+  "/": "Depth parameters",
+  "StructB1": {
+    "Struct_4_3": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_16_9": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_full": {
+      "paramS1": 4,
+      "paramS2": 4,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_HOT": {
+      "paramS1": 6,
+      "paramS2": 6,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    }
+  },
+  "StructB2": {
+    "Struct_4_3": {
+      "paramS1": 6,
+      "paramS2": 6,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_16_9": {
+      "paramS1": 6,
+      "paramS2": 6,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_full": {
+      "paramS1": 6,
+      "paramS2": 6,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    },
+    "Struct_HOT": {
+      "paramS1": 6,
+      "paramS2": 6,
+      "paramA": 31,
+      "paramB": 31,
+      "paramC": -18,
+      "paramD": 64,
+      "paramG": 0,
+      "paramT": 500,
+      "paramM-1": 9,
+      "paramM-2": 20,
+      "paramSR": 0
+    }
+  },
+  "StructDS": {
+    "paramB1": 0,
+    "paramB2": 0,
+    "paramBS": 8,
+    "paramS": 1,
+    "paramRR": 30,
+    "paramXV": 183,
+    "paramNV": 100
+  },
+  "StructEDGERef": {
+    "SWITCH": 0,
+	"SW_TRI": 0,
+	"SW_MPO": 0,
+    "B_W": 15,
+	"S_W": 32,
+	"M_H": 210,
+	"M_L": 10,
+	"R_RF": 1.0,
+	"Ang_Val": 0,
+	"To_Up": 0,
+	"To_Down": 1,
+	"To_Left": 1,
+	"To_Right": 0,
+	"Bg_DiSize": 7,
+	"Bg_DiCnt": 5,
+	"Bg_ErSize": 0,
+	"Bg_ErCnt": 0,
+	"Tri_ER": 6,
+	"Tri_DR": 6,
+	"St_Pix": 1.0
+  },
+  "StructI": {
+    "paramB": 1,
+    "paramU": 1,
+    "paramSD": 0,
+    "paramI": 0,
+    "paramW": 7,
+    "paramS": 5,
+    "paramGT": 220,
+    "paramT": 128,
+    "paramBF": 0,
+    "paramWR": 0.19,
+    "paramAR": 0.05
+  },
+  "StructF1": {
+    "paramLF": 1,
+    "paramO": 1,
+    "paramSC": 2,
+    "paramLFS": 9,
+    "paramLFU": 10,
+    "paramGF": 0,
+    "paramD": 0,
+    "paramU": 180,
+    "paramV1": 105,
+    "paramV2": 125,
+    "paramRM": 1,
+    "paramFR": 0.25
+  },
+  "StructF2": {
+    "paramLF": 1,
+	"paramO": 1,
+    "paramSC": 2,
+    "paramLFS": 9,
+    "paramLFU": 10,
+	"paramGF": 0,
+	"paramD": 0,
+    "paramU": 180,
+    "paramV1": 105,
+    "paramV2": 125,
+    "paramRM": 1,
+    "paramFR": 0.25
+  },
+  "StructP": {
+    "paramL0": 0,
+    "paramL1": 1,
+    "paramL2": 1,
+    "paramI": 2
+  },
+  "StructW": {
+    "paramB": 0,
+    "paramI": 1,
+    "paramS": 2.0,
+    "paramL": 100
+  },
+  "StructC1": {
+    "Struct_4_3": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_16_9": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_full": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_HOT": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    }
+  },
+  "StructC2": {
+    "Struct_4_3": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_16_9": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_full": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    },
+    "Struct_HOT": {
+      "paramT": 0,
+      "paramD": 4,
+      "paramS": 6,
+      "paramL0": 5,
+      "paramL1": 4,
+      "paramL2": 5,
+      "paramL3": 1,
+      "paramL4": 1,
+      "paramL": 48.0,
+      "paramVN": 15000,
+      "paramCONF": 1,
+      "paramGN": 1,
+      "paramFRC": 2.0,
+      "paramTolerr": 0.001,
+      "paramIterMax": 250,
+      "paramIterCheck": 10,
+      "paramMskErodeNum": 0
+    }
+  },
+  "StructPostProSwitch": {
+    "paramNonEdge": 0,
+    "paramDTF": 0
+  },
+  "//": "Calib parameters",
+  "StructM1": {
+    "paramA": 1,
+    "paramB": 1,
+    "paramC": 2,
+    "paramD": 0,
+    "paramE":"L9",
+    "paramF": 1,
+    "paramH": 1,
+    "paramI1": 1.0,
+    "paramJ_m": 0,
+	"paramJ_a": 0,
+    "paramTilt": 1,
+    "paramTx": -15,
+    "paramTy":3.85
+  },
+    "StructM2": {
+    "paramA": 1,
+    "paramB": 1,
+    "paramC": 2,
+    "paramD": 0,
+    "paramE":"L9",
+    "paramF": 1,
+    "paramH": 1,
+    "paramI1": 1.0,
+    "paramJ_m": 0,
+	"paramJ_a": 0,
+    "paramTilt": 1,
+    "paramTx": -15,
+    "paramTy":3.85
+  },
+  "StructO1": {
+    "paramA": 0,
+    "paramB": 1.4,
+    "paramC_Q": 400,
+    "paramD_Q": 4.0,
+    "paramX_Q": 0.1,
+    "paramE_Q": 0.1,
+    "paramF_Q": 0,
+    "paramDS_Q": 1,
+    "paramG_Q": 21,
+    "paramH_Q": 4,
+    "paramI_Q": 0.001,
+    "paramT_Q": 3,
+    "paramC_P": 400,
+    "paramD_P": 4.0,
+    "paramX_P": 0.1,
+    "paramE_P": 0.1,
+    "paramF_P": 0,
+    "paramDS_P": 1,
+    "paramG_P": 21,
+    "paramH_P": 4,
+    "paramI_P": 0.001,
+    "paramT_P": 3,
+    "paramBD":10,
+    "paramSD":3.0,
+    "paramSJ":6.0,
+    "paramMI":50,
+    "paramDT":1e-8,
+    "paramDE":1e-10,
+    "paramBE":1e-8,
+    "paramCE":1e-5
+  },
+  "StructO2": {
+    "paramA": 0,
+    "paramB": 1.4,
+    "paramC_Q": 100,
+    "paramD_Q": 4.0,
+    "paramX_Q": 0.1,
+    "paramE_Q": 0.1,
+    "paramF_Q": 0,
+    "paramDS_Q": 1,
+    "paramG_Q": 21,
+    "paramH_Q": 4,
+    "paramI_Q": 0.001,
+    "paramT_Q": 3,
+    "paramC_P": 400,
+    "paramD_P": 4.0,
+    "paramX_P": 0.1,
+    "paramE_P": 0.1,
+    "paramF_P": 0,
+    "paramDS_P": 0,
+    "paramG_P": 21,
+    "paramH_P": 4,
+    "paramI_P": 0.001,
+    "paramT_P": 3,
+    "paramBD":10,
+    "paramSD":3.0,
+    "paramSJ":6.0,
+    "paramMI":50,
+    "paramDT":1e-8,
+    "paramDE":1e-10,
+    "paramBE":1e-8,
+    "paramCE":1e-5
+  },
+  "StructIMG_Type": {
+    "paramA_4_3": 0,
+    "paramB_4_3": 0,
+    "paramC_4_3": 0,
+    "paramD_4_3": 0,
+    "paramA_16_9": 0,
+    "paramB_16_9": 0,
+    "paramC_16_9": 0,
+    "paramD_16_9": 0,
+    "paramA_all": 0,
+    "paramB_all": 0,
+    "paramC_all": 0,
+    "paramD_all": 0,
+    "paramA1_4_3": 4000,
+    "paramB1_4_3": 3000,
+    "paramC1_4_3": 3280,
+    "paramD1_4_3": 2464,
+    "paramA1_16_9": 3968,
+    "paramB1_16_9": 2232,
+    "paramC1_16_9": 3200,
+    "paramD1_16_9": 1800,
+    "paramA1_all": 4000,
+    "paramB1_all": 1800,
+    "paramC1_all": 3200,
+    "paramD1_all": 1440
+  },
+  "///": "BokehEffect parameters",
+  "StructMT":{
+	"InResizeMT": 1,
+	"ScatYuvMT": 1,
+	"UvbluMT": 1,
+	"PosProcYMT": 1
+  },
+  "StructDownSamp":{
+	"DowSampRat": 2,
+	"DowSampMeth": 0
+  },
+  "StructDownSampHot": {
+    "DowSampRat": 4,
+	"DowSampMeth": 0
+  },
+  "StructPre": {
+      "StructDof": {
+          "StructDofSubDep": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.0008,
+              "foreDistRat": 0.6,
+              "LabRat": 1.2
+          },
+          "StructDofNorm": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.002,
+              "foreDistRat": 1.0,
+              "LabRat": 1.4
+          },
+          "StructDofDepStret": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.0007,
+              "foreDistRat": 1.0,
+              "LabRat": 1.2
+          }
+      },
+      "StructDofRefine": {
+          "paramSwitch": 1,
+          "structAlpha": {
+              "paramSwitch": 1,
+              "paramMatSize": 2,
+              "paramMatRadius": 5,
+              "paramMatlowT": 0.25,
+              "paramMathighT": 0.50,
+              "paramBlurRadius": 9
+          },
+          "structErode": {
+              "paramSwitch": 1,
+              "paramRadius": 1
+          },
+          "structWeight": {
+              "paramSwitch": 1,
+              "paramRadius": 9,
+              "paramWeight": 0.1
+          }
+      },
+    "StructRadius": {
+        "StructRadiusSubDep": {
+            "backLeve": 6.5,
+            "foreLeve": 2.0,
+            "apeRat": 2.0,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        },
+        "StructRadiusNorm": {
+            "backLeve": 6.5,
+            "foreLeve": 1.5,
+            "apeRat": 0.8,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        },
+        "StructRadiusDepStret": {
+            "backLeve": 6.5,
+            "foreLeve": 2.0,
+            "apeRat": 2.0,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        }
+    },
+      "StructRadiRefine": {
+          "paramSwitch": 1,
+          "paramDilSiz": 7,
+          "paramRadius": 4
+      },
+      "StructSpot": {
+          "paramSwitch": 1,
+          "paramDxFlg": 0,
+          "paramIsoThre": 50,
+          "StructSoft": {
+              "paramMinBrig": 200,
+              "paramEnhanRat": 18,
+              "paramClipHigh": 0
+          },
+          "StructHard": {
+              "paramMinBrig": 200,
+              "paramEnhanRat": 18,
+              "paramClipHigh": 0,
+              "paramMaxContAre": 1200,
+              "paramMinContAre": 25,
+              "paramMaxAix": 25,
+              "paramMinAix": 0,
+              "paramMinGradAvge": 20,
+              "paramMaxGRadCv": 1.2,
+              "paramMaxEccen": 0.9,
+              "paramMamElliErr": 0.15,
+              "paramMinFillRat": 0.9,
+              "paramMaxAmbiVal": 0.75
+          }
+      },
+      "StructWeakFreq": {
+          "paramSwitch": 0,
+          "paramRadius": 3
+      }
+  },
+  "StructProc": {
+	  "StructApeLens":{
+		  "paramSwitch": 1,
+		  "paramYRat": 1.0,
+		  "paramURat": 1.5,
+		  "paramVRat": 1.5
+	  },
+	  "StructGather":{
+		  "paramSwitch": 1,
+		  "paramRadiusScalar": 4
+	  },
+	  "StructScatter":{
+        "paramSwitch": 0,
+        "paramIsTransGauss": 1,
+        "paramIsRaidusWeight":  0
+	  },
+	  "StructUv":{
+        "paramSwitch": 1,
+        "paramBlurRatio": 2,
+		"paramBlurWay": 1
+	  }
+  },
+  "StructPos": {
+	  "StructFusnAlpha":{
+		  "paramSwitch": 1,
+		  "paramlowT": 0.38,
+		  "paramhighT": 0.65,
+		  "paramTranRaidus": 0.75
+	  }
+  },
+  "SturctNoise":{
+	  "paramSwitch": 0,
+	  "paramThre": 6,
+	  "paramPortion": 7
+  }
+}

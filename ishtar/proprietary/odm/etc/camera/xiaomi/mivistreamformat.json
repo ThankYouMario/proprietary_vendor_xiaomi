@@ -1,0 +1,386 @@
+/*
+phgType (refer to: mihal/Photographer.h)
+format: (refer to: system/core/include/system/graphics-base-vx.x.h)
+
+ Photographer_SIMPLE = 0,
+ Photographer_HDR = 1,
+ Photographer_SR = 2,
+ Photographer_SN = 3,
+ Photographer_BURST = 4,
+ Photographer_HDRSR = 5,
+ Photographer_FUSION = 6,
+ Photographer_SR_FUSION = 7,
+ Photographer_VENDOR_MFNR = 8,
+ Photographer_MIHAL_MFNR = 9,
+ Photographer_BOKEH = 10,
+ Photographer_BOKEH_MD = 11,
+ Photographer_BOKEH_HDR = 12,
+ Photographer_BOKEH_SE = 13,
+ Photographer_HD_REMOSAIC = 14,
+ Photographer_HD_UPSCALE = 15,
+ Photographer_MANUAL = 16,
+ Photographer_AINR = 17,
+ Photographer_HD_AINR = 18
+*/
+
+{
+    "RoleIdList": {
+        "CameraRole" : [
+            {
+                // RoleIdRearWide
+                "RoleId" : 0,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 2,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 5,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 17,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 18,
+                        "format" : [32]
+                    }
+                ],
+                //"FovCropZoomRatio" : 1.1216,
+                "XCFASnapshotThreshold": [
+                    {"xcfaShortGain"    : 8.0},
+                    {"xcfaLuxIndex"     : 270.0},
+                    {"xcfaAdrcGain"     : 3.5},
+                    {"xcfaDarkRatio"    : 0.75},
+                    {"flashModeSingle"  : 1},
+                    {"flashModeTorch"   : 2}
+                ]
+            },
+            {
+                // RoleIdRearTele
+                "RoleId" : 20,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 2,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 5,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 17,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 18,
+                        "format" : [32]
+                    }
+                ],
+                "FakeSatZoomStart" : 10.0,
+                "FakeSatZoomStop" : 150.0,
+                "FakeSatLuxIndex" : 65536.0,
+                "FakeSatShortGain" : 5.0,
+                "FakeSatAdrcGain" : 100.0,
+                "FakeSatImageSizes":[
+                    {
+                        "FrameRatio" : 1.00,
+                        "ImageSizes" : [
+                            {
+                                "type" : 1,
+                                "width" : 1920,
+                                "height" : 1920
+                            },
+                            {
+                                "type" : 2,
+                                "width" : 1920,
+                                "height" : 1920
+                            },
+                            {
+                                "type" : 3,
+                                "width" : 3072,
+                                "height" : 3072
+                            }
+                       ]
+                    },
+                    {
+                        "FrameRatio" : 1.33,
+                        "ImageSizes" : [
+                            {
+                                "type" : 1,
+                                "width" : 2560,
+                                "height" : 1920
+                            },
+                            {
+                                "type" : 2,
+                                "width" : 2560,
+                                "height" : 1920
+                            },
+                            {
+                                "type" : 3,
+                                "width" : 4080,
+                                "height" : 3072
+                            }
+                       ]
+                    },
+                    {
+                        "FrameRatio" : 1.77,
+                        "ImageSizes" : [
+                            {
+                                "type" : 1,
+                                "width" : 2560,
+                                "height" : 1440
+                            },
+                            {
+                                "type" : 2,
+                                "width" : 2560,
+                                "height" : 1440
+                            },
+                            {
+                                "type" : 3,
+                                "width" : 4080,
+                                "height" : 2296
+                            }
+                       ]
+                    },
+                    {
+                        "FrameRatio" : 2.22,
+                        "ImageSizes" : [
+                            {
+                                "type" : 1,
+                                "width" : 2560,
+                                "height" : 1152
+                            },
+                            {
+                                "type" : 2,
+                                "width" : 2560,
+                                "height" : 1152
+                            },
+                            {
+                                "type" : 3,
+                                "width" : 4080,
+                                "height" : 1836
+                            }
+                       ]
+                    }
+                ],
+                "FovCropZoomRatio" : 1.2308,
+                "XCFASnapshotThreshold": [
+                    {"xcfaShortGain"    : 8.0},
+                    {"xcfaLuxIndex"     : 270.0},
+                    {"flashModeSingle"  : 1},
+                    {"flashModeTorch"   : 2}
+                ]
+            },
+            {
+                // RoleIdRearUltra
+                "RoleId" : 21,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 2,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 5,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 8,
+                        "format" : [35]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 17,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 18,
+                        "format" : [32]
+                    }
+                ],
+                "XCFASnapshotThreshold": [
+                    {"xcfaShortGain"    : 8.0},
+                    {"xcfaLuxIndex"     : 270.0},
+                    {"xcfaAdrcGain"     : 3.0},
+                    {"flashModeSingle"  : 1},
+                    {"flashModeTorch"   : 2}
+                ]
+            },
+            {
+                // RoleIdRearTele4x
+                "RoleId" : 23,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 0,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 1,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 2,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 4,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 5,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [37]
+                    },
+                    {
+                        "phgType" : 17,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 18,
+                        "format" : [32]
+                    }
+                ],
+                //"FovCropZoomRatio" : 1.1216,
+                "XCFASnapshotThreshold": [
+                    {"xcfaShortGain"    : 8.0},
+                    {"xcfaLuxIndex"     : 270.0},
+                    {"xcfaAdrcGain"     : 3.5},
+                    {"xcfaDarkRatio"    : 0.75},
+                    {"flashModeSingle"  : 1},
+                    {"flashModeTorch"   : 2}
+                ]
+            },
+            {
+                // RoleIdRearUltra
+                "RoleId" : 64,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 1,
+                        "format" : [35]
+                    },
+                    {
+                        "phgType" : 3,
+                        "format" : [32]
+                    },
+                    {
+                        "phgType" : 9,
+                        "format" : [37]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearBokeh2x
+                "RoleId" : 61,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 10,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 11,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 12,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 13,
+                        // master: raw16, slave: raw10
+                        "format" : [32, 37]
+                    }
+                ]
+            },
+            {
+                // RoleIdRearBokeh1x
+                "RoleId" : 63,
+                "PhgStreamFormat": [
+                    {
+                        "phgType" : 10,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 11,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 12,
+                        "format" : [35, 35]
+                    },
+                    {
+                        "phgType" : 13,
+                        // master: raw16, slave: raw10
+                        "format" : [32, 37]
+                    }
+                ]
+            }
+        ]
+    }
+}

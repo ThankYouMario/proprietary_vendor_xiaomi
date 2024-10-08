@@ -1,0 +1,10 @@
+on property:init.svc.mediadrm=running
+    mkdir /data/vendor/mediadrm 0770 media mediadrm
+
+service vendor.drm-widevine-hal /vendor/bin/hw/android.hardware.drm-service.widevine
+    interface aidl android.hardware.drm::IDrmFactory/widevine
+    class hal
+    user media
+    group media mediadrm drmrpc system
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

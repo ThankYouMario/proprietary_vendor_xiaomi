@@ -1,0 +1,76 @@
+on boot
+    mkdir /dev/socket/qcrild 0750 radio radio
+
+service vendor.qcrild /vendor/bin/hw/qcrilNrd
+    class main
+    user radio
+    disabled
+    group radio cache inet misc audio log readproc wakelock oem_2901 oem_2912
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+service vendor.qcrild2 /vendor/bin/hw/qcrilNrd -c 2
+    class main
+    user radio
+    disabled
+    group radio cache inet misc audio log readproc wakelock oem_2901 oem_2912
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+service vendor.qcrild3 /vendor/bin/hw/qcrilNrd -c 3
+    class main
+    user radio
+    disabled
+    group radio cache inet misc audio log readproc wakelock oem_2901 oem_2912
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+on property:persist.radio.multisim.config=ssss && property:ro.baseband=msm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+
+on property:persist.radio.multisim.config=ssss && property:ro.baseband=mdm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+
+on property:persist.radio.multisim.config=SSSS && property:ro.baseband=msm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+
+on property:persist.radio.multisim.config=SSSS && property:ro.baseband=mdm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+
+on property:persist.radio.multisim.config=dsds && property:ro.baseband=msm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2
+
+on property:persist.radio.multisim.config=dsds && property:ro.baseband=mdm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2
+
+on property:persist.radio.multisim.config=DSDS && property:ro.baseband=msm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2
+
+on property:persist.radio.multisim.config=DSDS && property:ro.baseband=mdm
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2
+
+on property:persist.radio.restart_rild=1
+    stop vendor.qcrild
+    start vendor.qcrild
+on property:persist.radio.restart_rild=2
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    start vendor.qcrild
+    start vendor.qcrild2

@@ -1,0 +1,282 @@
+{
+  "config":{
+    "hw_platform": ["QRD"],
+    "soc_id": ["568"]
+  },
+  "sx933x_0":{
+    "owner": "sx933x_0",
+    ".sar":{
+      "owner": "sx933x_0",
+      ".config":{
+        "owner": "sx933x_0",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "sx933x_0_platform":{
+    "owner": "sns_sx933x",
+    ".config":{
+      "owner": "sns_sx933x",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "40"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "1",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "vdd_rail":{ "type": "str", "ver": "1",
+        "data": ""
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".placement":{
+      "owner": "sns_sx933x",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".thresh":{
+      "owner": "sns_sx933x",
+      "threshold_0":{ "type": "flt", "ver": "50",
+        "data": "25.0"
+      },
+      "threshold_1":{ "type": "flt", "ver": "50",
+        "data": "25.0"
+      },
+      "threshold_2":{ "type": "flt", "ver": "50",
+        "data": "25.0"
+      },
+      "threshold_3":{ "type": "flt", "ver": "50",
+        "data": "25.0"
+      }
+    },
+    ".offset":{
+      "owner": "sns_sx933x",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".register":{
+      "owner": "sns_sx933x",
+      "Is_config":{ "type": "int", "ver": "1",
+      "data": "1"
+      },
+      "SX933X_SCANPERIOD_REG_0x801C":{ "type": "int", "ver": "1",
+      "data": "0x801C"
+      },
+      "SX933X_SCANPERIOD":{ "type": "int", "ver": "1",
+      "data": "0x00000061"
+      },
+      "SX933X_AFEPARAMSPH0_REG_0x8024":{ "type": "int", "ver": "1",
+      "data": "0x8024"
+      },
+      "SX933X_AFEPARAMSPH0":{ "type": "int", "ver": "1",
+      "data": "0x11011287"
+      },
+      "SX933X_AFEPHPH0_REG_0x8028":{ "type": "int", "ver": "1",
+      "data": "0x8028"
+      },
+      "SX933X_AFEPHPH0":{ "type": "int", "ver": "1",
+      "data": "0x3FFE825C"
+      },
+      "SX933X_AFEPARAMSPH1_REG_0x802C":{ "type": "int", "ver": "1",
+      "data": "0x802C"
+      },
+      "SX933X_AFEPARAMSPH1":{ "type": "int", "ver": "1",
+      "data": "0x11011287"
+      },
+      "SX933X_AFEPHPH1_REG_0x8030":{ "type": "int", "ver": "1",
+      "data": "0x8030"
+      },
+      "SX933X_AFEPHPH1":{ "type": "int", "ver": "1",
+      "data": "0x2FFF8260"
+      },
+      "SX933X_AFEPARAMSPH2_REG_0x8034":{ "type": "int", "ver": "1",
+      "data": "0x8034"
+      },
+      "SX933X_AFEPARAMSPH2":{ "type": "int", "ver": "1",
+      "data": "0x11011287"
+      },
+      "SX933X_AFEPHPH2_REG_0x8038":{ "type": "int", "ver": "1",
+      "data": "0x8038"
+      },
+      "SX933X_AFEPHPH2":{ "type": "int", "ver": "1",
+      "data": "0x3FBF82CF"
+      },
+      "SX933X_AFEPARAMSPH3_REG_0x803C":{ "type": "int", "ver": "1",
+      "data": "0x803C"
+      },
+      "SX933X_AFEPARAMSPH3":{ "type": "int", "ver": "1",
+      "data": "0x11011287"
+      },
+      "SX933X_AFEPHPH3_REG_0x8040":{ "type": "int", "ver": "1",
+      "data": "0x8040"
+      },
+      "SX933X_AFEPHPH3":{ "type": "int", "ver": "1",
+      "data": "0x3FF7825D"
+      },
+      "SX933X_AFEPARAMSPH4_REG_0x8044":{ "type": "int", "ver": "1",
+      "data": "0x8044"
+      },
+      "SX933X_AFEPARAMSPH4":{ "type": "int", "ver": "1",
+      "data": "0x11011287"
+      },
+      "SX933X_AFEPHPH4_REG_0x8048":{ "type": "int", "ver": "1",
+      "data": "0x8048"
+      },
+      "SX933X_AFEPHPH4":{ "type": "int", "ver": "1",
+      "data": "0x3DFF825C"
+      },
+      "SX933X_ADCFILTPH0_REG_0x8054":{ "type": "int", "ver": "1",
+      "data": "0x8054"
+      },
+      "SX933X_ADCFILTPH0":{ "type": "int", "ver": "1",
+      "data": "0x10223505"
+      },
+      "SX933X_AVGBFILTPH0_REG_0x8058":{ "type": "int", "ver": "1",
+      "data": "0x8058"
+      },
+      "SX933X_AVGBFILTPH0":{ "type": "int", "ver": "1",
+      "data": "0xA0600060"
+      },
+      "SX933X_AVGAFILTPH0_REG_0x805C":{ "type": "int", "ver": "1",
+      "data": "0x806C"
+      },
+      "SX933X_AVGAFILTPH0":{ "type": "int", "ver": "3",
+      "data": "0x20002000"
+      },
+      "SX933X_ADCFILTPH1_REG_0x8074":{ "type": "int", "ver": "1",
+      "data": "0x8074"
+      },
+      "SX933X_ADCFILTPH1":{ "type": "int", "ver": "2",
+      "data": "0x203F15"
+      },
+      "SX933X_AVGBFILTPH1_REG_0x8078":{ "type": "int", "ver": "1",
+      "data": "0x8078"
+      },
+      "SX933X_AVGBFILTPH1":{ "type": "int", "ver": "1",
+      "data": "0xA0600060"
+      },
+      "SX933X_AVGAFILTPH1_REG_0x807C":{ "type": "int", "ver": "1",
+      "data": "0x808C"
+      },
+      "SX933X_AVGAFILTPH1":{ "type": "int", "ver": "3",
+      "data": "0x1E001E"
+      },
+      "SX933X_ADCFILTPH2_REG_0x8094":{ "type": "int", "ver": "1",
+      "data": "0x8094"
+      },
+      "SX933X_ADCFILTPH2_REG":{ "type": "int", "ver": "1",
+      "data": "0x203105"
+      },
+      "SX933X_ADCFILTPH3_REG_0x80B4":{ "type": "int", "ver": "2",
+      "data": "0x80AC"
+      },
+      "SX933X_ADCFILTPH3":{ "type": "int", "ver": "2",
+      "data": "0x090009"
+      },
+      "SX933X_ADCFILTPH4_REG_0x80D4":{ "type": "int", "ver": "2",
+      "data": "0x80B0"
+      },
+      "SX933X_ADCFILTPH4":{ "type": "int", "ver": "2",
+      "data": "0x20000"
+      },
+      "SX933X_GNRLCTRL2_REG_0x8020":{ "type": "int", "ver": "1",
+      "data": "0x8020"
+      },
+      "SX933X_GNRLCTRL2":{ "type": "int", "ver": "1",
+      "data": "0x1F001F"
+      }
+    }
+  }
+}

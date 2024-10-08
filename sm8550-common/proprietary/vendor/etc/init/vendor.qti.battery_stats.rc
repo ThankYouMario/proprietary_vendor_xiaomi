@@ -1,0 +1,19 @@
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+on post-fs-data
+    mkdir /data/vendor/battery_stats 0700 system system
+
+service vendor.qti.battery_stats /vendor/bin/battery_stats
+    class late_start
+    user system
+    group system
+    disabled
+
+on property:persist.vendor.qtr.core.pmic.battery_linux.battery_stats=1
+    enable vendor.qti.battery_stats
+    start vendor.qti.battery_stats
+
+on property:persist.vendor.qtr.core.pmic.battery_linux.battery_stats=0
+    stop vendor.qti.battery_stats

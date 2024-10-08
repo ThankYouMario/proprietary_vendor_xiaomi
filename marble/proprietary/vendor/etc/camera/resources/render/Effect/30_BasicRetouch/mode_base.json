@@ -1,0 +1,21 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_BrightEye/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		},
+		{
+			"ConfigurePath":"Effects/0_BrightEyeV3/effect.json",
+			"Index":1,
+			"Mode":"Capture"
+		},
+		{
+			"ConfigurePath":"Effects/1_FacialSmooth/effectV2.json",
+			"Index":2,
+			"Mode":"Capture"
+		}
+	]
+}

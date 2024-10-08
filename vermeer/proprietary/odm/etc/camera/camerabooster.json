@@ -1,0 +1,231 @@
+{
+    "version": "1.1",
+    "product": "vermeer",
+    "threshold": {
+            "lowAdj_threshold": 0,
+            "3rd_lowAdj_threshold": 50,
+            "kill_lowprio_sysapp_threshlod": 10240,
+            "kill_highprio_sysapp_threshlod": 30720,
+            "protect_locktask_num": 2,
+            "kill_tag": 31,
+            "3rd_kill_tag": 31,
+            "dynamic_interval": 3000
+        },
+    "support": {
+            "inhibit_3rdprocs_enable": true,
+            "oom_update_support": true,
+            "cam_boost_early_enable": true,
+            "cam_boost_early_boost_perf": true,
+            "perceptible_support": true,
+            "lmkd_perceptible_support": true,
+            "dynamic_task_proctect_support": true,
+            "thread_inhibit_support": true,
+            "dynamic_updatelist_support": true,
+            "inhibit_dynamic_enable": true,
+            "inhibit_tokill_cgroup_support": true,
+            "inhibit_sysapp_cgroup_support": true
+        },
+    "oom": {
+            "oom_level": "51200:0,89600:100,128000:200,179200:251,262144:701,393216:800",
+            "psi_level": "28,20,13,8"
+        },
+    "kill_configs": [
+        {
+            "name": "pss_threshold",
+            "config": {
+                "com.tencent.mm": 1024000,
+                "com.miui.gallery": 368640,
+                "com.miui.home": 716800,
+                "com.miui.personalassistant": 512000,
+                "com.miui.miwallpaper": 409600,
+                "com.xiaomi.bluetooth": 153600,
+                "com.xiaomi.xmsf:services": 20480,
+                "com.xiaomi.mtb": 15360,
+                "com.miui.systemAdSolution": 35840,
+                "com.modemdebug": 10240,
+                "com.google.process.gservices": 20480,
+                "com.milink.service": 40960,
+                "com.miui.mishare.connectivity": 20480,
+                "com.miui.presale": 25600,
+                "com.qualcomm.qti.autoregistration": 10240,
+                "com.android.settings": 35840,
+                "com.lbe.security.miui": 30720,
+                "com.miui.aod": 51200,
+                "com.miui.miwallpaper.geometry:GeometrySuperWallpaper": 563200,
+                "com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper": 563200,
+                "com.miui.miwallpaper.saturn:saturnSuperWallpaper": 563200,
+                "com.miui.miwallpaper.earth:earthSuperWallpaper": 563200,
+                "com.miui.miwallpaper.mars:marsSuperWallpaper": 563200,
+                "com.miui.voiceassist:core": 81920
+            }
+        },
+        {
+            "name": "adj_threshold",
+            "config": {
+                "com.tencent.mm": 250,
+                "com.miui.screenrecorder": 200,
+                "com.miui.securitycenter:ui": 250,
+                "com.milink.service": 250,
+                "com.miui.mishare.connectivity": 250,
+                "com.android.incallui": 250,
+                "com.android.updater": 250,
+                "com.mi.health:device": 250
+            }
+        }
+    ],
+    "dump_app_configs": {
+        "com.miui.home": 563200,
+        "com.android.systemui": 563200,
+        "com.miui.miwallpaper": 307200
+    },
+    "configs": [
+        {
+            "name": "protect_list",
+            "config": [
+                "com.tencent.mobileqq",
+                "com.ss.android.lark.kami"
+            ]
+        },
+        {
+            "name": "black_list",
+             "config": [
+                 "com.miui.newhome:launcher",
+                 "com.xiaomi.smarthome:plugin0",
+                 "com.xiaomi.smarthome",
+                 "com.android.quicksearchbox",
+                 "com.xiaomi.misettings",
+                 "com.android.settings:remote"
+             ]
+        },
+        {
+            "name": "perceptible_list",
+            "config": [
+                "com.tencent.mm",
+                "com.miui.gallery",
+                "com.miui.personalassistant",
+                "com.xiaomi.bluetooth",
+                "com.miui.securitycenter:ui",
+                "com.miui.systemAdSolution",
+                "com.google.process.gservices",
+                "com.milink.service",
+                "com.miui.mishare.connectivity",
+                "com.miui.presale",
+                "com.android.settings",
+                "com.android.updater"
+            ]
+        },
+        {
+            "name": "white_list",
+            "config": [
+                "com.android.camera",
+                "com.miui.miwallpaper",
+                "com.miui.home",
+                "com.miui.screenrecorder",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "android.process.media",
+                "com.android.traceur",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess",
+                "com.miui.avpressuretest",
+                "com.android.mms:mms_service",
+                "com.xiaomi.xmsf:services",
+                "com.xiaomi.mtb",
+                "com.modemdebug",
+                "com.qualcomm.qti.autoregistration",
+                "com.lbe.security.miui",
+                "com.miui.aod",
+                "com.miui.miwallpaper.geometry:GeometrySuperWallpaper",
+                "com.miui.miwallpaper.snowmountain:snowmountainSuperWallpaper",
+                "com.miui.miwallpaper.saturn:saturnSuperWallpaper",
+                "com.miui.miwallpaper.earth:earthSuperWallpaper",
+                "com.miui.miwallpaper.mars:marsSuperWallpaper",
+                "com.android.incallui",
+                "com.miui.voiceassist:core",
+                "com.mi.health:device"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi"
+            ]
+        },
+        {
+            "name": "inhibit_sysapp_list",
+            "config": [
+                ".qtidataservices",
+                "<pre-initialized>",
+                "com.lbe.security.miui",
+                "com.mi.health",
+                "com.milink.service",
+                "com.miui.analytics",
+                "com.miui.daemon",
+                "com.miui.mishare.connectivity",
+                "com.miui.securitycenter",
+                "com.miui.voiceassist",
+                "com.qualcomm.qti.workloadclassifier",
+                "com.xiaomi.bluetooth"
+            ]
+        },
+        {
+            "name": "inhibit_native_list",
+            "config": [
+                "com.google.android.gms.persistent",
+                "/system/bin/logd",
+                "/vendor/bin/diag-router",
+                "/system/vendor/bin/cnss_diag"
+            ]
+        },
+        {
+            "name": "inhibit_3rdscene_list",
+            "config": [
+                "com.tencent.mm/.plugin.scanner.ui.BaseScanUI",
+                "com.eg.android.AlipayGphone/com.alipay.mobile.scan.as.main.MainCaptureActivity",
+                "com.duowan.kiwi/com.duowan.liveroom.LiveRoomActivity",
+                "air.tv.douyu.android/com.dy.live.activity.RecorderCameraLandActivity",
+                "air.tv.douyu.android/com.dy.live.activity.RecorderCameraPortraitActivity",
+                "com.duowan.mobile/com.yy.mobile.plugin.pluginmobilelive.MobileLiveActivity"
+            ]
+        },
+        {
+            "name": "dynamic_protect_list",
+            "config": [
+                    "com.tencent.mm",
+                    "com.tencent.mobileqq"
+            ]
+        }
+    ],
+    "configs_cn": [
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        }
+    ],
+    "threshold_8Gmem": {
+            "recent_task_pss_threshold": 819200
+    }
+}

@@ -1,0 +1,378 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["519", "536"]
+  },
+  "ak7323_x_platform":{
+    "owner": "ak7323",
+    ".config":{
+      "owner": "ak7323",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x08"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0x0E"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "17"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd_3"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    }
+  },
+  "ak7323_y_platform":{
+    "owner": "ak7323",
+    ".config":{
+      "owner": "ak7323",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x08"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0x4E"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "17"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd_3"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    }
+  },
+  "ak7323_adrs_platform":{
+    "owner": "ak7323",
+    ".config":{
+      "owner": "ak7323",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x08"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0x0D"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "1000"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "210"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd_3"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    }
+  },
+  "ak7323_gyro_scp_platform":{
+    "owner": "ak7323",
+    ".config":{
+      "owner": "ak7323",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x05"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0x00"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "9600"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "210"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".address":{
+      "owner": "ak7323",
+      "i2c_address":{ "type": "flt", "ver": "0",
+        "data": "106"
+      },
+      "i3c_address":{ "type": "flt", "ver": "0",
+        "data": "10"
+      }
+    }
+  },
+  "ak7323_platform":{
+    "owner": "ak7323",
+    ".vcmdirection":{
+      "owner": "ak7323",
+      "vcm_id_0":{ "type": "int", "ver": "0",
+        "data": "0x1E"
+      },
+      "x_dir_0_0":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_0_0":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "x_dir_1_0":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "y_dir_1_0":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vcm_id_1":{ "type": "int", "ver": "0",
+        "data": "0x14"
+      },
+      "x_dir_0_1":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_0_1":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "x_dir_1_1":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "y_dir_1_1":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vcm_id_2":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "x_dir_0_2":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_0_2":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "x_dir_1_2":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "y_dir_1_2":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vcm_id_3":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "x_dir_0_3":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_0_3":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "x_dir_1_3":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "y_dir_1_3":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "vcm_id_4":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "x_dir_0_4":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_0_4":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "x_dir_1_4":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "y_dir_1_4":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    },
+    ".chipdirection":{
+      "owner": "ak7323",
+      "x_dir_0":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "y_dir_0":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "x_dir_1":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "y_dir_1":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    },
+    ".params":{
+      "owner": "ak7323",
+      "param1": {
+        "ver": "0", "type": "flt", "data": "0"
+      },
+      "param2": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param3": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param4": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param5": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param6": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param7": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param8": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param9": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param10": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param11": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param12": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param13": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param14": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param15": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param16": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param17": {
+          "ver": "0", "type": "flt", "data": "0"
+      },
+      "param18": {
+          "ver": "0", "type": "flt", "data": "0"
+      }
+    }
+  }
+}

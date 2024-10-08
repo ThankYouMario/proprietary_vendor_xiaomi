@@ -1,0 +1,35 @@
+{
+  "PipelineName": "ManualSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.ldc",
+        "NodeInstance": "LdcInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "LdcInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "LdcInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

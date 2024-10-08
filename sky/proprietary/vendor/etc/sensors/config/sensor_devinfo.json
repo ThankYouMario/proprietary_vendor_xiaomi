@@ -1,0 +1,33 @@
+{
+  "config":{
+    "hw_platform": ["QRD"],
+    "soc_id": ["568"]
+  },
+  "sensor_devinfo": {
+    "owner": "NA",
+    ".gsensor_bma4xy":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "bma4_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".gsensor_lis2hh12":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "lis2hh12_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".als_rohm_bu27030": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "bu27030_0_platform.ambient_light.fac_cal"
+      }
+    },
+    ".als_rohm_bu27030_leak": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "bu27030_0_platform.ambient_light.fac_leak_cal"
+      }
+    }
+  }
+}

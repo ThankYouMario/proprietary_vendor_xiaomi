@@ -1,0 +1,16 @@
+# Copyright (c) 2019, 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+
+# Start daemon
+on boot
+    start vendor.qwesd
+
+# Used 'disabled' flag, so daemon won't be started until explicit start
+service vendor.qwesd /vendor/bin/qwesd
+    class late_start
+    user system
+    group system inet
+    disabled
+

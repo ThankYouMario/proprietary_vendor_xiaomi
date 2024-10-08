@@ -1,0 +1,16 @@
+<!-- Copyright (c) 2021 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <!-- VPP Service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.vpp</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IHidlVppService</name>
+            <instance>vppService</instance>
+        </interface>
+   </hal>
+</manifest>

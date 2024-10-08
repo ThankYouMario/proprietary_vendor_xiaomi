@@ -1,0 +1,139 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["355"]
+  },
+  "tsl2540":{
+    "owner": "sns_tsl2540",
+    ".als":{
+      "owner": "sns_tsl2540",
+      ".config":{
+        "owner": "sns_tsl2540",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+  "tsl2540_platform":{
+    "owner": "sns_tsl2540",
+    ".config":{
+      "owner": "sns_tsl2540",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "92"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tsl2540",
+      ".fac_cal":{
+        "owner": "sns_tsl2540",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "cali_raw_data":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "data0_offset":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "data1_offset":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_tsl2540",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "7530.2"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.139"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.928"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.113"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.1"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "100.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "1.075159"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "16.725"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "2.369"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "200.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "66.899"
+      }
+    }
+  }
+}

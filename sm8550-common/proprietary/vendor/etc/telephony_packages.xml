@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+    Copyright (c) 2021 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<!--
+    This file is used by the framework to determine the list of applications that need to be
+    disabled for modem-less targets. Developers are requested to add/remove entries in this
+    list as and when a new telephony-related app is added to the source tree, or an existing
+    app is removed.
+
+    Each <packageinfo> tag corresponds to one app and has the following attributes:
+
+    1. name: The package name as defined in the app's AndroidManifest.xml.
+
+    2. path: The app's location on the file system.
+             a. For apps that have their own directory, e.g., /product/priv-app/Dialer/Dialer.apk,
+                this should point to the directory.
+             b. For apps that don't, e.g., /product/overlay/TelephonyResCommon_Sys.apk, this should
+                point to the apk.
+-->
+
+<packageinfos>
+    <packageinfo name="com.android.carrierdefaultapp" path="/system/app/CarrierDefaultApp" />
+    <packageinfo name="com.android.cellbroadcastreceiver" path="/system/priv-app/CellBroadcastLegacyApp" />
+    <packageinfo name="com.android.cellbroadcastreceiver.module" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastApp" />
+    <packageinfo name="com.android.cellbroadcastservice" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastServiceModule" />
+    <packageinfo name="com.android.dialer" path="/product/priv-app/Dialer" />
+    <packageinfo name="com.android.imsserviceentitlement" path="/product/priv-app/ImsServiceEntitlement" />
+    <packageinfo name="com.android.mms" path="/system_ext/priv-app/Mms" />
+    <packageinfo name="com.android.mms.service" path="/system/priv-app/MmsService" />
+    <packageinfo name="com.android.MultiplePdpTest" path="/system_ext/app/MultiplePdpTest" />
+    <packageinfo name="com.android.ons" path="/system/priv-app/ONS" />
+    <packageinfo name="com.android.phone" path="/system/priv-app/TeleService" />
+    <packageinfo name="com.android.phone.overlay.common" path="/product/overlay/TelephonyResCommon_Sys.apk" />
+    <packageinfo name="com.android.providers.telephony" path="/system/priv-app/TelephonyProvider" />
+    <packageinfo name="com.android.stk" path="/system/app/Stk" />
+    <packageinfo name="com.qti.confuridialer" path="/product/app/ConfURIDialer" />
+    <packageinfo name="com.qti.phone" path="/system_ext/app/QtiTelephony" />
+    <packageinfo name="com.qti.telephonysettings" path="/product/app/QtiTelephonySettings" />
+    <packageinfo name="com.qti.qualcomm.carriertest" path="/system_ext/app/CarrierTest" />
+    <packageinfo name="com.qti.qualcomm.datastatusnotification" path="/system_ext/app/datastatusnotification" />
+    <packageinfo name="com.qti.qualcomm.deviceinfo" path="/system_ext/app/DeviceInfo" />
+    <packageinfo name="com.qti.xdivert" path="/product/app/xdivert" />
+    <packageinfo name="com.qualcomm.atfwd" path="/system_ext/app/atfwd" />
+    <packageinfo name="com.qualcomm.embms" path="/system_ext/app/embms" />
+    <packageinfo name="com.qualcomm.embmstest" path="/system_ext/app/EmbmsTestApp" />
+    <packageinfo name="com.qualcomm.qcrilmsgtunnel" path="/system_ext/priv-app/qcrilmsgtunnel" />
+    <packageinfo name="com.qualcomm.qti.callfeaturessetting" path="/product/app/CallFeaturesSetting" />
+    <packageinfo name="com.qualcomm.qti.confdialer" path="/product/app/ConferenceDialer" />
+    <packageinfo name="com.qualcomm.qti.devicestatisticsservice" path="/system_ext/app/DeviceStatisticsService" />
+    <packageinfo name="com.qualcomm.qti.euiccresource" path="/product/app/EuiccResource" />
+    <packageinfo name="com.qualcomm.qti.ims" path="/system_ext/app/imssettings" />
+    <packageinfo name="com.qualcomm.qti.lpa" path="/product/app/uimlpaservice" />
+    <packageinfo name="com.qualcomm.qti.modemtestmode" path="/system_ext/app/ModemTestMode" />
+    <packageinfo name="com.qualcomm.qti.remoteSimlockAuth" path="/product/app/remoteSimLockAuthentication" />
+    <packageinfo name="com.qualcomm.qti.ridemodeaudio" path="/product/app/RideModeAudio" />
+    <packageinfo name="com.qualcomm.qti.simcontacts" path="/system_ext/app/SimContact" />
+    <packageinfo name="com.qualcomm.qti.telephonyservice" path="/system_ext/app/QtiTelephonyService" />
+    <packageinfo name="com.qualcomm.qti.uimGbaApp" path="/product/app/uimgbaservice" />
+    <packageinfo name="com.qualcomm.qti.uimlpatest" path="/product/app/uimlpatest" />
+    <packageinfo name="com.qualcomm.uimremoteclient" path="/product/app/uimremoteclient" />
+    <packageinfo name="com.qualcomm.uimremoteserver" path="/product/app/uimremoteserver" />
+    <packageinfo name="org.codeaurora.dialer" path="/system_ext/priv-app/QtiDialer" />
+    <packageinfo name="org.codeaurora.ims" path="/system_ext/priv-app/ims" />
+</packageinfos>

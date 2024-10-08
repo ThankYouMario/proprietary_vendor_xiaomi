@@ -1,0 +1,712 @@
+{
+    "project_overlap_config_fn": "proj_overlap_config.json",
+    "device_ex_info_fn": "device_ex_info.json",
+
+    "CAMX__SENSOR_IMAGE_SIZES": [
+        {
+            "width" : 8192,
+            "height" : 6144,
+            "note" : "HWRemosaic wide OVX8000"
+        },
+        {
+            "width" : 4096,
+            "height" : 3072,
+            "note" : "4:3  Wide OVX8000"
+        },
+        {
+            "width" : 3280,
+            "height" : 2464,
+            "note" : "4:3 UW IMX355"
+        },
+        {
+            "width" : 2304,
+            "height" : 1728,
+            "note" : "4:3 Front OV16A1Q"
+        },
+        {
+            "width" : 1600,
+            "height" : 1200,
+            "note" : "4:3 Macro GC02M1"
+        }
+    ],
+    "CAMX__STANDARD_IMAGE_SIZES": [
+        {
+            "width" : 3072,
+            "height" : 3072,
+            "note" : "1:1 Wide OVX8000"
+        },
+        {
+            "width" : 4096,
+            "height" : 2304,
+            "note" : "16:9 Wide OVX8000"
+        },
+        {
+            "width" : 4096,
+            "height" : 2160,
+            "note" : "DC4K Video"
+        },
+        {
+            "width" : 3840,
+            "height" : 2160,
+            "note" : "4K Video"
+        },
+        {
+            "width" : 4000,
+            "height" : 1800,
+            "note" : "20:9 Wide OVX8000"
+        },
+        {
+            "width" : 2880,
+            "height" : 2160,
+            "note" : "4k 4:3"
+        },
+        {
+            "width" : 3200,
+            "height" : 1800,
+            "note" : "Ultra IMX355 16:9"
+        },
+        {
+            "width" : 3200,
+            "height" : 1440,
+            "note" : "20:9 Ultra IMX355"
+        },
+        {
+            "width" : 2560,
+            "height" : 1440,
+            "note" : "QHD"
+        },
+        {
+            "width" : 1728,
+            "height" : 1728,
+            "note" : "1:1 Front ov16a1q"
+        },
+        {
+            "width" : 2304,
+            "height" : 1296,
+            "note" : "16:9 Front ov16a1q"
+        },
+        {
+            "width" : 1920,
+            "height" : 1440,
+            "note" : "4:3 preview"
+        },
+        {
+            "width" : 2400,
+            "height" : 1080,
+            "note" : ""
+        },
+        {
+            "width" : 2304,
+            "height" : 1036,
+            "note" : "add front size for cts"
+        },
+        {
+            "width" : 2240,
+            "height" : 1008,
+            "note" : "20:9 Front ov16a1q"
+        },
+        {
+            "width" : 2320,
+            "height" : 1044,
+            "note" : "add size for haluo"
+        },
+        {
+            "width" : 1920,
+            "height" : 1080,
+            "note" : "16:9 preview"
+        },
+        {
+            "width" : 3280,
+            "height" : 2460,
+            "note" : "4:3 UW FOR ITS"
+        },
+        {
+            "width" : 3280,
+            "height" : 1848,
+            "note" : "add size for SDK 16:9 UW SN"
+        },
+        {
+            "width" : 4096,
+            "height" : 1844,
+            "note" : "add size for SDK 20:9 snapshot"
+        },
+        {
+            "width" : 1600,
+            "height" : 1200,
+            "note" : "UXGA"
+        },
+        {
+            "width" : 1920,
+            "height" : 960,
+            "note" : "add size to slove jingdong preview stretch problem"
+        },
+        {
+            "width" : 1440,
+            "height" : 1080,
+            "note" : "Wide HD"
+        },
+        {
+            "width" : 1280,
+            "height" : 960,
+            "note" : "SXGA"
+        },
+        {
+            "width" : 1600,
+            "height" : 720,
+            "note" : "720p 20:9"
+        },
+        {
+            "width" : 1280,
+            "height" : 720,
+            "note" : "720p"
+        },
+        {
+            "width" : 960,
+            "height" : 720,
+            "note" : "720p 4:3"
+        },
+        {
+            "width" : 800,
+            "height" : 600,
+            "note" : "SVGA"
+        },
+        {
+            "width" : 864,
+            "height" : 480,
+            "note" : "compass"
+        },
+        {
+            "width" : 854,
+            "height" : 480,
+            "note" : "16:9"
+        },
+        {
+            "width" : 720,
+            "height" : 480,
+            "note" : "480p"
+        },
+        {
+            "width" : 640,
+            "height" : 480,
+            "note" : "VGA"
+        },
+        {
+            "width" : 352,
+            "height" : 288,
+            "note" : "VGA"
+        },
+        {
+            "width" : 320,
+            "height" : 240,
+            "note" : "QVGA"
+        },
+        {
+            "width" : 176,
+            "height" : 144,
+            "note" : "QCIF"
+        }
+    ],
+    "CAMX__XIAOMI_CUSTOM_SUPPORTED_IMAGE_SIZES": [
+        {
+            "width" : 4000,
+            "height" : 3000,
+            "note" : ""
+        },
+        {
+            "width" : 2448,
+            "height" : 2448,
+            "note" : "Ultra IMX355 1:1"
+        },
+        {
+            "width" : 3280,
+            "height" : 1848,
+            "note" : "Ultra IMX355 16:9"
+        },
+        {
+            "width" : 2048,
+            "height" : 3072,
+            "note" : "Bokeh depth size W(4096/2)  H(3072) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 2048,
+            "height" : 2304,
+            "note" : "Bokeh depth size W(4096/2)  H(2304) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 2048,
+            "height" : 1844,
+            "note" : "Bokeh depth size W(4096/2)  H(1844) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 1152,
+            "height" : 1728,
+            "note" : "Bokeh depth size W(1152/2)  H(1728) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 1152,
+            "height" : 1296,
+            "note" : "Bokeh depth size W(1152/2)  H(1296) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 1120,
+            "height" : 1008,
+            "note" : "Bokeh depth size W(1120/2)  H(1008) ((Width/2)*(Height))*2 > depth buf size actual size 8.2MB"
+        },
+        {
+            "width" : 4096,
+            "height" : 1844,
+            "note" : "1x Bokeh Master 20:9"
+        },
+        {
+            "width" : 2880,
+            "height" : 2160,
+            "note" : "1x Bokeh Slave 4:3"
+        },
+        {
+            "width" : 3200,
+            "height" : 1440,
+            "note" : "20:9 Ultra IMX355"
+        },
+        {
+            "width" : 2880,
+            "height" : 1620,
+            "note" : "1x Bokeh Slave 16:9"
+        },
+        {
+            "width" : 2880,
+            "height" : 1296,
+            "note" : "1x Bokeh Slave 20:9"
+        },
+        {
+            "width" : 1200,
+            "height" : 1600,
+            "note" : "Macro 3:4 GC02M1 heif"
+        },
+        {
+            "width" : 1200,
+            "height" : 1200,
+            "note" : "Macro 1:1 GC02M1"
+        },
+        {
+            "width" : 1536,
+            "height" : 864,
+            "note" : "Macro 16:9 GC02M1"
+        },
+        {
+            "width" : 864,
+            "height" : 1536,
+            "note" : "Macro 16:9 GC02M1 heif"
+        },
+        {
+            "width" : 1080,
+            "height" : 1080,
+            "note" : "1:1 preview"
+        },
+        {
+            "width" : 1600,
+            "height" : 720,
+            "note" : "Macro 20:9 GC02M1"
+        },
+        {
+            "width" : 720,
+            "height" : 1600,
+            "note" : "Macro 20:9 GC02M1 heif"
+        }
+    ],
+    "CAMX__XIAOMI_REAR_QCFA_IMAGE_SIZES": [
+        {
+            "width" : 8192,
+            "height" : 6144,
+            "note" : "OVX8000 HWRemosaic 4:3  Wide"
+        },
+        {
+            "width" : 6144,
+            "height" : 8192,
+            "note" : "Wide OVX8000 HWRemosaic 3:4 heif"
+        },
+        {
+            "width" : 7680,
+            "height" : 4320,
+            "note" : "8k UHD"
+        },
+        {
+            "width" : 3072,
+            "height" : 4096,
+            "note" : "Wide OVX8000 3:4 heif"
+        },
+        {
+            "width" : 2304,
+            "height" : 4096,
+            "note" : "Wide OVX8000 9:16 heif"
+        },
+        {
+            "width" : 2464,
+            "height" : 3280,
+            "note" : "Ultra IMX355 3:4 heif"
+        },
+        {
+            "width" : 1844,
+            "height" : 4096,
+            "note" : "Wide OVX8000 9:20 heif"
+        },
+        {
+            "width" : 1848,
+            "height" : 3280,
+            "note" : "Ultra IMX355 9:16 heif"
+        },
+        {
+            "width" : 1440,
+            "height" : 3200,
+            "note" : "Ultra IMX355 9:20 heif"
+        }
+    ],
+    "CAMX__XIAOMI_FRONT_QCFA_IMAGE_SIZES": [
+        {
+            "width" : 4608,
+            "height" : 3456,
+            "note" : "ov16a1q 4:3 SWRemosaic"
+        },
+        {
+            "width" : 3456,
+            "height" : 4608,
+            "note" : "ov16a1q 3:4 SWRemosaic heif"
+        },
+        {
+            "width" : 3456,
+            "height" : 3456,
+            "note" : "ov16a1q 1:1 SWRemosaic/heif"
+        },
+        {
+            "width" : 4608,
+            "height" : 2592,
+            "note" : "ov16a1q 16:9 SWRemosaic"
+        },
+        {
+            "width" : 2592,
+            "height" : 4608,
+            "note" : "ov16a1q 9:16 SWRemosaic heif"
+        },
+        {
+            "width" : 4480,
+            "height" : 2016,
+            "note" : "ov16a1q 20:9 SWRemosaic"
+        },
+        {
+            "width" : 2016,
+            "height" : 4480,
+            "note" : "ov16a1q 9:20 SWRemosaic heif"
+        }
+    ],
+    "CAMX__XIAOMI_REAR_QCFA_LIMIT_IMAGE_SIZES": [
+        {
+            "width" : 7680,
+            "height" : 4320,
+            "note" : "8k UHD"
+        }
+    ],
+    "CAMX__XIAOMI_FRONT_QCFA_LIMIT_IMAGE_SIZES": [
+        {
+            "width" : 0,
+            "height" : 0,
+            "note" : "placeholder,invalid size"
+        }
+    ],
+    "CAMX__XIAOMI_SUPER_RESOLUTION_IMAGE_SIZES": [
+        {
+            "width" : 8192,
+            "height" : 6144,
+            "note" : "Wide HWRemosaic 4:3 Wide"
+        },
+        {
+            "width" : 1440,
+            "height" : 1080,
+            "note" : "4:3 Preview"
+        }
+    ],
+    "CAMX__XIAOMI_RAW_IMAGE_SIZES": [
+        {
+            "width" : 4096,
+            "height" : 3072,
+            "note" : "wide"
+        },
+        {
+            "width" : 3264,
+            "height" : 2448,
+            "note" : "ultra"
+        }
+    ],
+    "CAMX__XIAOMI_CUSTOM_SUPPORTED_THUMBNAIL_SIZES": [
+        {
+            "width" : 0,
+            "height" : 0,
+            "note" : ""
+        },
+        {
+            "width" : 200,
+            "height" : 90,
+            "note" : ""
+        },
+        {
+            "width" : 234,
+            "height" : 108,
+            "note" : ""
+        },
+        {
+            "width" : 240,
+            "height" : 240,
+            "note" : ""
+        },
+        {
+            "width" : 256,
+            "height" : 144,
+            "note" : ""
+        },
+        {
+            "width" : 320,
+            "height" : 240,
+            "note" : ""
+        }
+    ],
+    "CAMX__XIAOMI_REAR_HDR_BINNING_IMAGE_SIZES": [
+        {
+            "width" : 0,
+            "height" : 0,
+            "note" : "placeholder,invalid size"
+        }
+    ],
+    "CAMX__XIAOMI_VIDEO_SIZE_CUSTOM_SIZES": [
+        {
+            "width" : 7680,
+            "height" : 4320,
+            "maxFPS" : 30,
+            "isSensorOutput" : 1,
+            "note" : "8K, maxFps 30, not sensorOutput"
+        },
+        {
+            "width" : 3840,
+            "height" : 2160,
+            "maxFPS" : 24,
+            "isSensorOutput" : 0,
+            "note" : "4K, maxFps 24, not sensorOutput"
+        }
+    ],
+    "CHI__BOKEH_SENSOR_CAP_STATIC_SWITCH_CFG": [
+        {
+            "modeInBokehTab" : 63,
+            "sensorCombination" : 1,
+            "masterCap" : 0,
+            "slaveCap" : 0,
+            "mEnableSwitch" : 0,
+            "sEnableSwitch" : 0,
+            "note" : "BOKEH1X"
+        }
+    ],
+    "CHI__CUSTOMIZABLE_APK":[
+        {
+            "ApkFunctionType":"None",
+            "ApkTable" : [""]
+    },
+        {
+            "ApkFunctionType":"ScanWhitelist",
+            "ApkTable" : ["com.qiyi.video",
+            "com.tencent.qqlive",
+            "com.sankuai.meituan"]
+        },
+        {
+            "ApkFunctionType":"ScanBlacklist",
+            "ApkTable" : [ "com.tencent.zebra",
+                                        "com.p1.mobile.putong",
+                                        "com.kwai.m2u",
+                                        "com.smile.gifmaker",
+                                        "com.achievo.vipshop",
+                                        "com.baidu.tieba"
+    ]},
+        {
+            "ApkFunctionType":"MiuiCamera",
+            "ApkTable" :["com.android.camera"]
+        },
+        {
+            "ApkFunctionType":"isVolteVideo",
+            "ApkTable" :[ "org.codeaurora.ims"]
+        },
+        {
+            "ApkFunctionType":"forceFDEnabled",
+            "ApkTable" :[ "com.tencent.mobileqq"]
+        },
+        {
+            "ApkFunctionType":"VideoOptimization",
+            "ApkTable" :[ "com.tencent.mm",
+                                        "com.tencent.mobileqq",
+                                        "org.codeaurora.ims"]
+        },
+        {
+            "ApkFunctionType":"AutoTrigger",
+            "ApkTable" :["com.shizhuang.duapp",
+                                        "com.huodao.hdphone",
+                                        "com.jf.lkrj",
+                                        "com.baidu.haokan",
+                                        "com.ximalaya.ting.android",
+                                        "com.ss.android.lark",
+                                        "com.ss.android.lark.kami",
+                                        "com.baidu.tieba",
+                                        "com.mg.ec",
+                                        "jp.naver.line.android",
+                                        "com.tencent.wework",
+                                        "com.happyteam.dubbingshow",
+                                        "com.mi.health"]
+        },
+        {
+            "ApkFunctionType":"FixReconfigFlash",
+            "ApkTable" :[ "com.qingqikeji.blackhorse.passenger"]
+        },
+        {
+            "ApkFunctionType":"Enable3PartFallBack",
+            "ApkTable" :["com.tencent.mm",
+            "com.eg.android.AlipayGphone",
+            "com.taobao.taobao",
+            "com.tencent.mobileqq",
+            "com.alibaba.android.rimet",
+            "com.jingdong.app.mall",
+            "com.sankuai.meituan",
+            "com.sina.weibo",
+            "com.xingin.xhs",
+            "com.baidu.homework",
+            "com.ss.android.ugc.live",
+            "com.lemon.lv",
+            "com.mt.mtxx.mtxx",
+            "com.fenbi.android.solar",
+            "com.xhey.xcamera",
+            "com.tencent.zebra",
+            "com.gorgeous.lite",
+            "com.meitu.meiyancamera",
+            "com.kwai.m2u",
+            "com.benqu.wuta",
+            "com.spdbccc.app",
+            "com.shizhuang.duapp",
+            "com.tencent.wemeet.app",
+            "com.duxiaoman.wallet",
+            "com.wj.wallet",
+            "com.yiruike.sodacn.android",
+            "com.kwai.videoeditor",
+            "com.ss.android.ugc.aweme",
+            "com.xunmeng.pinduoduo",
+            "com.smile.gifmaker",
+            "com.unionpay",
+            "com.chinamworld.bocmbci",
+            "com.ydtx.camera",
+            "com.accordion.analogcam.cn",
+            "ctrip.android.view",
+            "com.Qunar",
+            "com.taobao.trip",
+            "com.ss.android.article.news",
+            "com.lemon.faceu",
+           "com.tencent.ttpic",
+            "com.campmobile.snowcamera",
+            "com.meitu.meipaimv",
+            "com.meitu.makeup",
+            "com.tencent.wework",
+            "com.dianping.v1",
+            "com.sankuai.meituan",
+            "com.icbc",
+            "com.taobao.idlefish",
+            "com.tmall.wireless",
+            "com.achievo.vipshop",
+            "com.suning.mobile.ebuy",
+            "com.youdao.dict",
+            "com.baidu.homework",
+            "com.qingqikeji.blackhorse.passenger",
+            "tv.danmaku.bili"]
+        },
+        {
+            "ApkFunctionType":"ForVideoCallReduceFPS",
+            "ApkTable" :["com.tencent.mm",
+                                       "com.tencent.mobileqq"]
+        },
+        {
+            "ApkFunctionType":"EnableVideoOut",
+            "ApkTable" :["com.smile.gifmaker",
+                                          "com.kwai.m2u",
+                                          "jp.naver.line.android"]
+        },
+        {
+            "ApkFunctionType":"FactoryRunin",
+            "ApkTable" :["com.xiaomi.runin"]
+        },
+        {
+            "ApkFunctionType":"ReconfigCaptureScene",
+            "ApkTable" :["com.tencent.wework"]
+        },
+        {
+            "ApkFunctionType":"SkipUselessFeature",
+            "ApkTable" :["com.eg.android.AlipayGphone",
+                                        "com.tencent.mm"]
+        },
+        {
+            "ApkFunctionType":"FallbackTrigger",
+            "ApkTable" :[""]
+        },
+        {
+            "ApkFunctionType":"Whitelist",
+            "ApkTable" :[""]
+        },
+        {
+            "ApkFunctionType":"ForVideoLiveReduceFPS",
+            "ApkTable" :["air.tv.douyu.android",
+                                        "com.duowan.kiwi"]
+        },
+        {
+            "ApkFunctionType":"GlobalVideoOptimize",
+            "ApkTable" :["com.whatsapp"]
+        }
+    ],
+    "CHI__PRODUCT_NAME": "vermeer",
+    "CAMX__PRODUCT_NAME": "vermeer",
+    "CAMX__SENSOR_CONFIG_SAMPLING_RATE": 480.0,
+    "CAMX__SENSOR_CONFIG_RATE_GYRO": 120.0,
+    "CAMX__ACCEL_SAMPLE_RATE": 480.0,
+    "CHI__NEED_SKIP_USELESS_FEATURE":1,
+    "__OVERLAP_NEW_CONFIG_INSERT_POINT__":0,
+    "CHI__FEATURE_IN_OPMODE": [
+        {
+            "Op_mode": 36865,
+            "Feature_List":["AnchorSync",
+            "Bayer2Yuv",
+            "MMF",
+            "FormatConvertor",
+            "RealTime"]
+        },
+        {
+            "Op_mode": 36867,
+            "Feature_List":["AnchorSync",
+            "Bayer2Yuv",
+            "MMF",
+            "FormatConvertor",
+            "RealTime"]
+        },
+        {
+            "Op_mode": 36864,
+            "Feature_List":["FeatureMux",
+            "Bayer2Yuv",
+            "MultiCameraReprocessRealtime",
+            "RealTimeMCX",
+            "MMF",
+            "AnchorSync",
+            "FormatConvertor"]
+        }
+    ],
+    "CHI__BOKEH_SET_SLAVE_CROP": [
+        {
+            "modeInPortraitTab" : 1,
+            "sensorCombination" : 1,
+            "slaveCap" : 0,
+            "originWidth" : 3280,
+            "cropToWidth" : 2880,
+            "note" : "FULL:W+UW UW binning"
+        }
+    ],
+    "CHI__FEATURES_SYNC_CREATE_LIST": [
+        "RealTimeMCX",
+        "MultiCameraReprocessRealtime",
+        "FeatureMux"
+    ]
+}

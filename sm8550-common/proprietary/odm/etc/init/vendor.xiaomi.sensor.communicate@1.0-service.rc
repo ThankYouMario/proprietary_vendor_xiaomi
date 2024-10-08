@@ -1,0 +1,4 @@
+service vendor.xiaomi.sensor.communicate  /odm/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
+    class late_start
+    user system
+    group system

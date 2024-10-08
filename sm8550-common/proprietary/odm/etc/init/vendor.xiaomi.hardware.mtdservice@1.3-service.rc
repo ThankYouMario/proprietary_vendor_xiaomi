@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/vendor/images 0770 system system
+
+service vendor.mtdservice-1-3 /odm/bin/mtd@1.3
+    class hal
+    group system drmrpc
+
+on init && property:ro.boot.serialno=*
+    setprop ro.vendor.oem.serialno ${ro.boot.serialno}
+
+on property:sys.boot_completed=1
+    setprop ro.vendor.oem.boot_completed ${sys.boot_completed}

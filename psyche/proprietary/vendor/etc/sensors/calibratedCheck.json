@@ -1,0 +1,51 @@
+[
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/lsm6dso_0_platform.accel.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"lsm6dso_0_platform.accel.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{"rootFile":"/vendor/etc/sensors/config/sm8250_lsm6dso_0.json",
+        "verDepth":4,
+        "rootObject":"lsm6dso_0_platform",
+        "subRootObject1":".accel",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/lsm6dso_0_platform.gyro.fac_cal.bias",
+        "verDepth":1,
+        "rootObject":"lsm6dso_0_platform.gyro.fac_cal.bias",
+        "items":["x"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_lsm6dso_0.json",
+        "verDepth":4,
+        "rootObject":"lsm6dso_0_platform",
+        "subRootObject1":".gyro",
+        "subRootObject2":".fac_cal",
+        "subRootObject3":".bias",
+        "items":["x"]
+    }
+},
+{
+    "parsedFileInfo":{
+        "rootFile":"/mnt/vendor/persist/sensors/registry/registry/tmd3719_platform.als.fac_cal",
+        "verDepth":1,
+        "rootObject":"tmd3719_platform.als.fac_cal",
+        "items":["scale"]
+    },
+    "originalFileInfo":{
+        "rootFile":"/vendor/etc/sensors/config/sm8250_tmd3719.json",
+        "verDepth":3,
+        "rootObject":"tmd3719_platform",
+        "subRootObject1":".als",
+        "subRootObject2":".fac_cal",
+        "items":["scale"]
+    }
+}
+]

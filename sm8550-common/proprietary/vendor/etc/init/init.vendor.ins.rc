@@ -1,0 +1,3 @@
+on post-fs-data
+    #sensors log dir
+    mkdir /data/vendor/ins 0764 gps system

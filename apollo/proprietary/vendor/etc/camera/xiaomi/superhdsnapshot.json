@@ -1,0 +1,16 @@
+{
+  "PipelineName": "SuperHdSnapshot",
+  "PipelineId": 444,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.depurple",
+        "NodeInstanceId": 1
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+    ]
+  }
+}

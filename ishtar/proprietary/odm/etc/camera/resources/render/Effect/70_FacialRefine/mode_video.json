@@ -1,0 +1,11 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/3_ModeVideo/effect.json",
+			"Index":0,
+			"Mode":"Preview"
+		}
+	]
+}

@@ -1,0 +1,1997 @@
+{
+  "__comment__": "Xiaomi MialgoSuperNightCapture config file",
+  "phone_code": "N11",
+  "jsonVersion": "1001",
+  "offline_config": {
+    "__comment__": "离线测试相关内容,离线测试使用",
+    "offline_input_dir": "/sdcard/raw-nightcases",
+    "offline_output_dir": "/sdcard/raw-nightcases-Output",
+    "dump_suffix": "-base"
+  },
+  "common_config": {
+    "__comment__": "通用配置参数",
+    "DenoiseArgs": {
+      "DL_denoise_ev0": true,
+      "DL_denoise_evn": false,
+      "DL_denoise_merge": false,
+      "model_engine": 1,
+      "model_config": "/odm/etc/camera/aisn_params.json",
+      "use_sigma_map": false,
+      "ev0_model_idx": 0,
+      "evn_model_idx": 1,
+      "ev0_ll_model_idx": 0,
+      "evn_ll_model_idx": 1,
+      "merge_model_idx": 1,
+
+      "model_ll_thre": 48.0,
+      "noise": {
+        "ak1": 5.51423036e-7,
+        "ak2": 8.31198095e-5,
+        "bk1": 4.41866008e-13,
+        "bk2": 7.93232804e-10,
+        "bk3": 4.25700922e-7,
+        "ak1_r": 5.79400505e-7,
+        "ak2_r": 3.43281246e-5,
+        "bk1_r": 4.41866008e-13,
+        "bk2_r": 7.93232804e-10,
+        "bk3_r": 4.25700922e-7,
+        "ak1_gr": 6.5939533e-7,
+        "ak2_gr": 4.37296261e-5,
+        "bk1_gr": 4.41866008e-13,
+        "bk2_gr": 7.93232804e-10,
+        "bk3_gr": 4.25700922e-7,
+        "ak1_gb": 5.64974703e-7,
+        "ak2_gb": 3.34581224e-5,
+        "bk1_gb": 4.41866008e-13,
+        "bk2_gb": 7.93232804e-10,
+        "bk3_gb": 4.25700922e-7,
+        "ak1_b": 6.2236971e-7,
+        "ak2_b": 5.2200484e-5,
+        "bk1_b": 4.41866008e-13,
+        "bk2_b": 7.93232804e-10,
+        "bk3_b": 4.25700922e-7
+      }
+    },
+
+    "ABF_Args": {
+      "block_count_thres": 0,
+      "bias_slope": 0.1,
+      "sigma_thres": 2,
+      "abf_sigma_ratio": 2.0
+    },
+    "BLArgs": {
+      "use_blc_outside": true,
+      "DEFAULT_BLC_VALUE": 1024.0
+    },
+    "DPC_Args": {
+      "enabled": false
+    },
+    "AlignArgs": {
+      "if_ev0_use_global_align": false,
+      "if_evn_use_global_align": false,
+      "EV0_REMAP_MODE": 0,
+      "EVN_REMAP_MODE": 0,
+      "GlobalAlianArgs": {
+        "patch_nums": 8,
+        "bad_patch_thre": 1.2
+      },
+      "LocalAlignArgs": {
+        "patch_size": 8,
+        "patch_step": 8,
+        "ev0_finest_scale": 2,
+        "ev0_finest_scale_ref_is_evn": 2,
+        "evn_finest_scale": 2,
+        "border_size": 16,
+        "if_ev0_mean_norm": true,
+        "if_evn_mean_norm": true,
+        "if_ev0_refinement": true,
+        "if_evn_refinement": true,
+        "FixFlowArgs": {
+          "medianBlur_1_size": 3,
+          "medianBlur_1_times": 1,
+          "medianBlur_2_size": 5,
+          "medianBlur_2_times": 8,
+          "overExposure_thres": 0.9
+        }
+      }
+    },
+    "DeghostArgs": {
+      "good_exp_ratio": 0.99,
+      "mid_exp_ratio": 0.7,
+      "ev0_frame_weight_coeff": 6,
+      "enable_clampRB": true,
+
+      "deghost_noise_enable": true,
+      "deghost_noise_ak1": 5.51423036e-7,
+      "deghost_noise_ak2": 8.31198095e-5,
+      "deghost_noise_bk1": 4.41866008e-13,
+      "deghost_noise_bk2": 7.93232804e-10,
+      "deghost_noise_bk3": 4.25700922e-7,
+
+      "weight_correction_factor": [],
+      "deghost_ev0_val_bias": [],
+      "deghost_ev0_wit_bias": [],
+      "evn_deghost_thre": 0.4
+    },
+    "MfnrMergeArgs": {
+      "merge_fft": false,
+      "evn_base_abandon_frames": 0
+    },
+    "BrightenArgs": {
+      "bright_min_limit": 1.6,
+      "bright_max_limit": 4.0,
+      "dark_val_thres": [],
+      "dark_proportion_thre": [],
+      "face_ev6_ratios": [],
+      "backlit_face_ev6_ratios": [],
+      "face_ev6_limits": [],
+      "noface_ev6_limits": []
+    },
+    "SkyDarkenArgs": {
+      "face_sky_use_ev": 2,
+      "noface_sky_use_ev": 2,
+      "face_sky_ratio": [],
+      "noface_sky_ratio": []
+    },
+    "MergeArgs": {
+      "MERGE_MODE": 2,
+      "OES_enabled": true,
+      "boost_detail_enabled": false,
+      "fast_llf_enabled": true,
+      "face_detect_enabled": true,
+      "sky_detect_enable": true,
+      "skin_segment_enable": true,
+      "blur_skin_enabled": false,
+      "BoostDetailArgs": {
+        "boost_level_max": 10,
+        "boost_val": 4.0
+      },
+      "FastLLFArgs": {
+        "llf_sigma": 0.1,
+        "llf_N": 7.0,
+        "llf_fact": 1.0,
+        "llf_merge_ratio": 0.7
+      },
+      "BlurSkinArgs": {
+        "v": 3,
+        "alpha": 0.8
+      },
+      "face_s_mean_ratios": [],
+      "tar_sensitivity": [],
+      "merge_mean": [],
+      "merge_mean_max": 256,
+      "merge_sigma": 36.0,
+      "halfsize_flag": false
+    },
+
+    "EdgeSharpArgs": {
+      "enabled": true,
+      "face_amount": 0.2,
+      "sigma": 0.85,
+      "amount": 2,
+      "ct_thresh": 0.01,
+      "alpha_strength_low": 0.2,
+      "alpha_strength_high": 0.2
+    },
+    "EV0SharpenArgs": {
+      "sharpen_enabled": true,
+      "sharpen_amount": 5
+    },
+    "FusionArgs": {
+      "dynamic_range_block": true,
+      "inpaint_enable": false,
+      "fusion_slim_enable": true,
+      "adjust_banding_ratio": false,
+      "ev0_unoe_thres_low": 0.1,
+      "ratio_final_thres": 1.05,
+      "bright_banding_pixel_ratio_high": 5.0,
+      "black_banding_mask_sum": 5200,
+      "black_banding_pixel_ratio_low": 0.7,
+      "black_banding_thres_low": 0.8,
+      "black_banding_thres_high": 1.2,
+      "expand_mask_enable": false,
+      "expand_mask_enable_thres": 100,
+      "adjust_banding_ratio_sp": false,
+      "banding_sp_black_thres_low": 0.9,
+      "banding_sp_black_thres_high": 0.96,
+      "banding_sp_bright_thres_low": 1.09,
+      "banding_sp_bright_thres_high": 1.14,
+      "banding_sp_mask_num_thres": 2200,
+      "drblock_hw_ratio1": 0.33,
+      "drblock_hw_ratio2": 0.10,
+      "drblock_hw_area_ratio": 0.35,
+      "drblock_mask_sum_thres1": 7000,
+      "drblock_mask_sum_thres2": 800,
+      "banding_check_bright_thres": 45,
+      "banding_check_black_thres": 300,
+      "banding_check_black_ratio": 0.6,
+      "banding_check_bright_ratio": 1.3,
+      "banding_check_bright_gap": 0.005,
+      "expand_mask_all_enable": false,
+      "pink2gray_enable": true,
+      "fusion_1st_ev0_oe": 0.95,
+      "fusion_1st_evn_oe": 0.6,
+      "fusion_1st_ev0_soft_thres_low": 0.7,
+      "fusion_1st_ev0_soft_thres_high": 0.99,
+      "fusion_1st_evn_soft_thres_low": 0.6,
+      "fusion_1st_evn_soft_thres_high": 0.9,
+      "fusion_1st_inpaint_thres": 0.6,
+      "fusion_2nd_evn_oe": 0.98,
+      "fusion_2nd_evnn_oe": 0.98,
+      "fusion_2nd_ref0_para": 0.2,
+      "fusion_2nd_refn_para": 1.0,
+      "white_mask_enable": true,
+      "lux_index_thres": 430,
+      "cal_white_diff": 3.0,
+      "white_brightness_thres": 128.0
+    },
+    "BackFillNoiseArgs": {
+      "ev0_back_fill_noise_enabled": true,
+      "back_fill_noise_scales": [],
+      "evn_back_fill_noise_enabled": false,
+      "back_fill_noise_scales_evn": [],
+      "merge_back_fill_noise_enabled": true,
+      "merge_back_fill_noise_scales": [],
+      "fill_final_gaussian_noise_enabled": true,
+      "fill_final_gaussian_noise_scales": [],
+      "scale_max": 0.2,
+      "scale_min": 0.07,
+      "total_gain_threshold": 30.0,
+      "nonlinear_opt_weight": 1.0,
+      "lmt_weight": 1.0,
+      "pca": []
+    },
+    "InpaintingArgs": { "ailab_inpaint_enable": false },
+    "ZoomInfoArgs": {
+      "zoom_enabled": false,
+      "limit_width": 1200,
+      "limit_height": 2000,
+      "zoom_map": []
+    },
+    "WaterMarkArgs": {
+      "watermark_enabled": false
+    },
+    "BHCArgs": {
+      "neutral_calibration_slope": -1.3419,
+      "neutral_calibration_intercept": 1.204,
+      "neutral_calibration_endx": 1.15,
+      "neutral_width": 0.15
+    },
+
+    "FaceEv6Lmts": {
+      "min_limit": 2.0,
+      "max_limit": 6.0
+    },
+    "NoFaceEv6Lmts": {
+      "min_limit": 2.0,
+      "max_limit": 6.0
+    }
+  },
+  "sensor_config": {
+    "__comment__": "针对不同sensor 进行的配置, 每一个节点下的参数结构应该是 common_config 的简化",
+    "Wide": {
+      "SN": {
+        "__comment__": "Wide SN 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": false,
+          "ev0_model_idx": 2,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 300,
+          "noise": {
+            "ak1": 2.2680722e-7,
+            "ak2": 1.6995054e-5,
+            "bk1": 1.1719987e-13,
+            "bk2": 2.0529461e-10,
+            "bk3": 4.0566142e-7,
+            "ak1_r": 2.2892354e-7,
+            "ak2_r": 6.7816277e-6,
+            "bk1_r": 1.3262893e-13,
+            "bk2_r": 1.6784536e-10,
+            "bk3_r": 4.1518509e-7,
+            "ak1_gr": 2.2812361e-7,
+            "ak2_gr": 1.5982067e-5,
+            "bk1_gr": 1.0289255e-13,
+            "bk2_gr": 2.3998295e-10,
+            "bk3_gr": 3.9597788e-7,
+            "ak1_gb": 2.2830141e-7,
+            "ak2_gb": 1.6430794e-5,
+            "bk1_gb": 1.0330254e-13,
+            "bk2_gb": 2.3963967e-10,
+            "bk3_gb": 3.9346081e-7,
+            "ak1_b": 2.2726766e-7,
+            "ak2_b": 1.3542656e-5,
+            "bk1_b": 1.3188425e-13,
+            "bk2_b": 1.7001065e-10,
+            "bk3_b": 4.1720599e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 2,
+            "ev0_finest_scale_ref_is_evn": 1,
+            "evn_finest_scale": 1
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200, 8],
+            [360, 8],
+            [370, 12]
+          ],
+          "deghost_ev0_val_bias": [
+            [200, 12],
+            [370, 10]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200, 0.1],
+            [360, 0.1],
+            [370, 0.05],
+            [430, 0.01]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 0
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 2.0,
+          "bright_max_limit": 6.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [280.0, 42.0],
+            [350.0, 38.0],
+            [400.0, 36.0],
+            [450.0, 35.0],
+            [520.0, 30.0]
+          ],
+          "dark_proportion_thre": [
+            [25, 0.1],
+            [180, 0.11],
+            [280, 0.12],
+            [400, 0.14],
+            [420, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.0],
+            [85.0, 3.0],
+            [100.0, 2.4],
+            [110.0, 2.3],
+            [120.0, 2.1],
+            [150.0, 1.6],
+            [180.0, 1.3]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.0],
+            [85.0, 1.5],
+            [100.0, 1.2],
+            [110.0, 1.05],
+            [120.0, 1.0],
+            [140.0, 1.2],
+            [150.0, 1.4],
+            [165.0, 1.2],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 2.0, 5.5],
+            [300.0, 1.5, 4.3],
+            [350.0, 1.3, 3.8],
+            [380.0, 1.2, 3.8],
+            [400.0, 1.0, 3.0],
+            [470.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ],
+          "noface_ev6_limits": [
+            [86.0, 3.0, 5.8],
+            [180.0, 2.5, 5.8],
+            [250.0, 2.3, 5.4],
+            [280.0, 1.8, 5.2],
+            [330.0, 1.5, 3.8],
+            [400.0, 1.0, 3.8],
+            [420.0, 1.0, 2.8],
+            [480.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 2,
+          "face_sky_ratio": [
+            [25.0, 1],
+            [180.0, 0.5],
+            [250.0, 0.5],
+            [280.0, 0.3],
+            [350.0, 0.3],
+            [450.0, 0.2]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 1],
+            [150.0, 0.3],
+            [180.0, 0.5],
+            [280.0, 0.3],
+            [400.0, 0.2],
+            [420.0, 0.1],
+            [450.0, 0.1]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": false,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 4.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [275, 0.35],
+            [320, 0.35],
+            [330, 0.45],
+            [350, 0.7],
+            [370, 0.9],
+            [400, 3],
+            [450, 3]
+          ],
+          "merge_mean": [
+            [200, 120],
+            [250, 110],
+            [280, 100],
+            [320, 95],
+            [350, 85],
+            [380, 80]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": false,
+          "amount": 2
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 3.0
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": false,
+          "inpaint_enable": true,
+          "adjust_banding_ratio": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_hw_ratio1": 0.33,
+          "drblock_hw_ratio2": 0.10,
+          "drblock_hw_area_ratio": 0.35,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 280,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": false,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.98,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0, 0.07],
+            [20, 0.06],
+            [40, 0.05],
+            [50, 0.04],
+            [100, 0.03],
+            [180, 0.015],
+            [256, 0.01],
+            [330, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0.0, 0.075],
+            [20.0, 0.055],
+            [40.0, 0.045],
+            [50.0, 0.04],
+            [100.0, 0.03],
+            [180.0, 0.0175],
+            [256.0, 0.0125],
+            [330.0, 0.0075]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0.0, 0.25],
+            [20.0, 0.22],
+            [40.0, 0.18],
+            [50.0, 0.16],
+            [100.0, 0.12],
+            [180.0, 0.07],
+            [256.0, 0.05],
+            [330.0, 0.03]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.12],
+            [20.0, 0.11],
+            [40.0, 0.1],
+            [50.0, 0.09],
+            [100.0, 0.08],
+            [180.0, 0.07],
+            [256.0, 0.05],
+            [330.0, 0.04]
+          ],
+          "pca": [
+            0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.65, 0.2784, -0.2784,
+            -0.65, -0.2784, 0.65, -0.65, 0.2784
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.3106,
+          "neutral_calibration_intercept": 1.224,
+          "neutral_calibration_endx": 0.9,
+          "neutral_width": 0.16
+        }
+      },
+      "SE": {
+        "__comment__": "Wide SE 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": false,
+          "ev0_model_idx": 2,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 300,
+          "noise": {
+            "ak1": 2.2680722e-7,
+            "ak2": 1.6995054e-5,
+            "bk1": 1.1719987e-13,
+            "bk2": 2.0529461e-10,
+            "bk3": 4.0566142e-7,
+            "ak1_r": 2.2892354e-7,
+            "ak2_r": 6.7816277e-6,
+            "bk1_r": 1.3262893e-13,
+            "bk2_r": 1.6784536e-10,
+            "bk3_r": 4.1518509e-7,
+            "ak1_gr": 2.2812361e-7,
+            "ak2_gr": 1.5982067e-5,
+            "bk1_gr": 1.0289255e-13,
+            "bk2_gr": 2.3998295e-10,
+            "bk3_gr": 3.9597788e-7,
+            "ak1_gb": 2.2830141e-7,
+            "ak2_gb": 1.6430794e-5,
+            "bk1_gb": 1.0330254e-13,
+            "bk2_gb": 2.3963967e-10,
+            "bk3_gb": 3.9346081e-7,
+            "ak1_b": 2.2726766e-7,
+            "ak2_b": 1.3542656e-5,
+            "bk1_b": 1.3188425e-13,
+            "bk2_b": 1.7001065e-10,
+            "bk3_b": 4.1720599e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 2,
+            "ev0_finest_scale_ref_is_evn": 1,
+            "evn_finest_scale": 1
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200, 8],
+            [360, 8],
+            [370, 12]
+          ],
+          "deghost_ev0_val_bias": [
+            [200, 12],
+            [370, 10]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200, 0.1],
+            [360, 0.1],
+            [370, 0.05],
+            [430, 0.01]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 1
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 2.0,
+          "bright_max_limit": 6.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [280.0, 42.0],
+            [350.0, 38.0],
+            [400.0, 36.0],
+            [450.0, 35.0],
+            [520.0, 30.0]
+          ],
+          "dark_proportion_thre": [
+            [25, 0.1],
+            [180, 0.11],
+            [280, 0.12],
+            [400, 0.14],
+            [420, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.0],
+            [85.0, 3.0],
+            [100.0, 2.4],
+            [110.0, 2.3],
+            [120.0, 2.1],
+            [150.0, 1.6],
+            [180.0, 1.4]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.0],
+            [85.0, 1.5],
+            [100.0, 1.2],
+            [110.0, 1.05],
+            [120.0, 1.0],
+            [140.0, 1.2],
+            [150.0, 1.4],
+            [165.0, 1.2],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 2.0, 5.5],
+            [300.0, 1.5, 4.3],
+            [350.0, 1.3, 3.8],
+            [380.0, 1.2, 3.8],
+            [400.0, 1.0, 3.0],
+            [470.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ],
+          "noface_ev6_limits": [
+            [86.0, 3.0, 5.8],
+            [180.0, 2.5, 5.8],
+            [250.0, 2.3, 5.4],
+            [280.0, 1.8, 5.2],
+            [330.0, 1.5, 3.8],
+            [400.0, 1.0, 3.8],
+            [420.0, 1.0, 2.8],
+            [480.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 2,
+          "face_sky_ratio": [
+            [25.0, 1],
+            [180.0, 0.5],
+            [250.0, 0.5],
+            [280.0, 0.3],
+            [350.0, 0.3],
+            [450.0, 0.2]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 1],
+            [150.0, 0.3],
+            [180.0, 0.5],
+            [280.0, 0.3],
+            [400.0, 0.2],
+            [420.0, 0.1],
+            [450.0, 0.1]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": true,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 4.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [275, 0.35],
+            [320, 0.35],
+            [330, 0.45],
+            [350, 0.7],
+            [370, 0.9],
+            [400, 3],
+            [450, 3]
+          ],
+          "merge_mean": [
+            [200, 120],
+            [250, 110],
+            [280, 100],
+            [320, 95],
+            [350, 85],
+            [380, 80]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": false,
+          "amount": 2
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 0.25
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": true,
+          "adjust_banding_ratio": false,
+          "inpaint_enable": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_hw_ratio1": 0.33,
+          "drblock_hw_ratio2": 0.10,
+          "drblock_hw_area_ratio": 0.35,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 280,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": false,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.98,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0, 0.07],
+            [20, 0.06],
+            [40, 0.05],
+            [50, 0.04],
+            [100, 0.03],
+            [180, 0.015],
+            [256, 0.01],
+            [330, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0, 0.125],
+            [20, 0.11],
+            [40, 0.09],
+            [50, 0.08],
+            [100, 0.06],
+            [180, 0.035],
+            [256, 0.025],
+            [330, 0.015]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0, 0.5],
+            [20, 0.5],
+            [40, 0.5],
+            [50, 0.4],
+            [100, 0.2],
+            [180, 0.1],
+            [256, 0.09],
+            [330, 0.05]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.12],
+            [20.0, 0.11],
+            [40.0, 0.1],
+            [50.0, 0.09],
+            [100.0, 0.08],
+            [180.0, 0.07],
+            [256.0, 0.05],
+            [330.0, 0.04]
+          ],
+          "pca": [
+            0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.65, 0.2784, -0.2784,
+            -0.65, -0.2784, 0.65, -0.65, 0.2784
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.3106,
+          "neutral_calibration_intercept": 1.224,
+          "neutral_calibration_endx": 0.9,
+          "neutral_width": 0.16
+        }
+      }
+    },
+    "UW": {
+      "SN": {
+        "__comment__": "UW SN 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": true,
+          "ev0_model_idx": 0,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 480,
+          "noise": {
+            "ak1": 6.0123275e-7,
+            "ak2": 2.4906381e-5,
+            "bk1": 1.3405058e-12,
+            "bk2": 1.3975255e-9,
+            "bk3": 2.2454277e-7,
+            "ak1_r": 5.9293137e-7,
+            "ak2_r": 1.5698857e-5,
+            "bk1_r": 1.033766e-12,
+            "bk2_r": 1.618601e-9,
+            "bk3_r": 1.9888352e-7,
+            "ak1_gr": 5.8509994e-7,
+            "ak2_gr": 2.3348028e-5,
+            "bk1_gr": 1.5675795e-12,
+            "bk2_gr": 1.3244504e-9,
+            "bk3_gr": 2.4010204e-7,
+            "ak1_gb": 5.8856291e-7,
+            "ak2_gb": 2.7660549e-5,
+            "bk1_gb": 1.5148172e-12,
+            "bk2_gb": 1.3346468e-9,
+            "bk3_gb": 2.3429407e-7,
+            "ak1_b": 6.4207597e-7,
+            "ak2_b": 2.6468094e-5,
+            "bk1_b": 1.1546583e-12,
+            "bk2_b": 1.3927878e-9,
+            "bk3_b": 2.0388981e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 3,
+            "ev0_finest_scale_ref_is_evn": 3,
+            "evn_finest_scale": 3
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200.0, 4.0],
+            [360.0, 4.0],
+            [460.0, 6.0]
+          ],
+          "deghost_ev0_val_bias": [
+            [200.0, 12.0],
+            [370.0, 12.0],
+            [460.0, 10.0]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200.0, 0.1],
+            [360.0, 0.1],
+            [460.0, 0.05]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 0
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 1.0,
+          "bright_max_limit": 4.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [300.0, 48.0],
+            [320.0, 40.0],
+            [400.0, 35.0],
+            [450.0, 35.0]
+          ],
+          "dark_proportion_thre": [
+            [25.0, 0.1],
+            [180.0, 0.11],
+            [280.0, 0.12],
+            [330.0, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.5],
+            [100.0, 3.5],
+            [125.0, 1.8],
+            [180.0, 1.0]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.25],
+            [100.0, 1.8],
+            [125.0, 1.05],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 2.0, 6.0],
+            [300.0, 2.0, 5.0],
+            [400.0, 1.5, 3.0],
+            [470.0, 1.1, 2.0]
+          ],
+          "noface_ev6_limits": [
+            [78.0, 1.0, 5.0],
+            [250.0, 1.0, 4.0],
+            [330.0, 1.0, 3.2],
+            [380.0, 1.0, 1.6],
+            [460.0, 1.0, 1.4],
+            [480.0, 1.0, 1.3]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 1,
+          "face_sky_ratio": [
+            [25.0, 0.3],
+            [180.0, 0.3]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 0.4],
+            [180.0, 0.4]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": false,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 15.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [270.0, 0.2],
+            [320.0, 0.55],
+            [350.0, 0.7],
+            [370.0, 1.9],
+            [400.0, 3.0],
+            [450.0, 3.0]
+          ],
+          "merge_mean": [
+            [200.0, 110],
+            [320.0, 100],
+            [400.0, 90]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": true,
+          "amount": 10
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 5
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": false,
+          "inpaint_enable": true,
+          "adjust_banding_ratio": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_hw_ratio1": 0.33,
+          "drblock_hw_ratio2": 0.10,
+          "drblock_hw_area_ratio": 0.35,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 380,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": true,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.925,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0.0, 0.08],
+            [30.0, 0.06],
+            [60.0, 0.04],
+            [100.0, 0.025],
+            [180.0, 0.015],
+            [256.0, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0.0, 0.125],
+            [20.0, 0.11],
+            [40.0, 0.09],
+            [50.0, 0.08],
+            [100.0, 0.06],
+            [180.0, 0.035],
+            [256.0, 0.025],
+            [330.0, 0.015]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0, 0.25],
+            [20, 0.22],
+            [40, 0.18],
+            [50, 0.16],
+            [100, 0.12],
+            [180, 0.07],
+            [256, 0.05],
+            [330, 0.03]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.1],
+            [20.0, 0.07],
+            [40.0, 0.05],
+            [50.0, 0.03],
+            [100.0, 0.01],
+            [180.0, 0.01],
+            [256.0, 0.01],
+            [330.0, 0.01]
+          ],
+          "pca": [
+            0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.65, 0.2784, -0.2784,
+            -0.65, -0.2784, 0.65, -0.65, 0.2784
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.1186,
+          "neutral_calibration_intercept": 0.9345,
+          "neutral_calibration_endx": 1,
+          "neutral_width": 0.25
+        }
+      },
+      "SE": {
+        "__comment__": "UW SE 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": true,
+          "ev0_model_idx": 0,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 480,
+          "noise": {
+            "ak1": 6.0123275e-7,
+            "ak2": 2.4906381e-5,
+            "bk1": 1.3405058e-12,
+            "bk2": 1.3975255e-9,
+            "bk3": 2.2454277e-7,
+            "ak1_r": 5.9293137e-7,
+            "ak2_r": 1.5698857e-5,
+            "bk1_r": 1.033766e-12,
+            "bk2_r": 1.618601e-9,
+            "bk3_r": 1.9888352e-7,
+            "ak1_gr": 5.8509994e-7,
+            "ak2_gr": 2.3348028e-5,
+            "bk1_gr": 1.5675795e-12,
+            "bk2_gr": 1.3244504e-9,
+            "bk3_gr": 2.4010204e-7,
+            "ak1_gb": 5.8856291e-7,
+            "ak2_gb": 2.7660549e-5,
+            "bk1_gb": 1.5148172e-12,
+            "bk2_gb": 1.3346468e-9,
+            "bk3_gb": 2.3429407e-7,
+            "ak1_b": 6.4207597e-7,
+            "ak2_b": 2.6468094e-5,
+            "bk1_b": 1.1546583e-12,
+            "bk2_b": 1.3927878e-9,
+            "bk3_b": 2.0388981e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 3,
+            "ev0_finest_scale_ref_is_evn": 3,
+            "evn_finest_scale": 3
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200.0, 4.0],
+            [360.0, 4.0],
+            [460.0, 6.0]
+          ],
+          "deghost_ev0_val_bias": [
+            [200.0, 12.0],
+            [370.0, 12.0],
+            [460.0, 10.0]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200.0, 0.1],
+            [360.0, 0.1],
+            [460.0, 0.05]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 0
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 1.0,
+          "bright_max_limit": 4.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [300.0, 48.0],
+            [320.0, 40.0],
+            [400.0, 35.0],
+            [450.0, 35.0]
+          ],
+          "dark_proportion_thre": [
+            [25.0, 0.1],
+            [180.0, 0.11],
+            [280.0, 0.12],
+            [330.0, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.5],
+            [100.0, 3.5],
+            [125.0, 1.8],
+            [180.0, 1.0]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.25],
+            [100.0, 1.8],
+            [125.0, 1.05],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 2.0, 6.0],
+            [300.0, 2.0, 5.0],
+            [400.0, 1.5, 3.0],
+            [470.0, 1.1, 2.0]
+          ],
+          "noface_ev6_limits": [
+            [78.0, 1.0, 5.0],
+            [250.0, 1.0, 4.0],
+            [330.0, 1.0, 3.2],
+            [380.0, 1.0, 1.6],
+            [460.0, 1.0, 1.4],
+            [480.0, 1.0, 1.3]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 1,
+          "face_sky_ratio": [
+            [25.0, 0.3],
+            [180.0, 0.3]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 0.4],
+            [180.0, 0.4]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": true,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 15.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [270.0, 0.2],
+            [320.0, 0.55],
+            [350.0, 0.7],
+            [370.0, 1.9],
+            [400.0, 3.0],
+            [450.0, 3.0]
+          ],
+          "merge_mean": [
+            [200.0, 110],
+            [320.0, 100],
+            [400.0, 90]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": true,
+          "amount": 10
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 5
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": true,
+          "inpaint_enable": false,
+          "adjust_banding_ratio": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_hw_ratio1": 0.33,
+          "drblock_hw_ratio2": 0.10,
+          "drblock_hw_area_ratio": 0.35,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 380,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": true,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.925,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0.0, 0.08],
+            [30.0, 0.06],
+            [60.0, 0.04],
+            [100.0, 0.025],
+            [180.0, 0.015],
+            [256.0, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0.0, 0.1],
+            [30.0, 0.095],
+            [60.0, 0.09],
+            [100.0, 0.05],
+            [180.0, 0.03],
+            [256.0, 0.015]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0, 0.25],
+            [20, 0.22],
+            [40, 0.18],
+            [50, 0.16],
+            [100, 0.12],
+            [180, 0.07],
+            [256, 0.05],
+            [330, 0.03]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.1],
+            [20.0, 0.07],
+            [40.0, 0.05],
+            [50.0, 0.03],
+            [100.0, 0.01],
+            [180.0, 0.01],
+            [256.0, 0.01],
+            [330.0, 0.01]
+          ],
+          "pca": [
+            0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.65, 0.2784, -0.2784,
+            -0.65, -0.2784, 0.65, -0.65, 0.2784
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.1186,
+          "neutral_calibration_intercept": 0.9345,
+          "neutral_calibration_endx": 1,
+          "neutral_width": 0.25
+        }
+      }
+    },
+    "Tele": {
+      "SN": {
+        "__comment__": "Tele SN 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": false,
+          "ev0_model_idx": 2,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 300,
+          "noise": {
+            "ak1": 1.6202161e-6,
+            "ak2": 7.0501149e-5,
+            "bk1": 9.0462817e-12,
+            "bk2": 3.8620961e-9,
+            "bk3": 1.0969278e-7,
+            "ak1_r": 1.6396441e-6,
+            "ak2_r": 5.9650202e-5,
+            "bk1_r": 9.093029e-12,
+            "bk2_r": 3.8162418e-9,
+            "bk3_r": 1.1632268e-7,
+            "ak1_gr": 1.6562288e-6,
+            "ak2_gr": 5.7893633e-5,
+            "bk1_gr": 9.0078639e-12,
+            "bk2_gr": 3.8852545e-9,
+            "bk3_gr": 1.0555019e-7,
+            "ak1_gb": 1.6520934e-6,
+            "ak2_gb": 5.9958142e-5,
+            "bk1_gb": 9.1188302e-12,
+            "bk2_gb": 3.8338555e-9,
+            "bk3_gb": 1.1416157e-7,
+            "ak1_b": 1.6528865e-6,
+            "ak2_b": 1.9605779e-5,
+            "bk1_b": 8.968938e-12,
+            "bk2_b": 3.9084145e-9,
+            "bk3_b": 1.032054e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 2,
+            "ev0_finest_scale_ref_is_evn": 1,
+            "evn_finest_scale": 1
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200, 8],
+            [360, 8],
+            [370, 12]
+          ],
+          "deghost_ev0_val_bias": [
+            [200, 12],
+            [370, 10]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200, 0.1],
+            [360, 0.1],
+            [370, 0.05],
+            [430, 0.01]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 0
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 2.0,
+          "bright_max_limit": 6.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [280.0, 42.0],
+            [350.0, 40.0],
+            [400.0, 38.0],
+            [450.0, 35.0],
+            [520.0, 30.0]
+          ],
+          "dark_proportion_thre": [
+            [25.0, 0.1],
+            [180.0, 0.11],
+            [280.0, 0.11],
+            [330.0, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.0],
+            [85.0, 3.0],
+            [100.0, 1.3],
+            [110.0, 1.1],
+            [120.0, 1.1],
+            [150.0, 1.0],
+            [180.0, 1.0]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.0],
+            [85.0, 1.5],
+            [100.0, 1.2],
+            [110.0, 1.05],
+            [120.0, 1.0],
+            [140.0, 1.2],
+            [150.0, 1.4],
+            [165.0, 1.2],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 1.4, 5.5],
+            [250.0, 1.1, 5.5],
+            [300.0, 1.0, 4.3],
+            [350.0, 1.0, 3.8],
+            [380.0, 1.0, 3.8],
+            [400.0, 1.0, 3.0],
+            [470.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ],
+          "noface_ev6_limits": [
+            [86.0, 3.0, 5.8],
+            [180.0, 2.5, 5.8],
+            [250.0, 2.3, 5.4],
+            [280.0, 2.1, 5.2],
+            [330.0, 1.9, 5.2],
+            [400.0, 1.5, 3.8],
+            [420.0, 1.0, 4.4],
+            [480.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 2,
+          "face_sky_ratio": [
+            [25.0, 1],
+            [180.0, 0.5],
+            [250.0, 0.5],
+            [280.0, 0.3],
+            [350.0, 0.3],
+            [450.0, 0.2]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 1.0],
+            [150.0, 0.3],
+            [180.0, 0.5],
+            [280.0, 0.4],
+            [400.0, 0.2],
+            [420.0, 0.05],
+            [450.0, 0.05]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": false,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 4.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [275, 0.35],
+            [320, 0.35],
+            [330, 0.45],
+            [350, 0.7],
+            [370, 0.9],
+            [400, 3],
+            [450, 3]
+          ],
+          "merge_mean": [
+            [200.0, 120],
+            [250.0, 110],
+            [300.0, 105],
+            [320.0, 103],
+            [350.0, 90],
+            [450.0, 80]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": true,
+          "amount": 10
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 5
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": false,
+          "inpaint_enable": true,
+          "adjust_banding_ratio": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 45,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": false,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.98,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0.0, 0.08],
+            [30.0, 0.06],
+            [60.0, 0.04],
+            [100.0, 0.025],
+            [180.0, 0.015],
+            [256.0, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0.0, 0.075],
+            [20.0, 0.055],
+            [40.0, 0.045],
+            [50.0, 0.04],
+            [100.0, 0.03],
+            [180.0, 0.0175],
+            [256.0, 0.0125],
+            [330.0, 0.0075]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0.0, 0.25],
+            [20.0, 0.22],
+            [40.0, 0.18],
+            [50.0, 0.16],
+            [100.0, 0.12],
+            [180.0, 0.07],
+            [256.0, 0.05],
+            [330.0, 0.03]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.05],
+            [20.0, 0.03],
+            [40.0, 0.01],
+            [50.0, 0.01],
+            [100.0, 0.01],
+            [180.0, 0.01],
+            [256.0, 0.01],
+            [330.0, 0.01]
+          ],
+          "pca": [
+            0.30803141, 0.56913316, 0.5698275, 0.50645936, -0.54443663,
+            -0.23408337, -0.17140302, 0.78702909, 0.77874374, -0.3454847,
+            -0.38822332, 0.35139954, 0.047581874, -0.70847225, 0.70370489,
+            -0.024546916
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.03993,
+          "neutral_calibration_intercept": 0.86365,
+          "neutral_calibration_endx": 0.75,
+          "neutral_width": 0.15
+        }
+      },
+      "SE": {
+        "__comment__": "Tele SE 配置参数",
+        "DenoiseArgs": {
+          "use_sigma_map": false,
+          "ev0_model_idx": 2,
+          "ev0_ll_model_idx": 0,
+          "merge_model_idx": 1,
+
+          "model_ll_thre": 300,
+          "noise": {
+            "ak1": 1.6202161e-6,
+            "ak2": 7.0501149e-5,
+            "bk1": 9.0462817e-12,
+            "bk2": 3.8620961e-9,
+            "bk3": 1.0969278e-7,
+            "ak1_r": 1.6396441e-6,
+            "ak2_r": 5.9650202e-5,
+            "bk1_r": 9.093029e-12,
+            "bk2_r": 3.8162418e-9,
+            "bk3_r": 1.1632268e-7,
+            "ak1_gr": 1.6562288e-6,
+            "ak2_gr": 5.7893633e-5,
+            "bk1_gr": 9.0078639e-12,
+            "bk2_gr": 3.8852545e-9,
+            "bk3_gr": 1.0555019e-7,
+            "ak1_gb": 1.6520934e-6,
+            "ak2_gb": 5.9958142e-5,
+            "bk1_gb": 9.1188302e-12,
+            "bk2_gb": 3.8338555e-9,
+            "bk3_gb": 1.1416157e-7,
+            "ak1_b": 1.6528865e-6,
+            "ak2_b": 1.9605779e-5,
+            "bk1_b": 8.968938e-12,
+            "bk2_b": 3.9084145e-9,
+            "bk3_b": 1.032054e-7
+          }
+        },
+
+        "AlignArgs": {
+          "LocalAlignArgs": {
+            "ev0_finest_scale": 2,
+            "ev0_finest_scale_ref_is_evn": 1,
+            "evn_finest_scale": 1
+          }
+        },
+        "DeghostArgs": {
+          "weight_correction_factor": [
+            [200, 8],
+            [360, 8],
+            [370, 12]
+          ],
+          "deghost_ev0_val_bias": [
+            [200, 12],
+            [370, 10]
+          ],
+          "deghost_ev0_wit_bias": [
+            [200, 0.1],
+            [360, 0.1],
+            [370, 0.05],
+            [430, 0.01]
+          ]
+        },
+        "MfnrMergeArgs": {
+          "evn_base_abandon_frames": 3
+        },
+        "BrightenArgs": {
+          "bright_min_limit": 2.0,
+          "bright_max_limit": 6.0,
+          "dark_val_thres": [
+            [86.0, 48.0],
+            [280.0, 42.0],
+            [350.0, 40.0],
+            [400.0, 38.0],
+            [450.0, 35.0],
+            [520.0, 30.0]
+          ],
+          "dark_proportion_thre": [
+            [25.0, 0.1],
+            [180.0, 0.11],
+            [280.0, 0.11],
+            [330.0, 0.13]
+          ],
+          "face_ev6_ratios": [
+            [25.0, 5.0],
+            [70.0, 4.0],
+            [85.0, 3.0],
+            [100.0, 1.3],
+            [110.0, 1.1],
+            [120.0, 1.1],
+            [150.0, 1.0],
+            [180.0, 1.0]
+          ],
+          "backlit_face_ev6_ratios": [
+            [25.0, 2.5],
+            [70.0, 2.0],
+            [85.0, 1.5],
+            [100.0, 1.2],
+            [110.0, 1.05],
+            [120.0, 1.0],
+            [140.0, 1.2],
+            [150.0, 1.4],
+            [165.0, 1.2],
+            [180.0, 1.0]
+          ],
+          "face_ev6_limits": [
+            [200.0, 1.4, 5.5],
+            [250.0, 1.1, 5.5],
+            [300.0, 1.0, 4.3],
+            [350.0, 1.0, 3.8],
+            [380.0, 1.0, 3.8],
+            [400.0, 1.0, 3.0],
+            [470.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ],
+          "noface_ev6_limits": [
+            [86.0, 3.0, 5.8],
+            [180.0, 2.5, 5.8],
+            [250.0, 2.3, 5.4],
+            [280.0, 2.1, 5.2],
+            [330.0, 1.9, 5.2],
+            [400.0, 1.5, 3.8],
+            [420.0, 1.0, 4.4],
+            [480.0, 1.0, 2.0],
+            [500.0, 1.0, 1.6]
+          ]
+        },
+        "SkyDarkenArgs": {
+          "face_sky_use_ev": 2,
+          "noface_sky_use_ev": 2,
+          "face_sky_ratio": [
+            [25.0, 1],
+            [180.0, 0.5],
+            [250.0, 0.5],
+            [280.0, 0.3],
+            [350.0, 0.3],
+            [450.0, 0.2]
+          ],
+          "noface_sky_ratio": [
+            [25.0, 1.0],
+            [150.0, 0.3],
+            [180.0, 0.5],
+            [280.0, 0.4],
+            [400.0, 0.2],
+            [420.0, 0.05],
+            [450.0, 0.05]
+          ]
+        },
+        "MergeArgs": {
+          "MERGE_MODE": 2,
+          "halfsize_flag": true,
+          "boost_detail_enabled": false,
+          "BoostDetailArgs": {
+            "boost_val": 4.0
+          },
+          "fast_llf_enabled": true,
+          "FastLLFArgs": {
+            "llf_sigma": 0.1,
+            "llf_N": 7.0,
+            "llf_fact": 1.0,
+            "llf_merge_ratio": 0.7
+          },
+          "face_s_mean_ratios": [
+            [110, 0.5],
+            [150, 0.3],
+            [170, 0.3],
+            [200, 0.15],
+            [220, 0.1]
+          ],
+          "tar_sensitivity": [
+            [275, 0.35],
+            [320, 0.35],
+            [330, 0.45],
+            [350, 0.7],
+            [370, 0.9],
+            [400, 3],
+            [450, 3]
+          ],
+          "merge_mean": [
+            [200.0, 120],
+            [250.0, 110],
+            [300.0, 105],
+            [320.0, 103],
+            [350.0, 90],
+            [450.0, 80]
+          ]
+        },
+        "EdgeSharpArgs": {
+          "enabled": true,
+          "amount": 10
+        },
+        "EV0SharpenArgs": {
+          "sharpen_enabled": false,
+          "sharpen_amount": 5
+        },
+        "FusionArgs": {
+          "fusion_slim_enable": true,
+          "inpaint_enable": false,
+          "adjust_banding_ratio": false,
+          "ev0_unoe_thres_low": 0.1,
+          "ratio_final_thres": 1.05,
+          "bright_banding_pixel_ratio_high": 5.0,
+          "black_banding_mask_sum": 5200,
+          "black_banding_pixel_ratio_low": 0.7,
+          "black_banding_thres_low": 0.8,
+          "black_banding_thres_high": 1.2,
+          "expand_mask_enable": false,
+          "expand_mask_enable_thres": 100,
+          "adjust_banding_ratio_sp": false,
+          "banding_sp_black_thres_low": 0.9,
+          "banding_sp_black_thres_high": 0.96,
+          "banding_sp_bright_thres_low": 1.09,
+          "banding_sp_bright_thres_high": 1.14,
+          "banding_sp_mask_num_thres": 2200,
+          "drblock_mask_sum_thres1": 7000,
+          "drblock_mask_sum_thres2": 800,
+          "banding_check_bright_thres": 45,
+          "banding_check_black_thres": 300,
+          "banding_check_black_ratio": 0.6,
+          "banding_check_bright_ratio": 1.3,
+          "banding_check_bright_gap": 0.005,
+          "expand_mask_all_enable": false,
+          "pink2gray_enable": true,
+          "fusion_1st_ev0_oe": 0.95,
+          "fusion_1st_evn_oe": 0.6,
+          "fusion_1st_ev0_soft_thres_low": 0.7,
+          "fusion_1st_ev0_soft_thres_high": 0.99,
+          "fusion_1st_evn_soft_thres_low": 0.6,
+          "fusion_1st_evn_soft_thres_high": 0.9,
+          "fusion_1st_inpaint_thres": 0.6,
+          "fusion_2nd_evn_oe": 0.98,
+          "fusion_2nd_evnn_oe": 0.98,
+          "fusion_2nd_ref0_para": 0.2,
+          "fusion_2nd_refn_para": 1.0,
+          "white_mask_enable": true,
+          "lux_index_thres": 430,
+          "cal_white_diff": 3.0,
+          "white_brightness_thres": 128.0
+        },
+        "BackFillNoiseArgs": {
+          "ev0_back_fill_noise_enabled": true,
+          "back_fill_noise_scales": [
+            [0.0, 0.08],
+            [30.0, 0.06],
+            [60.0, 0.04],
+            [100.0, 0.025],
+            [180.0, 0.015],
+            [256.0, 0.005]
+          ],
+          "evn_back_fill_noise_enabled": false,
+          "back_fill_noise_scales_evn": [
+            [0.0, 0.125],
+            [20.0, 0.11],
+            [40.0, 0.09],
+            [50.0, 0.08],
+            [100.0, 0.06],
+            [180.0, 0.035],
+            [256.0, 0.025],
+            [330.0, 0.015]
+          ],
+          "merge_back_fill_noise_enabled": false,
+          "merge_back_fill_noise_scales": [
+            [0.0, 0.5],
+            [20.0, 0.5],
+            [40.0, 0.5],
+            [50.0, 0.4],
+            [100.0, 0.2],
+            [180.0, 0.1],
+            [256.0, 0.09],
+            [330.0, 0.05]
+          ],
+          "fill_final_gaussian_noise_enabled": true,
+          "fill_final_gaussian_noise_scales": [
+            [0.0, 0.1],
+            [20.0, 0.07],
+            [40.0, 0.05],
+            [50.0, 0.03],
+            [100.0, 0.01],
+            [180.0, 0.01],
+            [256.0, 0.01],
+            [330.0, 0.01]
+          ],
+          "pca": [
+            0.30803141, 0.56913316, 0.5698275, 0.50645936, -0.54443663,
+            -0.23408337, -0.17140302, 0.78702909, 0.77874374, -0.3454847,
+            -0.38822332, 0.35139954, 0.047581874, -0.70847225, 0.70370489,
+            -0.024546916
+          ]
+        },
+        "BHCArgs": {
+          "neutral_calibration_slope": -1.03993,
+          "neutral_calibration_intercept": 0.86365,
+          "neutral_calibration_endx": 0.75,
+          "neutral_width": 0.15
+        }
+      }
+    }
+  }
+}

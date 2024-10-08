@@ -1,0 +1,30 @@
+{
+  "config":{
+    "hw_platform": ["IDP", "QRD"],
+    "soc_id": ["518"]
+  },
+
+  "sns_dynamic_libraries":
+  {
+    "owner": "dynamic_sensor",
+    "detect_on_every_boot":{ "type": "int", "ver": "0",
+        "data": "0"
+    },
+    ".lib0":
+    {
+      "owner": "dynamic_sensor",
+      "name":{ "type": "str", "ver": "0",
+        "data": "lsm6dso_normal.so"
+      },
+      "reg_fun":{ "type": "str", "ver": "0",
+        "data": "sns_register_lsm6dso"
+      },
+      "reg_cnt":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "detected":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

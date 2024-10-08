@@ -1,0 +1,19 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["519", "536"]
+  },
+  "sns_pointing_light_source": {
+    "owner": "sns_pointing_light_source",
+      ".params":{
+        "owner": "sns_pointing_light_source",
+          "param1": {
+              "ver": "0", "type": "flt", "data": "1.5"
+          },
+          "param2": {
+              "ver": "0", "type": "flt", "data": "75"
+          }
+      }
+  }
+}

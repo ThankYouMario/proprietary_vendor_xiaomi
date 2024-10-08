@@ -1,0 +1,15 @@
+{
+    "SDK": "MIVI",
+    "Version": "0.2",
+    "AppList": [
+        {
+            "PackageName": "com.xiaomi.camera.sample"
+        },
+        {
+            "PackageName": "com.xiaomi.camera.mivi"
+        },
+        {
+            "PackageName": "com.snapchat.android"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+  "PipelineName": "thirdpartyrawsupernightyuv",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.arcsoftsll",
+        "NodeInstance": "ArcsoftSLLInstance0",
+        "NodePropertyId" : 16
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.mialgoellc",
+        "NodeInstance": "MiAlgoELLCInstance0",
+        "NodePropertyId" : 16
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlinepostproc",
+        "NodeInstance": "OfflineStatsTintlessInstance0",
+        "NodePropertyId" : 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlinepostproc",
+        "NodeInstance": "OfflineStatsAWBIdealInstance0",
+        "NodePropertyId" : 1
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlinepostproc",
+        "NodeInstance": "IdealRaw2YuvInstance0",
+        "NodePropertyId" : 12
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.offlinepostproc",
+        "NodeInstance": "BayerRaw2YuvInstance0",
+        "NodePropertyId" : 12
+      },
+      {
+        "NodeName": "com.xiaomi.plugin.ldc",
+        "NodeInstance": "LDCInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "ArcsoftSLLInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "ArcsoftSLLInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "MiAlgoELLCInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "MiAlgoELLCInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "OfflineStatsTintlessInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "OfflineStatsTintlessInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "OfflineStatsAWBIdealInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "OfflineStatsAWBIdealInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "IdealRaw2YuvInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "IdealRaw2YuvInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "BayerRaw2YuvInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "BayerRaw2YuvInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "LDCInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "LDCInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

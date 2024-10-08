@@ -1,0 +1,30 @@
+<!--
+Copyright (c) 2021 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRCoreService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IQXRCamService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IQXRSplitService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IQXRModService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IQXRAudioService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

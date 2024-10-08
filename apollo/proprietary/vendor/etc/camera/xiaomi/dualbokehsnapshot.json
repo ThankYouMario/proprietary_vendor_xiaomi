@@ -1,0 +1,16 @@
+{
+  "PipelineName": "DualBokehSnapshot",
+  "PipelineId": 555,
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.capbokeh",
+        "NodeInstanceId": 1
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+    ]
+  }
+}

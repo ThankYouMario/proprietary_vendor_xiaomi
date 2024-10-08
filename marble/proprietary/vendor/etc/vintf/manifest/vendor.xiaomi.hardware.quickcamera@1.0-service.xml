@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <!-- quickcamera HAL service -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.quickcamera</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQuickCameraService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

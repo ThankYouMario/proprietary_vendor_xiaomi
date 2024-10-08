@@ -1,0 +1,75 @@
+{
+	"##note": "配置规则: release版本关闭，日常版本会开启debug模块，可以冷更新修改文件",
+
+	"TrueSight": "",
+	"##EnableLogSave##": "日志保存文件功能",
+	"EnableLogSave": false,
+	"##DebugSavePath##": "Debug文件保存目录 /data/vendor/camera/truesight/",
+	"DebugSavePath": "/data/vendor/camera/truesight/",
+	"##EnableLogLevel##": "打印0-7:kLOG_LEVEL_ALL=0, kLOG_LEVEL_VERBOSE=1,kLOG_LEVEL_DEBUG=2,kLOG_LEVEL_INFO=3,kLOG_LEVEL_WARN=4,kLOG_LEVEL_ERROR=5,kLOG_LEVEL_FATAL=6,kLOG_LEVEL_OFF=7,",
+	"EnableLogLevel": 5,
+	"##EnableLifeCycleLog##": "生命周期打印",
+	"EnableLifeCycleLog": false,
+	"##EnableAllReturn##": "所有函数直接return",
+	"EnableAllReturn": false,
+	"##EnableXRealityEmulate##": "仿真默认模板效果",
+	"EnableXRealityEmulate": false,
+	"##EnableFaceEmulate##": "仿真人脸数据",
+	"EnableFaceEmulate": false,
+	"##EnableTimeProfile##": "logcat耗时打印",
+	"EnableTimeProfile": false,
+	"##EnableFaceDrawLmk##": "人脸流程绘制 进出人脸框+嘴巴mask",
+	"EnableFaceDrawLmk": false,
+	"##EnableXRealityDrawLmk##": "美颜流程绘制人脸点+嘴巴mask+痣mask",
+	"EnableXRealityDrawLmk": false,
+	"##EnableXRealityDrawFps##": "美颜流程绘制fps(暂不准确)",
+	"EnableXRealityDrawFps": false,
+	"##EnableXRealityDrawInf##": "美颜流程绘制内部信息",
+	"EnableXRealityDrawInf": false,
+	"##EnableXRealityDrawEnvInf##": "环境光debug info",
+	"EnableXRealityDrawEnvInf": false,
+	"##EnableXRealityPreviewIODump##": "保存美颜预览数据，DebugSavePath + /preview/，开启后log也保存到文件",
+	"EnableXRealityPreviewIODump": false,
+	"##EnableXRealityCaptureIODump##": "保存美颜拍后数据，DebugSavePath + /capture/",
+	"EnableXRealityCaptureIODump": false,
+	"##EnableFaceTrackerIODump##": "保存实时人脸检测数据，DebugSavePath + /FaceTracker/",
+	"EnableFaceTrackerIODump": false,
+	"##EnableFaceDetectorIODump##": "保存单帧人脸检测数据，DebugSavePath + /FaceDetector/",
+	"EnableFaceDetectorIODump": false,
+
+	"EnableEffect": {
+		"##EnableEffectIgnoringInterface##": "是否排除接口配置影响",
+		"EnableEffectIgnoringInterface": false,
+		"MagicEngine": {
+			"EnableInit": true
+		},
+		"FaceRetouchEngine": {
+			"EnableInit": true
+		},
+		"EnableAIEffect": {
+			"E2ESpotless": {
+				"EnableInit": true,
+				"##HardwareAccelerationType##": "0 GPU; 1 NPU;",
+				"HardwareAccelerationType": 1
+			},
+			"SkinUnify": {
+				"EnableInit": true,
+				"HardwareAccelerationType": 1
+			},
+			"E2EWrinkle": {
+				"EnableInit": true,
+				"HardwareAccelerationType": 1
+			},
+			"E2EAcneLight": {
+				"EnableInit": false
+			}
+		}
+	},
+	"##EnableFaceRetouchEnvLightDebug##": "是否开启debug环境光功能(luxidx+人脸y数据逆光、暗光、小人脸减弱)",
+	"EnableFaceRetouchEnvLightDebug": false,
+	"EnableFaceRetouchEnvLight": true,
+	"##EnableMakeupEnvLightDebug##": "是否开启debug环境光功能(环境光ISO(暗光减弱))",
+	"EnableMakeupEnvLightDebug": false,
+	"EnableMakeupEnvLight": true
+}
+

@@ -1,0 +1,63 @@
+{
+    "Config": {
+        "switches": {
+            "main": false,
+            "debug": true
+        },
+        "scan": {
+            "timeout_second": 120,
+            "timeout_min_second": 30,
+            "interval_min_second": 1,
+            "log_timeout_second": 10,
+            "round": 4
+        },
+        "policy": "default",
+        "monitor_process": {
+            "enable": true,
+            "list": [
+                {
+                    "process": "system_server",
+                    "thread": [
+                        "watchdog"
+                    ]
+                },
+                {
+                    "process": "surfaceflinger",
+                    "thread": []
+                },
+                {
+                    "process": "vold",
+                    "thread": []
+                }
+            ]
+        },
+        "monitor_binder": {
+            "enable": false,
+            "monitor_uids": [
+                1000
+            ],
+            "wchans": [
+                "wait_on_page_bit_common"
+            ]
+        },
+        "default_open_hw_list": {
+            "enable": false,
+            "list": [
+                "lahaina"
+            ]
+        },
+        "black_white_list": {
+            "enable": false,
+            "mode": "white",
+            "max_iowait_timeout_cnt": 0,
+            "max_iowait_task_cnt": 5,
+            "list": []
+        },
+        "blackscreen_monitor": {
+            "enable": false,
+            "interval_second": 5,
+            "pixel_check": true,
+            "panic": false
+        }
+    }
+}

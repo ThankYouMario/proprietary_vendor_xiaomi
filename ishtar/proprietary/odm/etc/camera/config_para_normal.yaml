@@ -1,0 +1,184 @@
+offline_config:
+  offline_input_dir: '/sdcard/raw-nightcases'
+  offline_output_dir: '/sdcard/raw-nightcases-Output'
+Wide:
+  SN:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 36.0]
+        - [14.0, 36.0]
+        - [100.0, 36.0]
+        - [256.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [86.0, 2.0, 6.0]
+        - [180.0, 2.0, 6.0]
+        - [400.0, 2.0, 6.0]
+    EdgeSharpArgs:
+      enabled: false
+      amount: 2.0
+    BoostArgs:
+      enabled: true
+      boost_val: 2.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 120]
+        - [250.0, 120]
+        - [300.0, 120]
+  SE:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 36.0]
+        - [14.0, 36.0]
+        - [100.0, 36.0]
+        - [256.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [86.0, 2.0, 4.0]
+        - [180.0, 2.0, 4.0]
+        - [250.0, 2.2, 4.0]
+        - [300.0, 2.0, 4.0]
+        - [400.0, 1.0, 4.0]
+    EdgeSharpArgs:
+      enabled: true
+      amount: 5.0
+    BoostArgs:
+      enabled: false
+      boost_val: 2.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 110]
+        - [250.0, 110]
+        - [300.0, 110]
+Ultra_Wide:
+  SN:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 36.0]
+        - [14.0, 36.0]
+        - [100.0, 36.0]
+        - [256.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [86.0, 1.0, 5.0]
+        - [180.0, 1.0, 5.0]
+        - [400.0, 1.0, 5.0]
+    EdgeSharpArgs:
+      enabled: true
+      amount: 2.0
+    BoostArgs:
+      enabled: true
+      boost_val: 2.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 120]
+        - [250.0, 120]
+        - [300.0, 120]
+  SE:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 44.0]
+        - [14.0, 44.0]
+        - [16.0, 42.0]
+        - [20.0, 36.0]
+        - [100.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [78.0, 1.0, 4.0]
+        - [250.0, 1.0, 3.0]
+        - [290.0, 1.0, 2.0]
+        - [350.0, 1.0, 3.5]
+        - [400.0, 1.0, 3.5]
+        - [470.0, 1.0, 2.0]
+    EdgeSharpArgs:
+      enabled: true
+      amount: 5.0
+    BoostArgs:
+      enabled: true
+      boost_val: 3.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 110]
+        - [250.0, 110]
+        - [300.0, 110]
+Tele:
+  SN:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 36.0]
+        - [14.0, 36.0]
+        - [100.0, 36.0]
+        - [256.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [86.0, 1.0, 5.0]
+        - [180.0, 1.0, 5.0]
+        - [400.0, 1.0, 5.0]
+    EdgeSharpArgs:
+      enabled: true
+      amount: 2.0
+    BoostArgs:
+      enabled: true
+      boost_val: 2.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 120]
+        - [250.0, 120]
+        - [300.0, 120]
+  SE:
+    BrightenArgs:
+      dark_proportion_thre:
+        - [25.0, 0.10]
+        - [180.0, 0.10]
+        - [280.0, 0.10]
+        - [330.0, 0.10]
+      dark_val_thres:
+        - [10.0, 44.0]
+        - [14.0, 44.0]
+        - [16.0, 42.0]
+        - [20.0, 36.0]
+        - [100.0, 36.0]
+    Ev6Args:
+      noface_ev6_limits:
+        - [78.0, 1.0, 4.0]
+        - [250.0, 1.0, 3.0]
+        - [290.0, 1.0, 2.0]
+        - [350.0, 1.0, 3.5]
+        - [400.0, 1.0, 3.5]
+        - [470.0, 1.0, 2.0]
+    EdgeSharpArgs:
+      enabled: true
+      amount: 5.0
+    BoostArgs:
+      enabled: false
+      boost_val: 3.0
+    MergeArgs:
+      merge_mean:
+        - [200.0, 110]
+        - [250.0, 110]
+        - [300.0, 110]

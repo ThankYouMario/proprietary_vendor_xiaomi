@@ -1,0 +1,37 @@
+{
+    "PipelineName": "satburstsnapshot",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "BurstJpegInstance0",
+            "InputFormat": "YUV420_NV12",
+            "OutputFormat": "BLOB"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "SourceBuffer"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance0"
+            }
+        },
+        {
+            "SrcPort": {
+                "PortId": 0,
+                "NodeInstance": "BurstJpegInstance0"
+            },
+            "DstPort": {
+                "PortId": 0,
+                "NodeInstance": "SinkBuffer"
+            }
+        }
+        ]
+    }
+}

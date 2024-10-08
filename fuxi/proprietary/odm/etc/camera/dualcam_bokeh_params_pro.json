@@ -1,0 +1,194 @@
+{
+   "/": "Global parameters",
+  "StructGlobal": {
+	"StructDspGpu":{
+		"paramGatherDspSwitch": 1
+	}
+  },
+  "/": "BokehEffect parameters",
+  "StructMT":{
+	"InResizeMT": 1,
+	"ScatYuvMT": 1,
+	"UvbluMT": 0,
+	"PosProcYMT": 1
+  },
+  "StructDownSamp":{
+	"DowSampRat": 2,
+	"DowSampMeth": 1
+  },
+  "StructDownSampHot": {
+    "DowSampRat": 2,
+    "DowSampMeth": 1
+  },
+  "StructTimeControl": {
+    "paramSwitch": 1,
+    "overtimeThres": 4000
+  },
+  "StructPre": {
+      "StructPrePorcDepth": {
+          "StructPrePorcDepthNorm": {
+              "paramSwitch": 1,
+              "paramSize": 5
+          },
+          "StructPrePorcDepthNight": {
+              "paramSwitch": 0,
+              "paramSize": 3
+          }
+      },
+      "StructDof": {
+          "StructDofNorm": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist_1x": 10,
+              "backDist_3x": 10,
+              "foreDist_1x": 15,
+              "foreDist_3x": 15,
+              "backDistBias_1x": 10,
+              "backDistBias_3x": 10
+          },
+          "StructDofNight": {
+              "backDistRat_1x": 2.0,
+              "foreDistRat_1x": 0.5,
+              "backDistRat_3x": 1.0,
+              "foreDistRat_3x": 0.3,
+              "backDistBias_1x": 0,
+              "backDistBias_3x": 0
+          }
+      },
+      "StructDofRefine": {
+          "paramSwitch": 1,
+          "structAlpha": {
+              "paramSwitch": 1,
+              "paramBlurRadius": 5,
+              "paramBlurRadius_night": 7
+          },
+          "structPortraitMask": {
+              "paramSwitch": 1,
+              "paramRadius": 1.2
+          },
+          "structWeight": {
+              "paramSwitch": 0,
+              "paramSwitch_night": 0
+          }
+      },
+    "StructRadius": {
+        "StructRadiusNorm": {
+            "backLeve_1x": 0.125,
+            "foreLeve_1x": 0.02,
+            "apeRat_1x": 1.4,
+            "backGam_1x": 2.5,
+            "foreGam_1x": 1.8,
+            "a_slope_1x": 0.001,
+            "b_inter_1x": 1.1,
+            "backLeve_3x": 1.1,
+            "foreLeve_3x": 0.20,
+            "apeRat_3x": 1.8,
+            "backGam_3x": 1.2,
+            "foreGam_3x": 1.5,
+            "a_slope_3x": 0.0,
+            "b_inter_3x": 1.0
+        },
+        "StructRadiusNight": {
+            "backLeve_1x": 0.03,
+            "foreLeve_1x": 0.01,
+            "apeRat_1x": 1.8,
+            "backGam_1x": 0.7,
+            "foreGam_1x": 1.0,
+            "a_slope_1x": 1.0,
+            "b_inter_1x": 0.0,
+            "backLeve_3x": 0.15,
+            "foreLeve_3x": 0.04,
+            "apeRat_3x": 1.8,
+            "backGam_3x": 0.8,
+            "foreGam_3x": 1.0,
+            "a_slope_3x": 1.0,
+            "b_inter_3x": 0.0
+        }
+    },
+	"StructForeBlur": {
+		"paramSwitch": 1
+	},
+      "StructSpot": {
+          "paramSwitch": 1,
+          "paramDxFlg": 1,
+          "paramIsoThre": 400,
+          "StructSoft": {
+          "paramMinBrig": 220,
+          "paramEnhanRat": 15,
+          "paramMinBrig_night": 240,
+          "paramEnhanRat_night": 30,
+          "paramClipHigh": 0
+          },
+          "StructHard": {
+              "paramMinBrig": 160,
+              "paramEnhanRat": 18,
+              "paramClipHigh": 0,
+              "paramMaxContAre": 800,  
+              "paramMinContAre": 0,
+              "paramMaxAix": 30,
+              "paramMinAix": 0,
+              "paramMinGradAvge": -1,
+              "paramMaxGRadCv": -1,
+              "paramMaxEccen": -1,
+              "paramMamElliErr": -1,
+              "paramMinFillRat": -1,
+              "paramMaxAmbiVal": -1,
+              "paramMinBrig_night": 240,
+              "paramEnhanRat_night": 30,
+              "paramMaxContAre_night": 400,
+              "paramMinContAre_night": 0,
+              "paramMaxAix_night": 15,
+              "paramMinAix_night": 0
+          }
+      },
+      "StructWeakFreq": {
+          "paramSwitch": 0,
+          "paramRadius": 3,
+          "paramSwitch_night": 0,
+          "paramRadius_night": 3
+      }
+  },
+  "StructProc": {
+	  "StructGather":{
+		  "paramSwitch": 0,
+		  "paramRadiusScalar": 1,
+		  "paramSwitch_night": 0,
+		  "paramRadiusScalar_night": 1
+	  },
+	  "StructScatter":{
+		  "paramSwitch": 1,
+		  "paramSwitch_night": 1,
+		  "paramIsTransGauss": 0,
+		  "paramIsRaidusWeight": 0
+	  },
+	  "StructUv":{
+		  "paramSwitch": 1,
+		  "paramBlurRatio": 2,
+		  "paramBlurWay": 0,
+		  "paramSwitch_night": 1,
+		  "paramBlurRatio_night": 2,
+		  "paramBlurWay_night": 0
+	  }
+  },
+  "StructPos": {
+	  "StructFusnAlpha":{
+		  "paramSwitch": 1,
+		  "paramLowTh": 0.3,
+		  "paramHighTh": 0.6,
+		  "paramLowTh_night": 0.3,
+		  "paramHighTh_night": 0.7,
+		  "paramTranRaidusRatio_1x": 1.0,
+		  "paramTranRaidusRatio_3x": 2.0,
+		  "paramFarRatioRad1": 0.5,
+		  "paramCloRatioRad1": 0.8,
+		  "paramSwitch_night": 1,
+		  "paramTranRaidusRatio_night_1x": 2.0,
+		  "paramTranRaidusRatio_night_3x": 2.0
+	  }
+  },
+  "SturctNoise":{
+	  "paramSwitch": 0,
+	  "paramThre": 6,
+	  "paramPortion": 7
+  }
+}

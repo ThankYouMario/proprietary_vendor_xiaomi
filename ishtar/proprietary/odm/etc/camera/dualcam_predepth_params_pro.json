@@ -1,0 +1,25 @@
+{
+	"//": "Global parameters",
+  "StructGlobal": {
+	"StructMask":{
+		"paramSwitch": 2,
+		"paramaiMaskDownSample": 4,
+		"parammImaskW": 960,
+		"parammImaskH": 720
+	},
+	"StructAiDepth":{
+        "paramSwitch": 1,
+        "paramDepthW": 1024
+	},
+	"StructMultiThread":{
+	    "paramMaskThreadSwitch": 1,
+		"paramBgFilterSwitch": 0,
+		"paramAiDepthThreadSwitch": 1
+	},
+	"StructDspGpu":{
+		"paramBmDspSwitch": 1,
+		"paramMatteGpuSwitch": 1
+	},
+	"paramIsTrustAfCode": 1
+  }
+}

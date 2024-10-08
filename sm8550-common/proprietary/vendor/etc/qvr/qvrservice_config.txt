@@ -1,0 +1,9 @@
+##############################################################################
+# Copyright (c) 2016-2020 Qualcomm Technologies, Inc.
+# All Rights Reserved
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+##############################################################################
+
+# Configuration parameters for qvr service
+# VR Service parses the target specific config file under: cfg/<soc_id>/<platform_subtype>/<platform_version>
+# Any parameter added here will override the current value of same parameter.

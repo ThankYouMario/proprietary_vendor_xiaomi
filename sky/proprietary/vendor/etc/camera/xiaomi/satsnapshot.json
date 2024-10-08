@@ -1,0 +1,50 @@
+{
+    "PipelineName": "SatSnapshot",
+    "NodesList": {
+      "Node": [
+        {
+          "NodeName": "com.xiaomi.plugin.hdr",
+          "NodeInstance": "HdrInstance"
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.skinbeautifier",
+          "NodeInstance": "SkinInstance"
+        }
+      ]
+    },
+    "PortLinkages": {
+      "Link": [
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "HdrInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "HdrInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance":"SkinInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SkinInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance":"SinkBuffer"
+          }
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,125 @@
+{
+    "PipelineName": "FrontSuperNightSnapshotJpeg",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.arcfrontsll",
+                "NodeInstance": "ARCSOFTSLLInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 16
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "IdealRaw2YuvInstance0",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.gpu",
+                "NodeInstance": "GpuInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.tsskinbeautifier",
+                "NodeInstance": "SkinBeautifierInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.offlinepostproc",
+                "NodeInstance": "JpegInstance0"
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ARCSOFTSLLInstance0",
+                    "PortFormat": "RAW16"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "ARCSOFTSLLInstance0",
+                    "PortFormat": "RAW16"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "IdealRaw2YuvInstance0",
+                    "PortFormat": "RAW16"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "IdealRaw2YuvInstance0",
+                    "PortFormat": "YUV420_NV12"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SkinBeautifierInstance",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "GpuInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "JpegInstance0",
+                    "PortFormat": "BLOB",
+                    "PortFollowType": 2,
+                    "FollowPortId": 0
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            }
+        ]
+    }
+}

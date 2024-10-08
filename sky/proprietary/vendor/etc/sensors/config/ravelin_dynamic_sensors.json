@@ -1,0 +1,30 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "HDK", "IDP"],
+    "soc_id": ["568", "581", "582", "602"]
+  },
+
+  "sns_dynamic_libraries":
+  {
+    "owner": "dynamic_sensor",
+    "detect_on_every_boot":{ "type": "int", "ver": "0",
+        "data": "0"
+    },
+    ".lib0":
+    {
+      "owner": "dynamic_sensor",
+      "name":{ "type": "str", "ver": "0",
+        "data": "lsm6dst_normal.so"
+      },
+      "reg_fun":{ "type": "str", "ver": "0",
+        "data": "sns_register_lsm6dst"
+      },
+      "reg_cnt":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "detected":{ "type": "int", "ver": "0",
+        "data": "0"
+      }
+    }
+  }
+}

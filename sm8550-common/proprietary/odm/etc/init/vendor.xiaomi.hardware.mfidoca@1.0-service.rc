@@ -1,0 +1,4 @@
+service vendor.mfidoca /odm/bin/fidoca
+    class hal
+    user system
+    group system

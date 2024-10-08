@@ -1,0 +1,12 @@
+EISWidthMargin=0.2
+EISHeightMargin=0.2
+SUPEREISHeightMargin=0.513513
+SUPEREISWidthMargin=0.351351
+SUPEREISUWHeightMargin=0.517
+SUPEREISUWWidthMargin=0.355
+EISLDCGridEnabled=1
+EISv3GyroDumpEnabled=0
+EISv3OperationMode=0
+EISv2GyroDumpEnabled=0
+EISv2OperationMode=0
+EISFrameDelay=30

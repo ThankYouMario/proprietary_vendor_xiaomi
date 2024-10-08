@@ -1,0 +1,96 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "LMI"],
+    "soc_id": ["321", "356"]
+  },
+  "dual_als_platform":{
+    "owner": "sns_dual_als",
+    ".als":{
+      "owner": "sns_dual_als",
+      ".fac_cal":{
+        "owner": "sns_dual_als",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_dual_als",
+      "0":{ "type": "flt", "ver": "6",
+        "data": "12492.246"
+      },
+      "1":{ "type": "flt", "ver": "6",
+        "data": "0.371"
+      },
+      "2":{ "type": "flt", "ver": "6",
+        "data": "3.000"
+      },
+      "3":{ "type": "flt", "ver": "6",
+        "data": "-3.000"
+      },
+      "4":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "6",
+        "data": "1.9485"
+      },
+      "6":{ "type": "flt", "ver": "6",
+        "data": "1921.51"
+      },
+      "7":{ "type": "flt", "ver": "6",
+        "data": "1122.786"
+      },
+      "8":{ "type": "flt", "ver": "6",
+        "data": "549.855"
+      },
+      "9":{ "type": "flt", "ver": "6",
+        "data": "0.0"
+      }
+    },
+    ".oled_cal_factor":{
+      "owner": "sns_dual_als",
+      "clear_a":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "clear_b":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "red_a":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "red_b":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "green_a":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "green_b":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "blue_a":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      },
+      "blue_b":{ "type": "flt", "ver": "0",
+        "data": "2.5"
+      }
+    },
+    ".data_cal_factor":{
+      "owner": "sns_dual_als",
+      "data0_a":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "data1_a":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "data0_b":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "data1_b":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      }
+    }
+  }
+}

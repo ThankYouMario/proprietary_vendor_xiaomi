@@ -1,0 +1,45 @@
+{
+    "PipelineName": "miuicamerayuv2heic",
+    "NodesList": {
+      "Node": [
+        {
+            "NodeName": "com.xiaomi.plugin.offlinepostproc",
+            "NodeInstance": "HeicInstance0"
+        }
+      ]
+    },
+    "PortLinkages": {
+        "Link": [
+          {
+              "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SourceBuffer"
+              },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "HeicInstance0"
+              }
+          },
+          {
+              "SrcPort": {
+                  "PortId": 0,
+                  "NodeInstance": "HeicInstance0"
+              },
+              "DstPort": {
+                  "PortId": 0,
+                  "NodeInstance": "SinkBuffer0"
+              }
+          },
+          {
+              "SrcPort": {
+                  "PortId": 1,
+                  "NodeInstance": "HeicInstance0"
+              },
+              "DstPort": {
+                  "PortId": 1,
+                  "NodeInstance": "SinkBuffer1"
+              }
+          }
+        ]
+    }
+}

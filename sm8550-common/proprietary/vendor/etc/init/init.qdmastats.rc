@@ -1,0 +1,16 @@
+# Copyright (c) 2019-2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+on post-fs-data
+    # create QDMA dropbox
+    mkdir /data/vendor/qcc-trd 0700 system system
+    
+on boot
+    chown system system /sys/module/microdump_collector/parameters/enable_microdump
+    chown system system /sys/module/microdump_collector/parameters/start_qcomdump
+
+service vendor.qcc-trd /system/vendor/bin/qcc-trd
+    class late_start
+    user system
+    group vendor_qtr readproc system net_bw_stats radio vendor_rfs_shared sdcard_rw media_rw sdcard_r

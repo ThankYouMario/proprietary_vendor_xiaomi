@@ -1,0 +1,79 @@
+{
+    "ellc": {
+	"phone_version":"M3",
+	"model_version":"v10.0",
+	"hdr":"true",
+	"resize":"false",
+        "shape_patch":[784,1040],
+        "overlap": [32, 32],
+        "snpe":{
+			"runtime": "dsp",
+			"dlcs": [{
+				"dlc_name":"20221017_SC4644non2_2_snpe2.3.1.3811a4.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,16],
+					"offset": 0,
+					"delta": 0.0000152292195707559585571289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000178211485035717487335205078125000000,
+					"encoding": "tf16"
+				}
+			},
+			{
+				"dlc_name":"20221017_SC4644non2_2_snpe2.3.1.3811a4.dlc",
+				"input": {
+					"name": "Placeholder:0",
+					"shape": [1,784,1040,16],
+					"offset": 0,
+					"delta": 0.0000152292195707559585571289062500000000,
+					"encoding": "tf16"
+				},
+				"output": {
+					"name": "g_conv10/Conv2D:0",
+					"shape": [1,784,1040,4],
+					"offset": 0,
+					"delta": 0.0000178211485035717487335205078125000000,
+					"encoding": "tf16"
+				}
+			}]
+        },
+
+		"relight_setting": {
+			"range1_luxindex_start":495.0,
+			"range1_luxindex_end":520.0,
+			"range1_luxindex_start_ratio":1.0,
+			"range1_luxindex_end_ratio":1.0,
+			"range2_luxindex_start":520.0,
+			"range2_luxindex_end":540.0,
+			"range2_luxindex_start_ratio":1.0,
+			"range2_luxindex_end_ratio":1.0,
+			"range3_luxindex_start":540.0,
+			"range3_luxindex_end":550.0,
+			"range3_luxindex_start_ratio":1.0,
+			"range3_luxindex_end_ratio":1.0,
+			"range4_luxindex_start":550.0,
+			"range4_luxindex_end":580.0,
+			"range4_luxindex_start_ratio":1.0,
+			"range4_luxindex_end_ratio":1.0
+		},
+		"Threshold":{
+			"T_brightness":150,
+			"T_dark_scene":25000,
+			"T_motion_1": 15,
+			"T_motion_2": 50000000,
+			"T_over_expose_threshold": 3500,
+			"T_over_expose_ratio": 0.4,
+			"T_first_frame_luxindex": 360,
+			"T_merge_ratio": 0.985,
+			"T_pow_crop_ratio": 0.5,
+			"T_pow_merge_ratio": 2
+		}
+	}
+}
+

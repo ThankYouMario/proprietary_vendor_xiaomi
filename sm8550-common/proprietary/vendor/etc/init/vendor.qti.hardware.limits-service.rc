@@ -1,0 +1,11 @@
+# Copyright (c) 2020-2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service vendor.limits-hal /vendor/bin/hw/vendor.qti.hardware.limits@1.2-service
+	interface vendor.qti.hardware.limits@1.0::ILimits default
+	interface vendor.qti.hardware.limits@1.1::ILimits default
+	interface vendor.qti.hardware.limits@1.2::ILimits default
+	class hal
+	user root
+	group root

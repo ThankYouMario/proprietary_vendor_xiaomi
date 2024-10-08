@@ -1,0 +1,109 @@
+multiCameraEnable=TRUE
+# Camera Log
+logInfoMask=0
+logWarningMask=0
+logConfigMask=0
+logVerboseMask=0
+logCoreCfgMask=0
+logRequestMapping=FALSE
+systemLogEnable=TRUE
+enableAsciiLogging=0
+overrideLogLevels=0x1
+enableTxtLogging=0
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+
+#systrace
+traceGroupsEnable=0
+
+#ESD recovery
+raiserecoverysigabrt=FALSE
+raisesigabrt=FALSE
+
+MPMSizeThresToDisableDelayedUnmap=0
+MPMForceDisableDelayedUnmap=TRUE
+pdafHWEnable=TRUE
+oisMaxWaitingTime=50
+enableOISOptimization=TRUE
+enableResourceManager=TRUE
+enableRawHDR=0
+#forceHWMFFixedNumOfFrames=5
+enableICAInGrid=1
+enableNCSService=1
+iseispreviewSupported=TRUE
+ismfnrbokehsupported=TRUE
+isBeautyMakeupSupported=TRUE
+isVideoBeautifierSupported=TRUE
+isSuperPortraitSupported=TRUE
+is3rdLightWeightSupported=TRUE
+raiserecoverysigabrt=FALSE
+minReprocessInputWidth=8000
+minReprocessInputHeight=6000
+gyroSensitivityLLS=0.04
+gyroSensitivityLLSEnable=FALSE
+disableFocusIndication=TRUE
+overrideFlashTorchCurrent=500
+overrideFlashlightCurrent=150
+enableSensorHWSync=1
+# Bit Mask for HighQualityQuickShot configure
+# Bit[0]       - Support MFSR/LLS in SAT mode
+# Bit[1]       - Support HDR in SAT mode
+# Bit[2]       - Support SR in SAT mode
+# Bit[3]       - Support SuperNightSE in SAT mode
+# Bit[4~7]     - reserve
+# Bit[8]       - Support Bokeh MFNR in Back Camera
+# Bit[9]       - Support Bokeh HDR in Back Camera
+# Bit[10]      - Support MFNR in Front Camera
+# Bit[11]      - Support HDR in Front Camera
+# Bit[12]      - Support Bokeh in Front Camera
+# Bit[13]      - Support  Macro Mode
+# Bit[14~15]   - reserve
+# Bit[16~19]   - HighQualityQuickShot queue length(max number of HighQualityQuickShot)
+# Bit[20]      - Support reuse RDI buffer or not
+# Bit[21]      - Support Limit MFNR input frames or not
+# Bit[22~31]   - reserve
+HighQualityQuickShotSupportMask=0x000000
+enableSensorFpsMatch=TRUE
+isVideoBokehSupported=TRUE
+isVideoMimovieSupported=TRUE
+isVideoLogformatSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+isVideoFilterSupported=TRUE
+multiCameraFrameSync=1
+#isParallelCameraDeviceSupported=TRUE
+FDFilterEngine=FD_Standard_ARM
+fovcEnable=1
+vsquality=5@30|6@30
+FDPreprocessing=GTM
+miIfeCamnocBandwidthMBytes=0xFFFF
+miIfeExternalBandwidthMBytes=0xFFFF
+miIfeBandwidthBoostCount=1
+algoNormalSupportedValue=0:99|21:99|1:39|G:33
+algoHQSupportedValue=0:66|21:66|1:6|G:0
+algoSuperNightSupportedValue=0:8|1:8|21:0|G:0
+algoEISSupportedValue=0:16|1:0|21:16|G:0
+algoCameraXEnabled=TRUE
+sessionMaxFlushWaitTime=2000
+algoSDKEnabled=TRUE
+enableCHIPartialData=1
+quickviewsupport=TRUE
+enableGPURotation=TRUE
+colorBokehVersion=0
+superVideoFilterVersion=1
+isVideoBeautyScreenshotSupported=TRUE
+enableMotionCapture=0
+
+# rear capture bokeh
+bokehVendorID=3
+
+#bokeh fps range
+AvailableTargetFpsRanges=12:24
+
+#AIIEVersion
+AIEnhancementVersion=2
+
+#inplement high thermal strategy
+enableBLMClient=1
+
+pluginBurstReqCnt=0x1
+pluginBurstReqCntForHeif=0x1

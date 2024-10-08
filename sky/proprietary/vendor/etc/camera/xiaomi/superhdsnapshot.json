@@ -1,0 +1,35 @@
+{
+  "PipelineName": "SuperHdSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.memcpy",
+        "NodeInstance":"MemcpyInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+    {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "MemcpyInstance"
+        }
+      },
+       {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "MemcpyInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

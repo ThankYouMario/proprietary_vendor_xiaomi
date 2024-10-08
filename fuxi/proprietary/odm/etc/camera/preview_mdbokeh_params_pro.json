@@ -1,0 +1,443 @@
+{
+	"/": "Depth parameters",
+	"StructB": {
+		"paramA": 31,
+		"paramB": 31,
+		"paramC": 9,
+		"paramH": 30,
+		"paramF": 3000,
+		"StructRear": {
+			"StructHS": {
+				"paramE": -8,
+				"paramF": 32
+			},
+			"StructQS": {
+				"paramE": -4,
+				"paramF": 16
+			}
+		},
+		"StructFront": {
+			"StructHS": {
+				"paramE": -23,
+				"paramF": 32
+			},
+			"StructQS": {
+				"paramE": -11,
+				"paramF": 16
+			}
+		}
+	},
+	"StructC": {
+		"paramT": 1,
+		"paramD": 5,
+		"paramSX": 4,
+		"paramSY": 4,
+		"paramL0": 4,
+		"paramL1": 4,
+		"paramL2": 4,
+		"paramL3": 1,
+		"paramL4": 1,
+		"paramL": 48.0,
+		"paramF": 1,
+		"paramAlpha": 0.3,
+		"paramIsBlur3D": 1
+	},
+  "StructI": {
+    "paramB": 1,
+    "paramU": 1,
+    "paramI": 0,
+    "paramW": 7,
+    "paramS": 5,
+    "paramR": 0.1,
+    "paramGT": 220,
+    "paramT": 128,
+    "paramBF": 0,
+    "paramWR": 0.19,
+    "paramAR": 0.05
+  },
+  "StructSC": {
+    "paramA": 1,
+    "paramL": 10.0,
+    "paramS": 200.0,
+    "paramR": 0.1
+  },
+	"StructCA": {
+		"paramS": 0,
+		"paramSigma1": 0.50,
+		"paramSigma2": 0.33,
+		"paramSigma3": 0.17,
+		"paramDensityThres1": 0.1,
+		"paramDensityThres2": 0.5
+	},
+	"StructP": {
+		"paramA": 3,
+		"paramC": 256,
+		"paramD": 12
+	},
+	"StructTC": {
+		"Struct_4_3":{
+			"paramH": 5,
+			"paramWS": 5,
+			"paramD":  5,
+			"paramL": 5
+		},
+		"Struct_16_9":{
+			"paramH": 5,
+			"paramWS": 5,
+			"paramD":  5,
+			"paramL": 5
+		},
+		"Struct_full":{
+			"paramH": 5,
+			"paramWS": 5,
+			"paramD":  5,
+			"paramL": 5
+		}
+	},
+	"//": "Calib parameters",
+  "StructM_WU": {
+    "param_InitMode": 1,
+    "param_PreProcessDark": 1,
+    "param_Tx": 0,
+    "param_Ty":-14.55,
+    "param_Type": 3,
+    "param_BSwap": 0,
+    "param_UndisSelect": 32,
+    "param_BinHasDistable": 0,
+    "param_MAINDIS0": 0,
+    "param_MAINDIS1": 0.19,
+    "param_MAINDIS2": 0.12,
+    "param_MAINDIS3": 0.17,
+    "param_MAINDIS4": 0.51,
+    "param_MAINDIS5": 0.83,
+    "param_MAINDIS6": 1.14,
+    "param_MAINDIS7": 1.29,
+    "param_MAINDIS8": 1.41,
+    "param_MAINDIS9": 1.52,
+    "param_MAINDIS10": 1.62,
+    "param_SUBDIS0": 0,
+    "param_SUBDIS1": 0.61045,
+    "param_SUBDIS2": 0.60914,
+    "param_SUBDIS3": 0.44611,
+    "param_SUBDIS4": 0.1672,
+    "param_SUBDIS5": -0.03112,
+    "param_SUBDIS6": -0.10215,
+    "param_SUBDIS7": -0.50734,
+    "param_SUBDIS8": -1.73657,
+    "param_SUBDIS9": -5.33958,
+    "param_SUBDIS10": -14.57822
+  },
+  "StructM_WT": {
+    "param_InitMode": 1,
+    "param_AFnum": 1,
+    "param_PreProcessDark": 1,
+    "param_Tx": 14.55,
+    "param_Ty": 0,
+    "param_Type": 3,
+    "param_BSwap": 1,
+    "param_UndisSelect": 32,
+    "param_BinHasDistable": 0,
+    "param_MAINDIS0": 0,
+    "param_MAINDIS1": 0.0334154,
+    "param_MAINDIS2": 0.13516,
+    "param_MAINDIS3": 0.31131,
+    "param_MAINDIS4": 0.565759,
+    "param_MAINDIS5": 0.892043,
+    "param_MAINDIS6": 1.26374,
+    "param_MAINDIS7": 1.62358,
+    "param_MAINDIS8": 1.8683,
+    "param_MAINDIS9": 1.81597,
+    "param_MAINDIS10": 1.10216,
+    "param_SUBDIS0": 0,
+    "param_SUBDIS1": 0,
+    "param_SUBDIS2": 0,
+    "param_SUBDIS3": 0,
+    "param_SUBDIS4": 0,
+    "param_SUBDIS5": 0,
+    "param_SUBDIS6": 0,
+    "param_SUBDIS7": 0,
+    "param_SUBDIS8": 0,
+    "param_SUBDIS9": 0,
+    "param_SUBDIS10": 0
+  },
+  "StructPublic": {
+    "param_ProjectNum": "M3",
+    "param_bVerbose": 0,
+    "param_LM_BD": 10,
+    "param_LM_SD": 3.0,
+    "param_LM_SJ": 6.0,
+    "param_LM_MI": 50,
+    "param_LM_DT": 1e-8,
+    "param_LM_DE": 1e-10,
+    "param_LM_BE": 1e-8,
+    "param_LM_CE": 1e-5,
+    "param_FeatureNum": 30,
+    "param_RansacThd": 3.5,
+    "param_DispRankRatio": 0.02,
+    "param_WinSize": 31,
+    "param_MaxLevel": 2,
+    "param_QualityLevel": 0.005,
+    "param_PAP0": 0.5,
+    "param_PAP2": 0.1
+	},	
+  "StructIMG_1_4x_WU_Bin_Bin": {
+    "param_F_proc": 1.9,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 0.8,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 2684,
+    "param_m_4_3h": 2012,
+    "param_s_4_3w": 3360,
+    "param_s_4_3h": 2520
+	},	
+  "StructIMG_2x_WU_Bin_Bin": {
+    "param_F_proc": 1.6,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 1878,
+    "param_m_4_3h": 1408,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_2x_WU_Re_Bin": {
+    "param_F_proc": 1.6,	
+    "param_M_Nc": 1,
+    "param_S_Nc": 1,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 3758,
+    "param_m_4_3h": 2818,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_26x_WT_Bin_Bin": {
+    "param_F_proc": 1.3,	
+    "param_M_Nc": 0.9,
+    "param_S_Nc": 0.5,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 3258,
+    "param_m_4_3h": 2442,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_26x_WU_Bin_Bin": {
+    "param_F_proc": 1.8,
+    "param_M_Nc": 0.3,
+    "param_S_Nc": 0.4,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 1253,
+    "param_m_4_3h": 938,
+    "param_s_4_3w": 1440,
+    "param_s_4_3h": 1080
+	},
+  "StructIMG_3_75x_WT_Bin_Bin": {
+    "param_F_proc": 1.5,	
+    "param_M_Nc": 0.7,
+    "param_S_Nc": 0.5,
+    "paramBR_w": 0,
+    "paramBR_h": 0,
+    "param_m_4_3w": 2714,
+    "param_m_4_3h": 2034,
+    "param_s_4_3w": 1920,
+    "param_s_4_3h": 1440
+	},
+  "StructIMG_3_75x_WU_Bin_Bin": {
+    "param_F_proc": 1.8,
+    "param_M_Nc": 0.25,
+    "param_S_Nc": 0.4,
+    "paramBR_w": 0,
+    "paramBR_h": 0,	
+    "param_m_4_3w": 1044,
+    "param_m_4_3h": 782,
+    "param_s_4_3w": 1440,
+    "param_s_4_3h": 1080
+	},
+  "///": "MadridEffect parameters",
+  "StructSpin": {
+	"paramUV":1,
+	"paramS":0,
+	"paramM": 1,
+	"structB0":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0006,
+		"StructF":0.6
+	},
+	"structB1":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0004,
+		"StructF":0.6
+	},
+	"StructM0":{
+		"paramT1": 0.05,
+		"paramT2": 0.95,
+		"paramT3": 40,
+		"paramT4": 1000,
+		"paramTF": 0.9,
+		"paramTC": 2,
+		"paramBGA": 2.0,
+		"paramFGA": 2.0,
+		"paramBR": 1.0
+    },
+    "StructM1":{
+		"StructL1":4.0,
+		"StructL11":4.0,
+		"StructL2":1.0,
+		"StructBG":1.6,
+		"StructFG":1.5,
+		"StructBR": 2.0,
+		"StructCR":1.0,
+		"StructSR":6
+    }
+   },
+  "StructSoft": {
+	"paramUV":1,
+	"paramS":0,
+	"paramM": 0,
+	"structB0":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0006,
+		"StructF":0.6
+	},
+	"structB1":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0004,
+		"StructF":0.6
+	},
+	"StructM0":{
+		"paramT1": 0.05,
+		"paramT2": 0.95,
+		"paramT3": 40,
+		"paramT4": 1000,
+		"paramTF": 0.9,
+		"paramTC": 2,
+		"paramBGA": 2.0,
+		"paramFGA": 2.0,
+		"paramBR":4.0
+    },
+    "StructM1":{
+		"StructL1":4.0,
+		"StructL11":4.0,
+		"StructL2":0.5,
+		"StructBG":1.6,
+		"StructFG":1.5,
+		"StructBR": 2.0,
+		"StructCR":1.0,
+		"StructSR":8
+    }
+   },
+  "StructBlack": {
+	"paramUV":1,
+	"paramS":0,
+	"paramM":0,
+	"structB0":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0006,
+		"StructF":0.6
+	},
+	"structB1":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0004,
+		"StructF":0.6
+	},
+	"StructM0":{
+		"paramT1": 0.05,
+		"paramT2": 0.95,
+		"paramT3": 40,
+		"paramT4": 1000,
+		"paramTF": 0.9,
+		"paramTC": 2,
+		"paramBGA": 2.0,
+		"paramFGA": 2.0,
+		"paramBR": 0.5
+    },
+    "StructM1":{
+		"StructL1":4.0,
+		"StructL11":4.0,
+		"StructL2":0.5,
+		"StructBG":1.6,
+		"StructFG":1.5,
+		"StructBR": 2.0,
+		"StructCR":1.0,
+		"StructSR":8
+    }
+   },
+  "StructPortrait": {
+	"paramUV":1,
+	"paramS":0,
+	"paramM": 1,
+	"structB0":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0006,
+		"StructF":0.6
+	},
+	"structB1":{
+		"StructR1": 0.01,
+		"StructR2": 0.01,
+		"StructB":0.0004,
+		"StructF":0.6
+	},
+	"StructM0":{
+		"paramT1": 0.05,
+		"paramT2": 0.95,
+		"paramT3": 40,
+		"paramT4": 1000,
+		"paramTF": 0.9,
+		"paramTC": 2,
+		"paramBGA": 2.0,
+		"paramFGA": 2.0,
+		"paramBR": 1.0
+    },
+    "StructM1":{
+		"StructL1":4.0,
+		"StructL11":4.0,
+		"StructL2":1.0,
+		"StructBG":1.6,
+		"StructFG":1.5,
+		"StructBR": 2.0,
+		"StructCR":1.0,
+		"StructSR":6
+    }
+   },
+  "////": "sum control",
+  "StructS":{
+	"paramH": 1,
+	"paramM": 1,
+	"paramS": 9,
+	"paramDR": 1,
+	"paramES": 1,
+	"paramDS": 1,
+	"paramSS": 0,
+	"paramMS": 1,
+	"StructH":{
+		"paramD1_4_3": 360,
+		"paramD1_16_9": 480,
+		"paramD1_20_9": 600,
+		"paramR_4_3": 360,
+		"paramR_16_9": 480,
+		"paramR_20_9": 600,
+		"paramBM":1,
+		"paramBF":1,
+		"paramG":1
+	},
+	"StructC":{
+		"paramD1_4_3": 360,
+		"paramD1_16_9": 480,
+		"paramD1_20_9": 600,
+		"paramR_4_3": 360,
+		"paramR_16_9": 480,
+		"paramR_20_9": 600
+	}
+  }
+}

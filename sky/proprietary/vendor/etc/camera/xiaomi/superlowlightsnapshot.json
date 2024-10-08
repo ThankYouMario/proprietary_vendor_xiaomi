@@ -1,0 +1,35 @@
+{
+  "PipelineName": "RawSuperlightPlugin",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.superlowlight",
+        "NodeInstance": "SuperlightInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SuperlightInstance"
+        }
+      }, 
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SuperlightInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
+  }
+}

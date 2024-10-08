@@ -1,0 +1,261 @@
+multiCameraLogicalXMLFile=marble.xml
+
+# Camera Log
+overrideLogLevels=0x1
+logInfoMask=0
+logWarningMask=0
+logConfigMask=0
+logVerboseMask=0
+logCoreCfgMask=0
+logRequestMapping=FALSE
+systemLogEnable=TRUE
+enableAsciiLogging=0
+enableTxtLogging=0
+raiserecoverysigabrt=FALSE
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+numConsecutiveRecovery=10
+
+# Bokeh
+isPhyicalMultiCameraSupported=TRUE
+bokehVendorID=1
+bokehRelightVerion=2
+supportedBokehRoleMask=0x1
+ismfnrbokehsupported=TRUE
+BokehSlaveMfnrEnable=FALSE
+
+#enable InSensorZoom
+enableInSensorZoom=TRUE
+ISZGainThSwitchIn=12.0
+ISZGainThSwitchOff=16.0
+ISZEnableCameraRole=0xA
+
+#enable/disable PDAF
+disablePDAF=FALSE
+pdafHWEnable=FALSE
+# CAF显示对焦框,pdaf不显示对焦框
+disableFocusIndication=1
+
+# override Flash Current
+overrideFlashTorchCurrent=130
+overrideFlashVideoLightCurrent=130
+overrideFlashSnapshotLightCurrent=450
+# CIT app use default current snapshot
+overrideFlashPreviewLightCurrent=130
+
+# MFHDR enable Snapshot Mode
+SupportedAlgoEngineHdr=1
+
+#SHDR seamless
+setAutoHDRMode=1
+enableDynamicModeSwitchVCUpdate=TRUE
+perFrameSensorMode=TRUE
+enable3expSHDRSnapshot=TRUE
+
+# Input Info Check of HDR
+InputInfoChecker=1
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+#enable camera pre init
+isEarlysettingsEnable=0x1
+
+# For CTS Reprocess Size
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+
+#MFNR Frame Select
+MfnrDynamicFrameEnable=1
+MfnrDefaultFrameNumber=5
+
+#enablelogformat
+isVideoLogformatSupported=FALSE
+#enable supernight and SE
+MIVISuperNightSupportMask=0x3C130313
+
+
+# Video EIS
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|8@30
+is60fpseisSupported=FALSE
+iseispreviewSupported=TRUE
+is1080p60fpseisSupported=TRUE
+isFrontVHdrSupported=FALSE
+#enablemimovie
+isVideoMimovieSupported=TRUE
+
+# Video skinbeautifier/AI/Filter/Bokeh
+isBeautyMakeupSupported=TRUE
+isVideoBeautifierSupported=TRUE
+isVideoBeautyEISSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+isVideoBokehSupported=FALSE
+isFrontVideoBokehSupported=FALSE
+enableStrictChecksum=TRUE
+isColorRetentionSupported=FALSE
+isVideoFilterSupported=TRUE
+isVideoColorRetentionBackSupported=FALSE
+superVideoFilterVersion=1
+is30fpsDynamicSupported=TRUE
+dynamicFpsSupported=0@30|1@30|2@30|3@30|4@30
+
+#For VideoHdrSupport
+isVideoHdrSupported=FALSE
+
+# AIIE Version
+AIEnhancementVersion=0
+
+# HalBufferMgrMode disable
+#halBufferMgrMode=0
+
+# arcsoft skinbeautifier
+isBeautyVersion=3
+enableEGLCache=TRUE
+isTrueSightBeautyEnabled=FALSE
+
+#Enable shot2Shutter for zsl capture
+soundTimeWhenAnchor=1
+
+# MISDK
+algoCameraXEnabled=FALSE
+algoSDKEnabled=FALSE
+
+# Quickview
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F07
+addScanIn3ALockStatus=1
+
+#Disable SAT in Message Video
+is3rdLightWeightSupported=TRUE
+
+#Enable GPU rotate
+enablegpuRotation=1
+
+#Enable motion capture
+#   bit[0]: 1 means it supports motion capture in capture mode.
+#           0 means not.
+#   bit[1]: 1 means it supports dedicated denoise algo under
+#             motion capture & capture mode.
+#           0 means not.
+#   bit[2]: 1 means it supports HDR under
+#             motion capture & capture mode.
+#           0 means not.
+#   bit[3]: 1 means replace SR with MFNR
+#           0 means not.
+#   bit[8]: 1 means it supports motion capture in portrait mode.
+#           0 means not.
+#   bit[9]: 1 means it supports dedicated denoise algo under
+#             motion capture & portrait mode.
+#           0 means not.
+#   bit[10]: 1 means it supports HDR under
+#             motion capture & portrait mode.
+#           0 means not.
+#   bit[11:12]: default on behavior bits
+#           b'00 means off by default.
+#           b'01 means it's enabled by default in non-banding env.
+#                User enables it manually in banding env via UI.
+#           b'10 means it's enabled by default in all env.
+#                User disables it manually in banding env via UI.
+#           b'11 reserve
+#   bit[13:31]: reserve
+enableMotionCapture=0x0000
+
+# Bit Mask for HighQualityQuickShot configure
+# Bit[0]       - Support MFSR/LLS in SAT mode
+# Bit[1]       - Support HDR in SAT mode
+# Bit[2]       - Support SR in SAT mode
+# Bit[3]       - Support SuperNightSE in SAT mode
+# Bit[4~7]     - reserve
+# Bit[8]       - Support Bokeh MFNR in Back Camera
+# Bit[9]       - Support Bokeh HDR in Back Camera
+# Bit[10]      - Support MFNR in Front Camera
+# Bit[11]      - Support HDR in Front Camera
+# Bit[12]      - Support Bokeh in Front Camera
+# Bit[13]      - Support  Macro Mode
+# Bit[14~15]   - reserve
+# Bit[16~19]   - HighQualityQuickShot queue length(max number of HighQualityQuickShot)
+# Bit[20]      - Support reuse RDI buffer or not
+# Bit[21]      - Support Limit MFNR input frames or not
+# Bit[22]      - Support quickshot and HightQualityQuickShot mixed use.
+# Bit[23]      - reserve
+# Bit[24]      - Mixed quick shot suport SAT MFNR or not
+# Bit[25]      - Mixed quick shot suport front MFNR or not
+# Bit[26]      - Mixed quick shot suport Macro mode or not
+# Bit[27~31]   - reserve
+HighQualityQuickShotSupportMask=0x1431F03
+
+# Bit Mask for HighQualityQuickShotDelayTime configure
+# Bit[0 ~ 3]   - DelayTime XX * 100 ms of Bokeh MFNR in Back Camera
+# Bit[4 ~ 7]   - DelayTime XX * 100 ms of Bokeh MFNR in Front Camera
+# Bit[8 ~ 11]  - DelayTime XX * 100 ms of Back Normal Capture
+# Bit[12 ~ 15] - DelayTime XX * 100 ms of HDR in Front Camera
+# Bit[16 ~ 19] - DelayTime XX * 100 ms of HDR in Back Camera
+# Bit[20 ~ 23] - DelayTime XX * 100 ms of SuperNightSe in Back Camera
+# Bit[24 ~ 27] - DelayTime XX * 100 ms of SR in Back Camera
+# Bit[28 ~ 31] - DelayTime XX * 100 ms of Front Normal Capture
+# Bit[32 ~ 35] - DelayTime XX * 100 ms of MacroMode in Back Camera
+# Bit[36 ~ 39] - DelayTime XX * 100 ms of Bokeh HDR in Back Camera
+# Bit[40 ~ 63] - reserv
+QuickShotDelayTimeMask=0x4222222044
+
+#Flicker
+enableSpectralSensor=0
+luxIndexThreashouldForFlicker=320.000
+
+enablechirecovery=FALSE
+
+#FDClient=FDHWHybrid
+#VSR
+enableVSR=0X0
+overrideEnableVSR=FALSE
+
+#DME
+enableDMEbasedMCTF=1
+
+# SMMU
+MPMSizeThresToDisableDelayedUnmap=0
+MPMForceDisableDelayedUnmap=TRUE
+pluginBurstReqCnt=0x0
+pluginBurstReqCntForHeif=0x0
+
+#SW SYNC
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+enableExposureTimeMatch=TRUE
+multiCameraDetectFrameSync=TRUE
+
+#thermal
+enableBLMClient=1
+
+#slow motion thread num
+OperationMode2ThreadNum=1:4
+#systrace
+traceGroupsEnable=0
+
+#flush time
+nodeResponseTime=200
+sessionResponseTimePadding=250
+sessionMaxFlushWaitTime=1000
+#sensorModuleNumber
+sensorModuleNumber=4
+
+isVideoHDRSupportSetFreq=0x3
+
+# enableVideoChatPowerSave
+enableVideoChatPowerSave=TRUE
+
+#AE Sync Ratio
+AESyncRatiosVersion1=2800@1.000926,8.32566|4200@1.004921,8.507915|6500@1.006602,8.969335
+
+#OIS enable Optimization
+enableOISOptimization=TRUE
+
+#Enable NCSFlushFenceJob
+isNCSFlushFenceJobEnabled=TRUE
+
